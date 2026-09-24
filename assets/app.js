@@ -279,7 +279,7 @@ function initSchool() {
       ["#sec-overview", "系统概况"], ["#sec-projects", "重点项目"],
       ["#sec-spaces", "空间与服务"], ["#sec-trends", "趋势研判"],
       ["#sec-business", "业务启发"], ["#sec-limits", "待验证限制"],
-      ["#sec-sources", "来源"]
+      ["#sec-readers", "读者来信"], ["#sec-sources", "来源"]
     ].map(([h, t]) => `<a href="${h}">${t}</a>`).join("");
   }
   $("#d-flagship").innerHTML = `
@@ -307,6 +307,24 @@ function initSchool() {
     </div>`).join("");
   $("#d-insights").innerHTML = s.business.map(b => `<li>${hl(b)}</li>`).join("");
   $("#d-limits").innerHTML = s.limits.map(l => `<li>${esc(l)}</li>`).join("");
+  // 读者来信：有精选留言则展示，否则显示「虚位以待」引导
+  const letters = (typeof READERS !== "undefined" && READERS[s.id]) || [];
+  const tagName = { "感受": "feel", "建议": "advice", "选题": "topic", "启发": "insp" };
+  $("#d-readers").innerHTML = letters.length
+    ? letters.map(l => `
+      <div class="reader-card reveal">
+        <div class="r-head">
+          <span class="r-tag ${tagName[l.tag] || "feel"}">${esc(l.tag)}</span>
+          <span class="r-who">${esc(l.who)}</span>
+          <span class="r-when">${esc(l.when)}</span>
+        </div>
+        <p>${hl(l.text)}</p>
+      </div>`).join("")
+    : `<div class="reader-empty reveal">
+        <div class="r-quote">「</div>
+        <p>这里虚位以待——读完这所学校图书馆的研究，你有什么<b>感受</b>、<b>启发</b>，或者希望深入探究的<b>选题</b>？</p>
+        <p class="r-cta">到首页<a href="index.html#message">留言板</a>告诉我，精选内容会展示在这里与大家分享。</p>
+      </div>`;
   $("#d-sources").innerHTML = s.sources.map(src => `
     <li><a href="https://${src.url}" target="_blank" rel="noopener">${esc(src.label)}</a><span class="s-url">${esc(src.url)}</span></li>`).join("");
   // 上一所 / 下一所
