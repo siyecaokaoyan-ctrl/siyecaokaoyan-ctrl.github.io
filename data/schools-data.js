@@ -837,5 +837,114 @@ const SCHOOLS = [
     { label: "Retrofit Chicago – Mansueto 节能档案（20% 节能、3 分钟取书）", url: "chicago.gov/content/dam/city/sites/retrofit-chicago-2/pastparticipants/UChicagoMansueto.pdf" },
     { label: "The Chicago Maroon – 24/7 学习空间之困", url: "chicagomaroon.com/45089/news/beyond-midnight-the-case-for-24-7-study-spaces-at-uchicago" }
   ]
+},
+{
+  id: "upenn",
+  name: "宾夕法尼亚大学",
+  nameEn: "University of Pennsylvania",
+  founded: 1740,
+  country: "美国",
+  region: "美国东北",
+  state: "宾夕法尼亚州 · 费城",
+  reportId: "LR-20260924-01",
+  reportDate: "2026-09-24",
+  tagline: "一座主馆的六十年垂直更新",
+  mainLine: "没有新建过一座旗舰馆：1962 年的 Van Pelt 主馆以约十年为周期逐层再分配功能——地下 24/7、一层安静旗舰与协作共享、高层特藏与全球收藏；用一座自建校外高密度书库（LIBRA）承接藏书，用两轮大额修缮把 1891 年的国家历史地标 Fisher 馆保持在一线使用状态。",
+  flagship: { name: "Moelis 家族大阅览室（2017）", note: "5,500 平方英尺期刊库区改造，校方亲口承认的\"安静回归\"：20 英尺高天花板、Claudy Jongstra 19×49 英尺羊毛声学壁画、\"针落可闻\"的声学目标，获 IIDA 双奖与 AIA Philadelphia 优异奖。" },
+  overview: {
+    intro: "19 个实体图书馆＋数字图书馆（校方口径）。校方 FACTS 2017：全系统藏书 6,513,215 卷、年入馆 1,485,787 人次、座位 4,113 个、在编员工 338 人；印本与电子卷合计逾 837 万。系统中枢 Van Pelt 年访客 95.2 万。现任馆长 Constantia Constantinou（H. Carton Rogers III Vice Provost and Director，2023 年口径）。经费采用 RCM 模式由 12 个学院分摊。",
+    stats: [
+      { k: "总藏书", v: "651 万册", s: "FACTS 2017 校方口径；印本+电子卷合计 837.5 万册" },
+      { k: "年入馆", v: "148.6 万人次", s: "FACTS 2017 全系统；主馆 Van Pelt 95.2 万" },
+      { k: "系统规模", v: "19 馆＋数字图书馆", s: "另含校外高密度书库 LIBRA（约 300 万册容量）" },
+      { k: "馆内活动", v: "18,504 场/年", s: "2017 年教学、学习与协作活动合计" }
+    ]
+  },
+  projects: [
+    {
+      name: "Moelis 家族大阅览室（2017）：校方亲口承认的\"安静回归\"",
+      nameEn: "Moelis Family Grand Reading Room · Gensler · 2017",
+      year: "2017",
+      stats: [{ k: "面积", v: "5,500 SF" }, { k: "天花板", v: "20 英尺" }, { k: "壁画", v: "19×49 英尺" }, { k: "奖项", v: "IIDA 双奖等" }],
+      facts: "一层东端原期刊库区改造，Gensler 设计。校方 Almanac 立项声明：\"回应了近年偏向协作与交流的改造之后，学生对安静反思空间的渴求\"——全球名校官方口径中少见的自我修正。核心是荷兰艺术家 Claudy Jongstra 手工羊毛丝绸三联壁画《Fields of Transformation》（兼作吸声体）；核桃木板条吊顶藏吸音材料，团队以\"针落可闻\"为声学目标；3500K LED＋日光感应，桌面 50 英尺烛光，桌灯与家具厂商协同定制。",
+      insight: "安静空间的品质不靠面积堆叠，靠声学、照明与艺术的一体化设计密度。5,500 平方英尺、一个改造楼层、一枚捐赠，就造出一个旗舰级安静空间——这是\"不建新楼也能造旗舰\"的最小面积样本。"
+    },
+    {
+      name: "Van Pelt-Dietrich 主馆（1962）：六十年的垂直自我更新",
+      nameEn: "Van Pelt-Dietrich Library Center · H2L2 · 1962 / 1990 / 1995–98 / 2026–27",
+      year: "1962 → 持续更新",
+      stats: [{ k: "面积", v: "204,494 SF" }, { k: "年访客", v: "95.2 万" }, { k: "24/7", v: "1990 至今" }, { k: "CGC 决议", v: "$12.5M（2026）" }],
+      facts: "1962 年现代主义砖楼，1966 年加 Dietrich 翼。1990 年地下增设 Goldstein 本科生学习中心（学年周日至周五 24/7，美国最早的全天候学习空间之一）；1995–98 整体大翻新；2006 年一层西翼建 Weigle；2013 年六楼变 Kislak 特藏中心。2022–24 年书库多阶段重整（LC A–L 入三层、M–Z 入四层、低流通迁 LIBRA）。当前在建：五楼整体改造为 Zilberman 全球收藏中心（2026 夏–2027 初秋，1,250 万美元资本决议、约 3/4 来自捐赠）。",
+      insight: "更新逻辑是垂直分层而非水平扩张：地下＝通宵本科、一层＝安静旗舰＋协作共享、中层＝开架、高层＝特藏与全球收藏。对国内 1990–2010 年代存量馆舍，这是最直接的剖面样本：不需要新楼，需要的是一张逐层的\"功能再分配时刻表\"。"
+    },
+    {
+      name: "Fisher Fine Arts 图书馆（1891／1991／2026）：国家历史地标的两轮大额修缮",
+      nameEn: "Anne & Jerome Fisher Fine Arts Library · Frank Furness · NHL 1985",
+      year: "1891 / 修复 1986–91 / 再修 2025–26",
+      stats: [{ k: "首次修复", v: "$16.5M / 6 年" }, { k: "本轮修缮", v: "$17.8M / 20 个月" }, { k: "面积", v: "116,000 SF" }],
+      facts: "Frank Furness 设计（与 Dewey 磋商馆藏流程），1891 年启用，Penn 校主馆至 1962 年；玻璃顶铁架书库按 Furness 构想可\"一跨一跨\"生长。1950 年代曾面临拆建讨论，赖特称\"这是艺术家的作品\"；1985 年列国家历史地标；1986–91 年 Venturi, Rauch and Scott Brown 六年修复（Fisher 夫妇冠名），1991 年重新命名并获 AIA 等全国奖项；2025 年起 1,780 万美元外立面修缮，开放中施工并设噪音上报机制，预计 2026 年底完工。",
+      insight: "地标建筑的投资逻辑是\"保存即使命\"——35 年间两轮大额投入都不求改功能、只求保状态，与常见\"借机全面翻新\"的改造口径形成对照；Furness 的可生长书库则是 19 世纪的模数化弹性设计样本。"
+    },
+    {
+      name: "Kislak 特藏中心（2013）：把特藏\"上浮\"到顶层",
+      nameEn: "Kislak Center for Special Collections · 2013",
+      year: "2013",
+      stats: [{ k: "面积", v: "27,000 SF" }, { k: "捐赠", v: "$5.5M（Kislak 家族）" }, { k: "位置", v: "Van Pelt 六楼" }],
+      facts: "六楼整体改造：展览画廊、Furness Shakespeare Library、玻璃亭阅览区、Moelis Reading Terrace、Kamin Gallery 与 Steven Miller 古籍保护实验室同层闭环；特藏书库扩至五楼；年度 Rosenbach 目录学讲座（美国历史最悠久的目录学讲座系列之一）在此举办。",
+      insight: "最好的楼层、光与景观留给珍本与读者，楼下才是普通开架——\"修复—展览—教学\"在同一垂直动线里闭环，特藏从后台库房变成前台教学资产。"
+    },
+    {
+      name: "Holman Biotech Commons（2021）：健康科学的\"设备型\"共享空间",
+      nameEn: "Holman Biotech Commons · Voith & Mactavish · 2021",
+      year: "2021",
+      stats: [{ k: "投资", v: "$11.5M" }, { k: "学习室", v: "20 间" }, { k: "3D 打印", v: "9 台高端机" }, { k: "亮点", v: "Anatomage 解剖台" }],
+      facts: "原 Biomedical Library 全面改造（后获 Holman 家族冠名），Voith & Mactavish 设计，2021-09-20 开放，私人捐赠＋医学院＋护理学院＋教务长办公室共同出资。Holman 阅览室（可移动家具兼作活动场地）、Design Thinking Studio、Mixed Reality Lab、全校首台 Anatomage 虚拟解剖台、Bollinger 数字制造实验室（9 台 3D 打印机＋激光切割＋海报绘图仪）。校长称其为\"真正的 21 世纪图书馆设施\"。",
+      insight: "专业图书馆的换代方向：服务清单从\"文献＋座位\"扩成\"文献＋座位＋设备\"——虚拟解剖台、混合现实、数字制造直接进入图书馆服务目录，设备清单本身成为空间方案的一部分。"
+    },
+    {
+      name: "LIBRA 校外高密度书库（2011）：自建\"哈佛模式\"的第三条路",
+      nameEn: "LIBRA — Penn Libraries Research Annex · 2011 · Deptford, NJ",
+      year: "2011",
+      stats: [{ k: "启用", v: "2011.1" }, { k: "容量", v: "约 300 万册" }, { k: "货架", v: "30 英尺高架" }, { k: "送达", v: "1–2 个工作日" }],
+      facts: "1998 年起用租库、140 万册装满且业主收回物业后，迁往新泽西 Deptford 自建 LIBRA。\"哈佛模式\"高密度存储：按尺寸上架、30 英尺高架、改装叉车取书，Franklin 目录申请、1–2 个工作日送达校园，提供免费数字化。2022–24 年承接 Van Pelt 书库重整外迁，2026 年夏微缩胶片整体迁入。ReCAP 联盟（哥大、哈佛、NYPL、普林斯顿、耶鲁）成员中没有宾大——自建校外库、不入联盟；但宾大保护策展人 Ian Bogus 曾于 2017 年出任 ReCAP 执行主任。",
+      insight: "藏书外迁三条路线至此齐了：哈佛（自建＋模式输出）、芝大（坚决不外迁＋地下 ASRS）、宾大（自建校外库）。三条各有顶级背书，把三条的代价与承诺（次日达/分钟达/不外迁）摆在一起，把选择权交还校方。"
+    }
+  ],
+  learningSpaces: "按\"噪声等级\"垂直分层：地下 Goldstein 学年 24/7（1990 年承诺至今 35 年+，口径为周日至周五）；一层东端 Moelis 旗舰安静空间＋西翼 Weigle 协作与媒体制作（12 个数据卡座＋10 间小组学习室，LibCal 预约）；Education Commons 落在体育场看台夹层（7,000 平方英尺、容量 180+、创客工坊）；五层 Class of 1937 研究生阅览室；六层 Kislak 特藏研读。全系统 4,113 座、677 台电脑。2026 秋起 Van Pelt 与 Weigle 开放 48 个可预约学习空间。",
+  serviceModel: "服务叙事围绕\"速度\"与\"产品线\"：LIBRA 1–2 个工作日送达＋免费数字化；资源共享 Direct Borrowing 年借入 4.05 万件（Ivy 网络活跃）；自建 MetriDoc 数据平台，入馆、流通、空间预约与学生学习行为的分析进入官方 FACTS 手册。捐赠命名横跨全价位：Fisher 夫妇 1,650 万（全馆）、Moelis（阅览室）、Kislak 550 万（中心）、150 万/100 万（Forum/Gallery）、Holman（馆冠名）直至毕业班级冠名研讨室——\"改造—命名—传播—再改造\"的飞轮完整可鉴。",
+  trends: [
+    { title: "\"安静回归\"从批评走向立项：声学、照明、艺术一体化", type: "fact", note: "Moelis 是校方亲口承认的反向修正——不是媒体评论、不是学生请愿，而是立项声明。下一阶段获奖项目的共性将是\"安静空间的设计密度\"。" },
+    { title: "学习空间嵌入非图书馆建筑成为常规操作", type: "fact", note: "Education Commons 落在体育场看台夹层、Weigle 嵌在主馆翼楼——校园空间统筹正在取代单体馆设计成为空间决策的上位框架。" },
+    { title: "书库外迁＋按尺寸高密度存储成为\"默认运营动作\"", type: "fact", note: "LIBRA（2011）之后，2022–24 年书库重整再迁、2026 年微缩胶片整体入库——外迁已从一次性工程变为持续运营动作。" },
+    { title: "特藏上浮与\"特藏教学化\"", type: "fact", note: "Kislak 把特藏、修复实验室、讲座与展览垂直叠放在顶层——保护能力本身也成为展示与服务的一部分。" },
+    { title: "全球与区域研究收藏获得实体空间入口", type: "fact", note: "Zilberman 全球收藏中心（1,500 万募资、区域研讨室＋论坛＋画廊）把\"馆藏多样性\"翻译成可教学、可办展的空间产品，并同步聘任首位非洲研究、俄罗斯与东欧研究专职馆员。" },
+    { title: "历史建筑的\"保存即使命\"：两轮大额修缮的耐心", type: "fact", note: "Fisher 馆 1991 年修复（1,650 万）与 2025–26 再修（1,780 万、开放中施工）——\"开放中修缮＋噪音上报机制\"值得国内近现代优秀建筑类老馆借鉴。" }
+  ],
+  business: [
+    "\"安静回归\"最硬的官方话术在宾大：Moelis 立项声明（\"回应近年偏向协作的改造之后学生对安静空间的渴求\"）来自正在为协作空间花大钱的同一批决策者，分量高于任何媒体评论。",
+    "\"垂直分区\"是单体馆改造最直接的剖面模板：地下 24/7、一层安静旗舰＋协作、中层开架、高层特藏——配上 Goldstein\"学年周日至周五\"的边界设计，顺势讲清 24/7 的成本控制。",
+    "藏书外迁三条路线已经齐了，别再只讲一条：哈佛（自建库房）、芝大（地下 ASRS 不外迁）、宾大（自建校外库不入联盟）并列呈现，把选择权交还校方。",
+    "\"设备型服务\"是专业馆方案的新增价值点：Anatomage 虚拟解剖台、混合现实、9 台 3D 打印机写进图书馆服务清单——设备清单与空间清单应当同页出现。",
+    "命名捐赠有完整价格带可抄：馆—中心—厅—室—基金的货架结构（1,650 万到毕业班级级）可直接套用于国内校友捐赠方案。",
+    "可复制性边界：RCM 分摊＋巨额捐赠基金的资金结构与国内公立高校财政拨款不可直接类比；FACTS 2017 之后无系统手册，引用数据须注明年份。"
+  ],
+  limits: [
+    "FACTS 2017 为校方最后一份系统级手册，入馆/流通/座位为 2017 年口径。",
+    "Van Pelt 1995–98 大翻新造价与设计方、Moelis 项目造价、Kislak 改造总造价：无公开口径。",
+    "LIBRA 现藏量：仅获 2010 年迁入量（140 万册）与设计容量（约 300 万册）。",
+    "馆长 2026 年在任情况、Goldstein 24/7 现行安排：引用前需以官网复核。"
+  ],
+  sources: [
+    { label: "Penn Libraries SelectedFacts 2017（系统级数据手册）", url: "library.upenn.edu/sites/default/files/docs/publications/FACTS2017mar2018.pdf" },
+    { label: "Architectural Record – Moelis 大阅览室 by Gensler（2017-11）", url: "architecturalrecord.com/articles/13061-moelis-family-grand-reading-room-by-gensler" },
+    { label: "Penn Almanac – Moelis Family Grand Reading Room（立项声明原文）", url: "almanac.upenn.edu/volume-64-number-7" },
+    { label: "Penn Libraries – 全球收藏中心改造立项（2023-08）", url: "library.upenn.edu/news/cgc-launch" },
+    { label: "Penn Libraries – Books on the Move: Van Pelt 书库重整（2023）", url: "library.upenn.edu/news/books-move-changes-van-pelt" },
+    { label: "The Daily Pennsylvanian – 校董会批准 $12.5M 改造（2026-05）", url: "thedp.com/article/2026/05/penn-board-of-trustees-libraries-van-pelt-veterinary-facility" },
+    { label: "Penn Libraries – Biotech Commons 开放（2021-09）", url: "library.upenn.edu/news/penn-libraries-opens-newly" },
+    { label: "Penn Almanac – LIBRA 新馆 announcement（2010-03）", url: "almanac.upenn.edu/archive/volumes/v56/n26/libra.html" },
+    { label: "Penn Today – Fisher 馆外立面修缮（2025-05）", url: "penntoday.upenn.edu/news/exterior-restoration-landmark-Frank-Furness-fine-arts-library-historic-building" },
+    { label: "Wikipedia – Van Pelt Library（沿革与 24/7 口径）", url: "en.wikipedia.org/wiki/Van_Pelt_Library" }
+  ]
 }
 ];
