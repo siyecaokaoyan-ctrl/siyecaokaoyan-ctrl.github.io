@@ -6,7 +6,7 @@ const $ = (s, el) => (el || document).querySelector(s);
 const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
 function schoolShort(id) {
-  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", upenn:"宾" };
+  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", upenn:"宾", columbia:"哥" };
   return map[id] || id.slice(0, 1).toUpperCase();
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
@@ -22,7 +22,8 @@ const SCHOOL_COLORS = {
   duke:     { accent: "#00539B", soft: "#e8f1fa" },
   jhu:      { accent: "#002D72", soft: "#e9edf5" },
   uchicago: { accent: "#800000", soft: "#f5ecec" },
-  upenn:    { accent: "#011F5B", soft: "#e9edf5" }
+  upenn:    { accent: "#011F5B", soft: "#e9edf5" },
+  columbia: { accent: "#0038A8", soft: "#eef2fa" }
 };
 function setSchoolTheme(id) {
   const c = SCHOOL_COLORS[id] || SCHOOL_COLORS.upenn;

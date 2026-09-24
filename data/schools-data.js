@@ -946,5 +946,92 @@ const SCHOOLS = [
     { label: "Penn Today – Fisher 馆外立面修缮（2025-05）", url: "penntoday.upenn.edu/news/exterior-restoration-landmark-Frank-Furness-fine-arts-library-historic-building" },
     { label: "Wikipedia – Van Pelt Library（沿革与 24/7 口径）", url: "en.wikipedia.org/wiki/Van_Pelt_Library" }
   ]
+},
+{
+  id: "columbia",
+  name: "哥伦比亚大学",
+  nameEn: "Columbia University",
+  founded: 1754,
+  country: "美国",
+  region: "美国东北",
+  state: "纽约州 · 纽约市",
+  reportId: "LR-20260924-02",
+  reportDate: "2026-09-24",
+  tagline: "把藏书变成联盟资产的发明者",
+  mainLine: "在常春藤藏书外迁的三条路线里，哥大发明了第四条——不动自家高楼，而是和普林斯顿、纽约公共图书馆共创 ReCAP：一座 1600 万件规模的高密度共享书库，用联盟分摊成本、用\"下一工作日送达\"换出曼哈顿岛内的楼面。主馆 Butler 则示范了\"老馆不是包袱是资产\"：1994–2010 年分五期、1.1 亿美元以上的持续改造，让 1934 年的中心馆以 24/7 与呼吸式改造始终站在一线。",
+  flagship: { name: "Butler 图书馆（1934）", note: "1994–2010 年五期、$110M+ 改造：古籍保护与善本修复、信息管理教学中心、院系图书馆迁入、出口更新等；Butler 2–4 层学期内 24/7，是全球\"老馆持续再生\"历时最长、金额最大的样本之一。" },
+  overview: {
+    intro: "校方叙事口径（Columbia Facts 2024）：馆藏总量逾 1,600 万卷（含电子），可访问在线电子资源逾 700 万种，手稿与档案约 30 万延英尺。系统为联邦制二十二馆：Butler（人文社科主馆，含本科生馆 Milstein、珍本与手稿图书馆 RBML）、Avery 建筑与美术、C.V. Starr 东亚（美国东亚研究重镇）、Lehman 社会科学（深夜馆）、科学与工程（NoCo 馆）、Augustus C. Long 健康科学（设 24 小时阅览室）等。现任馆长 Ann D. Thornton（2015 年起，前 NYPL 馆长）。",
+    stats: [
+      { k: "实体馆藏", v: "1,269 万卷", s: "FY2024 年度口径；电子 399 万种" },
+      { k: "年流通", v: "14.2 万册次", s: "FY2024 全系统" },
+      { k: "年入馆", v: "310 万实体＋650 万虚拟", s: "FY2024 合计约 960 万人次" },
+      { k: "经费", v: "$6,931 万", s: "FY2024 总支出口径" }
+    ]
+  },
+  projects: [
+    {
+      name: "ReCAP 联盟书库（2000）：藏书外迁的第四种答案",
+      nameEn: "Research Collections and Preservation Consortium · Plainsboro, NJ",
+      year: "2000 创立 / 2001–07 启用",
+      stats: [{ k: "总馆藏", v: "1,600 万件+" }, { k: "年请求", v: "25 万次" }, { k: "环境", v: "55°F / 35%RH" }, { k: "送达", v: "下一工作日" }],
+      facts: "2000 年由哥大、普林斯顿、纽约公共图书馆（NYPL）三方共创，2001–07 年分阶段启用，是全球最早的跨机构高密度共享保存库之一；哈佛 2016 年准会员、2019 年转正。2021 年哥大在此寄存约 470 万卷。恒温恒湿（55°F/35% 相对湿度）、请求下一工作日送达各校。成员馆把低频藏书迁出曼哈顿岛内高楼，换回楼面与保存环境。",
+      insight: "藏书压力不是单馆问题，而是区域性问题——ReCAP 把\"谁拥有书库\"变成\"谁共享保存能力\"。与哈佛自建、芝大地下 ASRS、宾大自建校外库并列，构成藏书治理的完整光谱：自建、内嵌、联盟。"
+    },
+    {
+      name: "Butler 图书馆五期改造（1994–2010）：1.1 亿美元的老馆再生",
+      nameEn: "Butler Library · James Gamble Rogers · 1934",
+      year: "1994–2010 分五期",
+      stats: [{ k: "投入", v: "$110M+" }, { k: "周期", v: "约 15 年" }, { k: "期数", v: "五期滚动" }, { k: "楼层", v: "2–4 层 24/7" }],
+      facts: "1934 年楼（James Gamble Rogers 设计）经历约十五年、五期改造：古籍保护与善本修复中心、信息管理教学中心、院系图书馆迁入、出口与系统更新等，全程保持开馆。Butler 2–4 层学期内 24/7 开放，地下 Milstein 本科生馆与 RBML 珍本馆同楼。",
+      insight: "\"呼吸式改造\"的极限样本：不是一次性翻新，而是十五年的滚动投入曲线。对国内 20 世纪早期建造的中心馆，这是最完整的\"边运营边再生\"参照。"
+    },
+    {
+      name: "NoCo 科学与工程图书馆（2011）：新学科的新门面",
+      nameEn: "Science & Engineering Library · Northwest Corner Building",
+      year: "2011",
+      stats: [{ k: "位置", v: "NoCo 大楼 4 层" }, { k: "定位", v: "理工学科服务枢纽" }],
+      facts: "位于哥大校园西北角新楼的科学与工程图书馆，承接理工学科的文献、数据与协作服务，与 Butler 的人文社科主线形成功能互补。",
+      insight: "联邦制二十二馆的增量不在老馆扩张，而在新学科建筑内嵌新馆——空间增长跟随学科版图而非历史惯性。"
+    },
+    {
+      name: "FOLIO 开源图书馆系统（2025-08）：换掉二十年旧 ILS",
+      nameEn: "FOLIO LSP · EBSCO FOLIO · CLIO 发现 + Panorama 分析",
+      year: "2025-08 上线",
+      stats: [{ k: "发现层", v: "CLIO" }, { k: "分析层", v: "Panorama" }, { k: "前任", v: "Aleph（逾 20 年）" }],
+      facts: "哥大图书馆 2025 年 8 月正式上线 FOLIO 开源图书馆服务平台，发现层 CLIO、分析层 Panorama，取代使用逾二十年的 Aleph 系统，并与 ReCAP 联盟成员的系统互操作。",
+      insight: "常春藤里把开源 LSP 当生产底座跑通的一例：发现、分析、联盟互操作三层解耦，是\"系统选型即战略\"的最新注脚。"
+    }
+  ],
+  learningSpaces: "Butler 2–4 层学期内 24/7，Lehman 社会科学馆以深夜开放著称，Augustus C. Long 健康科学馆设 24 小时阅览室；Milstein 本科生学习空间嵌在 Butler 地下。空间叙事与宾大的\"垂直分层\"同构，但分层依据是学科联邦——每座学科馆各守自己的作息与声景。",
+  serviceModel: "联盟即服务：ReCAP 以\"下一工作日送达＋共享保存环境\"成为系统服务的一部分；2025 年 FOLIO/CLIO/Panorama 三层栈把发现与分析纳入同一服务目录。馆长 Ann D. Thornton 的 NYPL 履历（近二十年）本身即\"公共—大学联盟\"治理经验的活样本。",
+  trends: [
+    { title: "藏书治理进入\"联盟时代\"：ReCAP 是制度发明而不只是库房", type: "fact", note: "跨机构共享保存库把藏书压力从单馆资产负债表上移走——与自建、地下 ASRS 并列成为第三种标准答案。" },
+    { title: "老馆再生从项目变成曲线：十五年五期的滚动投入", type: "fact", note: "Butler 1994–2010 的改造节奏说明：历史中心馆的最优策略可能不是一次性翻新，而是可融资、可分期、边运营边更新的长曲线。" },
+    { title: "24/7 从承诺变成学科馆的差异化作息", type: "fact", note: "Butler 学期 24/7＋Lehman 深夜馆＋医学 24 小时阅览室：全天候不再是一座馆的统一口号，而是按学科与楼层分配的梯度。" },
+    { title: "开源 LSP 进入常春藤生产环境", type: "fact", note: "FOLIO＋CLIO＋Panorama 三层解耦 2025 年在哥大落地——系统架构开始像基础设施而非软件采购。" },
+    { title: "特藏与修复能力前置展示", type: "fact", note: "RBML 与古籍保护能力同楼于 Butler 主馆动线上，与宾大 Kislak\"特藏上浮\"共同指向：保护能力本身成为教学展示面。" }
+  ],
+  business: [
+    "藏书治理建议直接摆出\"四象限\"：自建（哈佛）、内嵌 ASRS（芝大）、自建校外库（宾大）、联盟共享（哥大 ReCAP）——四种都有顶级背书，把选择逻辑（资产 vs 服务）讲透。",
+    "老馆更新预算话术可引用 Butler 曲线：十五年五期、单笔不用吓人、全程开馆——对\"想翻新怕停业\"的校方是最有说服力的融资结构。",
+    "ReCAP 的 55°F/35%RH 与\"下一工作日送达\"是两个可以原样抄的服务指标：保存环境的可宣称承诺＋借阅时效的可宣称承诺。",
+    "联盟治理一课：ReCAP 三方（两校一公共馆）股权结构与管理外包安排，是跨区域图书馆联盟章程写作的现成模板。",
+    "可复制性边界：ReCAP 依赖纽约都会圈的多馆密度与哈佛级成员背书；无联盟生态的城市不能直接照抄股权比例，只能照抄服务指标。"
+  ],
+  limits: [
+    "Butler 五期改造各期明细造价与设计方：无逐期公开口径，仅总量 $110M+。",
+    "NoCo 科学与工程馆的面积、造价与设计方：未见官方披露。",
+    "ReCAP 现行各成员寄存量的最新口径：2021 年哥大 470 万卷为最近公开数。",
+    "FOLIO 迁移总成本与工期细节：未公开，引用前需以官方发布复核。"
+  ],
+  sources: [
+    { label: "Columbia University Libraries – 官方站点（系统结构与场馆）", url: "library.columbia.edu" },
+    { label: "Columbia OPIR – Columbia Facts 2024（馆藏与经费口径）", url: "opir.columbia.edu" },
+    { label: "ReCAP 官网（馆藏规模、环境指标、成员沿革）", url: "recap.princeton.edu" },
+    { label: "EBSCO – Columbia University Libraries Selects FOLIO（2025）", url: "www.ebsco.com/about/news-center/press-releases/columbia-university-libraries-selects-ebsco-folio-services-platform" },
+    { label: "NYPL – ReCAP 相关历史新闻稿", url: "www.nypl.org" },
+    { label: "Wikipedia – Columbia University Libraries（沿革与馆长信息）", url: "en.wikipedia.org/wiki/Columbia_University_Libraries" }
+  ]
 }
 ];
