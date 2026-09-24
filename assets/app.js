@@ -118,9 +118,11 @@ function renderTrendMap(activeIds) {
     <a class="trend reveal" style="transition-delay:${i * 0.05}s" href="trend.html?id=${t.id}">
       <div class="rank">${String(i + 1).padStart(2, "0")}</div>
       <div class="t-name">${t.title}<span>${t.subtitle}</span></div>
-      <div class="schools">${t.schools.map(id =>
-        `<div class="chip-s${activeIds && activeIds.includes(id) ? " hot" : ""}" title="${schoolById(id).name}">${schoolShort(id)}</div>`
-      ).join("")}</div>
+      <div class="schools">${t.schools.map(id => {
+        const hot = activeIds && activeIds.includes(id);
+        const c = hot ? SCHOOL_COLORS[id] : null;
+        return `<div class="chip-s${hot ? " hot" : ""}"${c ? ` style="background:${c.accent};border-color:${c.accent}"` : ""} title="${schoolById(id).name}">${schoolShort(id)}</div>`;
+      }).join("")}</div>
       <div class="count">${t.schools.length} 校共鸣</div>
     </a>`).join("");
   bindReveals();
@@ -133,13 +135,15 @@ function renderCompare(aId, bId) {
   const panel = $("#vs-panel");
   const a = schoolById(aId), b = schoolById(bId);
   if (!a || !b || !panel) return;
+  const ca = SCHOOL_COLORS[a.id] || { accent: "var(--accent)", soft: "var(--accent-soft)" };
+  const cb = SCHOOL_COLORS[b.id] || { accent: "var(--accent)", soft: "var(--accent-soft)" };
   const aTrendTitles = a.trends.map(t => t.title);
   const bTrendTitles = b.trends.map(t => t.title);
   const row = (label, va, vb, head) => `
     <div class="vs-row${head ? " vs-head" : ""}">
-      <div class="vs-cell">${va}</div>
+      <div class="vs-cell"${head ? ` style="box-shadow:inset 0 3px 0 ${ca.accent};background:${ca.soft}"` : ""}>${va}</div>
       <div class="vs-label">${label}</div>
-      <div class="vs-cell">${vb}</div>
+      <div class="vs-cell"${head ? ` style="box-shadow:inset 0 3px 0 ${cb.accent};background:${cb.soft}"` : ""}>${vb}</div>
     </div>`;
   const matchRows = (ids) => ids.map(id => {
     const t = TRENDS.find(x => x.id === id);
@@ -148,8 +152,8 @@ function renderCompare(aId, bId) {
   const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id)).map(t => t.id);
   panel.innerHTML =
     row("对比维度",
-      `${esc(a.name)}<span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span>`,
-      `${esc(b.name)}<span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span>`, true) +
+      `<b style="color:${ca.accent}">${esc(a.name)}</b><span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span>`,
+      `<b style="color:${cb.accent}">${esc(b.name)}</b><span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span>`, true) +
     row("一句话主线", `<b>「${esc(a.tagline)}」</b>${hl(a.mainLine)}`, `<b>「${esc(b.tagline)}」</b>${hl(b.mainLine)}`) +
     row("旗舰项目", `<b>${esc(a.flagship.name)}</b><br>${hl(a.flagship.note)}`, `<b>${esc(b.flagship.name)}</b><br>${hl(b.flagship.note)}`) +
     row("学习空间", hl(a.learningSpaces), hl(b.learningSpaces)) +
@@ -240,8 +244,8 @@ function initIndex() {
   ).join("");
   renderCards("all");
   bindFilters();
-  bindCompare();
   renderTrendMap(null);
+  bindCompare();
   bindMessageForm();
   // 数字滚动（进入视口时触发一次）
   const statObserver = new IntersectionObserver((entries) => {
