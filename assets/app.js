@@ -70,6 +70,11 @@ function countUp(el, target, dur = 900) {
 }
 
 /* ── 学校卡片 ── */
+/* 校徽（本地文件；mit/jhu 为 SVG 矢量，其余 PNG） */
+const LOGO_EXT = { mit: "svg", jhu: "svg" };
+const logoSrc = id => `assets/logos/${id}.${LOGO_EXT[id] || "png"}`;
+const logoImg = (id, cls) => `<img class="${cls}" src="${logoSrc(id)}" alt="" loading="lazy" onerror="this.style.display='none'">`;
+
 function renderCards(filter) {
   const grid = $("#cards");
   if (!grid) return;
@@ -78,9 +83,12 @@ function renderCards(filter) {
     const s = SCHOOLS[idx];
     return `
     <a class="card reveal" style="transition-delay:${(i % 3) * 0.07}s" href="school.html?id=${s.id}">
-      <div class="c-top">
-        <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
-        <div class="idx">${String(idx + 1).padStart(2, "0")}</div>
+      <div class="c-head">
+        ${logoImg(s.id, "c-logo")}
+        <div class="c-top">
+          <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
+          <div class="idx">${String(idx + 1).padStart(2, "0")}</div>
+        </div>
       </div>
       <div class="c-name">${esc(s.name)}</div>
       <div class="c-tagline">${esc(s.tagline)}</div>
@@ -152,8 +160,8 @@ function renderCompare(aId, bId) {
   const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id)).map(t => t.id);
   panel.innerHTML =
     row("对比维度",
-      `<b style="color:${ca.accent}">${esc(a.name)}</b><span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span>`,
-      `<b style="color:${cb.accent}">${esc(b.name)}</b><span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span>`, true) +
+      `<div class="vs-id">${logoImg(a.id, "vs-logo")}<div><b style="color:${ca.accent}">${esc(a.name)}</b><span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span></div></div>`,
+      `<div class="vs-id">${logoImg(b.id, "vs-logo")}<div><b style="color:${cb.accent}">${esc(b.name)}</b><span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span></div></div>`, true) +
     row("一句话主线", `<b>「${esc(a.tagline)}」</b>${hl(a.mainLine)}`, `<b>「${esc(b.tagline)}」</b>${hl(b.mainLine)}`) +
     row("旗舰项目", `<b>${esc(a.flagship.name)}</b><br>${hl(a.flagship.note)}`, `<b>${esc(b.flagship.name)}</b><br>${hl(b.flagship.note)}`) +
     row("学习空间", hl(a.learningSpaces), hl(b.learningSpaces)) +
@@ -269,6 +277,8 @@ function initSchool() {
   const crumb = $("#crumb-name");
   if (crumb) crumb.textContent = s.name;
   $("#d-title").textContent = s.name;
+  const dlogo = $("#d-logo");
+  if (dlogo) { dlogo.src = logoSrc(s.id); dlogo.onerror = () => dlogo.style.display = "none"; }
   $("#d-en").textContent = `${s.nameEn.toUpperCase()} · 建校 ${s.founded}`;
   $("#d-tagline").textContent = `「${s.tagline}」`;
   $("#d-mainline").innerHTML = hl(s.mainLine);
