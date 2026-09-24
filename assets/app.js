@@ -11,6 +11,39 @@ function schoolShort(id) {
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
 
+/* 校色系统：详情页由 JS 覆盖 --accent / --accent-soft */
+const SCHOOL_COLORS = {
+  harvard:  { accent: "#A51C30", soft: "#f7eef0" },
+  mit:      { accent: "#A31F34", soft: "#f5edef" },
+  stanford: { accent: "#8C1515", soft: "#f5eaea" },
+  princeton:{ accent: "#E77500", soft: "#fdf1e0" },
+  yale:     { accent: "#00356B", soft: "#e9eff6" },
+  glasgow:  { accent: "#005A87", soft: "#e8f1f6" },
+  duke:     { accent: "#00539B", soft: "#e8f1fa" },
+  jhu:      { accent: "#002D72", soft: "#e9edf5" },
+  uchicago: { accent: "#800000", soft: "#f5ecec" },
+  upenn:    { accent: "#011F5B", soft: "#e9edf5" }
+};
+function setSchoolTheme(id) {
+  const c = SCHOOL_COLORS[id] || SCHOOL_COLORS.upenn;
+  const root = document.documentElement.style;
+  root.setProperty("--accent", c.accent);
+  root.setProperty("--accent-soft", c.soft);
+}
+
+/* HTML 转义 */
+function esc(t) {
+  return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/* 关键数字自动加粗：金额/数量（带单位）与年份 */
+function hl(t) {
+  return esc(t).replace(
+    /(\$?\d[\d,]*(?:\.\d+)?(?:\s*[万亿])?(?:\s*(?:(?:美)?元|册|卷|座|所|个|项|人次|平方英尺|英尺|%|倍))|(?:19|20)\d{2}(?:[–—-]\d{2,4})?年?)/g,
+    "<b>$1</b>"
+  );
+}
+
 /* ── 滚动浮现动画 ── */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -40,15 +73,21 @@ function countUp(el, target, dur = 900) {
 function renderCards(filter) {
   const grid = $("#cards");
   if (!grid) return;
-  const list = filter === "all" ? SCHOOLS : SCHOOLS.filter(s => s.region === filter);
-  grid.innerHTML = list.map((s, i) => `
+  const list = (filter === "all" ? SCHOOLS : SCHOOLS.filter(s => s.region === filter)).map(s => SCHOOLS.indexOf(s));
+  grid.innerHTML = list.map((idx, i) => {
+    const s = SCHOOLS[idx];
+    return `
     <a class="card reveal" style="transition-delay:${(i % 3) * 0.07}s" href="school.html?id=${s.id}">
-      <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
-      <div class="c-name">${s.name}</div>
-      <div class="c-tagline">「${s.tagline}」</div>
-      <div class="c-line">${s.mainLine}</div>
-      <div class="c-foot"><span>旗舰 <b>${s.flagship.name.split("/")[0].trim()}</b></span><span class="arrow">→</span></div>
-    </a>`).join("");
+      <div class="c-top">
+        <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
+        <div class="idx">${String(idx + 1).padStart(2, "0")}</div>
+      </div>
+      <div class="c-name">${esc(s.name)}</div>
+      <div class="c-tagline">${esc(s.tagline)}</div>
+      <div class="c-line">${hl(s.mainLine)}</div>
+      <div class="c-foot"><span>旗舰 <b>${esc(s.flagship.name.split("（")[0].trim())}</b></span><span class="arrow">→</span></div>
+    </a>`;
+  }).join("");
   bindReveals();
 }
 
@@ -109,13 +148,13 @@ function renderCompare(aId, bId) {
   const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id)).map(t => t.id);
   panel.innerHTML =
     row("对比维度",
-      `${a.name}<span>${a.nameEn.toUpperCase()} · ${a.founded}</span>`,
-      `${b.name}<span>${b.nameEn.toUpperCase()} · ${b.founded}</span>`, true) +
-    row("一句话主线", `<b>「${a.tagline}」</b>${a.mainLine}`, `<b>「${b.tagline}」</b>${b.mainLine}`) +
-    row("旗舰项目", `<b>${a.flagship.name}</b><br>${a.flagship.note}`, `<b>${b.flagship.name}</b><br>${b.flagship.note}`) +
-    row("学习空间", a.learningSpaces, b.learningSpaces) +
+      `${esc(a.name)}<span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span>`,
+      `${esc(b.name)}<span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span>`, true) +
+    row("一句话主线", `<b>「${esc(a.tagline)}」</b>${hl(a.mainLine)}`, `<b>「${esc(b.tagline)}」</b>${hl(b.mainLine)}`) +
+    row("旗舰项目", `<b>${esc(a.flagship.name)}</b><br>${hl(a.flagship.note)}`, `<b>${esc(b.flagship.name)}</b><br>${hl(b.flagship.note)}`) +
+    row("学习空间", hl(a.learningSpaces), hl(b.learningSpaces)) +
     row("趋势交集", matchRows(common), matchRows(common)) +
-    row("独有判断", a.trends[0].title + "——" + a.trends[0].note, b.trends[0].title + "——" + b.trends[0].note);
+    row("独有判断", `<b>${esc(a.trends[0].title)}</b>——${hl(a.trends[0].note)}`, `<b>${esc(b.trends[0].title)}</b>——${hl(b.trends[0].note)}`);
   // 图谱高亮联动
   renderTrendMap([a.id, b.id]);
   const url = new URL(location.href);
@@ -221,48 +260,59 @@ function initIndex() {
 function initSchool() {
   const id = new URLSearchParams(location.search).get("id");
   const s = schoolById(id) || SCHOOLS[0];
+  setSchoolTheme(s.id);
   document.title = `${s.name} · 世界高校图书馆研究`;
   const crumb = $("#crumb-name");
   if (crumb) crumb.textContent = s.name;
   $("#d-title").textContent = s.name;
   $("#d-en").textContent = `${s.nameEn.toUpperCase()} · 建校 ${s.founded}`;
   $("#d-tagline").textContent = `「${s.tagline}」`;
-  $("#d-mainline").textContent = s.mainLine;
+  $("#d-mainline").innerHTML = hl(s.mainLine);
   $("#d-chips").innerHTML = `
     <span class="m-chip">${s.country} · ${s.state}</span>
     <span class="m-chip">报告编号 <b>${s.reportId}</b></span>
     <span class="m-chip">研究日期 <b>${s.reportDate}</b></span>`;
+  // 锚点快导航
+  const qn = $("#d-quicknav");
+  if (qn) {
+    qn.innerHTML = [
+      ["#sec-overview", "系统概况"], ["#sec-projects", "重点项目"],
+      ["#sec-spaces", "空间与服务"], ["#sec-trends", "趋势研判"],
+      ["#sec-business", "业务启发"], ["#sec-limits", "待验证限制"],
+      ["#sec-sources", "来源"]
+    ].map(([h, t]) => `<a href="${h}">${t}</a>`).join("");
+  }
   $("#d-flagship").innerHTML = `
     <div class="f-tag">旗舰项目</div>
-    <div class="f-name">${s.flagship.name}</div>
-    <div class="f-note">${s.flagship.note}</div>`;
-  $("#d-overview-intro").innerHTML = `<b>系统概况。</b>${s.overview.intro}`;
+    <div class="f-name">${esc(s.flagship.name)}</div>
+    <div class="f-note">${hl(s.flagship.note)}</div>`;
+  $("#d-overview-intro").innerHTML = `<b>系统概况。</b>${hl(s.overview.intro)}`;
   $("#d-stats").innerHTML = s.overview.stats.map(st =>
-    `<div class="stat-card reveal"><div class="k">${st.k}</div><div class="v">${st.v}</div><div class="s">${st.s}</div></div>`).join("");
+    `<div class="stat-card reveal"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div><div class="s">${esc(st.s)}</div></div>`).join("");
   $("#d-projects").innerHTML = s.projects.map(p => `
     <div class="proj reveal">
-      <div class="p-kicker">${p.year}</div>
-      <h3>${p.name}</h3>
-      <div class="p-en">${p.nameEn}</div>
-      ${p.stats && p.stats.length ? `<div class="p-stats">${p.stats.map(st => `<div class="p-stat"><div class="k">${st.k}</div><div class="v">${st.v}</div></div>`).join("")}</div>` : ""}
-      <div class="p-facts">${p.facts}</div>
-      <div class="p-insight"><b>判断 · 启示</b>　${p.insight}</div>
+      <span class="p-kicker">${esc(p.year)}</span>
+      <h3>${esc(p.name)}</h3>
+      <div class="p-en">${esc(p.nameEn)}</div>
+      ${p.stats && p.stats.length ? `<div class="p-stats">${p.stats.map(st => `<div class="p-stat"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div></div>`).join("")}</div>` : ""}
+      <div class="p-facts"><span class="p-badge fact">事实</span>${hl(p.facts)}</div>
+      <div class="p-insight"><span class="p-badge judge">判断 · 启示</span>${hl(p.insight)}</div>
     </div>`).join("");
-  $("#d-learning").innerHTML = `<b>学习空间与配置。</b>${s.learningSpaces}`;
-  $("#d-service").innerHTML = `<b>服务模式与运营。</b>${s.serviceModel}`;
+  $("#d-learning").innerHTML = `<b>学习空间与配置。</b>${hl(s.learningSpaces)}`;
+  $("#d-service").innerHTML = `<b>服务模式与运营。</b>${hl(s.serviceModel)}`;
   $("#d-trends").innerHTML = s.trends.map(t => `
     <div class="trend-item">
       <span class="t-badge ${t.type}">${t.type === "fact" ? "事实" : "判断"}</span>
-      <div class="t-body"><b>${t.title}</b><p>${t.note}</p></div>
+      <div class="t-body"><b>${esc(t.title)}</b><p>${hl(t.note)}</p></div>
     </div>`).join("");
-  $("#d-insights").innerHTML = s.business.map(b => `<li>${b}</li>`).join("");
-  $("#d-limits").innerHTML = s.limits.map(l => `<li>${l}</li>`).join("");
+  $("#d-insights").innerHTML = s.business.map(b => `<li>${hl(b)}</li>`).join("");
+  $("#d-limits").innerHTML = s.limits.map(l => `<li>${esc(l)}</li>`).join("");
   $("#d-sources").innerHTML = s.sources.map(src => `
-    <li><a href="https://${src.url}" target="_blank" rel="noopener">${src.label}</a><span class="s-url">${src.url}</span></li>`).join("");
+    <li><a href="https://${src.url}" target="_blank" rel="noopener">${esc(src.label)}</a><span class="s-url">${esc(src.url)}</span></li>`).join("");
   // 上一所 / 下一所
   const idx = SCHOOLS.indexOf(s);
   const prev = SCHOOLS[(idx - 1 + SCHOOLS.length) % SCHOOLS.length];
-  const next = SCHOOLS[(idx + 1) % SCHOOLS.length];
+  const next = SCHOOLS[(idx + 1 + SCHOOLS.length) % SCHOOLS.length];
   $("#d-pager").innerHTML = `
     <a class="prev" href="school.html?id=${prev.id}"><div class="p-dir">← 上一所</div><div class="p-name">${prev.name}</div></a>
     <a class="next" href="school.html?id=${next.id}"><div class="p-dir">下一所 →</div><div class="p-name">${next.name}</div></a>`;
@@ -276,7 +326,7 @@ function initTrend() {
   document.title = `${t.title} · 世界高校图书馆研究`;
   $("#t-title").textContent = t.title;
   $("#t-sub").textContent = t.subtitle;
-  $("#t-summary").textContent = t.summary;
+  $("#t-summary").innerHTML = hl(t.summary);
   $("#t-count").textContent = `${t.schools.length} 所学校独立验证了这一趋势`;
   $("#t-chips").innerHTML = t.schools.map(id2 =>
     `<a class="m-chip" href="school.html?id=${id2}"><b>${schoolById(id2).name}</b></a>`).join("");
@@ -284,8 +334,8 @@ function initTrend() {
     const sc = schoolById(sid);
     return `<div class="evidence reveal" style="transition-delay:${i * 0.06}s">
       <div class="e-school">${sc.name}<span>${sc.state}</span></div>
-      <p>${t.evidence[sid]}</p>
-      <p style="margin-top:10px"><a href="school.html?id=${sid}">查看 ${sc.name} 完整研究 →</a></p>
+      <p>${hl(t.evidence[sid])}</p>
+      <p style="margin-top:12px"><a href="school.html?id=${sid}">查看 ${sc.name} 完整研究 →</a></p>
     </div>`;
   }).join("");
   bindReveals();
