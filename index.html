@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界高校图书馆研究</title>
+<meta name="description" content="追踪全球知名大学图书馆的空间变革与运营趋势——每一所学校，一份独立研究；每一次横向对比，一个更清晰的行业未来。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230071e3'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html"><span class="dot"></span>高校图书馆研究图谱</a>
+    <div class="nav-links">
+      <a href="#top" class="on">总览</a>
+      <a href="#schools">学校库</a>
+      <a href="#compare">双校对比</a>
+      <a href="#trends">趋势专栏</a>
+      <a href="#message">留言</a>
+    </div>
+    <div class="progress-pill">研究进度 <b>9</b> / 100</div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">Library Research Atlas</div>
+    <h1>世界高校图书馆研究</h1>
+    <p class="sub">追踪全球知名大学图书馆的空间变革与运营趋势——每一所学校，一份独立研究；每一次横向对比，一个更清晰的行业未来。</p>
+    <div class="meta"></div>
+  </div>
+</header>
+
+<section id="schools">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="tag">Schools</div>
+      <h2>学校库</h2>
+      <p>每所学校一页精炼研究：一句话主线、关键项目、趋势研判与业务启发。</p>
+    </div>
+    <div class="filters reveal" id="filters"></div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="tag">Head to Head</div>
+      <h2>双校对比</h2>
+      <p>任选两所学校，按同一框架并排比较——差异一目了然，共同趋势自动标出；下方图谱同步高亮两校位置。</p>
+    </div>
+    <div class="vs-select reveal">
+      <div class="vs-field">
+        <select id="sel-a" aria-label="选择学校 A"></select>
+        <div class="s-sub" id="sel-a-sub"></div>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="vs-field">
+        <select id="sel-b" aria-label="选择学校 B"></select>
+        <div class="s-sub" id="sel-b-sub"></div>
+      </div>
+    </div>
+    <div class="vs-panel reveal" id="vs-panel"></div>
+  </div>
+</section>
+
+<section id="trends">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="tag">Cross-School Consensus</div>
+      <h2>趋势共识图谱</h2>
+      <p>把每所学校报告中的趋势判断叠加在一起——被越多学校独立验证的趋势，越可能代表行业真正的方向。点击任一条进入趋势专栏。</p>
+    </div>
+    <div id="trendmap"></div>
+  </div>
+</section>
+
+<section id="message">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="tag">Message</div>
+      <h2>留言板</h2>
+      <p>想看哪所大学的图书馆研究？有什么问题或建议？留言直接送达站长。</p>
+    </div>
+    <div class="msg-panel reveal">
+      <form id="msg-form">
+        <div class="field">
+          <label for="msg-name">署名（可留空）</label>
+          <input id="msg-name" type="text" placeholder="匿名" maxlength="40">
+        </div>
+        <div class="field">
+          <label for="msg-text">留言内容</label>
+          <textarea id="msg-text" rows="4" placeholder="例如：希望研究牛津大学博德利图书馆；或对某份报告有疑问…" maxlength="1000" required></textarea>
+        </div>
+        <button class="btn" id="msg-btn" type="submit">提交</button>
+        <div class="msg-ok" id="msg-ok">已收到，谢谢你的留言！站长会直接回复到你的邮箱（如已填写）。</div>
+      </form>
+      <p class="msg-note">留言仅站长可见，不会公开展示；请勿在留言中填写敏感个人信息。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    世界高校图书馆研究 · 每所学校一份独立研究，每周更新<br>
+    原始研究报告存档于站长本地 · 本站为精选重构版
+  </div>
+</footer>
+
+<script src="data/schools-data.js"></script>
+<script src="data/trends-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
