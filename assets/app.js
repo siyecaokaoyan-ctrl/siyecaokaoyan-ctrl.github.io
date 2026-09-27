@@ -57,6 +57,22 @@ function hl(t) {
   });
 }
 
+/* 图片点击放大：详情页项目图 / 旗舰图 */
+document.addEventListener("click", (e) => {
+  const t = e.target;
+  if (!(t instanceof HTMLImageElement)) return;
+  if (!t.closest(".p-fig, .f-fig")) return;
+  const ov = document.createElement("div");
+  ov.style.cssText = "position:fixed;inset:0;z-index:999;background:rgba(12,12,14,.92);display:flex;align-items:center;justify-content:center;cursor:zoom-out;padding:30px;";
+  const im = document.createElement("img");
+  im.src = t.src;
+  im.alt = "";
+  im.style.cssText = "max-width:94vw;max-height:92vh;border-radius:14px;box-shadow:0 24px 90px rgba(0,0,0,.55);";
+  ov.appendChild(im);
+  ov.addEventListener("click", () => ov.remove());
+  document.body.appendChild(ov);
+});
+
 /* ── 滚动浮现动画 ── */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {

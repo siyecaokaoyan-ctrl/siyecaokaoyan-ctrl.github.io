@@ -113,8 +113,13 @@ section{padding:100px 0;}
 .inl:hover{border-bottom-color:var(--accent);}
 .inl:hover i{opacity:1;transform:translate(1px,-1px);}
 
-/* ── 详情页配图：项目实景照片 ── */
-.p-fig,.f-fig{margin:16px 0 6px;text-align:center;}
-.p-fig img,.f-fig img{max-width:640px;width:100%;border-radius:14px;display:block;margin:0 auto;border:1px solid var(--line);box-shadow:0 2px 4px rgba(0,0,0,.05),0 14px 34px rgba(0,0,0,.08);}
-.f-fig img{border-radius:16px;}
-.p-fig figcaption,.f-fig figcaption{font-size:12px;color:var(--ink-3);margin:8px auto 0;max-width:640px;line-height:1.6;text-align:left;}
+/* ── 详情页配图：杂志式环绕（A 方案） ── */
+.p-fig,.f-fig{width:44%;margin:6px 22px 10px 0;float:left;}
+.p-fig:nth-of-type(even),.proj:nth-of-type(even) .p-fig{float:right;margin:6px 0 10px 22px;}
+.p-fig img,.f-fig img{width:100%;border-radius:12px;display:block;border:1px solid var(--line);box-shadow:0 2px 6px rgba(0,0,0,.06),0 12px 30px rgba(0,0,0,.08);cursor:zoom-in;}
+.p-fig figcaption,.f-fig figcaption{font-size:11.5px;color:var(--ink-3);margin-top:7px;line-height:1.6;text-align:left;}
+.proj .p-insight{clear:both;}
+.flagship::after{content:"";display:block;clear:both;}
+@media(max-width:720px){
+  .p-fig,.f-fig{width:100%;float:none;margin:14px 0 6px;}
+}
