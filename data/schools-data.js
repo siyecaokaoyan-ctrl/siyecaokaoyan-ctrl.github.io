@@ -1046,7 +1046,7 @@ const SCHOOLS = [
   reportDate: "2026-09-27",
   tagline: "向下、向下、向结构要空间的学校",
   mainLine: "在伊萨卡的峡谷坡地上，康奈尔三代图书馆改造是同一场空间战争的三种打法：1982 年凿开 Libe Slope 向坡体腹中挖出地下阅览翼，1992 年把 Kroch 特藏馆整体沉入 Arts Quad 地下三层，2019 年则在 1911 年的 Rand Hall 老厂房里抬高屋顶、用钢索把十万卷书\"挂\"成倒金字塔——书悬在半空，首层工坊与头顶书塔共用一条垂直动线。$16.9M 的 Rand Hall 改造（含校友 Mui Ho 600 万美元捐赠）是迄今造价最低、传播力最强的适应性再利用样本，新设计还认祖了 White 校长 1876 年铸铁书塔。",
-  flagship: { name: "Mui Ho Fine Arts Library（Rand Hall 1911 → 2019）", note: "拆除中层楼板、屋顶整体抬高约 4 英尺、掏出 40 英尺中庭，四层倒阶梯金字塔书塔以钢索悬挂 10–12.5 万卷藏书，首层 8,000+ 平方英尺 Material Practice Center（木/金属/数字工坊＋maker space）与图书馆同楼——书不占地面，地面还给工坊。LEED Gold，能耗较改造前降约 70%。" },
+  flagship: { name: "Mui Ho Fine Arts Library（Rand Hall 1911 → 2019）", note: "拆除中层楼板、屋顶整体抬高约 4 英尺、掏出 40 英尺中庭，四层倒阶梯金字塔书塔以钢索悬挂 10–12.5 万卷藏书，首层 8,000+ 平方英尺 Material Practice Center（木/金属/数字工坊＋maker space）与图书馆同楼——书不占地面，地面还给工坊。LEED Gold，能耗较改造前降约 70%。", img: "cornell-randhall.jpg", imgCap: "Rand Hall 黄昏外观：1911 年厂房，屋顶被整体抬高约 4 英尺。摄影：Chris Cooper / STV" },
   overview: {
     intro: "校方口径（[library.cornell.edu/collections](https://library.cornell.edu/collections)）：实体馆藏逾 850 万卷、电子图书逾 250 万种、连续出版物 24 万余刊名、电子文章年下载逾 600 万篇；ALA Library Fact Sheet 排名全美第 17 位（8,173,778 卷，统计年份待复核）。系统没有单一\"总馆\"，而是身世各异的馆群：Uris（1891，实质本科馆，昵称 The Libe，馆内 A.D. White Library）、Olin（1961，人文社科研究主馆，2023-12 起大修）、Kroch（1992，Arts Quad 地下三层特藏库）、Mui Ho Fine Arts（2019，Rand Hall 改造）及 Mann（农学院）等。现任馆长 Elaine Westbrooks，头衔 Carl A. Kroch University Librarian。",
     stats: [
@@ -1061,6 +1061,8 @@ const SCHOOLS = [
       name: "Rand Hall 改造为 Mui Ho Fine Arts Library（2019）：把十万卷书挂上半空",
       nameEn: "Rand Hall 1911 → Mui Ho Fine Arts Library · Wolfgang Tschapeller + STV",
       year: "2019-08 开放",
+      img: "cornell-fal.jpg",
+      imgCap: "40 英尺中庭与悬挂书塔。摄影：Lukas Schaller / designboom",
       stats: [{ k: "造价", v: "$16.9M" }, { k: "个人捐赠", v: "$6M（Mui Ho）" }, { k: "书塔藏书", v: "10–12.5 万卷" }, { k: "能耗", v: "-70% · LEED Gold" }],
       facts: "起因是双重挤压：Sibley Hall 的美术藏书逐年膨胀，建筑学院的工坊也在膨胀——同一校园里书没处放、工坊也没处放。2013 年校友[何妙儿（Mui Ho，建筑学 1966 届）捐赠 600 万美元](https://aap.cornell.edu)，学校拍板把 1911 年的工业厂房 Rand Hall 整体改造。设计建筑师是康奈尔建筑学院 1987 届硕士校友、奥地利人 Wolfgang Tschapeller（[STV 任执行建筑师](https://goodyclancy.com)），方案最激进的一笔是拆掉三层楼板、把屋顶整体抬高约 4 英尺、在厂房腹中掏出 40 英尺高的中庭，让一座四层钢制书塔以[倒阶梯金字塔的形态被钢索悬挂起来](https://www.archpaper.com/2019/11/wolfgang-tschapeller-cornell-library/)，外覆安全网、脚下是格栅地板，光线与视线都从塔身穿过。首层划出 8,000–8,300 平方英尺 Material Practice Center，木工、金属与数字制造工坊同 maker space 合为一体——悬挂不是炫技，是空间算力：书不占地面，地面就完整让给工坊。这个构思在建筑系内部认祖了 White 校长 1876 年创馆藏书的 A.D. White Library 三层铸铁书塔，改造因此有了跨越百年的叙事合法性（前院长 Kent Kleinman 评价：\"respectfully restored and radically re-inhabited\"）。2019 年 8 月开放，[LEED Gold、能耗较改造前降约 70%](https://www.designboom.com/architecture/wolfgang-tschapeller-mui-ho-fine-arts-library-12-12-2019/)，18 个研读卡座沿塔布置，成为全校最具传播力的学习空间照片。",
       insight: "本系列迄今最强的适应性再利用样本，强在三点：$16.9M 做出地标级传播力（造价不到新建馆舍零头）；\"悬挂\"用结构换平面，一栋楼解决书与工坊两个功能危机；新设计向本校历史认祖，募资、审批、舆论一路顺。对坐拥 1950–80 年代闲置工业厂房的高校，这个模板比新建便宜一个数量级——但悬挂结构对消防荷载规范要求极高，落地需专项论证。"
@@ -1077,6 +1079,8 @@ const SCHOOLS = [
       name: "Olin Library 改造（2023-12 启动）：把学生变成改造流程的一部分",
       nameEn: "Olin Library Renewal · Goody Clancy",
       year: "2023-12-18 封闭开工 · 目标 2025",
+      img: "cornell-olin.jpg",
+      imgCap: "Olin 一层改造后效果图：开放书架区与单一服务台。设计：Goody Clancy",
       stats: [{ k: "范围", v: "一层＋地下室" }, { k: "设计", v: "Goody Clancy" }, { k: "系统", v: "机械整体更换（60 年+）" }],
       facts: "Olin 是人文社科研究主馆，1961 年启用，机电系统超龄服役六十余年，空间组织停留在\"多服务台分区管理\"的旧范式。[2023 年 12 月 18 日一层与地下室封闭开工](https://library.cornell.edu/about/news/services-to-continue-during-olin-library-renovations/)，改造清单具体：整合为单一服务台、新增 3 间咨询室、人类学馆藏套房、新公共楼梯、面向 Arts Quad 的新入口门厅、机械系统整体更换。最值得抄的是过程里的学生参与：施工前学生试坐候选家具再定采购，设计阶段通过 VR 走查提前\"进入\"未建成的空间提意见，工程学院师生把拆下来的老式索书号叫号板改造成数字钟留校展示——把\"改造通知\"做成了深度参与的共创过程，而不是一张贴在门上的封馆告示。",
       insight: "老馆改造的标准难题是系统老化、范式切换、师生情绪三者打架，Olin 的答案是把第三件事做成前两件事的一部分：家具试用＝采购决策众包，VR 走查＝设计评审前置，旧物改造＝集体记忆的安置方案。参与感本身就是沟通成本最低的\"封馆安抚\"，任何规模的改造都能照抄。"
@@ -1085,6 +1089,8 @@ const SCHOOLS = [
       name: "Uris Library：1891 年老馆的三次转身与 1982 年\"凿坡入库\"",
       nameEn: "Uris Library · William Henry Miller · 1891",
       year: "1891 开放 · 1982 地下翼 · 1961 转本科馆",
+      img: "cornell-uris.jpg",
+      imgCap: "Uris Library（左）与 McGraw 钟楼，前景即 Libe Slope；右侧为 Olin。摄影：P. Hughes / Wikimedia Commons（CC BY 4.0）",
       stats: [{ k: "开放", v: "1891-10-07" }, { k: "建筑师", v: "W. H. Miller（23 岁出道作）" }, { k: "手术", v: "1982 凿 Libe Slope" }, { k: "开放时长", v: "多阅览室 24h" }],
       facts: "康奈尔 1865 年创校时校长 White 把最初藏书寄放在自己办公室；建校 23 年后由本校建筑系第一位学生 William Henry Miller 设计 Uris 馆，1891 年 10 月 7 日开放，师生昵称 \"The Libe\" 沿用至今。1961 年 Olin 建成后 Uris 转型本科生图书馆，冠名 1925 届校友、地产商 Harold D. Uris。真正的空间手术是 1982 年：面对坡地上再无扩建余地的窘境，学校凿开楼前的 Libe Slope 向山坡体内挖出地下阅览翼——顶部采光的地下空间被学生叫作 \"Cocktail Lounge\"，2019 年完成翻新；1990 年代摘掉\"本科馆\"字样，如今馆内多个阅览室 24 小时开放。White 校长 1876 年创馆藏书后来单独辟室成为馆中之馆 A.D. White Library，正是 Rand Hall 悬挂书塔百年后的灵感源头。",
       insight: "Uris 的三次转身（总馆→本科馆→24 小时学习空间）每次都踩在功能更迭的点上，而不是等到建筑被功能抛弃。1982 年\"凿坡入库\"尤其值得记录：当平面扩张走不通时，垂直方向（含向下）就是下一个平面——Kroch 整体下沉的思路在这里已预演过一次。"

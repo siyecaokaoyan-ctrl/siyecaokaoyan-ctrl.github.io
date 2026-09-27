@@ -312,7 +312,8 @@ function initSchool() {
   $("#d-flagship").innerHTML = `
     <div class="f-tag">旗舰项目</div>
     <div class="f-name">${esc(s.flagship.name)}</div>
-    <div class="f-note">${hl(s.flagship.note)}</div>`;
+    <div class="f-note">${hl(s.flagship.note)}</div>
+    ${s.flagship.img ? `<figure class="f-fig"><img src="assets/photos/${esc(s.flagship.img)}" alt="" loading="lazy"><figcaption>${esc(s.flagship.imgCap || "")}</figcaption></figure>` : ""}`;
   $("#d-overview-intro").innerHTML = `<b>系统概况。</b>${hl(s.overview.intro)}`;
   $("#d-stats").innerHTML = s.overview.stats.map(st =>
     `<div class="stat-card reveal"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div><div class="s">${esc(st.s)}</div></div>`).join("");
@@ -322,6 +323,7 @@ function initSchool() {
       <h3>${esc(p.name)}</h3>
       <div class="p-en">${esc(p.nameEn)}</div>
       ${p.stats && p.stats.length ? `<div class="p-stats">${p.stats.map(st => `<div class="p-stat"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div></div>`).join("")}</div>` : ""}
+      ${p.img ? `<figure class="p-fig"><img src="assets/photos/${esc(p.img)}" alt="" loading="lazy"><figcaption>${esc(p.imgCap || "")}</figcaption></figure>` : ""}
       <div class="p-facts"><span class="p-badge fact">事实</span>${hl(p.facts)}</div>
       <div class="p-insight"><span class="p-badge judge">判断 · 启示</span>${hl(p.insight)}</div>
     </div>`).join("");
