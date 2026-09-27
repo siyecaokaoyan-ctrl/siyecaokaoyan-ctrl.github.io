@@ -37,12 +37,23 @@ function esc(t) {
   return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-/* 关键数字自动加粗：金额/数量（带单位）与年份 */
+/* 关键数字自动加粗：金额/数量（带单位）与年份
+   同时支持内联出处链接写法：[文字](https://url) —— 读到就能点 */
 function hl(t) {
-  return esc(t).replace(
+  const links = [];
+  const raw = String(t).replace(/\[([^\]]{1,60})\]\((https?:\/\/[^)\s]{4,})\)/g, (m, label, url) => {
+    links.push({ label, url });
+    return "\u0007LINK\u0007";
+  });
+  const out = esc(raw).replace(
     /(\$?\d[\d,]*(?:\.\d+)?(?:\s*[万亿])?(?:\s*(?:(?:美)?元|册|卷|座|所|个|项|人次|平方英尺|英尺|%|倍))|(?:19|20)\d{2}(?:[–—-]\d{2,4})?年?)/g,
     "<b>$1</b>"
   );
+  let n = 0;
+  return out.replace(/\u0007LINK\u0007/g, () => {
+    const l = links[n++];
+    return `<a class="inl" href="${l.url}" target="_blank" rel="noopener">${l.label}<i>↗</i></a>`;
+  });
 }
 
 /* ── 滚动浮现动画 ── */
