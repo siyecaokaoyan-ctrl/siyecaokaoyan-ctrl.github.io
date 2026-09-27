@@ -1033,5 +1033,95 @@ const SCHOOLS = [
     { label: "NYPL – ReCAP 相关历史新闻稿", url: "www.nypl.org" },
     { label: "Wikipedia – Columbia University Libraries（沿革与馆长信息）", url: "en.wikipedia.org/wiki/Columbia_University_Libraries" }
   ]
+},
+{
+  id: "cornell",
+  name: "康奈尔大学",
+  nameEn: "Cornell University",
+  founded: 1865,
+  country: "美国",
+  region: "美国东北",
+  state: "纽约州 · 伊萨卡",
+  reportId: "LR-20260927-03",
+  reportDate: "2026-09-27",
+  tagline: "向下、向下、向结构要空间的学校",
+  mainLine: "在伊萨卡的峡谷坡地上，康奈尔三代图书馆改造是同一场空间战争的三种打法：1982 年凿开 Libe Slope 向坡体腹中挖出地下阅览翼，1992 年把 Kroch 特藏馆整体沉入 Arts Quad 地下三层，2019 年则在 1911 年的 Rand Hall 老厂房里抬高屋顶、用钢索把十万卷书\"挂\"成倒金字塔——书悬在半空，首层工坊与头顶书塔共用一条垂直动线。$16.9M 的 Rand Hall 改造（含校友 Mui Ho 600 万美元捐赠）是迄今造价最低、传播力最强的适应性再利用样本，新设计还认祖了 White 校长 1876 年铸铁书塔。",
+  flagship: { name: "Mui Ho Fine Arts Library（Rand Hall 1911 → 2019）", note: "拆除中层楼板、屋顶整体抬高约 4 英尺、掏出 40 英尺中庭，四层倒阶梯金字塔书塔以钢索悬挂 10–12.5 万卷藏书，首层 8,000+ 平方英尺 Material Practice Center（木/金属/数字工坊＋maker space）与图书馆同楼——书不占地面，地面还给工坊。LEED Gold，能耗较改造前降约 70%。" },
+  overview: {
+    intro: "校方口径（[library.cornell.edu/collections](https://library.cornell.edu/collections)）：实体馆藏逾 850 万卷、电子图书逾 250 万种、连续出版物 24 万余刊名、电子文章年下载逾 600 万篇；ALA Library Fact Sheet 排名全美第 17 位（8,173,778 卷，统计年份待复核）。系统没有单一\"总馆\"，而是身世各异的馆群：Uris（1891，实质本科馆，昵称 The Libe，馆内 A.D. White Library）、Olin（1961，人文社科研究主馆，2023-12 起大修）、Kroch（1992，Arts Quad 地下三层特藏库）、Mui Ho Fine Arts（2019，Rand Hall 改造）及 Mann（农学院）等。现任馆长 Elaine Westbrooks，头衔 Carl A. Kroch University Librarian。",
+    stats: [
+      { k: "实体馆藏", v: "850 万卷+", s: "校方叙事口径" },
+      { k: "电子图书", v: "250 万种+", s: "持续扩充" },
+      { k: "年下载", v: "600 万篇+", s: "电子文章口径" },
+      { k: "ALA 排名", v: "第 17 位", s: "8,173,778 卷，年份待复核" }
+    ]
+  },
+  projects: [
+    {
+      name: "Rand Hall 改造为 Mui Ho Fine Arts Library（2019）：把十万卷书挂上半空",
+      nameEn: "Rand Hall 1911 → Mui Ho Fine Arts Library · Wolfgang Tschapeller + STV",
+      year: "2019-08 开放",
+      stats: [{ k: "造价", v: "$16.9M" }, { k: "个人捐赠", v: "$6M（Mui Ho）" }, { k: "书塔藏书", v: "10–12.5 万卷" }, { k: "能耗", v: "-70% · LEED Gold" }],
+      facts: "起因是双重挤压：Sibley Hall 的美术藏书逐年膨胀，建筑学院的工坊也在膨胀——同一校园里书没处放、工坊也没处放。2013 年校友[何妙儿（Mui Ho，建筑学 1966 届）捐赠 600 万美元](https://aap.cornell.edu)，学校拍板把 1911 年的工业厂房 Rand Hall 整体改造。设计建筑师是康奈尔建筑学院 1987 届硕士校友、奥地利人 Wolfgang Tschapeller（[STV 任执行建筑师](https://goodyclancy.com)），方案最激进的一笔是拆掉三层楼板、把屋顶整体抬高约 4 英尺、在厂房腹中掏出 40 英尺高的中庭，让一座四层钢制书塔以[倒阶梯金字塔的形态被钢索悬挂起来](https://www.archpaper.com/2019/11/wolfgang-tschapeller-cornell-library/)，外覆安全网、脚下是格栅地板，光线与视线都从塔身穿过。首层划出 8,000–8,300 平方英尺 Material Practice Center，木工、金属与数字制造工坊同 maker space 合为一体——悬挂不是炫技，是空间算力：书不占地面，地面就完整让给工坊。这个构思在建筑系内部认祖了 White 校长 1876 年创馆藏书的 A.D. White Library 三层铸铁书塔，改造因此有了跨越百年的叙事合法性（前院长 Kent Kleinman 评价：\"respectfully restored and radically re-inhabited\"）。2019 年 8 月开放，[LEED Gold、能耗较改造前降约 70%](https://www.designboom.com/architecture/wolfgang-tschapeller-mui-ho-fine-arts-library-12-12-2019/)，18 个研读卡座沿塔布置，成为全校最具传播力的学习空间照片。",
+      insight: "本系列迄今最强的适应性再利用样本，强在三点：$16.9M 做出地标级传播力（造价不到新建馆舍零头）；\"悬挂\"用结构换平面，一栋楼解决书与工坊两个功能危机；新设计向本校历史认祖，募资、审批、舆论一路顺。对坐拥 1950–80 年代闲置工业厂房的高校，这个模板比新建便宜一个数量级——但悬挂结构对消防荷载规范要求极高，落地需专项论证。"
+    },
+    {
+      name: "Kroch Library（1992）：把特藏沉入 Arts Quad 地下",
+      nameEn: "Carl A. Kroch Library · 地下三层 · 1992-08 开放",
+      year: "1992",
+      stats: [{ k: "面积", v: "97,000 SF" }, { k: "容量", v: "130 万卷＋2 万立方英尺手稿" }, { k: "结构", v: "地下三层·4 座天窗中庭" }],
+      facts: "1980 年代珍稀手稿与特藏扩张到无处安放——这类藏品需要恒温恒湿的金库级环境，老馆给不起。康奈尔的方案大胆而彻底：在全校最金贵的景观地 Arts Quad 正下方挖一座三层地下图书馆。1992 年 8 月开放的[Carl A. Kroch Library](https://rare.library.cornell.edu/the-carl-a-kroch-library/)以 1935 届校友、芝加哥珍本书商 Carl A. Kroch 冠名，97,000 平方英尺容纳 130 万卷藏书与 20,000 立方英尺手稿，四座天窗中庭把自然光引入地下各层，恒温金库集中安置最脆弱藏品。馆内集中 Rare and Manuscript Collections 与 Asia Collections 两大板块——地面上几乎看不到这座图书馆，它把存在感全部让给了草坪，把所有体量藏在了师生脚下。",
+      insight: "与芝大 Mansueto（2011）常被并提，但 Kroch 早 19 年，且定位不同：Mansueto 存流通书，Kroch 存特藏——这决定了设计逻辑：特藏地下化的核心是环境控制（金库）与安保，天窗中庭解决的是\"地下工作者的尊严\"。做古籍/地方文献书库规划，\"金库＋采光中庭\"组合可直接引用。"
+    },
+    {
+      name: "Olin Library 改造（2023-12 启动）：把学生变成改造流程的一部分",
+      nameEn: "Olin Library Renewal · Goody Clancy",
+      year: "2023-12-18 封闭开工 · 目标 2025",
+      stats: [{ k: "范围", v: "一层＋地下室" }, { k: "设计", v: "Goody Clancy" }, { k: "系统", v: "机械整体更换（60 年+）" }],
+      facts: "Olin 是人文社科研究主馆，1961 年启用，机电系统超龄服役六十余年，空间组织停留在\"多服务台分区管理\"的旧范式。[2023 年 12 月 18 日一层与地下室封闭开工](https://library.cornell.edu/about/news/services-to-continue-during-olin-library-renovations/)，改造清单具体：整合为单一服务台、新增 3 间咨询室、人类学馆藏套房、新公共楼梯、面向 Arts Quad 的新入口门厅、机械系统整体更换。最值得抄的是过程里的学生参与：施工前学生试坐候选家具再定采购，设计阶段通过 VR 走查提前\"进入\"未建成的空间提意见，工程学院师生把拆下来的老式索书号叫号板改造成数字钟留校展示——把\"改造通知\"做成了深度参与的共创过程，而不是一张贴在门上的封馆告示。",
+      insight: "老馆改造的标准难题是系统老化、范式切换、师生情绪三者打架，Olin 的答案是把第三件事做成前两件事的一部分：家具试用＝采购决策众包，VR 走查＝设计评审前置，旧物改造＝集体记忆的安置方案。参与感本身就是沟通成本最低的\"封馆安抚\"，任何规模的改造都能照抄。"
+    },
+    {
+      name: "Uris Library：1891 年老馆的三次转身与 1982 年\"凿坡入库\"",
+      nameEn: "Uris Library · William Henry Miller · 1891",
+      year: "1891 开放 · 1982 地下翼 · 1961 转本科馆",
+      stats: [{ k: "开放", v: "1891-10-07" }, { k: "建筑师", v: "W. H. Miller（23 岁出道作）" }, { k: "手术", v: "1982 凿 Libe Slope" }, { k: "开放时长", v: "多阅览室 24h" }],
+      facts: "康奈尔 1865 年创校时校长 White 把最初藏书寄放在自己办公室；建校 23 年后由本校建筑系第一位学生 William Henry Miller 设计 Uris 馆，1891 年 10 月 7 日开放，师生昵称 \"The Libe\" 沿用至今。1961 年 Olin 建成后 Uris 转型本科生图书馆，冠名 1925 届校友、地产商 Harold D. Uris。真正的空间手术是 1982 年：面对坡地上再无扩建余地的窘境，学校凿开楼前的 Libe Slope 向山坡体内挖出地下阅览翼——顶部采光的地下空间被学生叫作 \"Cocktail Lounge\"，2019 年完成翻新；1990 年代摘掉\"本科馆\"字样，如今馆内多个阅览室 24 小时开放。White 校长 1876 年创馆藏书后来单独辟室成为馆中之馆 A.D. White Library，正是 Rand Hall 悬挂书塔百年后的灵感源头。",
+      insight: "Uris 的三次转身（总馆→本科馆→24 小时学习空间）每次都踩在功能更迭的点上，而不是等到建筑被功能抛弃。1982 年\"凿坡入库\"尤其值得记录：当平面扩张走不通时，垂直方向（含向下）就是下一个平面——Kroch 整体下沉的思路在这里已预演过一次。"
+    }
+  ],
+  learningSpaces: "康奈尔学习空间的共同主题是\"地形即空间\"：Uris 馆多个阅览室 24 小时开放（Dean Reading Room 等），夜晚灯火是 Libe Slope 上的地标；1982 年凿坡建成的地下 \"Cocktail Lounge\" 玻璃顶采光、景观与安静兼得；Mui Ho 美术图书馆 18 个研读卡座沿悬挂书塔布置，临卡尤加湖谷一侧；Rand Hall 首层 Material Practice Center 与图书馆同楼——做模型累了上楼看书，看书累了下楼做模型。多数高校把 maker space 设在图书馆外的另一栋楼，康奈尔用一座书塔把\"动手\"与\"阅读\"缝进了同一条垂直动线。",
+  serviceModel: "馆长头衔即传统：Carl A. Kroch University Librarian 以捐资书商命名，把个人捐赠制度化为职位记忆；校友冠名谱系横跨三代——Uris（1925 届地产商，1960 年代冠名本科馆）、Kroch（1935 届珍本书商，1992 年冠名地下特藏馆）、Mui Ho（1966 届建筑师校友，2013 年捐资发起美术馆改造），每次冠名都恰好发生在该馆功能重塑的节点，钱与转型互为因果。特藏运营上，RMC 藏在地下三层但服务上并未\"藏\"：物理上最深，服务上最外——金库级环境不以牺牲可达性为代价。",
+  trends: [
+    { title: "适应性再利用取代新建地标：Rand Hall 是低成本高传播力的答案", type: "fact", note: "1911 年老厂房＋抬顶中庭＋悬挂书塔，$16.9M 成为康奈尔图书馆系统的形象封面——老工业建筑改造可以进入学校宣传主叙事。" },
+    { title: "特藏的空间策略走向地下金库化", type: "fact", note: "Kroch 1992 年即实现恒温金库与地下采光兼得，比芝大 Mansueto 早 19 年，且为特藏而非流通书设计——天窗中庭不是奢侈项，是地下空间可持续使用的必要条件。" },
+    { title: "learning commons 开始吸收\"动手\"功能", type: "fact", note: "Material Practice Center 与图书馆同楼同动线，commons 的内涵从讨论协作扩展到制作实践——\"动手的 commons\"成为可引用原型。" },
+    { title: "共创式设计成为改造项目的标准沟通策略", type: "fact", note: "Olin 的家具试用、VR 走查、旧物改造（call board 变数字钟）三件套物料成本近零，回报是舆论零阻力与采购决策的免费众包。" },
+    { title: "校友捐赠与功能重塑同步发生", type: "fact", note: "Uris→Kroch→Mui Ho 三代冠名都落在功能转型节点——募资叙事应与空间转型叙事合并策划。" }
+  ],
+  business: [
+    "老厂房/老仓库改造图书馆，优先研究\"悬挂＋中庭\"两件套：Rand Hall 证明拆中层楼板＋抬屋顶＋悬挂结构，可以用零头造价获得地标级传播力。",
+    "书与工坊同楼，是 learning commons 的下一形态：让\"做\"与\"读\"共享同一动线，理工科见长的高校可整体借鉴。",
+    "特藏书库\"金库＋采光中庭\"组合可直接引用：Kroch 1992 年就做到恒温金库与地下采光兼得，天窗中庭是地下空间可持续使用的必要条件。",
+    "改造施工前把学生变成流程的一部分：Olin 的家具试用、VR 走查、旧物改造三件套成本近零，任何涉及封馆的改造都值得照抄。",
+    "新设计向本校历史\"认祖\"是改造项目的润滑剂：钢索书塔认祖 A.D. White 铸铁书塔，叙事一出，募资、审批、校友关系全线受益——每个学校都有值得认祖的空间遗产。"
+  ],
+  limits: [
+    "ALA 排名第 17 位（8,173,778 卷）统计年份未在引用页标注，横向比较前需复核。",
+    "Rand Hall 书塔藏书量各来源在 10 万–12.5 万卷间浮动，采用区间表述。",
+    "Olin 改造以 2025 年完工作为目标口径，实际完工状态截稿时未复核。",
+    "850 万卷＋250 万电子书为校方叙事口径，与 ALA 排名口径统计边界不同。",
+    "报告配图来自建筑设计媒体报道，版权归摄影者与出版方，仅限研究内部使用。"
+  ],
+  sources: [
+    { label: "Cornell University Library – Collections（馆藏总量与下载量口径）", url: "library.cornell.edu/collections" },
+    { label: "Cornell University Library – Services to Continue During Olin Library Renovations（2023-12 改造公告）", url: "library.cornell.edu/about/news/services-to-continue-during-olin-library-renovations/" },
+    { label: "Goody Clancy – Olin Library Renewal 项目档案", url: "goodyclancy.com" },
+    { label: "Cornell RMC – The Carl A. Kroch Library", url: "rare.library.cornell.edu/the-carl-a-kroch-library/" },
+    { label: "The Architect's Newspaper – Mui Ho Fine Arts Library（2019-11，摄影 Chris Cooper/STV）", url: "www.archpaper.com/2019/11/wolfgang-tschapeller-cornell-library/" },
+    { label: "designboom – Wolfgang Tschapeller 悬吊书塔（2019-12-12，摄影 Lukas Schaller）", url: "www.designboom.com/architecture/wolfgang-tschapeller-mui-ho-fine-arts-library-12-12-2019/" },
+    { label: "Cornell AAP – Milstein/Rand Hall 改造新闻", url: "aap.cornell.edu" },
+    { label: "ALA Library Fact Sheet（康奈尔卷数排名）", url: "www.ala.org" }
+  ]
 }
 ];
