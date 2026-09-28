@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a84ff"/>
+      <stop offset="1" stop-color="#0066cc"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+  <!-- 古典图书馆：三角山花 + 三柱 + 基座 -->
+  <g fill="#ffffff">
+    <path d="M32 12 L52 22 L12 22 Z"/>
+    <rect x="15" y="25" width="5.5" height="22" rx="1.5"/>
+    <rect x="29.25" y="25" width="5.5" height="22" rx="1.5"/>
+    <rect x="43.5" y="25" width="5.5" height="22" rx="1.5"/>
+    <rect x="11" y="50" width="42" height="5" rx="2"/>
+  </g>
+</svg>
