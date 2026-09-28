@@ -227,7 +227,7 @@ section{padding:100px 0;}
    B 通栏：图片旁文字不足以填满图高时，JS 加 .stacked → 图片独占一行居中
    ═══════════════════════════════════════════════════════════ */
 .p-fig img,.f-fig img{max-height:420px;object-fit:cover;}
-.p-fig.stacked,.f-fig.stacked{width:min(78%,720px);float:none;margin:20px auto 16px;clear:both;}
+.p-fig.stacked,.f-fig.stacked{width:min(78%,720px);float:none;margin:20px 0 16px;clear:both;}
 .p-fig.stacked img,.f-fig.stacked img{max-height:520px;}
 @media(max-width:720px){
   .p-fig img,.f-fig img{max-height:300px;}
