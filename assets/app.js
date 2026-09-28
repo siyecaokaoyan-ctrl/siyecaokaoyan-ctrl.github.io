@@ -104,22 +104,45 @@ const LOGO_EXT = { mit: "svg", jhu: "svg" };
 const logoSrc = id => `assets/logos/${id}.${LOGO_EXT[id] || "png"}`;
 const logoImg = (id, cls) => `<img class="${cls}" src="${logoSrc(id)}" alt="" loading="lazy" onerror="this.style.display='none'">`;
 
-function renderCards(filter) {
+/* 筛选状态：地区 + 主题 + 关键词，三者叠加 */
+const cardFilter = { region: "all", topic: "all", q: "" };
+
+function schoolMatches(s) {
+  if (cardFilter.region !== "all" && s.region !== cardFilter.region) return false;
+  if (cardFilter.topic !== "all" && !s.trends.some(t => t.title === cardFilter.topic)) return false;
+  if (cardFilter.q) {
+    const q = cardFilter.q.toLowerCase();
+    const hay = [s.name, s.nameEn, s.country, s.state, s.tagline, s.mainLine,
+      s.flagship.name, s.flagship.note,
+      ...s.projects.flatMap(p => [p.name, p.nameEn, p.facts]),
+      ...s.trends.map(t => t.title + t.note)].join(" ").toLowerCase();
+    if (!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function renderCards() {
   const grid = $("#cards");
   if (!grid) return;
-  const list = (filter === "all" ? SCHOOLS : SCHOOLS.filter(s => s.region === filter)).map(s => SCHOOLS.indexOf(s));
-  grid.innerHTML = list.map((idx, i) => {
-    const s = SCHOOLS[idx];
+  const picked = SCHOOLS.map((s, i) => ({ s, i })).filter(x => schoolMatches(x.s));
+  $("#cards-empty").hidden = picked.length > 0;
+  grid.innerHTML = picked.map(({ s, i }, n) => {
+    const headStat = s.overview.stats[0];
     return `
-    <a class="card reveal" style="transition-delay:${(i % 3) * 0.07}s" href="school.html?id=${s.id}">
+    <a class="card reveal" style="transition-delay:${(n % 3) * 0.07}s" href="school.html?id=${s.id}">
       <div class="c-head">
         ${logoImg(s.id, "c-logo")}
         <div class="c-top">
           <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
-          <div class="idx">${String(idx + 1).padStart(2, "0")}</div>
+          <div class="idx">${String(i + 1).padStart(2, "0")}</div>
         </div>
       </div>
       <div class="c-name">${esc(s.name)}</div>
+      <div class="c-tags">
+        <span>建校 ${s.founded}</span>
+        ${headStat ? `<span>${esc(headStat.k)} ${esc(headStat.v)}</span>` : ""}
+        <span>更新 ${esc(s.reportDate.slice(5))}</span>
+      </div>
       <div class="c-tagline">${esc(s.tagline)}</div>
       <div class="c-line">${hl(s.mainLine)}</div>
       <div class="c-foot"><span>旗舰 <b>${esc(s.flagship.name.split("（")[0].trim())}</b></span><span class="arrow">→</span></div>
@@ -142,8 +165,40 @@ function bindFilters() {
     if (!chip) return;
     $$(".f-chip", box).forEach(c => c.classList.remove("on"));
     chip.classList.add("on");
-    renderCards(chip.dataset.region);
+    cardFilter.region = chip.dataset.region;
+    renderCards();
   });
+  // 主题筛选：选项来自趋势库标题，计数为该趋势已验证的学校数
+  const tbox = $("#topic-filters");
+  if (tbox) {
+    tbox.innerHTML = [`<div class="f-chip on" data-topic="all">全部主题</div>`,
+      ...TRENDS.map(t => `<div class="f-chip" data-topic="${esc(t.title)}">${esc(t.title)} ${t.schools.length}</div>`)
+    ].join("");
+    tbox.addEventListener("click", (e) => {
+      const chip = e.target.closest(".f-chip");
+      if (!chip) return;
+      $$(".f-chip", tbox).forEach(c => c.classList.remove("on"));
+      chip.classList.add("on");
+      cardFilter.topic = chip.dataset.topic;
+      renderCards();
+    });
+  }
+  // 关键词搜索（防抖）
+  const q = $("#q");
+  if (q) {
+    let timer = null;
+    q.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { cardFilter.q = q.value.trim(); renderCards(); }, 160);
+    });
+  }
+  // 最近更新（按报告日期倒序取 3 所）
+  const recent = $("#recent");
+  if (recent) {
+    const latest = [...SCHOOLS].sort((a, b) => b.reportDate.localeCompare(a.reportDate)).slice(0, 3);
+    recent.innerHTML = `<span class="tb-label">最近更新</span>` + latest.map(s =>
+      `<a class="recent-link" href="school.html?id=${s.id}">${esc(s.name)} <i>${esc(s.reportDate.slice(5))}</i></a>`).join("");
+  }
 }
 
 /* ── 趋势共识图谱 ── */
@@ -166,7 +221,17 @@ function renderTrendMap(activeIds) {
 }
 
 /* ── 双校对比 ── */
-function trendIdsOf(school) { return school.trends.map(t => t.title); }
+/* 单元格：第一句作为加粗短结论，其余折入「展开细节」 */
+function splitFirst(raw) {
+  const i = String(raw).indexOf("。");
+  if (i < 0 || i > 90) return { short: raw, more: "" };
+  return { short: raw.slice(0, i + 1), more: raw.slice(i + 1) };
+}
+function vsRich(shortHtml, raw) {
+  const { short, more } = splitFirst(raw);
+  return `${shortHtml}<div class="vs-short">${hl(short)}</div>` +
+    (more ? `<div class="vs-more" hidden>${hl(more)}</div><button class="vs-toggle" type="button">展开细节 ↓</button>` : "");
+}
 
 function renderCompare(aId, bId) {
   const panel = $("#vs-panel");
@@ -186,16 +251,21 @@ function renderCompare(aId, bId) {
     const t = TRENDS.find(x => x.id === id);
     return t ? `<span class="match">● ${t.title}</span>` : "";
   }).join("<br>") || "—";
+  const onlyCell = (arr) => arr.length
+    ? arr.map(t => `<span class="match only">○ ${esc(t.title)}</span>`).join("<br>") : "—";
   const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id)).map(t => t.id);
+  const onlyA = a.trends.filter(t => !bTrendTitles.includes(t.title));
+  const onlyB = b.trends.filter(t => !aTrendTitles.includes(t.title));
   panel.innerHTML =
     row("对比维度",
       `<div class="vs-id">${logoImg(a.id, "vs-logo")}<div><b style="color:${ca.accent}">${esc(a.name)}</b><span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span></div></div>`,
       `<div class="vs-id">${logoImg(b.id, "vs-logo")}<div><b style="color:${cb.accent}">${esc(b.name)}</b><span>${esc(b.nameEn.toUpperCase())} · ${b.founded}</span></div></div>`, true) +
-    row("一句话主线", `<b>「${esc(a.tagline)}」</b>${hl(a.mainLine)}`, `<b>「${esc(b.tagline)}」</b>${hl(b.mainLine)}`) +
-    row("旗舰项目", `<b>${esc(a.flagship.name)}</b><br>${hl(a.flagship.note)}`, `<b>${esc(b.flagship.name)}</b><br>${hl(b.flagship.note)}`) +
-    row("学习空间", hl(a.learningSpaces), hl(b.learningSpaces)) +
-    row("趋势交集", matchRows(common), matchRows(common)) +
-    row("独有判断", `<b>${esc(a.trends[0].title)}</b>——${hl(a.trends[0].note)}`, `<b>${esc(b.trends[0].title)}</b>——${hl(b.trends[0].note)}`);
+    row("一句话主线", vsRich(`<b>「${esc(a.tagline)}」</b>`, a.mainLine), vsRich(`<b>「${esc(b.tagline)}」</b>`, b.mainLine)) +
+    row("旗舰项目", vsRich(`<b>${esc(a.flagship.name)}</b>`, a.flagship.note), vsRich(`<b>${esc(b.flagship.name)}</b>`, b.flagship.note)) +
+    row("学习空间", vsRich("", a.learningSpaces), vsRich("", b.learningSpaces)) +
+    row("趋势交集（相同点）", matchRows(common), matchRows(common)) +
+    row("各自独有（不同点）", onlyCell(onlyA), onlyCell(onlyB)) +
+    row("独有判断", vsRich(`<b>${esc(a.trends[0].title)}</b>`, a.trends[0].note), vsRich(`<b>${esc(b.trends[0].title)}</b>`, b.trends[0].note));
   // 图谱高亮联动
   renderTrendMap([a.id, b.id]);
   const url = new URL(location.href);
@@ -222,6 +292,17 @@ function bindCompare() {
   sync();
   selA.addEventListener("change", () => { sync(); renderCompare(selA.value, selB.value); });
   selB.addEventListener("change", () => { sync(); renderCompare(selA.value, selB.value); });
+  // 「展开细节」开关（事件委托，重渲染后仍然有效）
+  const panel = $("#vs-panel");
+  if (panel) panel.addEventListener("click", (e) => {
+    const btn = e.target.closest(".vs-toggle");
+    if (!btn) return;
+    const more = btn.previousElementSibling;
+    if (more && more.classList.contains("vs-more")) {
+      more.hidden = !more.hidden;
+      btn.textContent = more.hidden ? "展开细节 ↓" : "收起 ↑";
+    }
+  });
   renderCompare(selA.value, selB.value);
 }
 

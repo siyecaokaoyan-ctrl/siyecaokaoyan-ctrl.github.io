@@ -123,3 +123,105 @@ section{padding:100px 0;}
 @media(max-width:720px){
   .p-fig,.f-fig{width:100%;float:none;margin:14px 0 6px;}
 }
+
+/* ═══════════════════════════════════════════════════════════
+   v6（诊断共识改版 · 2026-09-28）
+   首屏压缩＋检索工具条＋卡片事实标签＋对比页短结论化＋趋势口径
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── 首屏：保留多色晕染与冲击力，收高度、降统计数字权重 ── */
+.v3 .hero{padding:84px 0 56px;}
+.v3 .stat .n{font-size:clamp(38px,4.8vw,56px);font-weight:800;letter-spacing:-.02em;}
+.v3 .stat .n small{font-size:18px;font-weight:600;}
+.v3 .stat .l{font-size:12px;}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:8px;margin-top:26px;
+  padding:12px 26px;border-radius:980px;font-size:15px;font-weight:600;
+  color:#fff;text-decoration:none;
+  background:linear-gradient(135deg,#0a84ff,#2997ff);
+  box-shadow:0 2px 8px rgba(41,151,255,.35),0 10px 28px rgba(41,151,255,.25);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+.hero-cta span{transition:transform .25s var(--ease);}
+.hero-cta:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(41,151,255,.4),0 16px 38px rgba(41,151,255,.3);}
+.hero-cta:hover span{transform:translateY(3px);}
+
+/* ── 检索工具条 ── */
+.toolbox{
+  background:var(--paper);border-radius:18px;padding:20px 22px;
+  box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);
+  margin-bottom:30px;
+}
+.tb-search input{
+  width:100%;box-sizing:border-box;padding:13px 18px;border-radius:12px;
+  border:1px solid var(--hair);background:#f5f5f7;color:var(--ink);
+  font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.tb-search input:focus{border-color:#2997ff;background:#fff;box-shadow:0 0 0 4px rgba(41,151,255,.15);}
+.tb-line{display:flex;align-items:baseline;gap:14px;margin-top:14px;}
+.tb-label{flex:none;font-size:12px;font-weight:700;color:var(--ink-3);letter-spacing:.08em;width:52px;}
+.tb-line .filters{margin-top:0;flex-wrap:wrap;}
+.tb-recent{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);}
+.recent-link{
+  font-size:13px;color:var(--ink-2);text-decoration:none;
+  padding:5px 12px;border-radius:980px;background:#f5f5f7;transition:all .2s var(--ease);
+}
+.recent-link i{font-style:normal;color:var(--ink-3);margin-left:2px;}
+.recent-link:hover{background:var(--blue-soft);color:var(--blue);}
+.cards-empty{
+  text-align:center;color:var(--ink-3);font-size:14.5px;
+  padding:48px 20px;background:var(--paper);border-radius:18px;
+}
+
+/* ── 卡片事实速览标签 ── */
+.card .c-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px;}
+.card .c-tags span{
+  font-size:11.5px;color:var(--ink-2);background:#f5f5f7;
+  padding:3px 10px;border-radius:980px;white-space:nowrap;
+}
+
+/* ── 双校对比：短结论＋展开 ── */
+.vs-short{font-weight:600;color:var(--ink);line-height:1.7;}
+.vs-more{margin-top:8px;color:var(--ink-2);font-size:13.5px;line-height:1.75;}
+.vs-toggle{
+  margin-top:8px;border:none;background:none;cursor:pointer;
+  font-size:12.5px;font-weight:600;color:var(--blue);padding:2px 0;
+  border-bottom:1px solid transparent;transition:border-color .2s;
+}
+.vs-toggle:hover{border-bottom-color:var(--blue);}
+.match.only{color:var(--ink-2);}
+
+/* ── 趋势口径说明 ── */
+.map-note{
+  max-width:760px;margin:26px auto 0;font-size:13px;line-height:1.8;color:var(--ink-3);
+  padding:14px 18px;border-radius:12px;background:rgba(255,255,255,.7);
+}
+.t-method{
+  margin-top:18px;max-width:760px;font-size:13.5px;line-height:1.85;color:var(--ink-2);
+  background:var(--paper);border-radius:14px;padding:16px 20px;
+  box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 18px rgba(0,0,0,.05);
+}
+.t-method b{
+  display:inline-block;margin-right:10px;color:var(--blue);
+  font-size:12px;letter-spacing:.08em;
+}
+
+/* ── 移动端补充 ── */
+@media(max-width:720px){
+  .v3 .hero{padding:64px 0 44px;}
+  .v3 .hero h1{font-size:clamp(30px,9vw,40px);}
+  .v3 .hero .sub{font-size:15.5px;}
+  .tb-line{flex-direction:column;gap:8px;}
+  .tb-label{width:auto;}
+  .vs-toggle{padding:6px 0;}
+  /* 顶栏：两行布局，链接可横滑，进度徽标收缩 */
+  .nav-in{gap:10px;height:auto;padding:8px 0;flex-wrap:wrap;}
+  .progress-pill{margin-left:auto;font-size:11px;padding:4px 10px;}
+  .nav-links{order:3;width:100%;gap:16px;margin:0;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  .nav-links a{font-size:12.5px;white-space:nowrap;padding:4px 0;}
+  /* 双校对比：维度标签置顶，两校内容纵向全幅排列 */
+  .vs-row{grid-template-columns:1fr;}
+  .vs-label{order:-1;border:none;border-bottom:1px dashed var(--hair);margin:0 24px;padding:12px 0 6px;background:none;justify-content:flex-start;font-size:11px;}
+  .vs-cell{padding:12px 24px 16px;}
+  .vs-head .vs-cell{font-size:16px;}
+}
