@@ -482,6 +482,31 @@ function initSchool() {
     <a class="prev" href="school.html?id=${prev.id}"><div class="p-dir">← 上一所</div><div class="p-name">${prev.name}</div></a>
     <a class="next" href="school.html?id=${next.id}"><div class="p-dir">下一所 →</div><div class="p-name">${next.name}</div></a>`;
   bindReveals();
+  scheduleSmartFigures();
+}
+
+/* ── v8 智能图排：图片旁文字填不满图高时，图片自动改通栏居中 ── */
+function smartFigures() {
+  document.querySelectorAll(".proj, .flagship").forEach(box => {
+    const fig = [...box.children].find(el => el.tagName === "FIGURE");
+    if (!fig || fig.classList.contains("stacked")) return;
+    const img = fig.querySelector("img");
+    if (!img) return;
+    const textH = [...box.children].filter(el => el !== fig)
+      .reduce((sum, el) => sum + el.offsetHeight, 0);
+    if (textH < fig.offsetHeight + 60) fig.classList.add("stacked");
+  });
+}
+function scheduleSmartFigures() {
+  const run = () => {
+    // 等正文图片加载完再测量，避免高度不准
+    const imgs = [...document.querySelectorAll(".p-fig img, .f-fig img")];
+    Promise.all(imgs.map(i => i.complete ? 1 :
+      new Promise(r => { i.onload = i.onerror = r; })))
+      .then(() => setTimeout(smartFigures, 80));
+  };
+  if (document.readyState === "complete") run();
+  else window.addEventListener("load", run);
 }
 
 /* ── 趋势详情页 ── */

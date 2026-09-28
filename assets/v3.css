@@ -220,6 +220,20 @@ section{padding:100px 0;}
 .q-list li{margin-bottom:12px;font-size:14.5px;line-height:1.8;}
 .q-list li:last-child{margin-bottom:0;}
 #d-brief{font-size:14.5px;line-height:1.9;color:var(--ink-soft);}
+
+/* ═══════════════════════════════════════════════════════════
+   v8（智能图排 · 2026-09-28）
+   A 限高：环绕排版下图片最高 420px，超出等比裁切（可点开放大看原图）
+   B 通栏：图片旁文字不足以填满图高时，JS 加 .stacked → 图片独占一行居中
+   ═══════════════════════════════════════════════════════════ */
+.p-fig img,.f-fig img{max-height:420px;object-fit:cover;}
+.p-fig.stacked,.f-fig.stacked{width:min(78%,720px);float:none;margin:20px auto 16px;clear:both;}
+.p-fig.stacked img,.f-fig.stacked img{max-height:520px;}
+@media(max-width:720px){
+  .p-fig img,.f-fig img{max-height:300px;}
+  .p-fig.stacked,.f-fig.stacked{width:100%;margin:14px 0 8px;}
+  .p-fig.stacked img,.f-fig.stacked img{max-height:340px;}
+}
 @media(max-width:720px){
   .v3 .hero{padding:64px 0 44px;}
   .v3 .hero h1{font-size:clamp(30px,9vw,40px);}
