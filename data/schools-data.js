@@ -1129,5 +1129,102 @@ const SCHOOLS = [
     { label: "Cornell AAP – Milstein/Rand Hall 改造新闻", url: "aap.cornell.edu" },
     { label: "ALA Library Fact Sheet（康奈尔卷数排名）", url: "www.ala.org" }
   ]
+},
+{
+  id: "oxford",
+  name: "牛津大学",
+  nameEn: "University of Oxford",
+  founded: 1096,
+  country: "英国",
+  region: "欧洲",
+  state: "牛津郡 · 牛津",
+  reportId: "LR-20260928-01",
+  reportDate: "2026-09-28",
+  tagline: "把书送走，把楼打开",
+  mainLine: "法定缴存四百年、每天约 1,000 件新入藏，博德利用\"外迁库房＋地下再生＋公众化改造\"三层结构回应\"只进不出\"的收藏义务。",
+  flagship: {
+    name: "Weston 图书馆改造（原 New Bodleian）",
+    note: "[£80M 三年改造](https://www.bbc.com/news/magazine-37442351)（2011–15）：消防评估发现 11 层中央书塔是\"住在烟囱上方的防火隐患\"，拆除后让出 Blackwell Hall 公众大厅与 39 公里地下新书库。",
+    img: "oxford-weston-exterior.jpg",
+    imgCap: "Weston 图书馆 Broad Street 外观（2015 年 3 月重开当月）。摄影：John Cairns / Wikimedia Commons（CC BY-SA 4.0）"
+  },
+  overview: {
+    intro: "[Bodleian Libraries](https://www.bodleian.ox.ac.uk/about/libraries) 是英国最大的大学图书馆系统、欧洲最大之一——1602 年向学者开放，法定缴存图书馆四百年，现藏 1,400 万+ 印刷品与 100 万+ 特藏。",
+    stats: [
+      { k: "馆藏总量", v: "1,400 万+ 册", s: "官网现行口径；2021–22 年报为 1,350 万" },
+      { k: "特藏", v: "100 万+ 件", s: "手稿、珍本、地图、乐谱（官网 Special Collections）" },
+      { k: "年增量", v: "约 5 公里书架/年", s: "法定缴存驱动，约 1,000 件/工作日入藏" },
+      { k: "校外库房", v: "1,530 万+ 件", s: "斯温登 BSF（2010，153 英里书架，£26M）" }
+    ]
+  },
+  projects: [
+    {
+      name: "Weston 图书馆：拆掉隐患书塔，换回公众大厅",
+      nameEn: "Weston Library · WilkinsonEyre · 2015",
+      year: "1940 建 / 2015 改",
+      img: "oxford-weston-blackwell.jpg",
+      imgCap: "Blackwell Hall：拆除中央书塔后形成的 13.5 米挑高公众大厅与环形玻璃书廊。摄影：Jps3 / Wikimedia Commons（CC BY-SA 4.0）",
+      stats: [{ k: "总造价", v: "£80M" }, { k: "地下书库", v: "39 km 书架" }, { k: "地下藏书", v: "140 万册" }, { k: "重开", v: "2015-03-21" }],
+      facts: "New Bodleian（Giles Gilbert Scott 设计，1937–40 建成，II 级登录建筑）到千禧年已成纯藏书仓库。[AJ 报道](https://www.architectsjournal.co.uk/buildings/weston-library-by-wilkinson-eyre)：11 层钢制中央书塔因防火分区连通，\"整个书塔实际上是一个防火隔间\"，起火则有三分之一概率整体坍塌。WilkinsonEyre 改造（2011–15）拆除书塔，地下新建 39 公里书架容纳 140 万册，地面层让渡给展厅、报告厅与咖啡厅；得名于捐资 [£25M 的 Garfield Weston 基金会](https://www.campaign.ox.ac.uk/news/weston-library-formally-opens)（牛津大学出版社对等配捐）。重开一年即破百万访客，入围 2016 斯特灵奖。",
+      insight: "真正的立项引擎是消防安全评估——\"安全整改＋空间再生\"打包，比单纯申请装修经费更容易讲通逻辑、拿到大钱。对国内 1950–80 年代砖混/钢结构老书库是直接话术样本；但 Rowan Moore 也提醒了另一面：公众化不应以牺牲研究功能为代价，Weston 阅览室预约紧张一直是读者抱怨点。"
+    },
+    {
+      name: "Gladstone Link：百年地下书库的再生",
+      nameEn: "The Gladstone Link · 2011",
+      year: "1909–12 建 / 2011 改",
+      img: "oxford-radcliffe-camera.jpg",
+      imgCap: "Radcliffe Camera（1737–49）：Gladstone Link 地下连接的南端节点，地下阅览空间即利用 1909–12 年建成的世界最大地下书库改造。摄影：Wikimedia Commons（CC）",
+      stats: [{ k: "原始书库", v: "1909–12" }, { k: "向读者开放", v: "2011-07-05" }, { k: "连接", v: "老馆—圆楼" }],
+      facts: "拉德克利夫广场地下的书库 1909–12 年建成时为世界最大。2011 年改造为连接老博德利与 Radcliffe Camera 的地下读者空间 [Gladstone Link](https://ora.ox.ac.uk/objects/uuid:70603fa2-ac73-41e0-b264-d2f8fc2b92bc)，7 月 5 日向读者开放。牛津把实施复盘写成公开论文：搬书与施工交织、防尘几乎不可能、金属格栅地板与推车冲突最终靠软轮专用推车解决——\"确保健康与安全问题在早期设计阶段就被彻底覆盖\"。",
+      insight: "基础设施的生命周期可以比建筑更长：1909 年的书库一百年后以新功能续命，靠改造而非重建。国内高校普遍存在的老馆地下书库/人防空间是直接参照——读者空间不挑层高，挑的是动线与采光；校方自曝运营\"丑话\"的复盘论文，比成功案例更值得带进场。"
+    },
+    {
+      name: "Schwarzman 人文馆：2025 年的原生答案",
+      nameEn: "Bodleian Humanities Library · Schwarzman Centre · 2025",
+      year: "2025-09-29 开放",
+      img: "oxford-schwarzman-atrium.jpg",
+      imgCap: "Schwarzman 中心中庭与上层学习座：全楼 320 个正式与非正式学习座散布于图书馆之外。摄影：Sara0606 / Wikimedia Commons（CC BY-SA 4.0）",
+      stats: [{ k: "人文馆面积", v: "2,100 ㎡" }, { k: "座位", v: "410（80 研究生专座）" }, { k: "捐资", v: "£185M（校史最大）" }],
+      facts: "[Schwarzman 中心](https://cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/)（Hopkins Architects，25,300 ㎡，英格兰最大 Passivhaus 项目）2025 年 10 月开放，其中的 Bodleian 人文馆 9 月 29 日先行开馆：合并哲学与神学、英语、音乐三个院系图书馆，2,100 ㎡、410 座（80 座为上层内环研究生专座），开放 9:00–21:00 每日。座位布局依据博德利自研的《The 21st Century Library》报告；配套 24/7 学习空间与智能储物柜，读者可闭架自取预约图书。",
+      insight: "三个细节可直接引用：① 20% 座位制度化留给研究生，回应\"研究生扩招、空间不增\"的矛盾；② 24/7 用智能储物柜替代夜间人工取书——通宵空间最大的成本顾虑（夜间值守）有了硬件解法；③ 用自己的研究报告当设计任务书，是\"先诊断、后方案\"的最优示范。捐资背景曾引发校内争议，提示大额命名捐赠需评估舆论风险。"
+    }
+  ],
+  learningSpaces: "Blackwell Hall 是新一代公共学习大厅的原型：展厅、咖啡、讲座与公众入口合成一个 13.5 米挑高空间；Gladstone Link 证明地下低层高空间可以成为稳定的读者空间；Schwarzman 人文馆 410 座中 80 座研究生专座设在内环（俯瞰中庭），全楼另散布 320 个正式与非正式学习座——学习空间溢出图书馆边界，成为整栋楼的底色。",
+  serviceModel: "统一发现层 SOLO 覆盖成员馆与共享编目的学院图书馆，校外库房取书请求经 SOLO 下单、逐件条码追踪。服务整合的主线是\"合并分散小馆\"：2025 年人文馆一次合并三个院系图书馆，开放时间从各馆的碎片化时段统一到每日 9:00–21:00。",
+  trends: [
+    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "Weston：1930 年代 New Bodleian 拆掉防火隐患书塔再生为公众大厅；Gladstone Link：1909–12 年地下书库百年后再生为读者空间——同一所学校两个世纪各做一次。" },
+    { title: "藏书外迁 · 高密度库房", type: "judgment", note: "斯温登 BSF（2010，£26M，153 英里书架、千万件级）：2007–08 年校内 Osney Mead 选址被规划拒绝才走向校外——在英国，外迁首先是个规划政治问题，其次才是工程问题。" },
+    { title: "全天候学习空间", type: "fact", note: "Schwarzman 人文馆 24/7 学习空间配智能储物柜：通宵不再依赖夜间人工值守，\"取书\"环节自动化——24/7 成本问题的新一代解法。" },
+    { title: "Learning Commons 常态化", type: "judgment", note: "Blackwell Hall 把公众入口、展厅与咖啡合成一个大厅；Schwarzman 全楼 320 个散布学习座——commons 溢出图书馆边界，成为整栋建筑的底色。" },
+    { title: "数据化运营", type: "judgment", note: "《The 21st Century Library》研究报告直接作为新馆设计任务书；BSF 逐件条码＋SOLO 请求驱动每日取书动线——研究先行、运营数据化。" },
+    { title: "特藏走向台前", type: "fact", note: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配常设展厅，重开一年访客破百万——特藏从库房变成公共目的地。" }
+  ],
+  business: [
+    "\"安全整改＋空间再生\"打包立项话术：Weston 的逻辑是消防评估发现书塔不可留→拆除→中庭公众化。国内 1950–80 年代老馆的消防与结构评估，完全可以成为空间改造的立项引擎，而不只是工程包袱。",
+    "24/7 的无人化版本：Schwarzman 用智能储物柜替代夜间人工取书——向校方谈 24 小时空间时最大的成本顾虑（夜间值守），lockers 给出了一条硬件路径，前提是与馆藏/门禁系统打通。",
+    "\"先研究、后设计\"的服务路径：博德利用自己的《The 21st Century Library》报告作为新馆任务书，哈佛做四馆改造前先跑可行性研究——推荐\"付费诊断研究先行\"本身就是专业服务切入点。",
+    "研究生专座制度：把 20% 座位明确定为研究生专用，是对扩招矛盾的制度化回应——谈家具配置时可以把\"专座比例与位置策略\"作为独立议题。",
+    "地下与低效空间再生的评估顺序：历史构造价值评估→功能植入（Gladstone Link 顺序），配结构、暖通、消防三专业早期介入——可写成 checklist 带进场。"
+  ],
+  limits: [
+    "Gladstone Link 项目造价与新增座位数未找到公开来源，本研究未猜测。",
+    "\"170 万+ 读者人次（2022/23）\"引自官方社交媒体转述，未核对年报原文页码。",
+    "成员馆数量官网（22）与维基（28）口径不一，已并列标注。",
+    "Schwarzman 人文馆首批使用数据尚未发布，410 座对七院系研究生是否充足需 2026 年复核。",
+    "BSF 读者取书送达时效各来源表述不一，本研究未采用\"次日达\"等具体承诺。"
+  ],
+  sources: [
+    { label: "Bodleian Libraries – About the libraries（馆藏与系统规模）", url: "www.bodleian.ox.ac.uk/about/libraries" },
+    { label: "Visit the Bodleian – History of the Bodleian（1602 / 1909–12 地下书库 / 1937–40 New Bodleian）", url: "visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian" },
+    { label: "BBC – Bodleian Libraries completes Swindon move（2011-12，BSF £26M/153 英里）", url: "www.bbc.com/news/uk-england-oxfordshire-16325727" },
+    { label: "Sackler 博客 – Offsite deliveries（2018-05，BSF 11.4m 架/逐件条码/日入藏千件）", url: "blogs.bodleian.ox.ac.uk/sackler/2018/05/25/sackler-101-offsite-deliveries/" },
+    { label: "BBC Magazine – Weston Library Stirling 短名单（2016-09，£50M/总 £80M）", url: "www.bbc.com/news/magazine-37442351" },
+    { label: "牛津大学官网 – 剑桥公爵揭幕 Weston（2016-05，Weston 基金会 £25M＋OUP 配捐）", url: "www.campaign.ox.ac.uk/news/weston-library-formally-opens" },
+    { label: "Architects' Journal – Weston Library by Wilkinson Eyre（2015-04，书塔防火隐患/39km 地下书库）", url: "www.architectsjournal.co.uk/buildings/weston-library-by-wilkinson-eyre" },
+    { label: "ORA – Underground Bookstore and Old Bodleian Access Project（Gladstone Link 复盘）", url: "ora.ox.ac.uk/objects/uuid:70603fa2-ac73-41e0-b264-d2f8fc2b92bc" },
+    { label: "牛津英语系官网 – Schwarzman Centre opens（2025-09，£185M/Passivhaus）", url: "www.english.ox.ac.uk/article/stephen-a.-schwarzman-centre-for-the-humanities-opens-in-oxford" },
+    { label: "Cherwell – Schwarzman Centre opens（2025-10-01，人文馆 2,100㎡/410 座/80 研究生专座）", url: "cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/" },
+    { label: "Wikipedia – Bodleian Libraries / Schwarzman Centre（28 馆口径、25,300 ㎡、资金来源争议）", url: "en.wikipedia.org/wiki/Bodleian_Libraries" }
+  ]
 }
 ];
