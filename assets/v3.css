@@ -207,6 +207,19 @@ section{padding:100px 0;}
 }
 
 /* ── 移动端补充 ── */
+/* v7：详情页富内容——案例问题/边界、交流问题、团队摘要 */
+.p-problem{
+  font-size:14.5px;line-height:1.8;color:var(--ink);
+  background:var(--paper);border:1px dashed var(--hair);border-radius:12px;
+  padding:12px 16px;margin:16px 0 4px;
+}
+.p-problem b{color:var(--accent);}
+.p-boundary{font-size:13px;line-height:1.8;color:var(--ink-3);margin-top:16px;}
+.p-badge.bnd{background:#f0efec;color:#8a8a8a;margin-right:6px;}
+.q-list{margin:0 0 0 1.3em;color:var(--ink-soft);}
+.q-list li{margin-bottom:12px;font-size:14.5px;line-height:1.8;}
+.q-list li:last-child{margin-bottom:0;}
+#d-brief{font-size:14.5px;line-height:1.9;color:var(--ink-soft);}
 @media(max-width:720px){
   .v3 .hero{padding:64px 0 44px;}
   .v3 .hero h1{font-size:clamp(30px,9vw,40px);}

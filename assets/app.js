@@ -403,7 +403,8 @@ function initSchool() {
     qn.innerHTML = [
       ["#sec-overview", "系统概况"], ["#sec-projects", "重点项目"],
       ["#sec-spaces", "空间与服务"], ["#sec-trends", "趋势研判"],
-      ["#sec-business", "业务启发"], ["#sec-limits", "待验证限制"],
+      ["#sec-questions", "交流问题"], ["#sec-business", "业务启发"],
+      ["#sec-brief", "团队摘要"], ["#sec-limits", "待验证限制"],
       ["#sec-readers", "读者来信"], ["#sec-sources", "来源"]
     ].map(([h, t]) => `<a href="${h}">${t}</a>`).join("");
   }
@@ -415,16 +416,24 @@ function initSchool() {
   $("#d-overview-intro").innerHTML = `<b>系统概况。</b>${hl(s.overview.intro)}`;
   $("#d-stats").innerHTML = s.overview.stats.map(st =>
     `<div class="stat-card reveal"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div><div class="s">${esc(st.s)}</div></div>`).join("");
-  $("#d-projects").innerHTML = s.projects.map(p => `
+  // 扩展内容（问题/摘要/案例问题与边界）：见 data/extras-data.js，缺省自动隐藏
+  const ex = (typeof EXTRAS_DATA !== "undefined" && EXTRAS_DATA[s.id]) || {};
+  $("#d-projects").innerHTML = s.projects.map(p => {
+    const px = (ex.projects && ex.projects[p.name]) || {};
+    const problem = p.problem || px.problem, boundary = p.boundary || px.boundary;
+    return `
     <div class="proj reveal">
       <span class="p-kicker">${esc(p.year)}</span>
       <h3>${esc(p.name)}</h3>
       <div class="p-en">${esc(p.nameEn)}</div>
       ${p.stats && p.stats.length ? `<div class="p-stats">${p.stats.map(st => `<div class="p-stat"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div></div>`).join("")}</div>` : ""}
+      ${problem ? `<div class="p-problem"><b>要解决的问题。</b>${hl(problem)}</div>` : ""}
       ${p.img ? `<figure class="p-fig"><img src="assets/photos/${esc(p.img)}" alt="" loading="lazy"><figcaption>${esc(p.imgCap || "")}</figcaption></figure>` : ""}
       <div class="p-facts"><span class="p-badge fact">事实</span>${hl(p.facts)}</div>
       <div class="p-insight"><span class="p-badge judge">判断 · 启示</span>${hl(p.insight)}</div>
-    </div>`).join("");
+      ${boundary ? `<div class="p-boundary"><span class="p-badge bnd">边界 · 不宜照搬</span>${hl(boundary)}</div>` : ""}
+    </div>`;
+  }).join("");
   $("#d-learning").innerHTML = `<b>学习空间与配置。</b>${hl(s.learningSpaces)}`;
   $("#d-service").innerHTML = `<b>服务模式与运营。</b>${hl(s.serviceModel)}`;
   $("#d-trends").innerHTML = s.trends.map(t => `
@@ -432,6 +441,17 @@ function initSchool() {
       <span class="t-badge ${t.type}">${t.type === "fact" ? "事实" : "判断"}</span>
       <div class="t-body"><b>${esc(t.title)}</b><p>${hl(t.note)}</p></div>
     </div>`).join("");
+  // 交流问题 / 团队分享摘要（见 extras-data.js，缺省自动隐藏板块）
+  const qsec = $("#d-questions"), bsec = $("#d-brief");
+  if (qsec) {
+    if (ex.questions && ex.questions.length) {
+      qsec.innerHTML = `<ol class="q-list">${ex.questions.map(q => `<li>${hl(q)}</li>`).join("")}</ol>`;
+    } else { qsec.closest("section").style.display = "none"; }
+  }
+  if (bsec) {
+    if (ex.brief) { bsec.innerHTML = `<div class="brief-body reveal">${hl(ex.brief)}</div>`; }
+    else { bsec.closest("section").style.display = "none"; }
+  }
   $("#d-insights").innerHTML = s.business.map(b => `<li>${hl(b)}</li>`).join("");
   $("#d-limits").innerHTML = s.limits.map(l => `<li>${esc(l)}</li>`).join("");
   // 读者来信：有精选留言则展示，否则显示「虚位以待」引导
