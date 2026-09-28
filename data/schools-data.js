@@ -1226,5 +1226,100 @@ const SCHOOLS = [
     { label: "Cherwell – Schwarzman Centre opens（2025-10-01，人文馆 2,100㎡/410 座/80 研究生专座）", url: "cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/" },
     { label: "Wikipedia – Bodleian Libraries / Schwarzman Centre（28 馆口径、25,300 ㎡、资金来源争议）", url: "en.wikipedia.org/wiki/Bodleian_Libraries" }
   ]
+},
+{
+  id: "ethz",
+  name: "苏黎世联邦理工学院",
+  nameEn: "ETH Zürich",
+  founded: 1855,
+  country: "瑞士",
+  region: "欧洲",
+  state: "苏黎世",
+  reportId: "LR-20260928-02",
+  reportDate: "2026-09-28",
+  tagline: "在市中心与山顶之间，重新发明图书馆",
+  mainLine: "1855 年与学校同岁的 ETH-Bibliothek 守着 Semper 设计的市中心历史主楼，却决定借 Hönggerberg 新高层 HWS 把主馆迁往山顶——展厅、研究阅览室、珍本展柜从土建阶段写进任务书，图书馆把自己重新立项为「信息学习中心」。",
+  flagship: {
+    name: "HWS 新教学研究楼与主馆迁址",
+    note: "[ETH-Bibliothek 战略 2025–2028](https://ethz.ch/content/dam/ethz/associates/ethlibrary-dam/documents/ETH-Bibliothek_Strategie_2025-2028_final.pdf)确认：借 Hönggerberg 新楼把主馆迁出历史主楼，按「Information and Learning Center」重新塑造——新楼规划展厅、研究阅览室与珍本展柜；[TED 2025 招标](https://ted.europa.eu/de/notice/-/detail/175166-2025)显示项目仍在早期（建筑师/造价待验证）。",
+    img: "ethz-hauptgebaude.jpg",
+    imgCap: "ETH 主楼（HG, Rämistrasse 101）：主馆现址所在的历史建筑——受保护的空间正是「迁址而非改造」的原因。摄影：Leonhard Lenz (GPSLeo) / Wikimedia Commons（CC0）"
+  },
+  overview: {
+    intro: "[ETH-Bibliothek](https://library.ethz.ch/en/) 是 ETH 苏黎世的中央图书馆：瑞士最大的公共自然科学与技术图书馆、国家自然与工程科学信息中心，1855 年与学校同岁创立。馆藏约 800 万模拟资源＋55 万数字资源（2022-09 口径），其中图片文献 379 万张、地图 34.3 万张（瑞士最大）；统一发现层 [ETH-Bibliothek @ swisscovery](https://library.ethz.ch/en/search-find/swisscovery.html) 连接全国 490+ 家图书馆、3,000 万+ 条目——ETH 是 2017 年全国平台 SLSP 的发起主力。",
+    stats: [
+      { k: "馆藏总量", v: "800 万+ 件", s: "模拟资源；另有数字资源 55 万（2022-09 口径）" },
+      { k: "图片文献", v: "379 万张", s: "图片档案馆 2000 年成立，核心约 320 万，成批进入维基共享" },
+      { k: "发现层", v: "3,000 万+ 条目", s: "swisscovery 全国网络：490+ 家图书馆" },
+      { k: "电子资源", v: "95.8 万电子书", s: "另有授权电子刊 4.5 万种、数据库 150 个" }
+    ]
+  },
+  projects: [
+    {
+      name: "HWS 新楼与主馆迁址：把图书馆写进新楼任务书",
+      nameEn: "Neubau Lehr- und Forschungsgebäude HWS · 2025 招标阶段",
+      year: "2025 招标 · ~2032 口径",
+      img: "ethz-hoenggerberg.jpg",
+      imgCap: "Hönggerberg 校区，自 Hönggerbergstrasse 远眺：HWS 新楼与迁址后的主馆将落位于这一侧。摄影：Balise42 / Wikimedia Commons（CC BY 4.0）",
+      stats: [{ k: "状态", v: "TED 2025 招标" }, { k: "定位", v: "信息学习中心" }, { k: "新楼配置", v: "展厅＋研究阅览室" }, { k: "竣工口径", v: "~2032（待验证）" }],
+      facts: "ETH-Bibliothek 战略 2025–2028 直言：由于现有安置条件，图书馆的空间进一步发展以及对现代灵活协作工位的适配「不再能充分保障」——主馆所在的 HG 主楼 H 层是受保护的历史空间。战略的答案不是改造而是迁址：「规划中的 Campus Hönggerberg 新教学研究楼及与之关联的主馆搬迁，为 ETH 和图书馆提供了一次性机会，参与塑造一个面向未来的『[Information and Learning Center](https://ted.europa.eu/de/notice/-/detail/175166-2025)』式图书馆选址。」新楼内已规划展厅、研究阅览室（档案与珍本可在监督下使用）与珍本展柜。欧盟 TED 招标公告（第 175166-2025 号）确认 HWS 为「面向未来、创新和可持续的高层建筑」，将成为校区中心；2025 年 ETH 还为 HWS 单独招标变更管理（Change Management）服务——组织变革与土建同等优先。地热井场预计约 2032 年投运（staffnet 2025-08），常被间接引为 HWS 建成口径，但未获官方明确确认；建筑师与预算均未公开。",
+      insight: "关键词是「借船出海」：图书馆不申请一栋自己的楼，而是把功能写进学校的新教学研究楼任务书——展厅、研究阅览室、珍本展柜在土建阶段就锁定，比单独立项建馆成功率高、也更抗通胀。可迁移：把「功能写入任务书」作为争取空间的默认动作，前提是能在学校基建决策早期进入编写组。隐忧：HWS 的建筑师、预算、竣工时间均未公开，项目仍在极早期；主馆迁出后 HG 主楼 H 层如何处置尚无公开方案；同期 HPQ 物理楼造价从 3.11 亿升至 3.87 亿瑞郎被联邦财务控制局公开批评（与 HWS 无关，但提醒绑定大项目也意味着共享预算风险——两栋楼的数字常被网络资料混淆）。"
+    },
+    {
+      name: "Science City：二十年 campus 战略为一栋新馆铺路",
+      nameEn: "Science City / Campus Hönggerberg 2040 · 1957–2018",
+      year: "1957 决议 · 2018 总规",
+      img: "ethz-campus.jpg",
+      imgCap: "Hönggerberg 校园：绿地骨架与建筑密度的关系，对应 2040 规划「向内加密、中央大道改步行绿轴」。摄影：Ank Kumar / Wikimedia Commons（CC BY-SA 4.0）",
+      stats: [{ k: "二校区决议", v: "1957" }, { k: "愿景首提", v: "2003 年报" }, { k: "总体规划", v: "2040（2018）" }, { k: "规划新高层", v: "2 座（HWS 其一）" }],
+      facts: "Semper 主楼很快就装不下快速膨胀的教学科研，1957 年联邦委员会决议在城外 Hönggerberg 建设第二校区：1961–69 年一期、1972–76 年二期（含土木科研楼 HIF）、1996–2004 年三期 HCI。2003 年 ETH 年报首次提出 [Science City 愿景](https://ethz.ch/de/campus/entwickeln/hoenggerberg.html)：把 Learning and Conference Centre 做成校园地标、「主要由捐赠出资」在瑞士属创举、约万人工作与居住、呼应国家「2000 瓦社会」能源目标。2005/2007 年总体规划（Andrea Deplazes 团队）与特殊建筑条例（2006-12 苏黎世市议会近乎全票通过、2007 年秋生效）为 campus 立规。2013–16 年两座学生公寓 HWO（architektick）与 HWW（Stücheli）共约 900 床位——HWO 底层设学习工位与托儿所，地下藏 gta 建筑史档案。2018 年《Campus Hönggerberg 2040》：向内加密不向外扩张、沿中央大道 Wolfgang-Pauli-Strasse 建两座新高层、入口各设一栋门户公共楼。HWS 即 2040 规划的第一座高层，也是 2003 年「学习中心地标」愿景的兑现。",
+      insight: "值得研究的不是某栋楼，而是「校园战略的耐心」：2003 愿景→2005/07 规划与建筑条例→2018 总体规划→2025 HWS 招标，一条 22 年的弧线。图书馆迁址不是图书馆的孤立决定，而是 campus 级规划的必然落子——「先有大规划，再有单项目」，每个单体因此获得合法性与资金通道。可迁移：向学校推介空间方案时，最好的入口不是图书馆单独的需求书，而是帮学校写 campus 规划里「学习空间」的那一章；HWO 底层「学习工位＋托儿所」证明学习空间已进入宿舍底商的逻辑。隐忧：22 年弧线依赖联邦制与建筑条例程序，时间成本不可平移；「约万人」是愿景口径而非现状统计。"
+    },
+    {
+      name: "馆墙之外的国家基础设施",
+      nameEn: "swisscovery · Bildarchiv · Research Collection · DOI Desk · 2017–",
+      year: "2017 SLSP 创立起",
+      img: "ethz-hoenggerberg.jpg",
+      imgCap: "Hönggerberg 校区远眺：1985 年地下书库与 HDB 闭架书库馆位于这一校区——「外迁」在 ETH 已有四十年传统。摄影：Balise42 / Wikimedia Commons（CC BY 4.0）",
+      stats: [{ k: "联网图书馆", v: "490+" }, { k: "全国条目", v: "3,000 万+" }, { k: "图片文献", v: "379 万张" }, { k: "地下书库", v: "1985 年起" }],
+      facts: "战略 2025–2028 自述：ETH 深度参与创建全国平台 SLSP（2017），借助 [swisscovery](https://library.ethz.ch/en/search-find/swisscovery.html) 把图书馆目录运营、电子资源许可谈判等标准化业务外包，集中资源开发以客户为中心的服务。ETH-Bibliothek 同时运营多个国家级平台：e-rara（15–19 世纪瑞士印本）、e-periodica（瑞士期刊全文）、e-manuscripta（手写文献）、E-Pics（图片在线档案）；DOI Desk 是瑞士高校与科研机构的中央 DOI 注册中心（与 DataCite 合作）；[Research Collection](https://www.research-collection.ethz.ch/) 是 ETH 的机构库，记录全校出版物并支撑学术年报。图片档案馆（2000 年成立，379 万张图片文献、核心约 320 万）不断有子收藏批量进入维基共享资源。珍本与手稿线包括托马斯·曼档案馆、马克斯·弗里施档案馆与瑞士规模最大的版画素描收藏。地下暗线：1985 年 ETH 在 Hönggerberg 建成地下书库存放低流通藏书，今 HDB 闭架书库馆延续这一逻辑。",
+      insight: "ETH 示范了图书馆的第三种身份：国家知识基础设施的运营商——第一层是 discovery（swisscovery），第二层是出版基础设施（DOI Desk、e-rara/e-periodica），第三层是 openness（图片批量进入维基）。实体馆的 HWS 迁址发生在第三层背景之上：正因为发现与获取已经全国数字化，新馆才敢把面积让给展厅与学习空间，而不是书架。可迁移：「先数字底座、后空间放手」的次序——向学校论证新馆方案时，先讲清「获取已解决」，再谈空间分配；瑞士「地下＋闭架＋全国共享」的朴素外迁版本比北美机器人高架早了十年。隐忧：e-rara 等多馆共建，ETH 是运营主力而非唯一所有者；各平台访问量无统一公开口径，引用需谨慎。"
+    }
+  ],
+  learningSpaces: "现状：主馆阅览室集中在 HG 主楼 H 层——受保护历史空间，只能微调；五个分馆按学科分布（建筑土木 HIL、地球科学 NO、GESS IFW、绿色 CHN、HDB 闭架书库 Hönggerberg）。战略 2025–2028 对「图书馆作为场所」的定义值得全文引用：开放工位与专注退避空间并存、家具可适配、现代技术配置、好空气与采光、可持续节能——新馆任务书先于建筑公布。2013–16 年的 HWO 学生公寓已示范「学习工位＋托儿所」进入宿舍底层；HIL「Living Lab」改造（至约 2035）将再造 1972–76 老楼的学习空间；HWS 则把展厅、研究阅览室与珍本展柜写进信息学习中心的任务书。",
+  serviceModel: "法定任务（ETH 组织条例第 42 条）：保障 ETH 师生的信息与文献供给及研究者出版条件，并作为 ETH 域图书馆事务的「主导机构」（Leitstelle）。标准化业务外包给 SLSP/swisscovery（目录运营＋电子许可谈判），馆员聚焦客户中心服务；全国平台 e-rara、e-periodica、e-manuscripta、E-Pics 由 ETH-Bibliothek 运营；DOI Desk（与 DataCite 合作）是瑞士高校的中央 DOI 注册中心；circulation courier 支撑全国馆际递送，文献可送至任一参与馆。",
+  trends: [
+    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "HIF 实验楼（1972–76）近年整体翻新（Stücheli 事务所，木铝预制混合立面）；HPP 物理楼 2006–11 全面翻新；HIL（1972–76）将改造为 Living Lab 至约 2035——老楼再生在 ETH 是规划文本里的常态词汇。" },
+    { title: "藏书外迁 · 高密度库房", type: "judgment", note: "1985 年 Hönggerberg 地下书库（外迁思维的 40 年前身）；HDB 闭架书库馆延续至今——不靠机器人高架，靠「地下＋闭架＋全国共享」的朴素版本，比北美早十年。" },
+    { title: "Learning Commons 常态化", type: "fact", note: "HWS 定位「Information and Learning Center」：展厅、研究阅览室、珍本柜与图书馆同楼；HWO 宿舍底层学习工位＋托儿所——commons 与展览/托育功能复合。" },
+    { title: "数据化运营", type: "judgment", note: "SLSP（2017）外包目录与许可谈判、馆员转向客户服务；AI 与开放科学列入 2025–2028 五大战略重点；Research Collection 记录全校出版——数据化运营的国家队版本。" },
+    { title: "特藏走向台前", type: "fact", note: "图片档案馆 379 万张文献成批进入维基共享；托马斯·曼、马克斯·弗里施档案馆公开服务；HWS 新馆规划展厅与珍本展柜——特藏成为公共基础设施。" }
+  ],
+  business: [
+    "「借船出海」式空间获取：把图书馆功能（展厅、研究阅览室、珍本柜）写进学校新教学楼的任务书，在土建阶段锁定——比单独立项建馆成功率高、抗通胀；前提是能在学校基建决策早期进入任务书编写组。",
+    "「先数字底座、后空间放手」的次序论证：发现层打通后，新馆才有底气把面积让给人而不是书架——向学校论证新馆方案时，先讲清「获取已解决」，再谈空间分配。",
+    "变更管理（Change Management）与土建同优先级招标：HWS 把变更管理写进 2025 年招标包，组织变革与土建同等优先——国内新馆普遍重土建轻迁移，「变更管理预算」是专业服务的直接切入点。",
+    "campus 规划耐心与入口选择：2003 愿景→2018 总规→2025 招标的 22 年弧线证明单馆项目的合法性来自校级规划——业务入口是帮学校写 campus 规划中的「学习空间」章节，而不是图书馆单独的需求书。",
+    "HWO 式服务打包：学习工位＋托儿所进宿舍底层——学习空间的边界可以向住宿、托育延伸，谈空间方案时不必局限于馆舍。"
+  ],
+  limits: [
+    "HWS 的建筑师/设计竞赛结果与竞赛年份未查到，本研究未猜测。",
+    "HWS 预算与竣工时间未公开：地热井场约 2032 年为间接口径，未获官方确认；HPQ 物理楼 3.39 亿/3.87 亿瑞郎造价属于另一项目，不可混淆。",
+    "主馆迁出后 HG 主楼 H 层空间的处置方案尚无公开信息。",
+    "馆藏 key figures 为 2022-09 口径，此后已有增长，引用需注明时点。",
+    "「约万人工作与居住」「2000 瓦社会」等为愿景/政策语境口径，非现状统计。"
+  ],
+  sources: [
+    { label: "ETH-Bibliothek 官网（机构定位、Locations、馆藏 key figures 2022-09）", url: "library.ethz.ch/en" },
+    { label: "ETH-Bibliothek 战略 2025–2028 官方 PDF（HWS 迁馆/信息学习中心、AI 与开放科学、SLSP 外包）", url: "ethz.ch/content/dam/ethz/associates/ethlibrary-dam/documents/ETH-Bibliothek_Strategie_2025-2028_final.pdf" },
+    { label: "TED 招标公告 175166-2025（HWS 为面向未来的创新可持续高层建筑）", url: "ted.europa.eu/de/notice/-/detail/175166-2025" },
+    { label: "ETH staffnet 2025-04（HPQ 3.39 亿→3.87 亿瑞郎；地热井场约 2032）", url: "ethz.ch/staffnet/de/news-und-veranstaltungen/intern-aktuell/archiv/2025/04/teuerung-verteuert-bauprojekt.html" },
+    { label: "ETH 官方 Campus Hönggerberg 页（2040 向内加密、两座新高层、门户楼）", url: "ethz.ch/de/campus/entwickeln/hoenggerberg.html" },
+    { label: "Wikipedia – ETH Library（key figures、swisscovery 490+/3,000 万、图片档案馆、全国平台）", url: "en.wikipedia.org/wiki/ETH_Library" },
+    { label: "Wikipedia（德语）– ETH-Bibliothek（1985 地下书库、1991 分馆、主楼改造史）", url: "de.wikipedia.org/wiki/ETH-Bibliothek" },
+    { label: "Baublatt 2024-09（1957 决议、1972–76 二期 HIF、2040 改造策略）", url: "www.baublatt.ch/bauprojekte/gebaeudesanierung-innovative-huelle-fuer-eth-forschungsgebaeude-36525" },
+    { label: "myscience.ch 2025-08（HIL Living Lab 改造至约 2035）", url: "www.myscience.ch/de/news/wire/eth_zuerich_startet_pionierhaftes_forschungsprojekt_am_bau-2025-ethz" },
+    { label: "Tages-Anzeiger 2025-04-08（HPQ 造价受联邦财务控制局批评，区别于 HWS）", url: "www.tagesanzeiger.ch/kostenexplosion-bei-eth-zuerich-neubau-wird-76-millionen-franken-teurer-als-geplant-172739242634" }
+  ]
 }
 ];
