@@ -105,7 +105,7 @@ section{padding:100px 0;}
 .detail-hero .mainline{font-size:16.5px;line-height:1.8;max-width:720px;}
 .stat-card .v{font-size:30px;font-weight:800;}
 .stat-card .k{color:var(--ink-3);}
-.trend-item .t-body b{font-weight:800;}
+.trend-item .t-body > b{font-weight:800;}
 .insight-list li{font-size:14.5px;}
 .proj .p-insight{background:#f5f5f7;border-radius:12px;}
 .proj .p-facts{font-size:14.5px;}

@@ -258,9 +258,9 @@ body>section{border-top:1px solid var(--hair);}
 .t-badge.fact{color:var(--green);background:var(--green-soft);}
 .t-badge.judgment{color:var(--amber);background:var(--amber-soft);}
 .trend-item .t-body{flex:1;}
-.trend-item .t-body b{display:block;font-size:15.5px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.55;}
+.trend-item .t-body > b{display:block;font-size:15.5px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.55;}
 .trend-item .t-body p{font-size:13.5px;color:var(--ink-2);margin-top:6px;line-height:1.75;}
-.trend-item .t-body p b{color:var(--ink);font-weight:600;}
+.trend-item .t-body p b{color:var(--ink);font-weight:600;font-size:inherit;display:inline;line-height:inherit;letter-spacing:0;}
 
 .insight-list{list-style:none;counter-reset:ins;}
 .insight-list li{
