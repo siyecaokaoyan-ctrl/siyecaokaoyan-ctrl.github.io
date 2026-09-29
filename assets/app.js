@@ -127,14 +127,31 @@ function renderCards() {
   if (!grid) return;
   const picked = SCHOOLS.map((s, i) => ({ s, i })).filter(x => schoolMatches(x.s));
   $("#cards-empty").hidden = picked.length > 0;
-  grid.innerHTML = picked.map(({ s, i }, n) => {
-    const headStat = s.overview.stats[0];
-    return `
-    <a class="card reveal" style="transition-delay:${(n % 3) * 0.07}s" href="school.html?id=${s.id}">
+  // 按地区分组：美洲 → 欧洲 → 亚太，组与组之间独占一行（区域标题跨整行）
+  const REGION_ORDER = ["美洲", "欧洲", "亚太"];
+  const byRegion = new Map();
+  picked.forEach(x => {
+    if (!byRegion.has(x.s.region)) byRegion.set(x.s.region, []);
+    byRegion.get(x.s.region).push(x);
+  });
+  const regionNames = [...byRegion.keys()].sort((a, b) => {
+    const ia = REGION_ORDER.indexOf(a), ib = REGION_ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  let n = 0;
+  grid.innerHTML = regionNames.map(rg => {
+    const items = byRegion.get(rg);
+    const head = `<div class="region-head reveal"><span class="rh-name">${esc(rg)}</span><span class="rh-n">${items.length} 所</span></div>`;
+    const cards = items.map(({ s, i }) => {
+      const headStat = s.overview.stats[0];
+      const delay = n % 3;
+      n++;
+      return `
+    <a class="card reveal" style="transition-delay:${delay * 0.07}s" href="school.html?id=${s.id}">
       <div class="c-head">
         ${logoImg(s.id, "c-logo")}
         <div class="c-top">
-          <div class="region">${s.country} · ${s.state.split(" · ")[0]}</div>
+          <div class="region">${esc(s.country)}</div>
           <div class="idx">${String(i + 1).padStart(2, "0")}</div>
         </div>
       </div>
@@ -146,10 +163,13 @@ function renderCards() {
       </div>
       <div class="c-tagline">${esc(s.tagline)}</div>
       <div class="c-line">${hl(s.mainLine)}</div>
-      <div class="c-foot"><span>旗舰 <b>${esc(s.flagship.name.split("（")[0].trim())}</b></span><span class="arrow">→</span></div>
+      <div class="c-foot"><span class="c-like" data-like="${s.id}" title="为这所学校点赞">♡ <b class="like-n">–</b></span><span>旗舰 <b>${esc(s.flagship.name.split("（")[0].trim())}</b></span><span class="arrow">→</span></div>
     </a>`;
+    }).join("");
+    return head + cards;
   }).join("");
   bindReveals();
+  loadLikesInto(grid);
 }
 
 function bindFilters() {
@@ -278,7 +298,7 @@ function renderCompare(aId, bId) {
 function bindCompare() {
   const selA = $("#sel-a"), selB = $("#sel-b");
   if (!selA || !selB) return;
-  const options = SCHOOLS.map(s => `<option value="${s.id}">${s.name} · ${s.state.split(" · ")[0]}</option>`).join("");
+  const options = SCHOOLS.map(s => `<option value="${s.id}">${s.name} · ${s.country}</option>`).join("");
   selA.innerHTML = options; selB.innerHTML = options;
   const params = new URLSearchParams(location.search);
   const aId = params.get("a") || "harvard";
@@ -287,8 +307,8 @@ function bindCompare() {
   selB.value = schoolById(bId) ? bId : "uchicago";
   const subA = $("#sel-a-sub"), subB = $("#sel-b-sub");
   const sync = () => {
-    subA.textContent = schoolById(selA.value).state;
-    subB.textContent = schoolById(selB.value).state;
+    subA.textContent = schoolById(selA.value).country;
+    subB.textContent = schoolById(selB.value).country;
   };
   sync();
   selA.addEventListener("change", () => { sync(); renderCompare(selA.value, selB.value); });
@@ -404,6 +424,12 @@ function initSchool() {
     libBox.innerHTML = libUrl
       ? `<a class="lib-btn" href="${esc(libUrl)}" target="_blank" rel="noopener">访问图书馆官网<span class="arr">↗</span></a>`
       : "";
+  }
+  // 点赞按钮
+  const likeBox = $("#d-like");
+  if (likeBox) {
+    likeBox.innerHTML = `<button class="like-btn" type="button" data-like="${s.id}"><span class="lh">♡</span>为这所学校点赞<b class="like-n">–</b></button>`;
+    loadLikesInto(likeBox);
   }
   // 锚点快导航
   const qn = $("#d-quicknav");
@@ -531,13 +557,55 @@ function initTrend() {
   $("#t-evidence").innerHTML = t.schools.map((sid, i) => {
     const sc = schoolById(sid);
     return `<div class="evidence reveal" style="transition-delay:${i * 0.06}s">
-      <div class="e-school">${sc.name}<span>${sc.state}</span></div>
+      <div class="e-school">${sc.name}<span>${sc.country}</span></div>
       <p>${hl(t.evidence[sid])}</p>
       <p style="margin-top:12px"><a href="school.html?id=${sid}">查看 ${sc.name} 完整研究 →</a></p>
     </div>`;
   }).join("");
   bindReveals();
 }
+
+/* ── 点赞：Cloudflare Workers 计数接口；每人每校限一次，点赞记录存本地 ── */
+const LIKE_API = "https://library-likes.pages.dev";   // Pages Functions 计数接口（国内可直连）
+
+function likedSet() {
+  try { return new Set(JSON.parse(localStorage.getItem("likedSchools") || "[]")); }
+  catch { return new Set(); }
+}
+function markLiked(id) {
+  const s = likedSet(); s.add(id);
+  localStorage.setItem("likedSchools", JSON.stringify([...s]));
+}
+async function loadLikesInto(root) {
+  if (!LIKE_API) return;
+  const els = $$("[data-like]", root || document);
+  if (!els.length) return;
+  const liked = likedSet();
+  els.forEach(el => { if (liked.has(el.dataset.like)) el.classList.add("liked"); });
+  await Promise.all(els.map(async el => {
+    try {
+      const r = await fetch(`${LIKE_API}/api/likes/${el.dataset.like}`);
+      const d = await r.json();
+      const n = el.querySelector(".like-n");
+      if (n) n.textContent = d.likes;
+    } catch { /* 接口不可达时保留占位符 */ }
+  }));
+}
+document.addEventListener("click", (e) => {
+  const el = e.target.closest("[data-like]");
+  if (!el) return;
+  e.preventDefault(); e.stopPropagation();
+  const id = el.dataset.like;
+  if (likedSet().has(id) || !LIKE_API) return;
+  markLiked(id);
+  el.classList.add("liked");
+  const nEl = el.querySelector(".like-n");
+  const cur = parseInt(nEl.textContent, 10);
+  if (!isNaN(cur)) nEl.textContent = cur + 1;
+  fetch(`${LIKE_API}/api/likes/${id}`, { method: "POST" })
+    .then(r => r.json()).then(d => { if (nEl) nEl.textContent = d.likes; })
+    .catch(() => {});
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   if ($("#cards")) initIndex();

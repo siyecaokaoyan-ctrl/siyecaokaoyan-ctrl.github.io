@@ -9,7 +9,7 @@ const SCHOOLS = [
   nameEn: "Harvard University",
   founded: 1636,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "马萨诸塞州 · 剑桥",
   reportId: "LR-20260916-01",
   reportDate: "2026-09-16",
@@ -99,7 +99,7 @@ const SCHOOLS = [
   nameEn: "Massachusetts Institute of Technology",
   founded: 1861,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "马萨诸塞州 · 剑桥",
   reportId: "LR-20260916-02",
   reportDate: "2026-09-16",
@@ -189,7 +189,7 @@ const SCHOOLS = [
   nameEn: "Stanford University",
   founded: 1885,
   country: "美国",
-  region: "美国西部",
+  region: "美洲",
   state: "加利福尼亚州 · 帕洛阿尔托",
   reportId: "LR-20260916-03",
   reportDate: "2026-09-16",
@@ -288,7 +288,7 @@ const SCHOOLS = [
   nameEn: "Princeton University",
   founded: 1746,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "新泽西州 · 普林斯顿",
   reportId: "LR-20260918-01",
   reportDate: "2026-09-18",
@@ -378,7 +378,7 @@ const SCHOOLS = [
   nameEn: "Yale University",
   founded: 1701,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "康涅狄格州 · 纽黑文",
   reportId: "LR-20260918-02",
   reportDate: "2026-09-18",
@@ -462,103 +462,14 @@ const SCHOOLS = [
     { label: "Yale News – 馆长连任（2025-02，数据与 AI 战略）", url: "news.yale.edu/2025/02/12/rockenbach-reappointed-university-librarian" }
   ]
 },
-{
-  id: "glasgow",
-  name: "格拉斯哥大学",
-  nameEn: "University of Glasgow",
-  founded: 1451,
-  country: "英国",
-  region: "英国",
-  state: "苏格兰 · 格拉斯哥",
-  reportId: "LR-20260917-01",
-  reportDate: "2026-09-17",
-  tagline: "存量深挖 · 增量外置",
-  mainLine: "一座 1968 年粗野主义塔楼五十年的持续现代化（加层→分层翻新→换幕墙→配楼升级），叠加校园发展计划中三座旗舰建筑（JMS、ARC、Keystone）承接学习空间增量。",
-  flagship: { name: "JMS Learning Hub（2021）/ Keystone Building（2028/29 预计）", note: "9,060 万英镑、2,500 人的\"学习中心\"旗舰是 10 亿英镑校园发展计划首座落成建筑；在建的 Keystone 造价 3 亿英镑，把\"神经包容性设计\"写进官方目标。" },
-  overview: {
-    intro: "英语世界第四古老大学（1451 年），图书馆与大学同龄。结构性差异在于：它是\"单主馆+超大规模新建学习中心\"的集中式体系——主馆承载绝大部分座位与藏书，增量通过旗舰学习建筑实现，图书馆系统的边界正被\"全校学习空间网络\"重新定义。",
-    stats: [
-      { k: "主馆", v: "1968 · 12 层", s: "粗野主义塔楼（Whitfield 设计），DoCoMoMo 1993 苏格兰战后代表建筑" },
-      { k: "座位/电脑", v: "2,500 座 / 800+ 台", s: "全年 361 天开放，每日 07:15–次日 02:00" },
-      { k: "馆藏", v: "250 万册（实体）", s: "另有电子书约 185 万种、电子期刊 5 万余种" },
-      { k: "特藏", v: "20 万+ 手稿", s: "约 20 万册珍本（含 1,060 种摇篮本），双址运营" }
-    ]
-  },
-  projects: [
-    {
-      name: "主馆（1968）：一座持续翻新五十年的塔楼",
-      nameEn: "Main Library · William Whitfield · 1968",
-      year: "1968 / 持续改造",
-      stats: [{ k: "座位", v: "约 2,500" }, { k: "开放", v: "361 天 · 07:15–02:00" }, { k: "幕墙更换", v: "2012" }],
-      facts: "启用时藏书 64 万册，此后持续分层改造：1996–97 加建 12 层安置特藏并翻新 2–3 层；2006 完成 10–11 层翻新；2012 年整体更换铝制雨幕外立面。现有约 2,500 个学习座位、800 余台学生电脑，入口欢迎台 08:00–20:00 有人值守。",
-      insight: "58 年里经历加层、分层翻新、整体换幕墙、配楼升级四轮动作，从未推倒重来——\"不拆也能现代化\"的最完整证据链。"
-    },
-    {
-      name: "James McCune Smith Learning Hub（2021）：9,060 万英镑的\"学习中心\"旗舰",
-      nameEn: "JMS Learning Hub · HLM Architects · 2021",
-      year: "2021",
-      stats: [{ k: "造价", v: "£90.6m" }, { k: "面积", v: "16,640 ㎡" }, { k: "容量", v: "2,500+ 学生" }, { k: "奖项", v: "苏格兰设计奖等" }],
-      facts: "10 亿英镑校园发展计划首座落成建筑。500 座大讲堂、340 至 75 人互动教学空间、大量研讨/小组空间与灵活自习区；以主动学习教学法和全过程用户咨询为驱动。命名致敬 James McCune Smith——1837 年在格拉斯哥获得医学博士的第一位非裔美国人。楼内 290 个储物柜、两层咖啡馆、祈祷与静思室。",
-      insight: "证明新型学习空间可以不叫图书馆、不归图书馆管，但拿走图书馆最大的一块功能——国内\"未来学习中心\"功能配比（大讲堂+互动教室+小组研讨+灵活自习+茶水间+储物柜+祈祷室）的完整清单来源。"
-    },
-    {
-      name: "图书馆 Annexe 升级工程（2024–2026）：边开放边改造",
-      nameEn: "Library Annexe Upgrade · 2024–2026",
-      year: "2024–2026",
-      stats: [{ k: "投资", v: "£23m" }, { k: "完工", v: "预计 2026 底" }, { k: "方式", v: "隔音墙分区 + 轮换关闭" }],
-      facts: "1980 年代九层配楼整体升级：更换屋面与外墙饰面至与主馆同等标准、高性能双层玻璃窗、内部学习空间改善采光通风与电源点位。施工期间以临时隔音墙分区、局部轮换关闭维持开放，并在其他楼宇设研究生快闪自习空间、以 App 实时拥挤度数据引导分流。",
-      insight: "\"施工期学习空间保障\"四件套（隔音墙、轮换关闭、快闪空间、App 分流）本身可以成为方案内容——临时家具、可移动隔断、快闪学习角是直接可供货的场景。"
-    },
-    {
-      name: "Keystone Building（2024–2028/29）：3 亿英镑的下一个学习旗舰",
-      nameEn: "Keystone Building · HOK · 2024–2028/29",
-      year: "在建",
-      stats: [{ k: "造价", v: "£300m" }, { k: "面积", v: "27,000 ㎡" }, { k: "容量", v: "约 3,600 学生" }, { k: "目标", v: "BREEAM Excellent" }],
-      facts: "校园第二大建筑，HOK 设计、Multiplex 承建，2028/29 学年预计完工。混合通用教学空间、干湿实验室、高规格计算机实验室、创客工坊与协作区，嵌入\"神经包容性（neuro-inclusive）\"工作空间设计，为 James Watt 工程学院新址。",
-      insight: "神经包容性设计已进入 3 亿英镑级项目的官方目标——这是人体工学之外一个新的价值叙事维度，值得跟踪其对家具选型标准（感官分区、低刺激区、可调节性）的具体化。"
-    }
-  ],
-  learningSpaces: "三色声学分区把\"行为管理\"前置到导视层：红区（8–12 层，静默）、琥珀区（安静个人学习）、绿区（2–3 层，小组学习）。全校学习空间作为统一网络运营：统一容量表（主馆 2,000 座、JMS 1,100 座等）、UofG Life App 预约与实时拥挤度、驻场学生助理 Reach Out 分区覆盖。",
-  serviceModel: "\"开放时长不是图书馆一家的事\"：07:15–02:00 的主馆 + 06:00–23:00 的 JMS + 24 小时医学自习区，构成覆盖近乎全天的分楼宇时段网络——任何一栋楼施工，网络内其他节点承接。馆藏管理有公开成文政策：剔旧是战略行为而非纯后勤行为。",
-  trends: [
-    { title: "图书馆的\"楼\"与\"服务\"正在解耦", type: "fact", note: "服务（学科馆员、预约系统、驻场支持、电子资源）遍布全网，藏书集中于主塔与远程书库——图书馆品牌价值越来越不依赖单栋建筑。" },
-    { title: "粗野主义遗产进入\"保护性更新\"周期", type: "fact", note: "DoCoMoMo 名录建筑换幕墙 + 配楼升级；欧洲 1960–70 年代大学高层图书馆普遍到达维护寿命终点，\"整馆现代化\"打包项目将批量出现。" },
-    { title: "全天候学习网络取代单楼通宵", type: "judgment", note: "三栋楼宇不同时段拼出近 24 小时覆盖，比单楼通宵更易控成本——预计更多英国大学采用\"多楼分时接力\"模式。" },
-    { title: "学习空间数据化运营成为标配", type: "fact", note: "App 预约、时段管理与实时拥挤度已把学习空间变成可调度资源；空间使用数据将反向进入家具采购与改造决策。" },
-    { title: "命名伦理成为新建筑的立项语言", type: "judgment", note: "以被美国大学拒之门外的非裔医学生命名旗舰教学楼——大学新建筑的命名叙事将越来越承担价值表达功能。" }
-  ],
-  business: [
-    "\"老馆持续翻新\"是欧洲存量市场的标准剧本，也是中国 1990–2010 年代馆舍即将面对的剧本——对应家具机会是分批、分楼层、与机电改造同步的持续性采购。",
-    "三色分区把声学行为写进空间导视，是静音舱/静音区家具的最强官方背书：可以反问\"您的分区标准是什么\"，把家具讨论升级为空间制度讨论。",
-    "\"学习 Hub\"与图书馆分立（JMS 模式）是中国高校\"未来学习中心\"浪潮的对标物——功能配比、造价量级、设计驱动与获奖记录俱全。",
-    "边开放边改造的工程组织方式本身值得卖给学校：临时家具、可移动隔断、快闪学习角是能直接供货的场景。",
-    "神经包容性设计已进入 3 亿英镑级项目的官方目标——建议跟踪其对家具选型标准（感官分区、低刺激区、可调节性）的具体化。",
-    "可复制性边界：英国高校资金结构与国内财政拨款+基建拨款模式不同，投资量级不可直接类比。"
-  ],
-  limits: [
-    "最新年度访问量与员工数为 2014 年旧口径（170 万人次、334 人）。",
-    "Annexe 造价两口径（£23m 总投资 / £12.6m 承建合同）对应关系待验证。",
-    "馆藏 250 万册为维基口径，未找到校方官网直接数字。",
-    "Glasgow 2036 十年新战略（2026 年 6 月发布）中图书馆条款未及展开。"
-  ],
-  sources: [
-    { label: "UofG – JMS Learning Hub（£90.6m、16,640㎡、2,500 人）", url: "gla.ac.uk/myglasgow/campusdevelopment/jamesmccunesmithlearninghub" },
-    { label: "MyGlasgow Library – Annexe Upgrade（£23m、2024–2026）", url: "gla.ac.uk/myglasgow/library/annexeupgrade" },
-    { label: "UofG News – Keystone Building（£300m、2024-10）", url: "gla.ac.uk/news/archiveofnews/2024/october/headline_1119004_en.html" },
-    { label: "MyGlasgow – Quick Start（红/琥珀/绿三色分区）", url: "gla.ac.uk/myglasgow/library/quickstart/" },
-    { label: "MyGlasgow – Study Spaces（全校容量与时间表）", url: "gla.ac.uk/myglasgow/students/learning/studyspaces/" },
-    { label: "HLM Architects – JMS Hub 项目页（获奖记录）", url: "hlmarchitects.com/projects/james-mccune-smith-learning-and-teaching-hub-jms/" },
-    { label: "UofG Library – 馆藏发展与管理政策（2025-02）", url: "gla.ac.uk/media/Media_344925_smxx.pdf" },
-    { label: "Wikipedia – Glasgow University Library", url: "en.wikipedia.org/wiki/Glasgow_University_Library" }
-  ]
-},
+
 {
   id: "duke",
   name: "杜克大学",
   nameEn: "Duke University",
   founded: 1838,
   country: "美国",
-  region: "美国南部",
+  region: "美洲",
   state: "北卡罗来纳州 · 达勒姆",
   reportId: "LR-20260918-03",
   reportDate: "2026-09-18",
@@ -664,7 +575,7 @@ const SCHOOLS = [
   nameEn: "Johns Hopkins University",
   founded: 1876,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "马里兰州 · 巴尔的摩",
   reportId: "LR-20260919-01",
   reportDate: "2026-09-19",
@@ -754,7 +665,7 @@ const SCHOOLS = [
   nameEn: "University of Chicago",
   founded: 1890,
   country: "美国",
-  region: "美国中西部",
+  region: "美洲",
   state: "伊利诺伊州 · 芝加哥",
   reportId: "LR-20260920-01",
   reportDate: "2026-09-20",
@@ -844,7 +755,7 @@ const SCHOOLS = [
   nameEn: "University of Pennsylvania",
   founded: 1740,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "宾夕法尼亚州 · 费城",
   reportId: "LR-20260924-01",
   reportDate: "2026-09-24",
@@ -953,7 +864,7 @@ const SCHOOLS = [
   nameEn: "Columbia University",
   founded: 1754,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "纽约州 · 纽约市",
   reportId: "LR-20260924-02",
   reportDate: "2026-09-24",
@@ -1040,7 +951,7 @@ const SCHOOLS = [
   nameEn: "Cornell University",
   founded: 1865,
   country: "美国",
-  region: "美国东北",
+  region: "美洲",
   state: "纽约州 · 伊萨卡",
   reportId: "LR-20260927-03",
   reportDate: "2026-09-27",
@@ -1510,6 +1421,97 @@ const SCHOOLS = [
     { label: "Moore 图书馆馆史（£7.5M 捐赠、四线合一、2015 承接）", url: "moore.libraries.cam.ac.uk/our-history" },
     { label: "校方 West Hub 发布稿 2022-04（公众开放、穿越动线、Foundation Year）", url: "www.cam.ac.uk/stories/westhub" },
     { label: "访察记 PDF（约 200 万册开架、年增约 10 万件）", url: "www.jaspul.org/ind/asset/docs/kokusai_kiroku01.pdf" }
+  ]
+}
+,
+{
+  id: "glasgow",
+  name: "格拉斯哥大学",
+  nameEn: "University of Glasgow",
+  founded: 1451,
+  country: "英国",
+  region: "欧洲",
+  state: "苏格兰 · 格拉斯哥",
+  reportId: "LR-20260917-01",
+  reportDate: "2026-09-17",
+  tagline: "存量深挖 · 增量外置",
+  mainLine: "一座 1968 年粗野主义塔楼五十年的持续现代化（加层→分层翻新→换幕墙→配楼升级），叠加校园发展计划中三座旗舰建筑（JMS、ARC、Keystone）承接学习空间增量。",
+  flagship: { name: "JMS Learning Hub（2021）/ Keystone Building（2028/29 预计）", note: "9,060 万英镑、2,500 人的\"学习中心\"旗舰是 10 亿英镑校园发展计划首座落成建筑；在建的 Keystone 造价 3 亿英镑，把\"神经包容性设计\"写进官方目标。" },
+  overview: {
+    intro: "英语世界第四古老大学（1451 年），图书馆与大学同龄。结构性差异在于：它是\"单主馆+超大规模新建学习中心\"的集中式体系——主馆承载绝大部分座位与藏书，增量通过旗舰学习建筑实现，图书馆系统的边界正被\"全校学习空间网络\"重新定义。",
+    stats: [
+      { k: "主馆", v: "1968 · 12 层", s: "粗野主义塔楼（Whitfield 设计），DoCoMoMo 1993 苏格兰战后代表建筑" },
+      { k: "座位/电脑", v: "2,500 座 / 800+ 台", s: "全年 361 天开放，每日 07:15–次日 02:00" },
+      { k: "馆藏", v: "250 万册（实体）", s: "另有电子书约 185 万种、电子期刊 5 万余种" },
+      { k: "特藏", v: "20 万+ 手稿", s: "约 20 万册珍本（含 1,060 种摇篮本），双址运营" }
+    ]
+  },
+  projects: [
+    {
+      name: "主馆（1968）：一座持续翻新五十年的塔楼",
+      nameEn: "Main Library · William Whitfield · 1968",
+      year: "1968 / 持续改造",
+      stats: [{ k: "座位", v: "约 2,500" }, { k: "开放", v: "361 天 · 07:15–02:00" }, { k: "幕墙更换", v: "2012" }],
+      facts: "启用时藏书 64 万册，此后持续分层改造：1996–97 加建 12 层安置特藏并翻新 2–3 层；2006 完成 10–11 层翻新；2012 年整体更换铝制雨幕外立面。现有约 2,500 个学习座位、800 余台学生电脑，入口欢迎台 08:00–20:00 有人值守。",
+      insight: "58 年里经历加层、分层翻新、整体换幕墙、配楼升级四轮动作，从未推倒重来——\"不拆也能现代化\"的最完整证据链。"
+    },
+    {
+      name: "James McCune Smith Learning Hub（2021）：9,060 万英镑的\"学习中心\"旗舰",
+      nameEn: "JMS Learning Hub · HLM Architects · 2021",
+      year: "2021",
+      stats: [{ k: "造价", v: "£90.6m" }, { k: "面积", v: "16,640 ㎡" }, { k: "容量", v: "2,500+ 学生" }, { k: "奖项", v: "苏格兰设计奖等" }],
+      facts: "10 亿英镑校园发展计划首座落成建筑。500 座大讲堂、340 至 75 人互动教学空间、大量研讨/小组空间与灵活自习区；以主动学习教学法和全过程用户咨询为驱动。命名致敬 James McCune Smith——1837 年在格拉斯哥获得医学博士的第一位非裔美国人。楼内 290 个储物柜、两层咖啡馆、祈祷与静思室。",
+      insight: "证明新型学习空间可以不叫图书馆、不归图书馆管，但拿走图书馆最大的一块功能——国内\"未来学习中心\"功能配比（大讲堂+互动教室+小组研讨+灵活自习+茶水间+储物柜+祈祷室）的完整清单来源。"
+    },
+    {
+      name: "图书馆 Annexe 升级工程（2024–2026）：边开放边改造",
+      nameEn: "Library Annexe Upgrade · 2024–2026",
+      year: "2024–2026",
+      stats: [{ k: "投资", v: "£23m" }, { k: "完工", v: "预计 2026 底" }, { k: "方式", v: "隔音墙分区 + 轮换关闭" }],
+      facts: "1980 年代九层配楼整体升级：更换屋面与外墙饰面至与主馆同等标准、高性能双层玻璃窗、内部学习空间改善采光通风与电源点位。施工期间以临时隔音墙分区、局部轮换关闭维持开放，并在其他楼宇设研究生快闪自习空间、以 App 实时拥挤度数据引导分流。",
+      insight: "\"施工期学习空间保障\"四件套（隔音墙、轮换关闭、快闪空间、App 分流）本身可以成为方案内容——临时家具、可移动隔断、快闪学习角是直接可供货的场景。"
+    },
+    {
+      name: "Keystone Building（2024–2028/29）：3 亿英镑的下一个学习旗舰",
+      nameEn: "Keystone Building · HOK · 2024–2028/29",
+      year: "在建",
+      stats: [{ k: "造价", v: "£300m" }, { k: "面积", v: "27,000 ㎡" }, { k: "容量", v: "约 3,600 学生" }, { k: "目标", v: "BREEAM Excellent" }],
+      facts: "校园第二大建筑，HOK 设计、Multiplex 承建，2028/29 学年预计完工。混合通用教学空间、干湿实验室、高规格计算机实验室、创客工坊与协作区，嵌入\"神经包容性（neuro-inclusive）\"工作空间设计，为 James Watt 工程学院新址。",
+      insight: "神经包容性设计已进入 3 亿英镑级项目的官方目标——这是人体工学之外一个新的价值叙事维度，值得跟踪其对家具选型标准（感官分区、低刺激区、可调节性）的具体化。"
+    }
+  ],
+  learningSpaces: "三色声学分区把\"行为管理\"前置到导视层：红区（8–12 层，静默）、琥珀区（安静个人学习）、绿区（2–3 层，小组学习）。全校学习空间作为统一网络运营：统一容量表（主馆 2,000 座、JMS 1,100 座等）、UofG Life App 预约与实时拥挤度、驻场学生助理 Reach Out 分区覆盖。",
+  serviceModel: "\"开放时长不是图书馆一家的事\"：07:15–02:00 的主馆 + 06:00–23:00 的 JMS + 24 小时医学自习区，构成覆盖近乎全天的分楼宇时段网络——任何一栋楼施工，网络内其他节点承接。馆藏管理有公开成文政策：剔旧是战略行为而非纯后勤行为。",
+  trends: [
+    { title: "图书馆的\"楼\"与\"服务\"正在解耦", type: "fact", note: "服务（学科馆员、预约系统、驻场支持、电子资源）遍布全网，藏书集中于主塔与远程书库——图书馆品牌价值越来越不依赖单栋建筑。" },
+    { title: "粗野主义遗产进入\"保护性更新\"周期", type: "fact", note: "DoCoMoMo 名录建筑换幕墙 + 配楼升级；欧洲 1960–70 年代大学高层图书馆普遍到达维护寿命终点，\"整馆现代化\"打包项目将批量出现。" },
+    { title: "全天候学习网络取代单楼通宵", type: "judgment", note: "三栋楼宇不同时段拼出近 24 小时覆盖，比单楼通宵更易控成本——预计更多英国大学采用\"多楼分时接力\"模式。" },
+    { title: "学习空间数据化运营成为标配", type: "fact", note: "App 预约、时段管理与实时拥挤度已把学习空间变成可调度资源；空间使用数据将反向进入家具采购与改造决策。" },
+    { title: "命名伦理成为新建筑的立项语言", type: "judgment", note: "以被美国大学拒之门外的非裔医学生命名旗舰教学楼——大学新建筑的命名叙事将越来越承担价值表达功能。" }
+  ],
+  business: [
+    "\"老馆持续翻新\"是欧洲存量市场的标准剧本，也是中国 1990–2010 年代馆舍即将面对的剧本——对应家具机会是分批、分楼层、与机电改造同步的持续性采购。",
+    "三色分区把声学行为写进空间导视，是静音舱/静音区家具的最强官方背书：可以反问\"您的分区标准是什么\"，把家具讨论升级为空间制度讨论。",
+    "\"学习 Hub\"与图书馆分立（JMS 模式）是中国高校\"未来学习中心\"浪潮的对标物——功能配比、造价量级、设计驱动与获奖记录俱全。",
+    "边开放边改造的工程组织方式本身值得卖给学校：临时家具、可移动隔断、快闪学习角是能直接供货的场景。",
+    "神经包容性设计已进入 3 亿英镑级项目的官方目标——建议跟踪其对家具选型标准（感官分区、低刺激区、可调节性）的具体化。",
+    "可复制性边界：英国高校资金结构与国内财政拨款+基建拨款模式不同，投资量级不可直接类比。"
+  ],
+  limits: [
+    "最新年度访问量与员工数为 2014 年旧口径（170 万人次、334 人）。",
+    "Annexe 造价两口径（£23m 总投资 / £12.6m 承建合同）对应关系待验证。",
+    "馆藏 250 万册为维基口径，未找到校方官网直接数字。",
+    "Glasgow 2036 十年新战略（2026 年 6 月发布）中图书馆条款未及展开。"
+  ],
+  sources: [
+    { label: "UofG – JMS Learning Hub（£90.6m、16,640㎡、2,500 人）", url: "gla.ac.uk/myglasgow/campusdevelopment/jamesmccunesmithlearninghub" },
+    { label: "MyGlasgow Library – Annexe Upgrade（£23m、2024–2026）", url: "gla.ac.uk/myglasgow/library/annexeupgrade" },
+    { label: "UofG News – Keystone Building（£300m、2024-10）", url: "gla.ac.uk/news/archiveofnews/2024/october/headline_1119004_en.html" },
+    { label: "MyGlasgow – Quick Start（红/琥珀/绿三色分区）", url: "gla.ac.uk/myglasgow/library/quickstart/" },
+    { label: "MyGlasgow – Study Spaces（全校容量与时间表）", url: "gla.ac.uk/myglasgow/students/learning/studyspaces/" },
+    { label: "HLM Architects – JMS Hub 项目页（获奖记录）", url: "hlmarchitects.com/projects/james-mccune-smith-learning-and-teaching-hub-jms/" },
+    { label: "UofG Library – 馆藏发展与管理政策（2025-02）", url: "gla.ac.uk/media/Media_344925_smxx.pdf" },
+    { label: "Wikipedia – Glasgow University Library", url: "en.wikipedia.org/wiki/Glasgow_University_Library" }
   ]
 }
 ];
