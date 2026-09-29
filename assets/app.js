@@ -397,6 +397,14 @@ function initSchool() {
     <span class="m-chip">${s.country} · ${s.state}</span>
     <span class="m-chip">报告编号 <b>${s.reportId}</b></span>
     <span class="m-chip">研究日期 <b>${s.reportDate}</b></span>`;
+  // 图书馆官网直达按钮
+  const libBox = $("#d-liburl");
+  if (libBox) {
+    const libUrl = (window.LIB_URLS || {})[s.id];
+    libBox.innerHTML = libUrl
+      ? `<a class="lib-btn" href="${esc(libUrl)}" target="_blank" rel="noopener">访问图书馆官网<span class="arr">↗</span></a>`
+      : "";
+  }
   // 锚点快导航
   const qn = $("#d-quicknav");
   if (qn) {

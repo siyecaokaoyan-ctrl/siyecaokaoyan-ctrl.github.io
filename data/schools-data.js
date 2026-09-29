@@ -1321,5 +1321,117 @@ const SCHOOLS = [
     { label: "myscience.ch 2025-08（HIL Living Lab 改造至约 2035）", url: "www.myscience.ch/de/news/wire/eth_zuerich_startet_pionierhaftes_forschungsprojekt_am_bau-2025-ethz" },
     { label: "Tages-Anzeiger 2025-04-08（HPQ 造价受联邦财务控制局批评，区别于 HWS）", url: "www.tagesanzeiger.ch/kostenexplosion-bei-eth-zuerich-neubau-wird-76-millionen-franken-teurer-als-geplant-172739242634" }
   ]
+},
+{
+  id: "imperial",
+  name: "帝国理工学院",
+  nameEn: "Imperial College London",
+  founded: 1907,
+  country: "英国",
+  region: "欧洲",
+  state: "伦敦 · 南肯辛顿",
+  reportId: "LR-20260929-01",
+  reportDate: "2026-09-29",
+  tagline: "每隔一代人就重生一次的主馆",
+  mainLine: "1969 年启用的帝国理工中央图书馆每约三十年重生一次——1997 年加建两层玻璃楼层、Waterstones 书店进馆，2018 年 £11M 翻新，2023 年更名 Abdus Salam Library；脚下还埋着一场与科学博物馆共用图书馆五十年的全球孤例。",
+  flagship: {
+    name: "主馆的四次生命（Central Library → Abdus Salam Library）",
+    note: "[1969 建馆→1997 加建→2018 翻新（£11M）→2023 更名](https://en.wikipedia.org/wiki/Abdus_Salam_Library)：Foster 咨询、McAslan 加建两层玻璃楼、Waterstones 书店进馆；2023 年为纪念诺奖得主 Abdus Salam [正式更名](https://www.imperial.ac.uk/news/245817/abdus-salam-library-named-honour-leading/)，成为校方回应校史报告的叙事载体。",
+    img: "imperial-salam-lawn.jpg",
+    imgCap: "中央图书馆俯瞰 Queen's Lawn（2023 年更名 Abdus Salam Library）。摄影：Shadowssettle / Wikimedia Commons（CC BY-SA 4.0）"
+  },
+  overview: {
+    intro: "[Abdus Salam Library](https://www.imperial.ac.uk/library)（原 Central Library）是帝国理工最大的学术与研究图书馆、全校 7 馆之主馆，1969 年 8 月启用，此前为 1959 年开馆的 Lyon Playfair Library；馆藏源头最老可追溯至 1845 年，1992 年曾与科学博物馆图书馆合并馆藏。2023 年为纪念 1979 年诺贝尔物理学奖得主 Abdus Salam 更名。分馆覆盖五个医院校区与 Silwood Park；White City 深科技校区不设馆、只设预约书取书柜。",
+    stats: [
+      { k: "现馆启用", v: "1969 年", s: "Lyon Playfair Library 1959 年为其前身" },
+      { k: "分馆网络", v: "7 所", s: "主馆＋五医院校区馆＋Silwood Park" },
+      { k: "电子馆藏", v: "63.7 万+ 种", s: "2025–26 手册口径；2023–24 为约 40 万" },
+      { k: "主馆开放", v: "24 小时", s: "学习空间；GoStudy 08:00–23:00 接力" }
+    ]
+  },
+  projects: [
+    {
+      name: "主馆的四次生命：加建、书店进馆、翻新与更名",
+      nameEn: "Central Library → Abdus Salam Library · 1969–2023",
+      year: "1969 建馆 · 2023 更名",
+      img: "imperial-salam-lawn.jpg",
+      imgCap: "主馆与 Queen's Lawn、Queen's Tower 的空间关系——「校园客厅」式场所定位。摄影：Shadowssettle / Wikimedia Commons（CC BY-SA 4.0）",
+      stats: [{ k: "现馆启用", v: "1969.8" }, { k: "加建", v: "1997 两层玻璃楼" }, { k: "翻新", v: "£11M（2017–18）" }, { k: "更名", v: "2023" }],
+      facts: "1960 年代政府大投资下帝国理工快速扩张，1959 年启用的 Lyon Playfair Library（以皇家矿业学院化学教授 Lord Playfair 命名）不敷使用，专门建设的新中央图书馆 1969 年 8 月与 College Block（今 Sherfield Building）同期落成。此后同一栋楼每代人更新一次：1994 年校方邀 [Foster and Partners 做改造咨询](https://en.wikipedia.org/wiki/Abdus_Salam_Library)，1997 年落地——地面层扩建引入 Waterstones 书店，顶部加建两层现代玻璃楼层（John McAslan + Partners），Haldane 馆藏此时已逾 4 万件；2017 年至 2018 年夏 £11M 大规模翻新（含空调）。2023-06-30 校方宣布更名为 Abdus Salam Library：2020 年校方委托 History Group 审查校史（含与英帝国的关联），2021-10 报告建议「Salam 应被广泛宣传」，更名是回应举措之一——Salam 1957 年加入帝国理工、创立理论物理组，1979 年获诺贝尔物理学奖，1964 年创立国际理论物理中心（ICTP）。2025-08 新生指南显示四层新增 Group Study Space 与 Wellbeing Room。",
+      insight: "「滚动更新」的教科书：约 30 年一个周期（1969→1997→2018→2023），每次投入 £11M 量级而非推倒重建——对经费受限的老馆比「一次性大改」更可持续。1997 年 Waterstones 书店进馆是「第三空间」正式命名前的早期实验；2023 年更名示范了空间命名作为治理工具的用法——图书馆成为机构回应历史争议的叙事载体。隐忧：2018 年翻新以机电升级为主，55 岁建筑的下一轮结构性更新已被下一个 30 年周期预定；更名后是否配套 Salam 主题馆藏展示，公开信息有限。"
+    },
+    {
+      name: "与科学博物馆共用图书馆的五十年",
+      nameEn: "Science Museum Library × Imperial · 1969–2014",
+      year: "1969 共楼 · 2014 分家",
+      img: "imperial-salam-entrance.jpg",
+      imgCap: "Abdus Salam Library 入口（2023 年更名后）：更名以导视与叙事为主，无大规模土建。摄影：Hammersfan / Wikimedia Commons（CC BY 4.0）",
+      stats: [{ k: "最老馆藏", v: "1845 年" }, { k: "博物馆馆迁入", v: "1969" }, { k: "馆藏合并", v: "1992" }, { k: "分家关闭", v: "2014" }],
+      facts: "帝国理工 1907 年由皇家科学院、皇家矿业学院、城市与行会学院合并而成，各院老馆分散（最老 1845 年）；近在咫尺的科学博物馆拥有国家级科技史文献库——两馆物理相邻、馆藏互补。1959 年 Lyon Playfair Library 开放，馆藏源自各工程系馆合并；1969 年新中央馆落成时[科学博物馆图书馆迁入同一栋楼](https://en.wikipedia.org/wiki/Abdus_Salam_Library)——最初的方案是让博物馆馆完全并入大学馆，1971 年前该计划被取消；1992 年两馆馆藏正式合并为单一图书馆；2014 年科学博物馆图书馆关闭，资源移至 Queen's Gate 的 Dana Centre 与馆外库房。一次「共楼→合并→分家」的完整周期，历时 45 年。",
+      insight: "「大学馆＋博物馆馆」合并实验的全球孤例，完整呈现了跨机构合作的全生命周期：1969 共楼（物理整合）→1971 合并叫停（治理权未解）→1992 合并（馆藏层妥协）→2014 分家（战略重心分化）。教训直白：跨机构合并最大的成本不是搬书，而是治理权——「谁说了算」没写清楚，合作就反复。对国内「高校馆＋公共馆/博物馆」共建共享的启示：协议里治理权条款优先于藏书条款。合并期形成的大量科技史馆藏，至今仍是帝国档案与特藏的底子。"
+    },
+    {
+      name: "一馆七舍：跨伦敦的空间网络与 24 小时学习基础设施",
+      nameEn: "7 Libraries + GoStudy + Book Locker",
+      year: "现行网络",
+      img: "imperial-salam-sherfield.jpg",
+      imgCap: "Sherfield Building 与中央图书馆沿 Queen's Lawn 并立：1969 年「图书馆＋学院楼」配套建设的 campus 格局。摄影：Shadowssettle / Wikimedia Commons（CC BY-SA 4.0）",
+      stats: [{ k: "图书馆", v: "7 所" }, { k: "主馆", v: "24 小时" }, { k: "GoStudy", v: "08:00–23:00" }, { k: "外借上限", v: "40 册" }],
+      facts: "帝国理工是跨伦敦的多点布局院校：南肯辛顿主校区＋五个医院校区＋Silwood Park＋White City 深科技校区。[官网 Our libraries](https://www.imperial.ac.uk/admin-services/library/use-the-library/our-libraries/)列出 Abdus Salam Library 主馆与 Charing Cross、Chelsea & Westminster、Hammersmith、Royal Brompton、St Mary's（Fleming Library）、Silwood Park 六所分馆；White City 校区没有独立图书馆，设 book locker 供预约取书。主馆学习空间 24 小时开放，自助借还全网络通借通还；主馆之外 GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天。Charing Cross 馆配协作 booths、solo pods（单人静音舱）与研习室；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room（心理健康室）；三校区间有免费穿梭巴士；可借 40 册，缺藏文献走免费 Document Delivery。",
+      insight: "格拉斯哥「多楼分时接力」的伦敦加强版——接力对象不是校内多楼，而是跨医院与校区的网络：主馆通宵打底、GoStudy 补 08–23 全覆盖、医院馆按临床作息运行，一套系统三种节奏。最值得引用的细节是 White City 的 book locker：新校区不配馆、只配柜——馆藏获取高度数字化后，新校区第一代学习基础设施可以轻到只有一个取书柜加共享学习区。隐忧：24 小时运行的能耗与安保成本、医院校区馆「大学＋NHS 双重治理」的权责划分，均无公开评估数据。"
+    }
+  ],
+  learningSpaces: "主馆学习空间 24 小时开放是基本盘；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）以 08:00–23:00 每周七天补位——一通宵一早班的双层结构。空间类型细化到行为颗粒：Charing Cross 馆的协作 booths（4 人）、solo pods（单人静音舱，可调座椅/通风/照明，专为在线会议与语音输入设计）、10 人研习室；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施开始同层配置。1997 年 Waterstones 书店进馆则是「第三空间」的祖师爷级实验。",
+  serviceModel: "全校统一服务入口为图书馆官网；7 所图书馆网络通借通还（自助借还，任意馆可还）；缺藏文献免费 Document Delivery；医院校区馆同时服务 NHS 信托员工，是「大学＋医疗系统」双重会员制。White City 校区的 book locker 把「分馆」压缩成一个取书柜——馆藏获取靠网络与物流而非馆舍。学科馆员制度完备（各院系专设 Department Librarian），1992 年与科学博物馆合并的馆藏构成档案与特藏的底子。",
+  trends: [
+    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "1969 建馆→1997 McAslan 加建两层玻璃楼→2017–18 £11M 翻新→2023 更名：约 30 年一个更新周期的滚动再生，单次投入不大但每次都跟上了一代学习方式。" },
+    { title: "全天候学习空间", type: "fact", note: "主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——单馆通宵＋共享学习区接力的伦敦版本。" },
+    { title: "Learning Commons 常态化", type: "fact", note: "1997 年 Waterstones 书店进馆（第三空间早期实验）；2025 年四层新增 Group Study Space 与 Wellbeing Room；Charing Cross 馆协作 booths 与 solo pods——commons 细化到行为颗粒。" },
+    { title: "跨机构合作与治理", type: "judgment", note: "与科学博物馆图书馆共楼 45 年（1969 迁入→1992 合并→2014 分家）：合并的最大成本是治理权而非搬书——协议里治理条款优先于藏书条款。" },
+    { title: "空间命名即叙事", type: "fact", note: "2023 年更名 Abdus Salam Library 是校方回应 History Group 校史报告的举措——馆名成为机构叙事的治理工具，图书馆由此进入校级叙事中心。" }
+  ],
+  business: [
+    "「30 年节律」滚动更新：单次 £11M 级投入、约三十年一个周期，每次恰好回应一代学习方式——比攒一次性大改更适合经费受限的老馆；前提是有机电与空间健康度监测。",
+    "空间命名作为叙事与治理工具：更名（2023）把图书馆变成机构回应历史争议的载体；同理可用于捐赠叙事与馆藏展示——前提是命名有真实叙事内容支撑。",
+    "跨机构共建「先谈治理再谈书架」：科学博物馆 45 年分合史证明治理权条款没写清楚，共楼、合并、分家就会反复——协议起草阶段就要有治理结构设计。",
+    "新校区「先配柜、不配馆」：White City 以 book locker＋共享学习区起步——馆藏数字化与跨馆物流就绪后，新校区第一代学习基础设施可以轻到只有一个取书柜。"
+  ],
+  limits: [
+    "更名后馆内是否增设 Salam 主题馆藏/展示区，公开信息有限。",
+    "2014 年后科学博物馆文献服务（Dana Centre）的馆藏规模与服务范围未细查。",
+    "各医院分馆的通宵开放具体范围未逐一核验（官网概括语为「许多图书馆 24 小时」）。",
+    "Waterstones 书店进馆的租金与合作模式细节未公开。",
+    "电子馆藏数量随年度快速增长（2023–24 约 40 万→2025–26 逾 63.7 万种），引用必须注明年份。"
+  ],
+  sources: [
+    { label: "帝国理工图书馆官网（总入口）", url: "www.imperial.ac.uk/library" },
+    { label: "官网 Our libraries（7 所分馆、GoStudy、开放时间）", url: "www.imperial.ac.uk/admin-services/library/use-the-library/our-libraries/" },
+    { label: "官网新生页 2025-08（24 小时、book locker、Group Study Space、Wellbeing Room）", url: "www.imperial.ac.uk/admin-services/library/library-services-for-new-students/" },
+    { label: "校方新闻 2023-06-30（更名决定、History Group 背景、Salam 生平）", url: "www.imperial.ac.uk/news/245817/abdus-salam-library-named-honour-leading/" },
+    { label: "Wikipedia – Abdus Salam Library（1969 现馆、1997 加建、£11M 翻新、博物馆馆沿革）", url: "en.wikipedia.org/wiki/Abdus_Salam_Library" },
+    { label: "Felix 2023-09-28（更名背景深度侧写）", url: "felixonline.co.uk/articles/central-library-renamed-in-honour-of-abdus-salam/" },
+    { label: "PGT Handbook 2025–26（馆藏 637,000+、借 40 册、24 小时）", url: "www.imperial.ac.uk/media/imperial-college/medicine/surgery-cancer/pg-handbook/Imperial-PGR-S&C-Programme-Handbook-Final_2025-26.pdf" },
+    { label: "MEd Handbook 2024–25（馆藏 almost 667,000、GoStudy、Sherfield 3 层）", url: "www.imperial.ac.uk/media/imperial-college/staff/education-development-unit/public/MED-Handbook-2024-25.pdf" },
+    { label: "官网 Charing Cross 馆页（协作 booths、solo pods、研习室）", url: "www.imperial.ac.uk/admin-services/library/use-the-library/our-libraries/charing-cross-campus-library/" }
+  ]
 }
 ];
+
+/* ── 各校图书馆官网直达链接（2026-09-29 逐一验证可达；Princeton/JHU/UPenn 有反爬验证，浏览器可正常打开） ── */
+window.LIB_URLS = {
+  harvard: "https://library.harvard.edu/",
+  mit: "https://libraries.mit.edu/",
+  stanford: "https://library.stanford.edu/",
+  princeton: "https://library.princeton.edu/",
+  yale: "https://library.yale.edu/",
+  duke: "https://library.duke.edu/",
+  jhu: "https://www.library.jhu.edu/",
+  uchicago: "https://www.lib.uchicago.edu/",
+  glasgow: "https://www.gla.ac.uk/myglasgow/library/",
+  upenn: "https://www.library.upenn.edu/",
+  columbia: "https://library.columbia.edu/",
+  cornell: "https://library.cornell.edu/",
+  oxford: "https://www.bodleian.ox.ac.uk/",
+  ethz: "https://library.ethz.ch/en/",
+  imperial: "https://www.imperial.ac.uk/library"
+};
