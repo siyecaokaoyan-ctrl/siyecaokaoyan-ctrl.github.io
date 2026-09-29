@@ -6,7 +6,7 @@ const $ = (s, el) => (el || document).querySelector(s);
 const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
 function schoolShort(id) {
-  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛" };
+  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛", cambridge:"剑", ethz:"苏", imperial:"帝" };
   return map[id] || id.slice(0, 1).toUpperCase();
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
@@ -25,7 +25,10 @@ const SCHOOL_COLORS = {
   upenn:    { accent: "#011F5B", soft: "#e9edf5" },
   columbia: { accent: "#0038A8", soft: "#eef2fa" },
   cornell:  { accent: "#B31B1B", soft: "#f9ecec" },
-  oxford:   { accent: "#002147", soft: "#e9eef4" }
+  oxford:   { accent: "#002147", soft: "#e9eef4" },
+  cambridge:{ accent: "#A3C1AD", soft: "#eef4f0" },
+  ethz:     { accent: "#1F407A", soft: "#e9eef4" },
+  imperial: { accent: "#002E5E", soft: "#e9eef4" }
 };
 function setSchoolTheme(id) {
   const c = SCHOOL_COLORS[id] || SCHOOL_COLORS.upenn;
@@ -101,7 +104,7 @@ function countUp(el, target, dur = 900) {
 
 /* ── 学校卡片 ── */
 /* 校徽（本地文件；mit/jhu 为 SVG 矢量，其余 PNG） */
-const LOGO_EXT = { mit: "svg", jhu: "svg" };
+const LOGO_EXT = { mit: "svg" };
 const logoSrc = id => `assets/logos/${id}.${LOGO_EXT[id] || "png"}`;
 const logoImg = (id, cls) => `<img class="${cls}" src="${logoSrc(id)}" alt="" loading="lazy" onerror="this.style.display='none'">`;
 
@@ -110,7 +113,10 @@ const cardFilter = { region: "all", topic: "all", q: "" };
 
 function schoolMatches(s) {
   if (cardFilter.region !== "all" && s.region !== cardFilter.region) return false;
-  if (cardFilter.topic !== "all" && !s.trends.some(t => t.title === cardFilter.topic)) return false;
+  if (cardFilter.topic !== "all") {
+    const tr = TRENDS.find(x => x.id === cardFilter.topic);
+    if (!tr || !tr.schools.includes(s.id)) return false;
+  }
   if (cardFilter.q) {
     const q = cardFilter.q.toLowerCase();
     const hay = [s.name, s.nameEn, s.country, s.state, s.tagline, s.mainLine,
@@ -193,7 +199,7 @@ function bindFilters() {
   const tbox = $("#topic-filters");
   if (tbox) {
     tbox.innerHTML = [`<div class="f-chip on" data-topic="all">全部主题</div>`,
-      ...TRENDS.map(t => `<div class="f-chip" data-topic="${esc(t.title)}">${esc(t.title)} ${t.schools.length}</div>`)
+      ...TRENDS.map(t => `<div class="f-chip" data-topic="${t.id}">${esc(t.title)} ${t.schools.length}</div>`)
     ].join("");
     tbox.addEventListener("click", (e) => {
       const chip = e.target.closest(".f-chip");
@@ -260,23 +266,24 @@ function renderCompare(aId, bId) {
   if (!a || !b || !panel) return;
   const ca = SCHOOL_COLORS[a.id] || { accent: "var(--accent)", soft: "var(--accent-soft)" };
   const cb = SCHOOL_COLORS[b.id] || { accent: "var(--accent)", soft: "var(--accent-soft)" };
-  const aTrendTitles = a.trends.map(t => t.title);
-  const bTrendTitles = b.trends.map(t => t.title);
   const row = (label, va, vb, head) => `
     <div class="vs-row${head ? " vs-head" : ""}">
       <div class="vs-cell"${head ? ` style="box-shadow:inset 0 3px 0 ${ca.accent};background:${ca.soft}"` : ""}>${va}</div>
       <div class="vs-label">${label}</div>
       <div class="vs-cell"${head ? ` style="box-shadow:inset 0 3px 0 ${cb.accent};background:${cb.soft}"` : ""}>${vb}</div>
     </div>`;
-  const matchRows = (ids) => ids.map(id => {
-    const t = TRENDS.find(x => x.id === id);
-    return t ? `<span class="match">● ${t.title}</span>` : "";
-  }).join("<br>") || "—";
-  const onlyCell = (arr) => arr.length
-    ? arr.map(t => `<span class="match only">○ ${esc(t.title)}</span>`).join("<br>") : "—";
-  const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id)).map(t => t.id);
-  const onlyA = a.trends.filter(t => !bTrendTitles.includes(t.title));
-  const onlyB = b.trends.filter(t => !aTrendTitles.includes(t.title));
+  // 趋势口径统一以趋势库（TRENDS）为准：交集/各自侧重都由 TRENDS.schools 推导，杜绝两个数字
+  const trendLink = t => `<a href="trend.html?id=${t.id}">${esc(t.title)}</a>`;
+  const matchRows = (arr) => arr.map(t => `<span class="match">● ${trendLink(t)}</span>`).join("<br>") || "—";
+  const onlyCell = (school, arr) => arr.length
+    ? arr.map(t => {
+        const ev = (t.evidence && t.evidence[school.id]) || "";
+        const { short } = splitFirst(ev);
+        return `<div class="only-item"><span class="match only">○ ${trendLink(t)}</span>${short ? `<div class="vs-mini">${hl(short)}</div>` : ""}</div>`;
+      }).join("") : "—";
+  const common = TRENDS.filter(t => t.schools.includes(a.id) && t.schools.includes(b.id));
+  const onlyA = TRENDS.filter(t => t.schools.includes(a.id) && !t.schools.includes(b.id));
+  const onlyB = TRENDS.filter(t => t.schools.includes(b.id) && !t.schools.includes(a.id));
   panel.innerHTML =
     row("对比维度",
       `<div class="vs-id">${logoImg(a.id, "vs-logo")}<div><b style="color:${ca.accent}">${esc(a.name)}</b><span>${esc(a.nameEn.toUpperCase())} · ${a.founded}</span></div></div>`,
@@ -285,8 +292,8 @@ function renderCompare(aId, bId) {
     row("旗舰项目", vsRich(`<b>${esc(a.flagship.name)}</b>`, a.flagship.note), vsRich(`<b>${esc(b.flagship.name)}</b>`, b.flagship.note)) +
     row("学习空间", vsRich("", a.learningSpaces), vsRich("", b.learningSpaces)) +
     row("趋势交集（相同点）", matchRows(common), matchRows(common)) +
-    row("各自独有（不同点）", onlyCell(onlyA), onlyCell(onlyB)) +
-    row("独有判断", vsRich(`<b>${esc(a.trends[0].title)}</b>`, a.trends[0].note), vsRich(`<b>${esc(b.trends[0].title)}</b>`, b.trends[0].note));
+    row("各自侧重（对方未验证）", onlyCell(a, onlyA), onlyCell(b, onlyB)) +
+    row("代表判断", vsRich(`<b>${esc(a.trends[0].title)}</b>`, a.trends[0].note), vsRich(`<b>${esc(b.trends[0].title)}</b>`, b.trends[0].note));
   // 图谱高亮联动
   renderTrendMap([a.id, b.id]);
   const url = new URL(location.href);
@@ -470,11 +477,16 @@ function initSchool() {
   }).join("");
   $("#d-learning").innerHTML = `<b>学习空间与配置。</b>${hl(s.learningSpaces)}`;
   $("#d-service").innerHTML = `<b>服务模式与运营。</b>${hl(s.serviceModel)}`;
-  $("#d-trends").innerHTML = s.trends.map(t => `
+  $("#d-trends").innerHTML = s.trends.map(t => {
+    const tr = t.tid ? TRENDS.find(x => x.id === t.tid) : null;
+    const verified = tr && tr.schools.includes(s.id);
+    return `
     <div class="trend-item">
       <span class="t-badge ${t.type}">${t.type === "fact" ? "事实" : "判断"}</span>
-      <div class="t-body"><b>${esc(t.title)}</b><p>${hl(t.note)}</p></div>
-    </div>`).join("");
+      <div class="t-body"><b>${esc(t.title)}</b><p>${hl(t.note)}</p>
+      ${verified ? `<a class="t-link" href="trend.html?id=${tr.id}">查看「${esc(tr.title)}」跨校共识 →</a>` : ""}</div>
+    </div>`;
+  }).join("");
   // 交流问题 / 团队分享摘要（见 extras-data.js，缺省自动隐藏板块）
   const qsec = $("#d-questions"), bsec = $("#d-brief");
   if (qsec) {
@@ -608,6 +620,8 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  const sp = $("#stat-progress");
+  if (sp && typeof SCHOOLS !== "undefined") sp.textContent = SCHOOLS.length;
   if ($("#cards")) initIndex();
   if ($("#d-title")) initSchool();
   if ($("#t-title")) initTrend();

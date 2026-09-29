@@ -88,6 +88,12 @@ section{padding:100px 0;}
 /* ④ 交互蓝全面换苹果产品蓝 */
 .v3 .f-chip.on,.v3 .btn{background:linear-gradient(135deg,#0a84ff,#2997ff);}
 .v3 a{color:#0066cc;}
+/* ④b 修复：.v3 a 不得覆盖首页品牌字、导航与主按钮的既定配色 */
+.v3 .brand,.v3 .brand a{color:var(--ink,#1d1d1f);}
+.v3 .nav-links a{color:var(--ink-2,#6e6e73);}
+.v3 .nav-links a.on,.v3 .nav-links a:hover{color:var(--accent,#0a84ff);}
+.v3 a.hero-cta{color:#fff;}
+.v3 .site-nav a{color:inherit;}
 /* ⑤ 白色区块顶部一抹渐变过渡（苹果 bg-light 渐变）*/
 .v3 #schools,.v3 #trends{background:linear-gradient(180deg,#fdfdfe 0%,#ffffff 18%);}
 /* ⑥ 卡片 hover：顶部 3px 品牌渐变条 */
@@ -288,3 +294,18 @@ section{padding:100px 0;}
 
 /* ── v14：趋势主题超过 8 条时自动收紧字号 ── */
 .trend .t-name{font-size:clamp(15px,1.9vw,20px)}
+
+/* ── v15 修复包 ── */
+/* 对比页：各自侧重的证据小字 */
+.vs-mini{font-size:12px;color:var(--ink-3);line-height:1.6;margin:3px 0 8px 16px;}
+.only-item{margin-bottom:4px;}
+.vs-cell .match a{color:inherit;text-decoration:underline;text-underline-offset:3px;}
+/* 学校页趋势研判：跨校共识链接 */
+.t-link{display:inline-block;margin-top:6px;font-size:12.5px;color:var(--accent);text-decoration:none;}
+.t-link:hover{text-decoration:underline;}
+/* 卡片页脚：长旗舰项目名/点赞不再挤换行 */
+.card .c-foot{flex-wrap:wrap;gap:6px 10px;}
+.card .c-foot .c-like{flex-shrink:0;}
+
+/* 首页：第一阶段样本标注 */
+.phase-tag{display:inline-block;margin-top:14px;padding:6px 14px;border-radius:999px;background:rgba(10,132,255,.08);border:1px solid rgba(10,132,255,.25);color:var(--accent);font-size:12.5px;line-height:1.5;}

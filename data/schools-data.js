@@ -17,12 +17,12 @@ const SCHOOLS = [
   mainLine: "通过校外高密度库房（Harvard Depository）承接低流通藏书，把馆内面积释放给协作学习、教学与社交空间。",
   flagship: { name: "Widener 主馆开放化 / Cabot 学习共享改造", note: "面向 2036 建校 400 周年的四馆整体改造可行性研究（Widener、Lamont、Pusey、Houghton）是观察全球顶级大学图书馆走向的最好样本。" },
   overview: {
-    intro: "[全球最大学术图书馆系统](https://library.harvard.edu/)，1638 年随建校设立，是美国最古老的图书馆。近二十年的空间主线是\"藏书退让、空间还给人\"。",
+    intro: "[全球最大学术图书馆系统](https://library.harvard.edu/)，1636 年建校、1638 年因约翰·哈佛遗赠设馆，是美国最古老的图书馆。近二十年的空间主线是\"藏书退让、空间还给人\"。",
     stats: [
-      { k: "系统规模", v: "约 70+ 分馆", s: "全球最大学术图书馆系统（口径不一，维基称约 90 个单元）" },
+      { k: "系统规模", v: "70+ 分馆（旧口径）", s: "2014–15 校方口径；现行官网称 25+ 主要图书馆，统计范围不同，维基称约 90 个单元" },
       { k: "总藏书", v: "约 2,000 万册", s: "2014 年 Gazette 口径 1,700 万，其中约一半存于校外库房" },
       { k: "主馆 Widener", v: "1915 年建成", s: "馆内约 350 万册，书架总长 92 公里，10 层书库" },
-      { k: "建馆历史", v: "1638 年", s: "随建校设立，美国最古老图书馆" }
+      { k: "建馆历史", v: "1638 年", s: "约翰·哈佛遗赠设馆（建校 1636）" }
     ]
   },
   projects: [
@@ -31,15 +31,15 @@ const SCHOOLS = [
       nameEn: "Widener Library · 1915",
       year: "1915",
       stats: [{ k: "书架总长", v: "92 km" }, { k: "日均入馆", v: "1,715 人（2015）" }, { k: "书库纵深", v: "10 层" }],
-      facts: "由 Eleanor Widener 为纪念泰坦尼克号遇难的儿子 Harry Widener（1907 届校友）捐建，是哈佛的精神象征。全球五大\"超级图书馆\"中唯一的大学图书馆，且是唯一允许读者自由进入开架书库浏览的。2015 年日均借出约 2,811 册。",
+      facts: "由 Eleanor Widener 为纪念泰坦尼克号遇难的儿子 Harry Widener（1907 届校友）捐建，是哈佛的精神象征。业内常列为全球五大\"超级图书馆\"中唯一的大学图书馆（评价口径，非官方排名）；开架书库现主要面向哈佛师生开放，访客需申请——\"自由进入\"已是历史记忆。2015 年日均借出约 2,811 册（维基百科 Widener 条目口径，非官方统计）。",
       insight: "Widener 的价值正从\"藏书容器\"转向\"校园体验与公共符号\"。2036 愿景研究提出设\"发现中心\"，让公众透过玻璃看书库——把书库本身变成展示品。对\"密集书库是否可见、可否成为空间叙事一部分\"有直接启发。"
     },
     {
       name: "Cabot 科学图书馆：Learning Commons 标杆",
       nameEn: "Cabot Science Library · 2017 改造",
       year: "1973 建 / 2017 改",
-      stats: [{ k: "改造面积", v: "3,655 ㎡" }, { k: "重开", v: "2017.4" }, { k: "认证", v: "LEED-CI v4" }, { k: "主动学习教室", v: "24 座" }],
-      facts: "改造前\"窗户不透明、一二层不受欢迎、学生无处久坐\"。改造后一层为开放社交协作区（Discovery Bar、学习湾、咖啡区连庭院），地下层为小组研讨室、媒体制作室与 24 座主动学习教室。家具策略\"几乎所有东西都是可移动的\"，本科生首次可通过 Roombook 自助预约研讨间。",
+      stats: [{ k: "改造面积", v: "3,655 ㎡" }, { k: "重开", v: "2017.4" }, { k: "认证", v: "LEED-CI v4" }, { k: "主动学习教室", v: "1 间·24 人" }],
+      facts: "改造前\"窗户不透明、一二层不受欢迎、学生无处久坐\"。改造后一层为开放社交协作区（Discovery Bar、学习湾、咖啡区连庭院），地下层为小组研讨室、媒体制作室与 1 间 24 人主动学习教室（原文 \"a flexible instruction room with a capacity of 24\"）。家具策略\"几乎所有东西都是可移动的\"，本科生首次可通过 Roombook 自助预约研讨间。",
       insight: "核心启示在于分区逻辑：一层 = 社交+协作+餐饮（高噪），地下 = 小组研讨+教学（中噪），安静深读留给 Widener 等馆——\"功能分层、动静分馆/分层\"的典型操作，家具配置随噪声等级与活动类型分层，而非全馆统一。"
     },
     {
@@ -62,12 +62,12 @@ const SCHOOLS = [
   learningSpaces: "Learning Commons 已是标配：Cabot 的分层配置（社交/协作/研讨/教学）、Lamont 的 24 小时本科生馆与\"越往上越安静\"垂直分区、Roombook 自助预约、主动学习教室进图书馆，构成完整的学习空间谱系。",
   serviceModel: "多馆系统按学习行为分工：Widener（深读）/ Lamont（24h 本科+垂直动静分区）/ Cabot（社交协作），是\"一个校园内不同馆承担不同学习行为\"的系统打法。2022–2023 学年完成四馆整体改造可行性研究（2024 年公开），面向 2036 建校 400 周年。",
   trends: [
-    { title: "Learning Commons 从\"新概念\"变成\"默认配置\"", type: "judgment", note: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已成北美大学图书馆改造的标准套餐。" },
-    { title: "藏书外迁与高密度/自动化库房", type: "judgment", note: "哈佛模式（托盘+高架+人工）与 ASRS（机器人自动存取）是两大流派；外迁释放的面积是改造的资金与空间前提。" },
-    { title: "图书馆作为\"第三空间\"（Third Place）", type: "judgment", note: "家与教室/工作之外的归属空间；空间评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。" },
-    { title: "主动学习教室进入图书馆", type: "judgment", note: "Cabot 地下层 24 座主动学习教室直接复制教学楼成功经验，图书馆与教学空间边界消融。" },
+    { tid: "learning-commons", title: "Learning Commons 从\"新概念\"变成\"默认配置\"", type: "judgment", note: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已成北美大学图书馆改造的标准套餐。" },
+    { tid: "offsite-storage", title: "藏书外迁与高密度/自动化库房", type: "judgment", note: "哈佛模式（托盘+高架+人工）与 ASRS（机器人自动存取）是两大流派；外迁释放的面积是改造的资金与空间前提。" },
+    { tid: "learning-commons", title: "图书馆作为\"第三空间\"（Third Place）", type: "judgment", note: "家与教室/工作之外的归属空间；空间评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。" },
+    { tid: "learning-commons", title: "主动学习教室进入图书馆", type: "judgment", note: "Cabot 地下层 1 间 24 人主动学习教室直接复制教学楼成功经验，图书馆与教学空间边界消融。" },
     { title: "身心健康、归属感与包容性设计", type: "judgment", note: "自然采光、声学分区、Study Pod、亲生命设计成为获奖项目共性；反向证据：有研究指出近年改造过度偏向协作空间，牺牲安静空间——按活动分区而非按人群分区更稳妥。" },
-    { title: "既有建筑改造 + 可持续认证", type: "judgment", note: "顶级项目越来越多是\"改\"而不是\"建\"——对国内 1990–2010 年代馆舍进入改造期是直接利好。" }
+    { tid: "historic-renewal", title: "既有建筑改造 + 可持续认证", type: "judgment", note: "顶级项目越来越多是\"改\"而不是\"建\"——对国内 1990–2010 年代馆舍进入改造期是直接利好。" }
   ],
   business: [
     "汇报叙事：用\"Cabot 改造前后\"讲空间价值优先级——同一栋楼、同样的面积，差异在于功能配比与家具策略，而不在装修豪华度。",
@@ -80,7 +80,8 @@ const SCHOOLS = [
     "Cabot 改造的投资额、家具品牌与供应商未在公开来源中查到。",
     "2036 愿景研究尚处于\"可行性研究\"阶段，是否已获资本批准需跟踪。",
     "2020 年后的使用数据未公开系统披露，报告中 2015 年数据为最新可引用口径。",
-    "本报告以二手公开来源为主，未含实地调研或馆方访谈。"
+    "本报告以二手公开来源为主，未含实地调研或馆方访谈。",
+    "据 The Harvard Crimson 2025-09 报道，因预算压力 Widener/Lamont/Pusey/Houghton 四馆改造计划已暂停，2036 愿景时间表存变数。"
   ],
   sources: [
     { label: "Harvard Library – Yard Libraries 2036 愿景（2024-06）", url: "library.harvard.edu/about/news/2024-06-18/yard-libraries-reimagined" },
@@ -153,11 +154,11 @@ const SCHOOLS = [
   serviceModel: "多馆系统\"分时分工\"：Hayden（旗舰+24h+活动）、Barker/Dewey（24/7 学习间）、Rotch（学科+24/7 试点）、Storage Annex（次日达库房）。未来图书馆工作组（2016）确立\"开放全球平台\"总纲，空间规划组承接第 2 条建议落地。",
   trends: [
     { title: "愿景先行——\"工作组机制\"成为大改标配", type: "judgment", note: "MIT 工作组（2016）→ 空间规划组 → Hayden 改造（2021），与哈佛四馆可行性研究（2022-23）→ 2036 愿景路径同构：先花 1–2 年做全校共识与需求诊断，再进入设计。" },
-    { title: "24/7 空间从\"一间房\"扩容到\"整层\"", type: "fact", note: "Hayden 24 小时座位 16 → 325+；全天候开放已是北美顶尖馆默认项，且与家具选型直接相关（耐用性、易清洁、可重组、照明与电源密度）。" },
+    { tid: "247-spaces", title: "24/7 空间从\"一间房\"扩容到\"整层\"", type: "fact", note: "Hayden 24 小时座位 16 → 325+；全天候开放已是北美顶尖馆默认项，且与家具选型直接相关（耐用性、易清洁、可重组、照明与电源密度）。" },
     { title: "健康材料与身心健康认证进入采购标准", type: "judgment", note: "LEED + Fitwel + Red List Free 三件套意味着家具与软装选型从\"价格+款式\"变成\"化学成分披露+健康声明\"。" },
-    { title: "\"研究十字路口\"——功能混合成为设计概念本身", type: "judgment", note: "研讨亭阁置于动线交叉口、研究房间进门即见、馆员办公室贴邻阅览室——家具的角色从\"填充空间\"变成\"定义交叉口\"。" },
-    { title: "既有建筑节能改造与\"局部精准手术\"", type: "judgment", note: "Hayden 只改两层 + 全面机电与表皮升级，证明不必全楼闭馆重建也能实现体验跃迁——对国内 1990–2010 年代馆舍改造潮直接可用。" },
-    { title: "多馆系统的\"分时分工\"", type: "judgment", note: "一个校园内不同馆承担不同学习行为与时段——系统级规划比单馆设计更能体现专业深度。" }
+    { tid: "learning-commons", title: "\"研究十字路口\"——功能混合成为设计概念本身", type: "judgment", note: "研讨亭阁置于动线交叉口、研究房间进门即见、馆员办公室贴邻阅览室——家具的角色从\"填充空间\"变成\"定义交叉口\"。" },
+    { tid: "historic-renewal", title: "既有建筑节能改造与\"局部精准手术\"", type: "judgment", note: "Hayden 只改两层 + 全面机电与表皮升级，证明不必全楼闭馆重建也能实现体验跃迁——对国内 1990–2010 年代馆舍改造潮直接可用。" },
+    { tid: "247-spaces", title: "多馆系统的\"分时分工\"", type: "judgment", note: "一个校园内不同馆承担不同学习行为与时段——系统级规划比单馆设计更能体现专业深度。" }
   ],
   business: [
     "与哈佛报告组合使用：\"综合巨型系统（哈佛）vs 精准敏捷路径（MIT）\"的对照组——展示\"我们研究的不是一个案例，而是两种可迁移的模式\"。",
@@ -251,12 +252,12 @@ const SCHOOLS = [
   learningSpaces: "清晰的四层结构：通宵自习（生存型）→ 小组研讨（协作型）→ 特藏与展览（探究型）→ 技术支持与创客（产出型），集中分布在 Green、Lathrop 两馆步行范围内。通宵化由学生会（ASSU）2024 年 2 月决议推动，历经 419 天（招聘馆员与安保、试行至凌晨 3 点）后 Hohbach Hall 周日至周四通宵开放——校方把\"开放时间\"当作经费、人员与治理三方咬合的运营问题。",
   serviceModel: "SAL3 支撑\"远程储存+按需调拨\"：SearchWorks 提交请求、每日两次配送、库内设预约制阅览室。The Hub 将图书馆服务与 IT 学生技术支持合并运营。教学深度嵌入空间：硅谷档案课程、Rumsey 课堂教学、特藏 pop-up 快闪展、本科毕业设计展常态化举办。",
   trends: [
-    { title: "从\"藏\"到\"展\"再到\"用\"", type: "fact", note: "特藏不再锁在库房，以展柜长廊、档案课程、快闪展进入日常动线；特藏空间成为吸引人流与捐赠的双引擎。" },
-    { title: "通宵化从 fringe 需求变成治理议题", type: "judgment", note: "学生会立法推动、校方公开回应经费年限，预计更多研究型大学将以\"分区通宵+安保配套\"模式跟进。" },
-    { title: "高密度储存+每日两次调拨成为空间重组的基础设施", type: "fact", note: "\"远程储存+馆内精选\"的双层结构正在取代\"全量馆内开架\"。" },
-    { title: "图书馆与技术支援服务合并运营", type: "judgment", note: "The Hub 把图书馆、IT 支持、创客空间放进同一入口——学习空间的竞争单元从\"馆\"变成\"服务台半径内的完整支持链\"。" },
-    { title: "历史建筑的适应性再利用优于新建", type: "fact", note: "Lathrop（旧商楼）、科学馆（1903 Old Chem）、Hohbach（老馆东翼）均为改造；图书馆预算更多流向\"改\"，家具与内装占比上升。" },
-    { title: "空间即筹款载体", type: "judgment", note: "Hohbach Hall、Rumsey 中心、Li & Ma 科学馆均以捐赠命名——空间设计质量直接影响学校募资能力。" }
+    { tid: "special-collections", title: "从\"藏\"到\"展\"再到\"用\"", type: "fact", note: "特藏不再锁在库房，以展柜长廊、档案课程、快闪展进入日常动线；特藏空间成为吸引人流与捐赠的双引擎。" },
+    { tid: "247-spaces", title: "通宵化从 fringe 需求变成治理议题", type: "judgment", note: "学生会立法推动、校方公开回应经费年限，预计更多研究型大学将以\"分区通宵+安保配套\"模式跟进。" },
+    { tid: "offsite-storage", title: "高密度储存+每日两次调拨成为空间重组的基础设施", type: "fact", note: "\"远程储存+馆内精选\"的双层结构正在取代\"全量馆内开架\"。" },
+    { tid: "learning-commons", title: "图书馆与技术支援服务合并运营", type: "judgment", note: "The Hub 把图书馆、IT 支持、创客空间放进同一入口——学习空间的竞争单元从\"馆\"变成\"服务台半径内的完整支持链\"。" },
+    { tid: "historic-renewal", title: "历史建筑的适应性再利用优于新建", type: "fact", note: "Lathrop（旧商楼）、科学馆（1903 Old Chem）、Hohbach（老馆东翼）均为改造；图书馆预算更多流向\"改\"，家具与内装占比上升。" },
+    { tid: "special-collections", title: "空间即筹款载体", type: "judgment", note: "Hohbach Hall、Rumsey 中心、Li & Ma 科学馆均以捐赠命名——空间设计质量直接影响学校募资能力。" }
   ],
   business: [
     "\"储存书库先行\"是说服学校做减法的关键论据：斯坦福敢拆 Meyer、敢清空 Green 东翼书库，前提是 SAL3 的 480 万册容量与每日两次配送。",
@@ -342,7 +343,7 @@ const SCHOOLS = [
   serviceModel: "\"服务不随空间中断\"：Firestone 十年翻新期间保持开放（设施工沟通专岗），Marquand 三年过渡期通过预约制维持特藏服务，Commons 从低调试运行到正式开放有完整活动排期。学科服务含数据与统计服务（DSS）、数字人文中心（CDH）、PUL Makerspace；校友可付费调阅 ReCAP 馆藏。",
   trends: [
     { title: "图书馆的\"馆\"与\"藏\"正在解耦", type: "fact", note: "Firestone 承载中央运营与特藏，ReCAP 承担高密度存储，Commons 承担知识创造，Lewis 承担科学整合——图书馆品牌价值越来越依赖网络协同，而非单栋地标。" },
-    { title: "历史建筑进入\"保护性翻新\"周期", type: "fact", note: "哥特式外壳保留+内部彻底现代化，与格拉斯哥粗野主义塔楼换幕墙同属\"不拆重建\"范式；欧美 1950–1980 年代馆舍普遍到达维护寿命终点，此类打包项目将批量出现。" },
+    { tid: "historic-renewal", title: "历史建筑进入\"保护性翻新\"周期", type: "fact", note: "哥特式外壳保留+内部彻底现代化，与格拉斯哥粗野主义塔楼换幕墙同属\"不拆重建\"范式；欧美 1950–1980 年代馆舍普遍到达维护寿命终点，此类打包项目将批量出现。" },
     { title: "学科综合楼内嵌学习空间成为主流", type: "judgment", note: "Commons 嵌入 ES & SEAS 综合楼、Marquand 嵌入艺术博物馆、工程馆迁入 Fine Hall——图书馆增量不再以独立建筑为主，家具采购决策主体从图书馆扩展到院系与校级基建部门。" },
     { title: "空间分级制度成为标配", type: "fact", note: "Talking/Quiet/Silent 三级命名与导视比格拉斯哥的红/琥珀/绿更强调行为预期；空间制度（分区、预约、噪声管理）将先于家具选型成为采购前提。" },
     { title: "捐赠叙事驱动旗舰空间命名", type: "judgment", note: "命名伦理成为新空间的价值表达——大学新空间的命名将越来越承担筹款与价值传播功能，设计需要承接这种叙事。" }
@@ -431,11 +432,11 @@ const SCHOOLS = [
   learningSpaces: "家具与制度双轨分级：软座给中殿社交/休闲空间，长桌给安静阅览室，卡座给书塔深读，移动家具给 24h 协作空间；预约制管小组室，先到先得管个人位，学期分配管研究生卡座。24 小时供给分布式实现：Marx 馆 24h 学习室 + 医学馆 24/7 空间 + 14 所住宿学院图书馆夜间开放，主馆照常闭馆。",
   serviceModel: "成熟度体现在\"看不见的系统\"：跨馆 24 小时配送、三台合一与自助化、LibCal 预约、Alma 迁移（两周流通冻结提前三个月公告、切换当日馆领导第一个借书）。研究支持从\"找文献\"转向\"用数据\"：CMD 部门、Yale Dataverse、DHLab、与教学中心合作开发 AI 工具。",
   trends: [
-    { title: "特藏走向\"一个品牌\"整合", type: "fact", note: "Beinecke 2022 年合并手稿与档案馆、2026 年再并艺术与音乐特藏——特藏从\"分散保管\"转向\"统一运营\"，教学与公共功能持续加码。" },
-    { title: "历史图书馆进入\"逐房间修复\"周期", type: "fact", note: "欧美 1930 年代馆舍批量进入维护寿命终点，\"按房间、按捐赠、不闭馆\"的滚动修复将成为常态项目类型。" },
-    { title: "建筑即展品，公共性从\"借阅\"转向\"观展+教学\"", type: "fact", note: "Beinecke 四分之三访客为建筑而来；大学图书馆的访客经济与捐赠叙事深度绑定，展陈空间成为新馆标配。" },
-    { title: "发现层先于空间层打通", type: "fact", note: "LUX 把图书馆、美术馆、博物馆、艺术中心 1,700 万件对象合一检索；机构边界的消融首先发生在数字层。" },
-    { title: "数据与 AI 成为图书馆新基建", type: "judgment", note: "研究支持从\"找文献\"转向\"用数据\"，对应空间上数据工坊（Marx 模式）与可视化实验室的持续扩张。" }
+    { tid: "special-collections", title: "特藏走向\"一个品牌\"整合", type: "fact", note: "Beinecke 2022 年合并手稿与档案馆、2026 年再并艺术与音乐特藏——特藏从\"分散保管\"转向\"统一运营\"，教学与公共功能持续加码。" },
+    { tid: "historic-renewal", title: "历史图书馆进入\"逐房间修复\"周期", type: "fact", note: "欧美 1930 年代馆舍批量进入维护寿命终点，\"按房间、按捐赠、不闭馆\"的滚动修复将成为常态项目类型。" },
+    { tid: "special-collections", title: "建筑即展品，公共性从\"借阅\"转向\"观展+教学\"", type: "fact", note: "Beinecke 四分之三访客为建筑而来；大学图书馆的访客经济与捐赠叙事深度绑定，展陈空间成为新馆标配。" },
+    { tid: "data-driven-ops", title: "发现层先于空间层打通", type: "fact", note: "LUX 把图书馆、美术馆、博物馆、艺术中心 1,700 万件对象合一检索；机构边界的消融首先发生在数字层。" },
+    { tid: "data-driven-ops", title: "数据与 AI 成为图书馆新基建", type: "judgment", note: "研究支持从\"找文献\"转向\"用数据\"，对应空间上数据工坊（Marx 模式）与可视化实验室的持续扩张。" }
   ],
   business: [
     "\"逐房间滚动修复\"是历史馆舍改造的低门槛范式——对应家具机会是\"按房间滚动更新+原装家具修复\"的双轨采购（L&B 证明 1931 年的沙发修好了仍是最好的家具）。",
@@ -538,11 +539,11 @@ const SCHOOLS = [
   learningSpaces: "主馆群\"三层供给\"：Perkins 阅览室长桌、Bostock 研习卡座、The Edge 项目室与开放协作区。研讨室是硬通货（FY2025 预约 25,644 次）。深夜供给经历\"收缩—反馈—恢复\"：2024 年按清点数据缩短开放（凌晨一两点整层仅 6 人），被 2026 年用户调查否决后，以\"试点＋评估\"恢复至凌晨 3 点、刷卡进入。配置哲学：\"把最受欢迎的空间类型数据化之后再投资\"。",
   serviceModel: "\"愿意把账算给用户看\"：造价估算、为什么涨价、为什么缩短开放时间、依据什么数据恢复——全部公开，这种透明度本身就是用户关系资产。LSC 为北卡三角区四校共享并以 30 年协议固化，还为公共图书馆免费代存。纸质流通坍缩（年流通率不足 0.6%）后不撤书，用后台库承接、把面积让给座位与教室。",
   trends: [
-    { title: "后台密集库走向区域联盟化", type: "fact", note: "LSC 从杜克自有设施发展为北卡三角区四校共享基础设施，UNC 以 30 年长约购买容量——\"谁的库房\"变成\"谁的协议\"。" },
-    { title: "特藏馆 = 教学空间 + 活动场馆 + 募捐载体", type: "fact", note: "Rubenstein 教室与展览空间翻倍、成为热门活动场地；特藏空间的使用时长与功能密度都在上升。" },
-    { title: "百年馆舍批量进入大修周期，造价与工期风险前置暴露", type: "fact", note: "Lilly（1927）2027 年百年；耶鲁 Sterling（1930）已启动 2031 百年评估——1920–30 年代馆舍的系统性更新高峰已到，造价公开透明将成为新的沟通标准。" },
-    { title: "运营管理全面数据化", type: "fact", note: "座位清点决定开放时间、用户调查决定是否恢复、研讨室预约量进入官方快数——空间运营转向\"测量—调整—再测量\"循环。" },
-    { title: "纸质流通坍缩后的空间再分配成为常态议题", type: "fact", note: "\"藏\"与\"用\"的空间分离不可逆；流通率将持续走低。" }
+    { tid: "offsite-storage", title: "后台密集库走向区域联盟化", type: "fact", note: "LSC 从杜克自有设施发展为北卡三角区四校共享基础设施，UNC 以 30 年长约购买容量——\"谁的库房\"变成\"谁的协议\"。" },
+    { tid: "special-collections", title: "特藏馆 = 教学空间 + 活动场馆 + 募捐载体", type: "fact", note: "Rubenstein 教室与展览空间翻倍、成为热门活动场地；特藏空间的使用时长与功能密度都在上升。" },
+    { tid: "historic-renewal", title: "百年馆舍批量进入大修周期，造价与工期风险前置暴露", type: "fact", note: "Lilly（1927）2027 年百年；耶鲁 Sterling（1930）已启动 2031 百年评估——1920–30 年代馆舍的系统性更新高峰已到，造价公开透明将成为新的沟通标准。" },
+    { tid: "data-driven-ops", title: "运营管理全面数据化", type: "fact", note: "座位清点决定开放时间、用户调查决定是否恢复、研讨室预约量进入官方快数——空间运营转向\"测量—调整—再测量\"循环。" },
+    { tid: "offsite-storage", title: "纸质流通坍缩后的空间再分配成为常态议题", type: "fact", note: "\"藏\"与\"用\"的空间分离不可逆；流通率将持续走低。" }
   ],
   business: [
     "\"先建后台库、再动主馆\"是十五年滚动改造的地基：对国内高校，密集书库不是配套，是改造项目的前置条件。",
@@ -628,10 +629,10 @@ const SCHOOLS = [
   learningSpaces: "\"座位是算出来的，家具是投出来的\"：BLC 补的是 MSE 被书库吃掉的具体座位数；MSE 新馆家具由 2025 年 3 月的\"家具市集（Furniture Fair）\"让学生现场试坐投票——偏好集中在带靠背支撑的高背软包休闲椅。\"自然光\"是跨越 2009 与 2026 两轮用户研究的第一诉求，最终成为 1.3 亿美元改造的建筑主线。闭馆期间\"五点供给\"：BLC + MSE 附楼 + Hutzler + Hodson Hall + 宿舍楼学习家具。",
   serviceModel: "\"图书馆没有关门，关门的只是一栋楼\"：全闭馆但服务零中断——书刊校外存储 + 在线申请 + 增加配送班次 + 校内取书点；替代空间命名（MSE Annex）、参考书就近迁移、宿舍楼补家具、学生会反馈通道，四件套齐全。Welch 医学图书馆是另一种\"轻空间\"样本：馆员迁出实体馆、转为分布式嵌入式服务。",
   trends: [
-    { title: "1960 年代地下/半地下馆舍批量进入\"采光与机电双重更新\"周期", type: "fact", note: "MSE 60 年后首次全面改造，核心是把光引入地下 50 英尺；美国高校 20 世纪中期馆舍的系统性更新高峰仍在持续，\"采光债\"成为普遍议题。" },
-    { title: "家具选型从采购环节变成公开的用户研究环节", type: "fact", note: "家具市集让学生对候选桌椅现场投票，校方媒体与学生媒体同步报道——家具清单的诞生过程本身成为项目沟通资产，供应商样品即教具。" },
-    { title: "旗舰馆\"全闭馆＋服务不闭馆\"成为可接受的改造模式", type: "fact", note: "与耶鲁\"逐房间滚动\"、杜克\"新楼先开再修旧楼\"并列的第三种施工组织范式，前提是有替代空间矩阵。" },
-    { title: "特藏从边缘库位走向主馆核心层", type: "fact", note: "MSE 改造把特藏部迁到核心层并配教学与展览空间——特藏教学化趋势在空间分配上兑现（与杜克 Rubenstein、耶鲁 Beinecke 同向）。" },
+    { tid: "historic-renewal", title: "1960 年代地下/半地下馆舍批量进入\"采光与机电双重更新\"周期", type: "fact", note: "MSE 60 年后首次全面改造，核心是把光引入地下 50 英尺；美国高校 20 世纪中期馆舍的系统性更新高峰仍在持续，\"采光债\"成为普遍议题。" },
+    { tid: "data-driven-ops", title: "家具选型从采购环节变成公开的用户研究环节", type: "fact", note: "家具市集让学生对候选桌椅现场投票，校方媒体与学生媒体同步报道——家具清单的诞生过程本身成为项目沟通资产，供应商样品即教具。" },
+    { tid: "renovation-decant", title: "旗舰馆\"全闭馆＋服务不闭馆\"成为可接受的改造模式", type: "fact", note: "与耶鲁\"逐房间滚动\"、杜克\"新楼先开再修旧楼\"并列的第三种施工组织范式，前提是有替代空间矩阵。" },
+    { tid: "special-collections", title: "特藏从边缘库位走向主馆核心层", type: "fact", note: "MSE 改造把特藏部迁到核心层并配教学与展览空间——特藏教学化趋势在空间分配上兑现（与杜克 Rubenstein、耶鲁 Beinecke 同向）。" },
     { title: "可持续与本地责任条款前置进图书馆改造", type: "fact", note: "LEED Gold、全电系统、net-zero ready、20% 少数族裔/女性企业发包、13% 本地企业发包全部写进公开口径——公共叙事从\"空间与藏书\"扩展到\"碳与社区\"。" }
   ],
   business: [
@@ -671,14 +672,14 @@ const SCHOOLS = [
   reportDate: "2026-09-20",
   tagline: "馆藏完整性：用自动化密度换土地",
   mainLine: "一条\"书不出校园\"的逆流之线：2005 年校董会决定把全部印本馆藏留在校园内，答案不是缩小馆藏，而是 2011 年在主馆旁挖出一个 50 英尺深的机器人书库，把 350 万册书塞进常规书库七分之一的体积里。",
-  flagship: { name: "曼苏托图书馆（2011）", note: "全美唯一全地下 ASRS、北美最大自动化高密度图书馆之一：1/7 占地、平均 3 分钟取书、2,500 万命名捐赠撬动 8,100 万项目。" },
+  flagship: { name: "曼苏托图书馆（2011）", note: "全美唯一全地下 ASRS、北美最大自动化高密度图书馆之一：1/7 占地、平均 3 分钟取书、2,500 万命名捐赠；自动化系统公开口径约 1,000 万美元，项目总造价未见公开来源。" },
   overview: {
-    intro: "美国第十大学术图书馆（校方 2022–23 口径，1,320 万册）。六馆系统呈\"一巨、一密、一专、三小\"格局，与哈佛 70 余馆的联邦制相反，芝大走的是持续集中化路线——从 1970 年合并 12 个院系馆开始就没停过。",
+    intro: "美国第十大学术图书馆（校方 2022–23 口径，1,320 万册含电子；ALA 早期统计为 1,101 万册、全美第 13——口径与年份不同，引用时须注明）。六馆系统呈\"一巨、一密、一专、三小\"格局，与哈佛 70 余馆的联邦制相反，芝大走的是持续集中化路线——从 1970 年合并 12 个院系馆开始就没停过。",
     stats: [
-      { k: "总藏书", v: "1,320 万册", s: "校方口径（含电子），位列美国第十大学术图书馆" },
+      { k: "总藏书", v: "1,320 万册", s: "校方口径（含电子）；ALA 旧口径 1,101 万册（全美第 13），排名随口径变化" },
       { k: "数字馆藏", v: "304 TB", s: "原生数字档案与数字化馆藏；档案手稿 73,451 直线英尺" },
       { k: "雷根斯坦", v: "110 万人次/年", s: "FY2022–23 入馆；577,085 平方英尺" },
-      { k: "电子文献传递", v: "740 万篇次", s: "FY2022–23，年印本流通 103,940 册" }
+      { k: "电子文献传递", v: "740 万篇次", s: "FY2022–23 口径，量级疑似电子资源使用/检索量，待与馆方核实；年印本流通 103,940 册" }
     ]
   },
   projects: [
@@ -695,7 +696,7 @@ const SCHOOLS = [
       nameEn: "Joseph Regenstein Library · SOM (Walter Netsch) · 1970",
       year: "1970 / 重组 1998",
       stats: [{ k: "总造价", v: "$20.75M" }, { k: "面积", v: "577,085 SF" }, { k: "容量扩容", v: "+50%（1998）" }, { k: "模数", v: "27 英尺见方" }],
-      facts: "SOM 的 Walter Netsch 设计，印第安纳石灰岩外墙呼应校园哥特传统；把全校总馆与 12 个院系图书馆的 160 余万册藏书合并进同一排架序列——\"图书馆史上最大的单一统一馆藏\"。1998 年 B 层固定架换活动密集书架，容量扩容超 50%；2015 年 A 层改互动学习中心（72 英尺玻璃墙朝向花园，\"改造后立刻挤满了学生\"）。",
+      facts: "SOM 的 Walter Netsch 设计，钢筋混凝土 brutalist 巨构（非石灰岩外墙）；把全校总馆与 12 个院系图书馆的 160 余万册藏书合并进同一排架序列——\"图书馆史上最大的单一统一馆藏\"。1998 年 B 层固定架换活动密集书架，容量扩容超 50%；2015 年 A 层改互动学习中心（72 英尺玻璃墙朝向花园，\"改造后立刻挤满了学生\"）。",
       insight: "大进深、少隔断的\"仓库式\"楼层剖面有极强的再配置韧性——56 年装下全部功能更替；\"容量不够\"不一定是缺地，也可能是缺密度：一次书架层级的改造换来 50% 增量，推迟新建十余年。"
     },
     {
@@ -703,26 +704,26 @@ const SCHOOLS = [
       nameEn: "Harper Memorial Library · 1912",
       year: "1912 / 2009 改造",
       stats: [{ k: "配捐", v: "洛克菲勒 3:1" }, { k: "改造", v: "2009 → 凯西中心 2012" }, { k: "命名捐赠", v: "约 $17M" }],
-      facts: "洛克菲勒 3:1 挑战配捐（每筹 1 美元配 3 美元）。1970 年藏书迁出后功能让位，2009 年顶层改造为 24 小时学习空间，2012 年校友凯西认捐约 1,700 万美元命名为凯西学习中心。注意：24 小时承诺没有守住——如今仅考试周开放。",
+      facts: "洛克菲勒 3:1 挑战配捐（每筹 1 美元配 3 美元）。1970 年藏书迁出后功能让位，2009 年顶层改造为 24 小时学习空间，2012 年校友凯西认捐约 1,700 万美元命名为卡西学习中心（Arley D. Cathey）。注意：24 小时承诺没有守住——如今仅考试周开放。",
       insight: "\"图书馆变成非图书馆\"的完整样本：1912 年全校中枢 → 1970 年藏书抽走 → 2009 年以\"无书的学习空间\"回归学生生活。"
     },
     {
       name: "克里勒图书馆（1984／2017–2018）：科学馆的两轮\"空间换功能\"",
       nameEn: "John Crerar Library · 1984 / 2017–2018",
       year: "1984 / 2017–2018",
-      stats: [{ k: "造价", v: "约 $22M" }, { k: "面积", v: "160,836 SF" }, { k: "再造", v: "顶层两层给 CS 系" }],
-      facts: "源自 1894 年实业家遗嘱设立的免费公共科学图书馆，1981 年以并入芝大为条件获得新馆。2017–2018 年顶层两层改造为计算机科学系与计算研究所空间，留馆藏书压入地下密集架、迁出藏书改为申请调阅。",
+      stats: [{ k: "造价", v: "约 $22M" }, { k: "面积", v: "约 167,500 GSF" }, { k: "再造", v: "顶层两层给 CS 系" }],
+      facts: "源自实业家 John Crerar 1889 年去世遗赠、1894 年组建的免费公共科学图书馆，1981 年以并入芝大为条件获得新馆（面积取设计方 Payette 口径）。2017–2018 年顶层两层改造为计算机科学系与计算研究所空间，留馆藏书压入地下密集架、迁出藏书改为申请调阅。",
       insight: "\"图书馆建筑被大学重新分配\"的样本——前提曼苏托在 6 年前建成：没有后台密度，前台让渡就不成立。"
     }
   ],
   learningSpaces: "\"主馆即校园客厅\"：雷根斯坦 A 层互动学习中心（高吧台、休闲椅、会议桌、白板、72 英尺玻璃墙）+ 17 间可预约研习室 + 62 个日间储物柜（14 个带充电）；曼苏托大阅览室 180 座自然光穹顶；凯西学习中心 2 万平方英尺（主阅览室安静自习＋北阅览室小组协作）。但 24/7 供给正在收缩：2009 年高调开出的 24 小时空间，如今收缩到考试周限定——雷根斯坦午夜闭馆（期末周延至凌晨 4 点），与 JHU 以 BLC 补 24/7 的方向相反。",
   serviceModel: "服务叙事始终围绕\"馆藏的可及性\"：不迁走书（2005 方针）、分钟级取书（ASRS）、数字化传递（740 万篇次）与特藏教学化（SCRC 扩大研讨教室）是同一条逻辑的四种兑现方式。数字学术基础设施进入\"基金会＋校方配捐\"共建模式（NEH 100 万美元＋校方再募 400 万美元）。",
   trends: [
-    { title: "\"校内高密度自动化存储\"正在从小众选择变成可评估的常规选项", type: "fact", note: "第一代 ASRS 已进入\"扩容周期\"——对国内有土地约束的老校区，这是比异地库房更贴近\"馆藏即身份\"叙事的路线。" },
-    { title: "图书馆建筑正在被\"适应性再利用\"重新定义", type: "fact", note: "克里勒让位计算机系、哈珀变学习空间、雷根斯坦 A 层变互动学习中心——芝大没有拆过一座图书馆，但每一座的功能都被重新分配过；资产价值评估从\"藏书容器\"转向\"校园不动产\"。" },
-    { title: "24/7 供给在美国高校呈收缩态势", type: "fact", note: "24/7 正从\"标配叙事\"变成\"需要持续辩护的成本项\"——数据化清点与公开沟通将成为下一阶段的标配动作。" },
-    { title: "数字学术基础设施进入\"基金会＋校方配捐\"共建模式", type: "fact", note: "图书馆的下一笔大钱不花在空间上，而花在数据结构与 AI 就绪的馆藏上；空间投资与数字投资开始分账叙事。" },
-    { title: "特藏空间的\"荣誉命名\"成为零成本捐赠产品", type: "fact", note: "SCRC 以 90 岁前校长之名命名（2020），不涉大额捐赠却获得全校传播——与曼苏托 2,500 万美元的金钱命名构成命名产品价格带的两端。" }
+    { tid: "offsite-storage", title: "\"校内高密度自动化存储\"正在从小众选择变成可评估的常规选项", type: "fact", note: "第一代 ASRS 已进入\"扩容周期\"——对国内有土地约束的老校区，这是比异地库房更贴近\"馆藏即身份\"叙事的路线。" },
+    { tid: "historic-renewal", title: "图书馆建筑正在被\"适应性再利用\"重新定义", type: "fact", note: "克里勒让位计算机系、哈珀变学习空间、雷根斯坦 A 层变互动学习中心——芝大没有拆过一座图书馆，但每一座的功能都被重新分配过；资产价值评估从\"藏书容器\"转向\"校园不动产\"。" },
+    { tid: "247-spaces", title: "24/7 供给在美国高校呈收缩态势", type: "fact", note: "24/7 正从\"标配叙事\"变成\"需要持续辩护的成本项\"——数据化清点与公开沟通将成为下一阶段的标配动作。" },
+    { tid: "data-driven-ops", title: "数字学术基础设施进入「基金会资助＋校方另行募集」共建模式", type: "fact", note: "图书馆的下一笔大钱不花在空间上，而花在数据结构与 AI 就绪的馆藏上；空间投资与数字投资开始分账叙事。" },
+    { tid: "special-collections", title: "特藏空间的\"荣誉命名\"成为零成本捐赠产品", type: "fact", note: "SCRC 以 90 岁前校长之名命名（2020），不涉大额捐赠却获得全校传播——与曼苏托 2,500 万美元的金钱命名构成命名产品价格带的两端。" }
   ],
   business: [
     "\"书不出校园\"是一个可以反向使用的决策模板：先问\"这所学校把馆藏当包袱还是当资产\"，再决定推撤书方案还是密度方案——两种叙事都有顶级名校背书。",
@@ -763,7 +764,7 @@ const SCHOOLS = [
   mainLine: "没有新建过一座旗舰馆：1962 年的 Van Pelt 主馆以约十年为周期逐层再分配功能——地下 24/7、一层安静旗舰与协作共享、高层特藏与全球收藏；用一座自建校外高密度书库（LIBRA）承接藏书，用两轮大额修缮把 1891 年的国家历史地标 Fisher 馆保持在一线使用状态。",
   flagship: { name: "Moelis 家族大阅览室（2017）", note: "5,500 平方英尺期刊库区改造，校方亲口承认的\"安静回归\"：20 英尺高天花板、Claudy Jongstra 19×49 英尺羊毛声学壁画、\"针落可闻\"的声学目标，获 IIDA 双奖与 AIA Philadelphia 优异奖。" },
   overview: {
-    intro: "19 个实体图书馆＋数字图书馆（校方口径）。[校方 FACTS 2017](https://library.upenn.edu/sites/default/files/docs/publications/FACTS2017mar2018.pdf)：全系统藏书 6,513,215 卷、年入馆 1,485,787 人次、座位 4,113 个、在编员工 338 人；印本与电子卷合计逾 837 万。系统中枢 Van Pelt 年访客 95.2 万。现任馆长 Constantia Constantinou（H. Carton Rogers III Vice Provost and Director，2023 年口径）。经费采用 RCM 模式由 12 个学院分摊。",
+    intro: "19 个实体图书馆＋数字图书馆（校方口径）。[校方 FACTS 2017](https://www.library.upenn.edu/sites/default/files/docs/publications/FACTS2017mar2018.pdf)：全系统藏书 6,513,215 卷、年入馆 1,485,787 人次、座位 4,113 个、在编员工 338 人；印本与电子卷合计逾 837 万。系统中枢 Van Pelt 年访客 95.2 万。现任馆长 Constantia Constantinou（H. Carton Rogers III Vice Provost and Director，2023 年口径）。经费采用 RCM 模式由 12 个学院分摊。",
     stats: [
       { k: "总藏书", v: "651 万册", s: "FACTS 2017 校方口径；印本+电子卷合计 837.5 万册" },
       { k: "年入馆", v: "148.6 万人次", s: "FACTS 2017 全系统；主馆 Van Pelt 95.2 万" },
@@ -825,11 +826,11 @@ const SCHOOLS = [
   serviceModel: "服务叙事围绕\"速度\"与\"产品线\"：LIBRA 1–2 个工作日送达＋免费数字化；资源共享 Direct Borrowing 年借入 4.05 万件（Ivy 网络活跃）；自建 MetriDoc 数据平台，入馆、流通、空间预约与学生学习行为的分析进入官方 FACTS 手册。捐赠命名横跨全价位：Fisher 夫妇 1,650 万（全馆）、Moelis（阅览室）、Kislak 550 万（中心）、150 万/100 万（Forum/Gallery）、Holman（馆冠名）直至毕业班级冠名研讨室——\"改造—命名—传播—再改造\"的飞轮完整可鉴。",
   trends: [
     { title: "\"安静回归\"从批评走向立项：声学、照明、艺术一体化", type: "fact", note: "Moelis 是校方亲口承认的反向修正——不是媒体评论、不是学生请愿，而是立项声明。下一阶段获奖项目的共性将是\"安静空间的设计密度\"。" },
-    { title: "学习空间嵌入非图书馆建筑成为常规操作", type: "fact", note: "Education Commons 落在体育场看台夹层、Weigle 嵌在主馆翼楼——校园空间统筹正在取代单体馆设计成为空间决策的上位框架。" },
-    { title: "书库外迁＋按尺寸高密度存储成为\"默认运营动作\"", type: "fact", note: "LIBRA（2011）之后，2022–24 年书库重整再迁、2026 年微缩胶片整体入库——外迁已从一次性工程变为持续运营动作。" },
-    { title: "特藏上浮与\"特藏教学化\"", type: "fact", note: "Kislak 把特藏、修复实验室、讲座与展览垂直叠放在顶层——保护能力本身也成为展示与服务的一部分。" },
-    { title: "全球与区域研究收藏获得实体空间入口", type: "fact", note: "Zilberman 全球收藏中心（1,500 万募资、区域研讨室＋论坛＋画廊）把\"馆藏多样性\"翻译成可教学、可办展的空间产品，并同步聘任首位非洲研究、俄罗斯与东欧研究专职馆员。" },
-    { title: "历史建筑的\"保存即使命\"：两轮大额修缮的耐心", type: "fact", note: "Fisher 馆 1991 年修复（1,650 万）与 2025–26 再修（1,780 万、开放中施工）——\"开放中修缮＋噪音上报机制\"值得国内近现代优秀建筑类老馆借鉴。" }
+    { tid: "learning-commons", title: "学习空间嵌入非图书馆建筑成为常规操作", type: "fact", note: "Education Commons 落在体育场看台夹层、Weigle 嵌在主馆翼楼——校园空间统筹正在取代单体馆设计成为空间决策的上位框架。" },
+    { tid: "offsite-storage", title: "书库外迁＋按尺寸高密度存储成为\"默认运营动作\"", type: "fact", note: "LIBRA（2011）之后，2022–24 年书库重整再迁、2026 年微缩胶片整体入库——外迁已从一次性工程变为持续运营动作。" },
+    { tid: "special-collections", title: "特藏上浮与\"特藏教学化\"", type: "fact", note: "Kislak 把特藏、修复实验室、讲座与展览垂直叠放在顶层——保护能力本身也成为展示与服务的一部分。" },
+    { tid: "special-collections", title: "全球与区域研究收藏获得实体空间入口", type: "fact", note: "Zilberman 全球收藏中心（1,500 万募资、区域研讨室＋论坛＋画廊）把\"馆藏多样性\"翻译成可教学、可办展的空间产品，并同步聘任首位非洲研究、俄罗斯与东欧研究专职馆员。" },
+    { tid: "historic-renewal", title: "历史建筑的\"保存即使命\"：两轮大额修缮的耐心", type: "fact", note: "Fisher 馆 1991 年修复（1,650 万）与 2025–26 再修（1,780 万、开放中施工）——\"开放中修缮＋噪音上报机制\"值得国内近现代优秀建筑类老馆借鉴。" }
   ],
   business: [
     "\"安静回归\"最硬的官方话术在宾大：Moelis 立项声明（\"回应近年偏向协作的改造之后学生对安静空间的渴求\"）来自正在为协作空间花大钱的同一批决策者，分量高于任何媒体评论。",
@@ -846,13 +847,13 @@ const SCHOOLS = [
     "馆长 2026 年在任情况、Goldstein 24/7 现行安排：引用前需以官网复核。"
   ],
   sources: [
-    { label: "Penn Libraries SelectedFacts 2017（系统级数据手册）", url: "library.upenn.edu/sites/default/files/docs/publications/FACTS2017mar2018.pdf" },
+    { label: "Penn Libraries SelectedFacts 2017（系统级数据手册）", url: "www.library.upenn.edu/sites/default/files/docs/publications/FACTS2017mar2018.pdf" },
     { label: "Architectural Record – Moelis 大阅览室 by Gensler（2017-11）", url: "architecturalrecord.com/articles/13061-moelis-family-grand-reading-room-by-gensler" },
     { label: "Penn Almanac – Moelis Family Grand Reading Room（立项声明原文）", url: "almanac.upenn.edu/volume-64-number-7" },
-    { label: "Penn Libraries – 全球收藏中心改造立项（2023-08）", url: "library.upenn.edu/news/cgc-launch" },
-    { label: "Penn Libraries – Books on the Move: Van Pelt 书库重整（2023）", url: "library.upenn.edu/news/books-move-changes-van-pelt" },
+    { label: "Penn Libraries – 全球收藏中心改造立项（2023-08）", url: "www.library.upenn.edu/news/cgc-launch" },
+    { label: "Penn Libraries – Books on the Move: Van Pelt 书库重整（2023）", url: "www.library.upenn.edu/news/books-move-changes-van-pelt" },
     { label: "The Daily Pennsylvanian – 校董会批准 $12.5M 改造（2026-05）", url: "thedp.com/article/2026/05/penn-board-of-trustees-libraries-van-pelt-veterinary-facility" },
-    { label: "Penn Libraries – Biotech Commons 开放（2021-09）", url: "library.upenn.edu/news/penn-libraries-opens-newly" },
+    { label: "Penn Libraries – Biotech Commons 开放（2021-09）", url: "www.library.upenn.edu/news/penn-libraries-opens-newly" },
     { label: "Penn Almanac – LIBRA 新馆 announcement（2010-03）", url: "almanac.upenn.edu/archive/volumes/v56/n26/libra.html" },
     { label: "Penn Today – Fisher 馆外立面修缮（2025-05）", url: "penntoday.upenn.edu/news/exterior-restoration-landmark-Frank-Furness-fine-arts-library-historic-building" },
     { label: "Wikipedia – Van Pelt Library（沿革与 24/7 口径）", url: "en.wikipedia.org/wiki/Van_Pelt_Library" }
@@ -917,11 +918,11 @@ const SCHOOLS = [
   learningSpaces: "Butler 2–4 层学期内 24/7，Lehman 社会科学馆以深夜开放著称，Augustus C. Long 健康科学馆设 24 小时阅览室；Milstein 本科生学习空间嵌在 Butler 地下。空间叙事与宾大的\"垂直分层\"同构，但分层依据是学科联邦——每座学科馆各守自己的作息与声景。",
   serviceModel: "联盟即服务：ReCAP 以\"下一工作日送达＋共享保存环境\"成为系统服务的一部分；2025 年 FOLIO/CLIO/Panorama 三层栈把发现与分析纳入同一服务目录。馆长 Ann D. Thornton 的 NYPL 履历（近二十年）本身即\"公共—大学联盟\"治理经验的活样本。",
   trends: [
-    { title: "藏书治理进入\"联盟时代\"：ReCAP 是制度发明而不只是库房", type: "fact", note: "跨机构共享保存库把藏书压力从单馆资产负债表上移走——与自建、地下 ASRS 并列成为第三种标准答案。" },
-    { title: "老馆再生从项目变成曲线：十五年五期的滚动投入", type: "fact", note: "Butler 1994–2010 的改造节奏说明：历史中心馆的最优策略可能不是一次性翻新，而是可融资、可分期、边运营边更新的长曲线。" },
-    { title: "24/7 从承诺变成学科馆的差异化作息", type: "fact", note: "Butler 学期 24/7＋Lehman 深夜馆＋医学 24 小时阅览室：全天候不再是一座馆的统一口号，而是按学科与楼层分配的梯度。" },
-    { title: "开源 LSP 进入常春藤生产环境", type: "fact", note: "FOLIO＋CLIO＋Panorama 三层解耦 2025 年在哥大落地——系统架构开始像基础设施而非软件采购。" },
-    { title: "特藏与修复能力前置展示", type: "fact", note: "RBML 与古籍保护能力同楼于 Butler 主馆动线上，与宾大 Kislak\"特藏上浮\"共同指向：保护能力本身成为教学展示面。" }
+    { tid: "offsite-storage", title: "藏书治理进入\"联盟时代\"：ReCAP 是制度发明而不只是库房", type: "fact", note: "跨机构共享保存库把藏书压力从单馆资产负债表上移走——与自建、地下 ASRS 并列成为第三种标准答案。" },
+    { tid: "historic-renewal", title: "老馆再生从项目变成曲线：十五年五期的滚动投入", type: "fact", note: "Butler 1994–2010 的改造节奏说明：历史中心馆的最优策略可能不是一次性翻新，而是可融资、可分期、边运营边更新的长曲线。" },
+    { tid: "247-spaces", title: "24/7 从承诺变成学科馆的差异化作息", type: "fact", note: "Butler 学期 24/7＋Lehman 深夜馆＋医学 24 小时阅览室：全天候不再是一座馆的统一口号，而是按学科与楼层分配的梯度。" },
+    { tid: "data-driven-ops", title: "开源 LSP 进入常春藤生产环境", type: "fact", note: "FOLIO＋CLIO＋Panorama 三层解耦 2025 年在哥大落地——系统架构开始像基础设施而非软件采购。" },
+    { tid: "special-collections", title: "特藏与修复能力前置展示", type: "fact", note: "RBML 与古籍保护能力同楼于 Butler 主馆动线上，与宾大 Kislak\"特藏上浮\"共同指向：保护能力本身成为教学展示面。" }
   ],
   business: [
     "藏书治理建议直接摆出\"四象限\"：自建（哈佛）、内嵌 ASRS（芝大）、自建校外库（宾大）、联盟共享（哥大 ReCAP）——四种都有顶级背书，把选择逻辑（资产 vs 服务）讲透。",
@@ -975,7 +976,7 @@ const SCHOOLS = [
       img: "cornell-fal.jpg",
       imgCap: "40 英尺中庭与悬挂书塔。摄影：Lukas Schaller / designboom",
       stats: [{ k: "造价", v: "$16.9M" }, { k: "个人捐赠", v: "$6M（Mui Ho）" }, { k: "书塔藏书", v: "10–12.5 万卷" }, { k: "能耗", v: "-70% · LEED Gold" }],
-      facts: "起因是双重挤压：Sibley Hall 的美术藏书逐年膨胀，建筑学院的工坊也在膨胀——同一校园里书没处放、工坊也没处放。2013 年校友[何妙儿（Mui Ho，建筑学 1966 届）捐赠 600 万美元](https://aap.cornell.edu)，学校拍板把 1911 年的工业厂房 Rand Hall 整体改造。设计建筑师是康奈尔建筑学院 1987 届硕士校友、奥地利人 Wolfgang Tschapeller（[STV 任执行建筑师](https://goodyclancy.com)），方案最激进的一笔是拆掉三层楼板、把屋顶整体抬高约 4 英尺、在厂房腹中掏出 40 英尺高的中庭，让一座四层钢制书塔以[倒阶梯金字塔的形态被钢索悬挂起来](https://www.archpaper.com/2019/11/wolfgang-tschapeller-cornell-library/)，外覆安全网、脚下是格栅地板，光线与视线都从塔身穿过。首层划出 8,000–8,300 平方英尺 Material Practice Center，木工、金属与数字制造工坊同 maker space 合为一体——悬挂不是炫技，是空间算力：书不占地面，地面就完整让给工坊。这个构思在建筑系内部认祖了 White 校长 1876 年创馆藏书的 A.D. White Library 三层铸铁书塔，改造因此有了跨越百年的叙事合法性（前院长 Kent Kleinman 评价：\"respectfully restored and radically re-inhabited\"）。2019 年 8 月开放，[LEED Gold、能耗较改造前降约 70%](https://www.designboom.com/architecture/wolfgang-tschapeller-mui-ho-fine-arts-library-12-12-2019/)，18 个研读卡座沿塔布置，成为全校最具传播力的学习空间照片。",
+      facts: "起因是双重挤压：Sibley Hall 的美术藏书逐年膨胀，建筑学院的工坊也在膨胀——同一校园里书没处放、工坊也没处放。2013 年校友[何妙儿（Mui Ho，建筑学 1966 届）捐赠 600 万美元](https://aap.cornell.edu)，学校拍板把 1911 年的工业厂房 Rand Hall 整体改造。设计建筑师是康奈尔建筑学院 1987 届硕士校友、奥地利人 Wolfgang Tschapeller（[STV 任执行建筑师](https://goodyclancy.com)），方案最激进的一笔是拆掉三层楼板、把屋顶整体抬高约 4 英尺、在厂房腹中掏出 40 英尺高的中庭，让一座四层钢制书塔以[倒阶梯金字塔的形态被钢索悬挂起来](https://www.archpaper.com/2019/11/wolfgang-tschapeller-cornell-library/)，外覆安全网、脚下是格栅地板，光线与视线都从塔身穿过。首层划出 8,000–8,300 平方英尺 Material Practice Center，木工、金属与数字制造工坊同 maker space 合为一体——悬挂不是炫技，是空间算力：书不占地面，地面就完整让给工坊。这个构思在建筑系内部认祖了 White 校长 1876 年创馆藏书的 A.D. White Library 三层铸铁书塔，改造因此有了跨越百年的叙事合法性（前院长 Kent Kleinman 评价：\"respectfully restored and radically re-inhabited\"）。2019 年 8 月开放，LEED Gold、能耗较改造前降约 70%（来源链接已失效，保留结论），18 个研读卡座沿塔布置，成为全校最具传播力的学习空间照片。",
       insight: "本系列迄今最强的适应性再利用样本，强在三点：$16.9M 做出地标级传播力（造价不到新建馆舍零头）；\"悬挂\"用结构换平面，一栋楼解决书与工坊两个功能危机；新设计向本校历史认祖，募资、审批、舆论一路顺。对坐拥 1950–80 年代闲置工业厂房的高校，这个模板比新建便宜一个数量级——但悬挂结构对消防荷载规范要求极高，落地需专项论证。"
     },
     {
@@ -1010,11 +1011,11 @@ const SCHOOLS = [
   learningSpaces: "康奈尔学习空间的共同主题是\"地形即空间\"：Uris 馆多个阅览室 24 小时开放（Dean Reading Room 等），夜晚灯火是 Libe Slope 上的地标；1982 年凿坡建成的地下 \"Cocktail Lounge\" 玻璃顶采光、景观与安静兼得；Mui Ho 美术图书馆 18 个研读卡座沿悬挂书塔布置，临卡尤加湖谷一侧；Rand Hall 首层 Material Practice Center 与图书馆同楼——做模型累了上楼看书，看书累了下楼做模型。多数高校把 maker space 设在图书馆外的另一栋楼，康奈尔用一座书塔把\"动手\"与\"阅读\"缝进了同一条垂直动线。",
   serviceModel: "馆长头衔即传统：Carl A. Kroch University Librarian 以捐资书商命名，把个人捐赠制度化为职位记忆；校友冠名谱系横跨三代——Uris（1925 届地产商，1960 年代冠名本科馆）、Kroch（1935 届珍本书商，1992 年冠名地下特藏馆）、Mui Ho（1966 届建筑师校友，2013 年捐资发起美术馆改造），每次冠名都恰好发生在该馆功能重塑的节点，钱与转型互为因果。特藏运营上，RMC 藏在地下三层但服务上并未\"藏\"：物理上最深，服务上最外——金库级环境不以牺牲可达性为代价。",
   trends: [
-    { title: "适应性再利用取代新建地标：Rand Hall 是低成本高传播力的答案", type: "fact", note: "1911 年老厂房＋抬顶中庭＋悬挂书塔，$16.9M 成为康奈尔图书馆系统的形象封面——老工业建筑改造可以进入学校宣传主叙事。" },
-    { title: "特藏的空间策略走向地下金库化", type: "fact", note: "Kroch 1992 年即实现恒温金库与地下采光兼得，比芝大 Mansueto 早 19 年，且为特藏而非流通书设计——天窗中庭不是奢侈项，是地下空间可持续使用的必要条件。" },
-    { title: "learning commons 开始吸收\"动手\"功能", type: "fact", note: "Material Practice Center 与图书馆同楼同动线，commons 的内涵从讨论协作扩展到制作实践——\"动手的 commons\"成为可引用原型。" },
-    { title: "共创式设计成为改造项目的标准沟通策略", type: "fact", note: "Olin 的家具试用、VR 走查、旧物改造（call board 变数字钟）三件套物料成本近零，回报是舆论零阻力与采购决策的免费众包。" },
-    { title: "校友捐赠与功能重塑同步发生", type: "fact", note: "Uris→Kroch→Mui Ho 三代冠名都落在功能转型节点——募资叙事应与空间转型叙事合并策划。" }
+    { tid: "historic-renewal", title: "适应性再利用取代新建地标：Rand Hall 是低成本高传播力的答案", type: "fact", note: "1911 年老厂房＋抬顶中庭＋悬挂书塔，$16.9M 成为康奈尔图书馆系统的形象封面——老工业建筑改造可以进入学校宣传主叙事。" },
+    { tid: "special-collections", title: "特藏的空间策略走向地下金库化", type: "fact", note: "Kroch 1992 年即实现恒温金库与地下采光兼得，比芝大 Mansueto 早 19 年，且为特藏而非流通书设计——天窗中庭不是奢侈项，是地下空间可持续使用的必要条件。" },
+    { tid: "learning-commons", title: "learning commons 开始吸收\"动手\"功能", type: "fact", note: "Material Practice Center 与图书馆同楼同动线，commons 的内涵从讨论协作扩展到制作实践——\"动手的 commons\"成为可引用原型。" },
+    { tid: "data-driven-ops", title: "共创式设计成为改造项目的标准沟通策略", type: "fact", note: "Olin 的家具试用、VR 走查、旧物改造（call board 变数字钟）三件套物料成本近零，回报是舆论零阻力与采购决策的免费众包。" },
+    { tid: "special-collections", title: "校友捐赠与功能重塑同步发生", type: "fact", note: "Uris→Kroch→Mui Ho 三代冠名都落在功能转型节点——募资叙事应与空间转型叙事合并策划。" }
   ],
   business: [
     "老厂房/老仓库改造图书馆，优先研究\"悬挂＋中庭\"两件套：Rand Hall 证明拆中层楼板＋抬屋顶＋悬挂结构，可以用零头造价获得地标级传播力。",
@@ -1103,12 +1104,12 @@ const SCHOOLS = [
   learningSpaces: "Duke Humfrey's Library（1488）至今维持原状使用——低矮双层书廊与自然采光，是「历史建筑第二次生命」的原点证据。Blackwell Hall 是新一代公共学习大厅的原型：13.5 米挑高，展厅、咖啡、讲座与公众入口合成一个空间；Gladstone Link 证明地下低层高空间可以成为稳定的读者空间；Schwarzman 人文馆 410 座中 80 座研究生专座设在内环（俯瞰中庭），全楼另散布 320 个学习座——学习空间溢出图书馆边界，成为整栋楼的底色。",
   serviceModel: "统一发现层 SOLO 覆盖成员馆与共享编目的学院图书馆；校外库房（斯温登 BSF，153 英里书架）取书请求经 SOLO 下单、逐件条码追踪。服务整合的主线是「合并分散小馆」：2025 年人文馆一次合并三个院系图书馆，开放时间从各馆的碎片化时段统一到每日 9:00–21:00。",
   trends: [
-    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "Weston：1930 年代 New Bodleian 拆掉防火隐患书塔再生为公众大厅；Gladstone Link：1909–12 年地下书库百年后再生为读者空间——同一所学校两个世纪各做一次。" },
-    { title: "藏书外迁 · 高密度库房", type: "judgment", note: "斯温登 BSF（2010，£26M，153 英里书架、千万件级）：2007–08 年校内 Osney Mead 选址被规划拒绝才走向校外——在英国，外迁首先是个规划政治问题，其次才是工程问题。" },
-    { title: "全天候学习空间", type: "fact", note: "Schwarzman 人文馆 24/7 学习空间配智能储物柜：通宵不再依赖夜间人工值守，\"取书\"环节自动化——24/7 成本问题的新一代解法。" },
-    { title: "Learning Commons 常态化", type: "judgment", note: "Blackwell Hall 把公众入口、展厅与咖啡合成一个大厅；Schwarzman 全楼 320 个散布学习座——commons 溢出图书馆边界，成为整栋建筑的底色。" },
-    { title: "数据化运营", type: "judgment", note: "《The 21st Century Library》研究报告直接作为新馆设计任务书；BSF 逐件条码＋SOLO 请求驱动每日取书动线——研究先行、运营数据化。" },
-    { title: "特藏走向台前", type: "fact", note: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配常设展厅，重开一年访客破百万——特藏从库房变成公共目的地。" }
+    { tid: "historic-renewal", title: "历史建筑的\"第二次生命\"", type: "fact", note: "Weston：1930 年代 New Bodleian 拆掉防火隐患书塔再生为公众大厅；Gladstone Link：1909–12 年地下书库百年后再生为读者空间——同一所学校两个世纪各做一次。" },
+    { tid: "offsite-storage", title: "藏书外迁 · 高密度库房", type: "judgment", note: "斯温登 BSF（2010，£26M，153 英里书架、千万件级）：2007–08 年校内 Osney Mead 选址被规划拒绝才走向校外——在英国，外迁首先是个规划政治问题，其次才是工程问题。" },
+    { tid: "247-spaces", title: "全天候学习空间", type: "fact", note: "Schwarzman 人文馆 24/7 学习空间配智能储物柜：通宵不再依赖夜间人工值守，\"取书\"环节自动化——24/7 成本问题的新一代解法。" },
+    { tid: "learning-commons", title: "Learning Commons 常态化", type: "judgment", note: "Blackwell Hall 把公众入口、展厅与咖啡合成一个大厅；Schwarzman 全楼 320 个散布学习座——commons 溢出图书馆边界，成为整栋建筑的底色。" },
+    { tid: "data-driven-ops", title: "数据化运营", type: "judgment", note: "《The 21st Century Library》研究报告直接作为新馆设计任务书；BSF 逐件条码＋SOLO 请求驱动每日取书动线——研究先行、运营数据化。" },
+    { tid: "special-collections", title: "特藏走向台前", type: "fact", note: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配常设展厅，重开一年访客破百万——特藏从库房变成公共目的地。" }
   ],
   business: [
     "\"安全整改＋空间再生\"打包立项话术：Weston 的逻辑是消防评估发现书塔不可留→拆除→中庭公众化。国内 1950–80 年代老馆的消防与结构评估，完全可以成为空间改造的立项引擎，而不只是工程包袱。",
@@ -1157,7 +1158,7 @@ const SCHOOLS = [
     imgCap: "ETH 主楼（HG, Rämistrasse 101）：主馆现址所在的历史建筑——受保护的空间正是「迁址而非改造」的原因。摄影：Leonhard Lenz (GPSLeo) / Wikimedia Commons（CC0）"
   },
   overview: {
-    intro: "[ETH-Bibliothek](https://library.ethz.ch/en/) 是 ETH 苏黎世的中央图书馆：瑞士最大的公共自然科学与技术图书馆、国家自然与工程科学信息中心，1855 年与学校同岁创立。馆藏约 800 万模拟资源＋55 万数字资源（2022-09 口径），其中图片文献 379 万张、地图 34.3 万张（瑞士最大）；统一发现层 [ETH-Bibliothek @ swisscovery](https://library.ethz.ch/en/search-find/swisscovery.html) 连接全国 490+ 家图书馆、3,000 万+ 条目——ETH 是 2017 年全国平台 SLSP 的发起主力。",
+    intro: "[ETH-Bibliothek](https://library.ethz.ch/en/) 是 ETH 苏黎世的中央图书馆：瑞士最大的公共自然科学与技术图书馆、国家自然与工程科学信息中心，1855 年与学校同岁创立。馆藏约 800 万模拟资源＋55 万数字资源（2022-09 口径），其中图片文献 379 万张、地图 34.3 万张（瑞士最大）；统一发现层 [ETH-Bibliothek @ swisscovery](https://library.ethz.ch/en/find-media/borrowing-and-using/swisscovery-hilfe-auf-einen-blick.html) 连接全国 490+ 家图书馆、3,000 万+ 条目——ETH 是 2017 年全国平台 SLSP 的发起主力。",
     stats: [
       { k: "馆藏总量", v: "800 万+ 件", s: "模拟资源；另有数字资源 55 万（2022-09 口径）" },
       { k: "图片文献", v: "379 万张", s: "图片档案馆 2000 年成立，核心约 320 万，成批进入维基共享" },
@@ -1193,18 +1194,18 @@ const SCHOOLS = [
       img: "ethz-hoenggerberg.jpg",
       imgCap: "Hönggerberg 校区远眺：1985 年地下书库与 HDB 闭架书库馆位于这一校区——「外迁」在 ETH 已有四十年传统。摄影：Balise42 / Wikimedia Commons（CC BY 4.0）",
       stats: [{ k: "联网图书馆", v: "490+" }, { k: "全国条目", v: "3,000 万+" }, { k: "图片文献", v: "379 万张" }, { k: "地下书库", v: "1985 年起" }],
-      facts: "战略 2025–2028 自述：ETH 深度参与创建全国平台 SLSP（2017），借助 [swisscovery](https://library.ethz.ch/en/search-find/swisscovery.html) 把图书馆目录运营、电子资源许可谈判等标准化业务外包，集中资源开发以客户为中心的服务。ETH-Bibliothek 同时运营多个国家级平台：e-rara（15–19 世纪瑞士印本）、e-periodica（瑞士期刊全文）、e-manuscripta（手写文献）、E-Pics（图片在线档案）；DOI Desk 是瑞士高校与科研机构的中央 DOI 注册中心（与 DataCite 合作）；[Research Collection](https://www.research-collection.ethz.ch/) 是 ETH 的机构库，记录全校出版物并支撑学术年报。图片档案馆（2000 年成立，379 万张图片文献、核心约 320 万）不断有子收藏批量进入维基共享资源。珍本与手稿线包括托马斯·曼档案馆、马克斯·弗里施档案馆与瑞士规模最大的版画素描收藏。地下暗线：1985 年 ETH 在 Hönggerberg 建成地下书库存放低流通藏书，今 HDB 闭架书库馆延续这一逻辑。",
+      facts: "战略 2025–2028 自述：ETH 深度参与创建全国平台 SLSP（2017），借助 [swisscovery](https://library.ethz.ch/en/find-media/borrowing-and-using/swisscovery-hilfe-auf-einen-blick.html) 把图书馆目录运营、电子资源许可谈判等标准化业务外包，集中资源开发以客户为中心的服务。ETH-Bibliothek 同时运营多个国家级平台：e-rara（15–19 世纪瑞士印本）、e-periodica（瑞士期刊全文）、e-manuscripta（手写文献）、E-Pics（图片在线档案）；DOI Desk 是瑞士高校与科研机构的中央 DOI 注册中心（与 DataCite 合作）；[Research Collection](https://www.research-collection.ethz.ch/) 是 ETH 的机构库，记录全校出版物并支撑学术年报。图片档案馆（2000 年成立，379 万张图片文献、核心约 320 万）不断有子收藏批量进入维基共享资源。珍本与手稿线包括托马斯·曼档案馆、马克斯·弗里施档案馆与瑞士规模最大的版画素描收藏。地下暗线：1985 年 ETH 在 Hönggerberg 建成地下书库存放低流通藏书，今 HDB 闭架书库馆延续这一逻辑。",
       insight: "ETH 示范了图书馆的第三种身份：国家知识基础设施的运营商——第一层是 discovery（swisscovery），第二层是出版基础设施（DOI Desk、e-rara/e-periodica），第三层是 openness（图片批量进入维基）。实体馆的 HWS 迁址发生在第三层背景之上：正因为发现与获取已经全国数字化，新馆才敢把面积让给展厅与学习空间，而不是书架。可迁移：「先数字底座、后空间放手」的次序——向学校论证新馆方案时，先讲清「获取已解决」，再谈空间分配；瑞士「地下＋闭架＋全国共享」的朴素外迁版本比北美机器人高架早了十年。隐忧：e-rara 等多馆共建，ETH 是运营主力而非唯一所有者；各平台访问量无统一公开口径，引用需谨慎。"
     }
   ],
   learningSpaces: "现状：主馆阅览室集中在 HG 主楼 H 层——受保护历史空间，只能微调；五个分馆按学科分布（建筑土木 HIL、地球科学 NO、GESS IFW、绿色 CHN、HDB 闭架书库 Hönggerberg）。战略 2025–2028 对「图书馆作为场所」的定义值得全文引用：开放工位与专注退避空间并存、家具可适配、现代技术配置、好空气与采光、可持续节能——新馆任务书先于建筑公布。2013–16 年的 HWO 学生公寓已示范「学习工位＋托儿所」进入宿舍底层；HIL「Living Lab」改造（至约 2035）将再造 1972–76 老楼的学习空间；HWS 则把展厅、研究阅览室与珍本展柜写进信息学习中心的任务书。",
   serviceModel: "法定任务（ETH 组织条例第 42 条）：保障 ETH 师生的信息与文献供给及研究者出版条件，并作为 ETH 域图书馆事务的「主导机构」（Leitstelle）。标准化业务外包给 SLSP/swisscovery（目录运营＋电子许可谈判），馆员聚焦客户中心服务；全国平台 e-rara、e-periodica、e-manuscripta、E-Pics 由 ETH-Bibliothek 运营；DOI Desk（与 DataCite 合作）是瑞士高校的中央 DOI 注册中心；circulation courier 支撑全国馆际递送，文献可送至任一参与馆。",
   trends: [
-    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "HIF 实验楼（1972–76）近年整体翻新（Stücheli 事务所，木铝预制混合立面）；HPP 物理楼 2006–11 全面翻新；HIL（1972–76）将改造为 Living Lab 至约 2035——老楼再生在 ETH 是规划文本里的常态词汇。" },
-    { title: "藏书外迁 · 高密度库房", type: "judgment", note: "1985 年 Hönggerberg 地下书库（外迁思维的 40 年前身）；HDB 闭架书库馆延续至今——不靠机器人高架，靠「地下＋闭架＋全国共享」的朴素版本，比北美早十年。" },
-    { title: "Learning Commons 常态化", type: "fact", note: "HWS 定位「Information and Learning Center」：展厅、研究阅览室、珍本柜与图书馆同楼；HWO 宿舍底层学习工位＋托儿所——commons 与展览/托育功能复合。" },
-    { title: "数据化运营", type: "judgment", note: "SLSP（2017）外包目录与许可谈判、馆员转向客户服务；AI 与开放科学列入 2025–2028 五大战略重点；Research Collection 记录全校出版——数据化运营的国家队版本。" },
-    { title: "特藏走向台前", type: "fact", note: "图片档案馆 379 万张文献成批进入维基共享；托马斯·曼、马克斯·弗里施档案馆公开服务；HWS 新馆规划展厅与珍本展柜——特藏成为公共基础设施。" }
+    { tid: "historic-renewal", title: "历史建筑的\"第二次生命\"", type: "fact", note: "HIF 实验楼（1972–76）近年整体翻新（Stücheli 事务所，木铝预制混合立面）；HPP 物理楼 2006–11 全面翻新；HIL（1972–76）将改造为 Living Lab 至约 2035——老楼再生在 ETH 是规划文本里的常态词汇。" },
+    { tid: "offsite-storage", title: "藏书外迁 · 高密度库房", type: "judgment", note: "1985 年 Hönggerberg 地下书库（外迁思维的 40 年前身）；HDB 闭架书库馆延续至今——不靠机器人高架，靠「地下＋闭架＋全国共享」的朴素版本，比北美早十年。" },
+    { tid: "learning-commons", title: "Learning Commons 常态化", type: "fact", note: "HWS 定位「Information and Learning Center」：展厅、研究阅览室、珍本柜与图书馆同楼；HWO 宿舍底层学习工位＋托儿所——commons 与展览/托育功能复合。" },
+    { tid: "data-driven-ops", title: "数据化运营", type: "judgment", note: "SLSP（2017）外包目录与许可谈判、馆员转向客户服务；AI 与开放科学列入 2025–2028 五大战略重点；Research Collection 记录全校出版——数据化运营的国家队版本。" },
+    { tid: "special-collections", title: "特藏走向台前", type: "fact", note: "图片档案馆 379 万张文献成批进入维基共享；托马斯·曼、马克斯·弗里施档案馆公开服务；HWS 新馆规划展厅与珍本展柜——特藏成为公共基础设施。" }
   ],
   business: [
     "「借船出海」式空间获取：把图书馆功能（展厅、研究阅览室、珍本柜）写进学校新教学楼的任务书，在土建阶段锁定——比单独立项建馆成功率高、抗通胀；前提是能在学校基建决策早期进入任务书编写组。",
@@ -1295,9 +1296,9 @@ const SCHOOLS = [
   learningSpaces: "主馆学习空间 24 小时开放是基本盘；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）以 08:00–23:00 每周七天补位——一通宵一早班的双层结构。空间类型细化到行为颗粒：Charing Cross 馆的协作 booths（4 人）、solo pods（单人静音舱，可调座椅/通风/照明，专为在线会议与语音输入设计）、10 人研习室；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施开始同层配置。1997 年 Waterstones 书店进馆则是「第三空间」的祖师爷级实验。",
   serviceModel: "全校统一服务入口为图书馆官网；7 所图书馆网络通借通还（自助借还，任意馆可还）；缺藏文献免费 Document Delivery；医院校区馆同时服务 NHS 信托员工，是「大学＋医疗系统」双重会员制。White City 校区的 book locker 把「分馆」压缩成一个取书柜——馆藏获取靠网络与物流而非馆舍。学科馆员制度完备（各院系专设 Department Librarian），1992 年与科学博物馆合并的馆藏构成档案与特藏的底子。",
   trends: [
-    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "1969 建馆→1997 McAslan 加建两层玻璃楼→2017–18 £11M 翻新→2023 更名：约 30 年一个更新周期的滚动再生，单次投入不大但每次都跟上了一代学习方式。" },
-    { title: "全天候学习空间", type: "fact", note: "主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——单馆通宵＋共享学习区接力的伦敦版本。" },
-    { title: "Learning Commons 常态化", type: "fact", note: "1997 年 Waterstones 书店进馆（第三空间早期实验）；2025 年四层新增 Group Study Space 与 Wellbeing Room；Charing Cross 馆协作 booths 与 solo pods——commons 细化到行为颗粒。" },
+    { tid: "historic-renewal", title: "历史建筑的\"第二次生命\"", type: "fact", note: "1969 建馆→1997 McAslan 加建两层玻璃楼→2017–18 £11M 翻新→2023 更名：约 30 年一个更新周期的滚动再生，单次投入不大但每次都跟上了一代学习方式。" },
+    { tid: "247-spaces", title: "全天候学习空间", type: "fact", note: "主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——单馆通宵＋共享学习区接力的伦敦版本。" },
+    { tid: "learning-commons", title: "Learning Commons 常态化", type: "fact", note: "1997 年 Waterstones 书店进馆（第三空间早期实验）；2025 年四层新增 Group Study Space 与 Wellbeing Room；Charing Cross 馆协作 booths 与 solo pods——commons 细化到行为颗粒。" },
     { title: "跨机构合作与治理", type: "judgment", note: "与科学博物馆图书馆共楼 45 年（1969 迁入→1992 合并→2014 分家）：合并的最大成本是治理权而非搬书——协议里治理条款优先于藏书条款。" },
     { title: "空间命名即叙事", type: "fact", note: "2023 年更名 Abdus Salam Library 是校方回应 History Group 校史报告的举措——馆名成为机构叙事的治理工具，图书馆由此进入校级叙事中心。" }
   ],
@@ -1346,7 +1347,7 @@ const SCHOOLS = [
     imgCap: "UL 主入口与 157 英尺塔楼：为面子而生、为里子所用的塔。摄影：Michael Behrend / geograph.org.uk（CC BY-SA 2.0）"
   },
   overview: {
-    intro: "[Cambridge University Library](https://www.lib.cam.ac.uk/)（UL）是剑桥大学总图书馆、英国[六家法定送存图书馆](https://en.wikipedia.org/wiki/Cambridge_University_Library)之一，馆藏约 900 万件、年增约 10 万件（约三分之二来自法定送存）。现馆由 Giles Gilbert Scott 设计、1934 年启用，157 英尺塔楼为 Grade II 登录建筑；全校各学院、学系图书馆合计约 114 所，统一发现系统为 iDiscover。2025-01 起历史系 Seeley Library 整体迁入 UL 一层 West Room，等待其所在的 Grade II* 名楼 Stirling Building 三年大修；2026-01，[Herzog & de Meuron 的 UL 未来概念方案](https://www.em.admin.cam.ac.uk/news/university-library-future-exhibition)开始公众展览。",
+    intro: "[Cambridge University Library](https://www.lib.cam.ac.uk/)（UL）是剑桥大学总图书馆、英国[六家法定送存图书馆](https://en.wikipedia.org/wiki/Cambridge_University_Library)之一，馆藏约 900 万件、年增约 10 万件（约三分之二来自法定送存）。现馆由 Giles Gilbert Scott 设计、1934 年启用，157 英尺塔楼为 Grade II 登录建筑；全校各学院、学系图书馆合计约 114 所，统一发现系统为 iDiscover。2025-01 起历史系 Seeley Library 整体迁入 UL 一层 West Room，等待其所在的 Grade II* 名楼 Stirling Building 大修（2025-05 获批、2026-05 开工、计划 2028 完工，£78.9m）；2026-01，[Herzog & de Meuron 的 UL 未来概念方案](https://www.em.admin.cam.ac.uk/news/university-library-future-exhibition)开始公众展览。",
     stats: [
       { k: "馆史源头", v: "1416 年", s: "最早馆藏目录 1424 年，122 卷" },
       { k: "馆藏规模", v: "约 900 万件", s: "年增约 10 万件；约 200 万册开架" },
@@ -1367,12 +1368,12 @@ const SCHOOLS = [
     },
     {
       name: "Seeley Library 迁入主馆与 Stirling Building 大修：老馆改造的「先迁后修」",
-      nameEn: "Seeley Move & Stirling Refurbishment · 2025–2029",
+      nameEn: "Seeley Move & Stirling Refurbishment · 2025–2028",
       year: "2025 迁入 · 3–4 年工期",
       img: "cambridge-ul-facade.jpg",
       imgCap: "UL 西侧面全景：Seeley Library 迁入后，主馆冗余容量成为全校改造的「避震舱」。摄影：N Chadwick / geograph.org.uk（CC BY-SA 2.0）",
-      stats: [{ k: "Stirling 楼", v: "1968 启用" }, { k: "Seeley 迁出", v: "2024.12" }, { k: "West Room 开放", v: "2025.1.21" }, { k: "大修工期", v: "3–4 年" }],
-      facts: "历史系所在的 Stirling Building 是 [James Stirling 设计的 20 世纪建筑名作（Grade II*）](https://www.hist.cam.ac.uk/faculty-building-be-vacated-ahead-major-refurbishment)，1968 年启用；将近 60 年后屋顶漏雨、大风天多次闭馆。[Seeley Library 2024 年 12 月整体迁入 UL 一层 West Room](https://www.lib.cam.ac.uk/stories/seeley-library)（沿主阅览室、无台阶通行），2025-01-21 起随 UL 开放——学期中周一至五 9:00–19:00（复活节学期至 22:00）、周六至 16:45；馆员团队全建制进驻，培训、工作坊、一对一约见照常，读者享用 UL 全部馆藏与茶室；还书点多达三处，含馆外 24 小时电话亭书箱。Stirling 改造 2025 年 2 月底递交规划申请，施工约 3–4 年：修复历史特征、南北各加扩建亭阁、地面层打开为可穿越空间、无障碍通达全部楼层，采用可再生能源——校方称其为登录建筑改造的示范工程。",
+      stats: [{ k: "Stirling 楼", v: "1968 启用" }, { k: "Seeley 迁出", v: "2024.12" }, { k: "West Room 开放", v: "2025.1.21" }, { k: "工期·造价", v: "2026–2028 · £78.9m" }],
+      facts: "历史系所在的 Stirling Building 是 [James Stirling 设计的 20 世纪建筑名作（Grade II*）](https://www.hist.cam.ac.uk/faculty-building-be-vacated-ahead-major-refurbishment)，1968 年启用；将近 60 年后屋顶漏雨、大风天多次闭馆。[Seeley Library 2024 年 12 月整体迁入 UL 一层 West Room](https://www.lib.cam.ac.uk/stories/seeley-library)（沿主阅览室、无台阶通行），2025-01-21 起随 UL 开放——学期中周一至五 9:00–19:00（复活节学期至 22:00）、周六至 16:45；馆员团队全建制进驻，培训、工作坊、一对一约见照常，读者享用 UL 全部馆藏与茶室；还书点多达三处，含馆外 24 小时电话亭书箱。Stirling 改造 2025-02 递交规划申请、5 月底获批，主体工程 2026-05 开工、计划 2028 完工，总造价 £78.9m（BDP 设计、SDC 施工，5,200 ㎡）：修复历史特征、南北各加扩建亭阁、地面层打开为可穿越空间、无障碍通达全部楼层，采用可再生能源——校方称其为登录建筑改造的示范工程。",
       insight: "「先迁后修」的完整教科书，关键不在搬迁本身，而在安置规格：Seeley 不是临时凑合，而是带着完整团队与服务标准迁入主馆——迁入即「升级」。与牛津 Weston 改造期把读者安置进圆楼同构：主馆的冗余容量就是全校旧馆改造的「避震舱」。更深一层：一次屋顶漏雨反而完成了学科馆向大学馆体系的实质整合——物理整合倒逼组织整合。启示：国内老馆大修前，值得先做一次「全校容量腾挪地图」——答案往往不在新建临时馆，而在主馆的弹性空间里。隐忧：3–4 年工期中 West Room 的占用成本、Seeley 迁回后的空间分配，均未见公开评估。"
     },
     {
@@ -1389,11 +1390,13 @@ const SCHOOLS = [
   learningSpaces: "UL 内部按行为分层：Main Reading Room 静音、South Wing Study Hub 协作讨论、Commonwealth Room 公共电脑、North Reading Room 站立式书桌、West 4 有空调，考试季另设 24 小时电脑区——官方用「哪里适合干什么」的导览语言代替楼层编号。茶室（Tea Room）是 UL 的老传统。Seeley 迁入后，West Room 读者同时享用 UL 全部学习空间。馆外，Scott 设计的红色电话亭被改造成 24 小时还书箱——电话亭与 UL 出自同一位建筑师之手，构成英式幽默的闭环。West Hub 则把「学习空间」外推为对公众开放的 co-working 枢纽：个人研习舱、媒体实验室、Research Café。",
   serviceModel: "全校 114 所图书馆经 iDiscover 统一发现（其前身可追溯至 1880 年代的联合目录工程，是今天发现系统的祖师爷）。UL 作为法定送存馆中唯一大规模开架并允许部分读者外借的一家，服务标准天然高于其他送存馆：Reader Services Desk、Scan & Deliver、特藏阅览室分级服务；Seeley 迁入后学科馆员服务并轨——历史、政治、社会学、土地经济的专指服务在 UL 一层照常运行，还书网络三处通还（含 24 小时电话亭书箱）。West Hub 把服务边界推向公众：任何人都可参加 Research Café、使用穿越动线与咖啡区。",
   trends: [
-    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "1934 年 Grade II 主馆：1990 年代以来不断内部更新，2026-01 Herzog & de Meuron 概念方案公展（遗产保护＋碳足迹＋重新开放历史区域）；同期历史系 Stirling 名楼（Grade II*）启动 3–4 年保护性大修——两座 20 世纪名楼的再生在同一所大学并行。" },
-    { title: "藏书外迁 · 高密度库房", type: "fact", note: "法定送存的低频部分（非学术版权收登）转入 Ely 馆外库或改收电子格式；157 英尺塔本身即垂直高密度存储（17 层中 10 层藏书约百万册）——义务型收藏的三层分流。" },
-    { title: "全天候学习空间", type: "fact", note: "UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标；考试季设 24 小时电脑区；West Hub 以长时段共享办公运行——全天候以「分时梯度」而非单楼通宵实现。" },
-    { title: "Learning Commons 常态化", type: "fact", note: "West Hub 是大学第一座对公众开放的 co-working hub：穿越动线、咖啡、媒体实验室、Research Café——commons 的边界从校内推到社区；UL 茶室与行为分层学习空间则是校内版。" },
-    { title: "双重身份治理", type: "judgment", note: "「大学馆＋国家记忆基础设施」的双重身份使 UL 的藏书策略受法律约束（每种必收、永不剔除）——双重身份不是负担的叠加，而是逼出「塔＋馆外库＋电子化」三层解法的结构动力。" }
+    { tid: "historic-renewal", title: "历史建筑的\"第二次生命\"", type: "fact", note: "1934 年 Grade II 主馆：1990 年代以来不断内部更新，2026-01 Herzog & de Meuron 概念方案公展（遗产保护＋碳足迹＋重新开放历史区域）；同期历史系 Stirling 名楼（Grade II*）2025-05 获批、2026-05 开工大修，计划 2028 完工——两座 20 世纪名楼的再生在同一所大学并行。" },
+    { tid: "offsite-storage", title: "藏书外迁 · 高密度库房", type: "fact", note: "法定送存的低频部分（非学术版权收登）转入 Ely 馆外库或改收电子格式；157 英尺塔本身即垂直高密度存储（17 层中 10 层藏书约百万册）——义务型收藏的三层分流。" },
+    { tid: "247-spaces", title: "全天候学习空间", type: "fact", note: "UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标；考试季设 24 小时电脑区；West Hub 以长时段共享办公运行——全天候以「分时梯度」而非单楼通宵实现。" },
+    { tid: "learning-commons", title: "Learning Commons 常态化", type: "fact", note: "West Hub 是大学第一座对公众开放的 co-working hub：穿越动线、咖啡、媒体实验室、Research Café——commons 的边界从校内推到社区；UL 茶室与行为分层学习空间则是校内版。" },
+    { title: "双重身份治理", type: "judgment", note: "「大学馆＋国家记忆基础设施」的双重身份使 UL 的藏书策略受法律约束（每种必收、永不剔除）——双重身份不是负担的叠加，而是逼出「塔＋馆外库＋电子化」三层解法的结构动力。" },
+    { tid: "renovation-decant", title: "先迁后修：安置做进主馆冗余容量", type: "fact", note: "Seeley Library 2024 年 12 月整体迁入 UL 一层 West Room，2025-01 随主馆开放——馆员团队全建制进驻、还书点多达三处（含 24 小时电话亭书箱），安置规格定为「迁入即升级」；Stirling 名楼随后启动大修（2026-05 开工，2028 完工）——主馆冗余容量就是全校旧馆改造的「避震舱」。" },
+    { tid: "open-to-public", title: "大学设施公共化", type: "fact", note: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：两个主入口相对形成穿越动线，图书馆服务、媒体实验室、个人研习舱对外开放，Research Café 任何人可报名闪电演讲——「大学第一张桌子」摆进了社区。" }
   ],
   business: [
     "「塔＋馆外库＋电子化」三层分流：义务型/特藏级收藏走垂直塔与密集库，把开架空间还给读者；低利用率收藏同样是叙事资产（Tall Tales 模式）——前提是馆藏分级有制度依据。",
@@ -1484,9 +1487,9 @@ const SCHOOLS = [
   serviceModel: "\"开放时长不是图书馆一家的事\"：07:15–02:00 的主馆 + 06:00–23:00 的 JMS + 24 小时医学自习区，构成覆盖近乎全天的分楼宇时段网络——任何一栋楼施工，网络内其他节点承接。馆藏管理有公开成文政策：剔旧是战略行为而非纯后勤行为。",
   trends: [
     { title: "图书馆的\"楼\"与\"服务\"正在解耦", type: "fact", note: "服务（学科馆员、预约系统、驻场支持、电子资源）遍布全网，藏书集中于主塔与远程书库——图书馆品牌价值越来越不依赖单栋建筑。" },
-    { title: "粗野主义遗产进入\"保护性更新\"周期", type: "fact", note: "DoCoMoMo 名录建筑换幕墙 + 配楼升级；欧洲 1960–70 年代大学高层图书馆普遍到达维护寿命终点，\"整馆现代化\"打包项目将批量出现。" },
-    { title: "全天候学习网络取代单楼通宵", type: "judgment", note: "三栋楼宇不同时段拼出近 24 小时覆盖，比单楼通宵更易控成本——预计更多英国大学采用\"多楼分时接力\"模式。" },
-    { title: "学习空间数据化运营成为标配", type: "fact", note: "App 预约、时段管理与实时拥挤度已把学习空间变成可调度资源；空间使用数据将反向进入家具采购与改造决策。" },
+    { tid: "historic-renewal", title: "粗野主义遗产进入\"保护性更新\"周期", type: "fact", note: "DoCoMoMo 名录建筑换幕墙 + 配楼升级；欧洲 1960–70 年代大学高层图书馆普遍到达维护寿命终点，\"整馆现代化\"打包项目将批量出现。" },
+    { tid: "247-spaces", title: "全天候学习网络取代单楼通宵", type: "judgment", note: "三栋楼宇不同时段拼出近 24 小时覆盖，比单楼通宵更易控成本——预计更多英国大学采用\"多楼分时接力\"模式。" },
+    { tid: "data-driven-ops", title: "学习空间数据化运营成为标配", type: "fact", note: "App 预约、时段管理与实时拥挤度已把学习空间变成可调度资源；空间使用数据将反向进入家具采购与改造决策。" },
     { title: "命名伦理成为新建筑的立项语言", type: "judgment", note: "以被美国大学拒之门外的非裔医学生命名旗舰教学楼——大学新建筑的命名叙事将越来越承担价值表达功能。" }
   ],
   business: [
