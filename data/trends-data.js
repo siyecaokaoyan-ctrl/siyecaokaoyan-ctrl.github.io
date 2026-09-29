@@ -7,8 +7,8 @@ const TRENDS = [
   id: "historic-renewal",
   title: "历史建筑的\"第二次生命\"",
   subtitle: "保护性翻新 · 适应性再利用 · 滚动修复",
-  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 11 所学校独立验证，是本研究中共识最强的趋势。",
-  schools: ["princeton", "yale", "duke", "glasgow", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial"],
+  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 12 所学校独立验证，是本研究中共识最强的趋势。",
+  schools: ["princeton", "yale", "duke", "glasgow", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge"],
   evidence: {
     princeton: "Firestone 主馆（1948）十年 2.5 亿美元整体翻新、全程不闭馆——哥特式外壳不动，内部从\"书库+卡片目录\"彻底改造为现代学习基础设施；\"原址现代化\"的最完整成本与周期参照。",
     yale: "Sterling 主馆（1930）以\"每 2–3 年修复一个标志性房间\"的节奏滚动更新：2014 中殿（2,000 万美元）→ 2022 Hanke 展厅 → 2024 L&B 阅览室，全程不闭馆，已启动 2031 百年评估。",
@@ -20,15 +20,16 @@ const TRENDS = [
     cornell: "Rand Hall（1911 年工业厂房→2019 美术图书馆）：拆三层楼板、屋顶抬高 4 英尺、悬吊书塔认祖 A.D. White 铸铁书塔，$16.9M 做出地标级传播力——适应性再利用取代新建地标的教科书。",
     oxford: "Weston：1930 年代 New Bodleian 拆除 11 层防火隐患书塔→Blackwell Hall 公众大厅＋39 公里地下新书库（£80M，2015）；Gladstone Link：1909–12 年世界最大地下书库百年后再生为连接老馆与圆楼的读者空间（2011）——两个世纪的设施各获得一次第二次生命。",
     ethz: "HIF 实验楼（1972–76，Hönggerberg 二期）近年整体翻新：Stücheli 事务所设计木铝混合预制立面，ETH 自建研究项目先行试点；HPP 物理楼 2006–11 全面翻新；HIL（1972–76）将改造为 Living Lab 至约 2035——「老楼再生」在 ETH 是规划文本里的常态词汇，而非一次性事件。",
-    imperial: "帝国理工中央图书馆（1969）：1994 Foster 咨询→1997 McAslan 加建两层玻璃楼＋Waterstones 进馆→2017–18 £11M 翻新（含空调）→2023 更名 Abdus Salam——约 30 年一个周期的滚动再生，55 年四次更新从不推倒重来。"
+    imperial: "帝国理工中央图书馆（1969）：1994 Foster 咨询→1997 McAslan 加建两层玻璃楼＋Waterstones 进馆→2017–18 £11M 翻新（含空调）→2023 更名 Abdus Salam——约 30 年一个周期的滚动再生，55 年四次更新从不推倒重来。",
+    cambridge: "剑桥 UL（1934，Grade II）：1990 年代以来内部持续更新；2026-01 Herzog & de Meuron 未来概念方案公展——遗产保护＋降低碳足迹＋重新开放最初对公众的区域；同期历史系 Stirling 名楼（Grade II*，1968）启动 3–4 年保护性大修——两座 20 世纪名楼的再生在同一所大学并行。"
   }
 },
 {
   id: "offsite-storage",
   title: "藏书外迁 · 高密度库房",
   subtitle: "释放馆内面积给\"人\"",
-  summary: "当纸质流通持续走低，\"书放哪里\"成为空间改革的前提题。哈佛模式（人工高架）与 ASRS（机器人自动存取）是两大流派；芝大证明书不出校园、用自动化密度换土地，宾大示范自建校外库的独立路线，哥大则与普林斯顿、NYPL 共创 ReCAP 发明了\"联盟共享\"这第四条路。牛津补上了第五条注脚：校内选址被规划拒绝，才走向斯温登——外迁首先是个规划政治问题。被 9 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "yale", "uchicago", "upenn", "columbia", "oxford", "ethz"],
+  summary: "当纸质流通持续走低，\"书放哪里\"成为空间改革的前提题。哈佛模式（人工高架）与 ASRS（机器人自动存取）是两大流派；芝大证明书不出校园、用自动化密度换土地，宾大示范自建校外库的独立路线，哥大则与普林斯顿、NYPL 共创 ReCAP 发明了\"联盟共享\"这第四条路。牛津补上了第五条注脚：校内选址被规划拒绝，才走向斯温登——外迁首先是个规划政治问题。剑桥给出第六条注脚：157 英尺的塔本身就是最早的垂直高密度库，义务型收藏的三层分流（塔→馆外库→电子化）由此展开。被 10 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "yale", "uchicago", "upenn", "columbia", "oxford", "ethz", "cambridge"],
   evidence: {
     harvard: "Harvard Depository（1986）：1,000 万册容量、60 秒取书、次日达、零差错；全美 68 个高密度库房中 56% 采用\"哈佛模式\"——外迁不是降级，而是保存条件升级。",
     mit: "Library Storage Annex 存放低流通资料、下一工作日可取；但 MIT 刻意不把库房包装成主角——同一个功能，叙事资源让给了\"开放获取+健康空间\"。",
@@ -38,15 +39,16 @@ const TRENDS = [
     upenn: "LIBRA（2011，新泽西 Deptford）：\"哈佛模式\"高密度库，30 英尺高架按尺寸上架、1–2 个工作日送达校园；2022–24 年承接 Van Pelt 书库重整外迁，2026 年微缩胶片整体入库——外迁从一次性工程变成持续运营动作。ReCAP 五校联盟中没有宾大，自建校外库是第三条路。",
     columbia: "ReCAP（2000 由哥大、普林斯顿、NYPL 三方共创，2001–07 启用）：1600 万件+、年请求 25 万次、55°F/35%RH、下一工作日送达各校，哈佛 2016 准会员/2019 转正——藏书外迁的第四条路：联盟共享保存能力，把藏书压力从单馆资产负债表上移走。",
     oxford: "斯温登 Book Storage Facility（2010，£26M，153 英里书架、千万件级）：2007–08 年校内 Osney Mead 选址被规划拒绝，才走向 13 英亩的校外工业用地；架高 11.4 米、巷道 71 米、逐件条码，读者经 SOLO 下单取书——法定缴存图书馆的外迁是法律义务倒逼的必然，不是选择。",
-    ethz: "1985 年 ETH 在 Hönggerberg 建成地下书库存放低流通藏书（国家「档案图书馆」定位的兑现），今 HDB 闭架书库馆延续——不靠机器人高架，靠「地下＋闭架＋全国共享」的朴素外迁版本，比北美大规模 ASRS 早了近十年；配合 swisscovery 全国发现层，外迁与获取解耦。"
+    ethz: "1985 年 ETH 在 Hönggerberg 建成地下书库存放低流通藏书（国家「档案图书馆」定位的兑现），今 HDB 闭架书库馆延续——不靠机器人高架，靠「地下＋闭架＋全国共享」的朴素外迁版本，比北美大规模 ASRS 早了近十年；配合 swisscovery 全国发现层，外迁与获取解耦。",
+    cambridge: "剑桥 UL 的 157 英尺塔（1934）本身就是最早的垂直高密度库——17 层中 10 层藏「次级」版权收登约百万册，为面子加建的塔意外成为义务型收藏的垂直解法；如今更低频的非学术收登转 Ely 馆外库或改收电子格式（Legal Deposit Regulations 2013 允许单格式送存后，纸本压力开始解套）——「塔→馆外库→电子化」三层分流。"
   }
 },
 {
   id: "247-spaces",
   title: "全天候学习空间",
   subtitle: "24/7 的扩张、治理与收缩",
-  summary: "24 小时空间已从 fringe 福利变成校级治理议题，而且出现了方向相反的两股力量：MIT、斯坦福在扩容，芝大、杜克在收缩后按数据恢复，格拉斯哥用多楼分时接力取代单楼通宵；宾大示范了\"可持续版本\"（35 年承诺配清晰边界），哥大则让全天候按学科与楼层分配成梯度，康奈尔的答案最特别——把 24 小时空间藏进 1982 年凿坡挖出的地下翼；牛津 2025 年的新版本给出硬件解法：智能储物柜让通宵空间不再需要夜间人工值守。被 10 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "uchicago", "glasgow", "upenn", "columbia", "cornell", "oxford", "imperial"],
+  summary: "24 小时空间已从 fringe 福利变成校级治理议题，而且出现了方向相反的两股力量：MIT、斯坦福在扩容，芝大、杜克在收缩后按数据恢复，格拉斯哥用多楼分时接力取代单楼通宵；宾大示范了\"可持续版本\"（35 年承诺配清晰边界），哥大则让全天候按学科与楼层分配成梯度，康奈尔的答案最特别——把 24 小时空间藏进 1982 年凿坡挖出的地下翼；牛津 2025 年的新版本给出硬件解法：智能储物柜让通宵空间不再需要夜间人工值守。被 11 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "uchicago", "glasgow", "upenn", "columbia", "cornell", "oxford", "imperial", "cambridge"],
   evidence: {
     harvard: "Lamont 图书馆 24 小时开放 75 年，塑造了最强的学生归属感（\"Lamonsters\"文化）——开放时间本身是空间产品。",
     mit: "Hayden 24 小时座位从 16 座扩至 325+ 座，靠运营时段与家具布局而非新建面积——性价比最高的\"空间产品\"。",
@@ -57,15 +59,16 @@ const TRENDS = [
     columbia: "Butler 2–4 层学期内 24/7，Lehman 社会科学馆以深夜开放著称，健康科学馆设 24 小时阅览室——全天候不再是统一口号，而是按学科与楼层分配的梯度作息。",
     cornell: "Uris 馆多个阅览室 24 小时开放，地下 \"Cocktail Lounge\"（1982 年凿坡建成、2019 翻新）玻璃顶采光——全天候空间借地形藏在坡地腹中，夜晚灯火是 Libe Slope 上的地标。",
     oxford: "Schwarzman 中心配套 24/7 学习空间与智能储物柜：读者闭架自取预约图书，通宵运行的核心成本项（夜间人工值守）被硬件消解——2025 年版本的答案不是更多人轮班，而是更少的\"必须有人在场\"。",
-    imperial: "Abdus Salam Library 主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——主馆通宵打底＋学科楼共享学习区接力的双层结构，医院分馆再按临床作息运行，一套系统三种节奏。"
+    imperial: "Abdus Salam Library 主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——主馆通宵打底＋学科楼共享学习区接力的双层结构，医院分馆再按临床作息运行，一套系统三种节奏。",
+    cambridge: "剑桥以「分时梯度」而非单楼通宵实现全天候：UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标（2001）；考试季另设 24 小时电脑区；West Hub 以长时段共享办公运行——同一网络里，梯度比通宵更可持续。"
   }
 },
 {
   id: "learning-commons",
   title: "Learning Commons 常态化",
   subtitle: "主动学习 · 协作空间 · 第三空间",
-  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 11 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial"],
+  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 12 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge"],
   evidence: {
     harvard: "Cabot 科学图书馆（2017）是北美 Learning Commons 标杆：一层社交协作、地下研讨教学，\"几乎所有东西都是可移动的\"；LEED-CI v4 认证。",
     mit: "Hayden 改造以\"研究十字路口\"为设计概念——研讨亭阁置于动线交叉口，功能混合成为设计概念本身。",
@@ -77,7 +80,8 @@ const TRENDS = [
     cornell: "Rand Hall 首层 Material Practice Center（8,000+ SF 木/金属/数字工坊＋maker space）与悬挂书塔图书馆同楼同垂直动线——commons 从讨论协作扩展到制作实践，\"动手的 commons\"成为可引用原型。",
     oxford: "Blackwell Hall 把公众入口、常设展厅、咖啡与讲座合成一个 13.5 米挑高大厅，重开一年访客破百万；Schwarzman 中心全楼另散布 320 个正式与非正式学习座——commons 溢出图书馆边界，成为整栋建筑的底色。",
     ethz: "战略 2025–2028 把「图书馆作为场所」写成新馆任务书：开放工位＋专注退避空间、可适配家具、现代技术配置、好空气与采光、可持续节能；HWS 新楼定位「Information and Learning Center」，展厅、研究阅览室、珍本展柜与图书馆同楼——commons 直接与展览、研究功能复合；HWO 学生公寓底层「学习工位＋托儿所」把学习空间嵌进宿舍。",
-    imperial: "1997 年 Waterstones 书店进馆（第三空间正式命名前的早期实验）；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施同层配置；Charing Cross 馆把空间细化到行为颗粒：协作 booths、solo pods 单人静音舱、10 人研习室。"
+    imperial: "1997 年 Waterstones 书店进馆（第三空间正式命名前的早期实验）；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施同层配置；Charing Cross 馆把空间细化到行为颗粒：协作 booths、solo pods 单人静音舱、10 人研习室。",
+    cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：双入口穿越动线、咖啡、媒体实验室、个人研习舱，图书馆团队主办的 Research Café 对所有人开放——commons 的边界从校内推到社区；UL 茶室与「静音/协作/电脑/站桌」行为分层学习空间则是校内版；Moore Library（2001）全座位通电源的混合图书馆是鼻祖级样本。"
   }
 },
 {

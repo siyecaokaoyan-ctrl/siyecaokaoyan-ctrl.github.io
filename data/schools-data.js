@@ -1415,6 +1415,103 @@ const SCHOOLS = [
     { label: "官网 Charing Cross 馆页（协作 booths、solo pods、研习室）", url: "www.imperial.ac.uk/admin-services/library/use-the-library/our-libraries/charing-cross-campus-library/" }
   ]
 }
+,
+{
+  id: "cambridge",
+  name: "剑桥大学",
+  nameEn: "University of Cambridge",
+  founded: 1209,
+  country: "英国",
+  region: "欧洲",
+  state: "剑桥",
+  reportId: "LR-20260929-02",
+  reportDate: "2026-09-29",
+  tagline: "一座塔锁住的六分之一英国出版史",
+  mainLine: "1416 年有第一间馆室、1710 年起依法收藏英国出版的每一本书的剑桥 UL，用三百年法定送存义务攒下约 900 万件馆藏；1934 年 Scott 设计、洛克菲勒提议加建的 157 英尺塔，阴差阳错成为低频出版物的垂直归宿。将近一个世纪后，Seeley 迁入、Stirling 大修、Herzog & de Meuron 概念方案三线并发，同时改写这座楼的下一个百年。",
+  flagship: {
+    name: "157 英尺的塔与法定送存的三层解法（UL · 1710–2018）",
+    note: "[1416 年首见馆室记载→1710 年《版权法》特权馆→1934 年 Scott 现馆（Rockefeller 提议加塔）→1972 年书库扩建→2018 年 Tall Tales 展览](https://en.wikipedia.org/wiki/Cambridge_University_Library)：约 900 万件馆藏、年增约 10 万件，[法定送存馆中唯一大规模开架](https://www.jaspul.org/ind/asset/docs/kokusai_kiroku01.pdf)（约 200 万册）；低频版权收登约百万册入塔，更低频转 [Ely 馆外库](https://www.cam.ac.uk/stories/tall-tales)或改电子格式——「塔＋馆外库＋电子化」三层分流。",
+    img: "cambridge-ul-tower.jpg",
+    imgCap: "UL 主入口与 157 英尺塔楼：为面子而生、为里子所用的塔。摄影：Michael Behrend / geograph.org.uk（CC BY-SA 2.0）"
+  },
+  overview: {
+    intro: "[Cambridge University Library](https://www.lib.cam.ac.uk/)（UL）是剑桥大学总图书馆、英国[六家法定送存图书馆](https://en.wikipedia.org/wiki/Cambridge_University_Library)之一，馆藏约 900 万件、年增约 10 万件（约三分之二来自法定送存）。现馆由 Giles Gilbert Scott 设计、1934 年启用，157 英尺塔楼为 Grade II 登录建筑；全校各学院、学系图书馆合计约 114 所，统一发现系统为 iDiscover。2025-01 起历史系 Seeley Library 整体迁入 UL 一层 West Room，等待其所在的 Grade II* 名楼 Stirling Building 三年大修；2026-01，[Herzog & de Meuron 的 UL 未来概念方案](https://www.em.admin.cam.ac.uk/news/university-library-future-exhibition)开始公众展览。",
+    stats: [
+      { k: "馆史源头", v: "1416 年", s: "最早馆藏目录 1424 年，122 卷" },
+      { k: "馆藏规模", v: "约 900 万件", s: "年增约 10 万件；约 200 万册开架" },
+      { k: "塔藏", v: "约百万册", s: "17 层塔中 10 层藏书，最老 1710 年" },
+      { k: "全系统", v: "约 114 所", s: "含 31 所学院馆；统一入口 iDiscover" }
+    ]
+  },
+  projects: [
+    {
+      name: "157 英尺的塔：法定送存、Rockefeller 与「塔的辩证法」",
+      nameEn: "The Tower & Legal Deposit · 1710–2018",
+      year: "1710 法定送存 · 1934 现馆",
+      img: "cambridge-ul-tower.jpg",
+      imgCap: "UL 主入口与塔楼：Scott 砖构立面与垂直塔身的比例关系。摄影：Michael Behrend / geograph.org.uk（CC BY-SA 2.0）",
+      stats: [{ k: "法定送存", v: "1710 年起" }, { k: "现馆启用", v: "1934" }, { k: "塔高", v: "157 英尺" }, { k: "馆藏", v: "约 900 万件" }],
+      facts: "老馆在 Old Schools，1710 年起承接版权收登，到 1920 年代已塞满 20 英里书架，1922 年校方决定建馆。1931–1934 年[由 Giles Gilbert Scott 设计建成](https://en.wikipedia.org/wiki/Cambridge_University_Library)（红色电话亭、Battersea 发电站的建筑师），资金主要来自各学院与私人捐助，最大金主 John D. Rockefeller 嫌主入口不够宏伟，说服建筑师加入中央塔楼——塔高 157 英尺，比圣约翰学院礼拜堂低 6 英尺、比国王学院礼拜堂高 10 英尺，时任首相 Chamberlain 称之为「a magnificent erection」。1972 年加建封闭书库。塔的 17 层中 10 层藏书约百万册，最老 1710 年——《霍比特人》《皇家赌场》首版当年因「学术价值低」被打入塔中；[2018 年 Tall Tales 展览](https://www.cam.ac.uk/stories/tall-tales)首次把塔藏整体公开展出（90% 以上首次亮相）。如今大量非学术版权收登转入 Ely 馆外库或以电子格式接收；UL 保持约 200 万册开架，是法定送存馆中唯一大规模开架并允许部分读者外借的一家。",
+      insight: "「法定收藏」与「开架服务」分层共存的百年样本：法定送存的硬约束是每种一本、永不剔除，剑桥的答案是三层分流——高频学术馆藏开架、低频版权收登上塔、更低频转馆外库或直接收电子格式。启示：① 高层塔式存储不是过时的象征，而是义务型收藏的成熟解法——对承担呈缴/特藏职能的国内大型馆，「垂直塔＋密集库」分层比一味剔旧更可持续；② 2018 年展览证明「锁起来」的收藏同样是叙事资产——90% 首展率的库存本身就是内容生产的富矿。隐忧：H&deM 概念方案若落地，塔与主馆的功能配比如何调整尚无公开文本。"
+    },
+    {
+      name: "Seeley Library 迁入主馆与 Stirling Building 大修：老馆改造的「先迁后修」",
+      nameEn: "Seeley Move & Stirling Refurbishment · 2025–2029",
+      year: "2025 迁入 · 3–4 年工期",
+      img: "cambridge-ul-facade.jpg",
+      imgCap: "UL 西侧面全景：Seeley Library 迁入后，主馆冗余容量成为全校改造的「避震舱」。摄影：N Chadwick / geograph.org.uk（CC BY-SA 2.0）",
+      stats: [{ k: "Stirling 楼", v: "1968 启用" }, { k: "Seeley 迁出", v: "2024.12" }, { k: "West Room 开放", v: "2025.1.21" }, { k: "大修工期", v: "3–4 年" }],
+      facts: "历史系所在的 Stirling Building 是 [James Stirling 设计的 20 世纪建筑名作（Grade II*）](https://www.hist.cam.ac.uk/faculty-building-be-vacated-ahead-major-refurbishment)，1968 年启用；将近 60 年后屋顶漏雨、大风天多次闭馆。[Seeley Library 2024 年 12 月整体迁入 UL 一层 West Room](https://www.lib.cam.ac.uk/stories/seeley-library)（沿主阅览室、无台阶通行），2025-01-21 起随 UL 开放——学期中周一至五 9:00–19:00（复活节学期至 22:00）、周六至 16:45；馆员团队全建制进驻，培训、工作坊、一对一约见照常，读者享用 UL 全部馆藏与茶室；还书点多达三处，含馆外 24 小时电话亭书箱。Stirling 改造 2025 年 2 月底递交规划申请，施工约 3–4 年：修复历史特征、南北各加扩建亭阁、地面层打开为可穿越空间、无障碍通达全部楼层，采用可再生能源——校方称其为登录建筑改造的示范工程。",
+      insight: "「先迁后修」的完整教科书，关键不在搬迁本身，而在安置规格：Seeley 不是临时凑合，而是带着完整团队与服务标准迁入主馆——迁入即「升级」。与牛津 Weston 改造期把读者安置进圆楼同构：主馆的冗余容量就是全校旧馆改造的「避震舱」。更深一层：一次屋顶漏雨反而完成了学科馆向大学馆体系的实质整合——物理整合倒逼组织整合。启示：国内老馆大修前，值得先做一次「全校容量腾挪地图」——答案往往不在新建临时馆，而在主馆的弹性空间里。隐忧：3–4 年工期中 West Room 的占用成本、Seeley 迁回后的空间分配，均未见公开评估。"
+    },
+    {
+      name: "West Hub 与 Moore Library：对外开放的共享枢纽＋一笔捐赠完成的科学网整合",
+      nameEn: "West Hub 2022 + Moore Library 2001",
+      year: "2001 · 2022",
+      img: "cambridge-ul-backs.jpg",
+      imgCap: "从康河一侧看 UL 与剑桥天际线：塔楼数英里外可见。摄影：Jdforrester / Wikimedia Commons（CC BY-SA 3.0）",
+      stats: [{ k: "Moore 馆", v: "2001 启用" }, { k: "捐赠", v: "£7.5M" }, { k: "West Hub", v: "2022.4.26" }, { k: "全系统", v: "约 114 馆" }],
+      facts: "[Betty & Gordon Moore Library 2001-10-01 开放](https://moore.libraries.cam.ac.uk/our-history)（Edward Cullinan 设计），由 Intel 创始人 Gordon Moore 夫妇 £7.5M 捐赠建成，是 UL 分馆兼两数学系系馆；设计定位「21 世纪混合图书馆」标杆——四层 7,000 余延米开架、初始容量 15.6 万册、70 多个公共工作站、全部座位通电源，设计目标含安全 24 小时开放；把科学期刊馆、主馆理科藏书与两个数学系馆四处藏书合到一处，2015 年又承接关闭的 Central Science Library 馆藏。[West Hub 2022-04-26 开放](https://www.cam.ac.uk/stories/westhub)（Jestico + Whiles 设计，BREEAM Excellent，地源热泵），是剑桥第一座对公众开放的 co-working hub：双主入口形成穿越动线，鼓励社区居民穿楼而过；上层设图书馆服务、媒体实验室、个人研习舱，承接化工、计算机等学科馆员驻点，并承担 Foundation Year 教学；图书馆团队主办的 Research Café 对所有人开放（2026-03 主题为可持续发展），经 Apollo 开放存取库传播成果。",
+      insight: "两个案例各给出一条可迁移打法。West Hub 重新定义了 Learning Commons：commons 不只是校内共享，而是大学把第一张桌子摆进社区——穿越式动线、咖啡、活动对所有人开放，在预算紧缩年代既是政治资产也是使用率解药。Moore Library 示范「捐赠冠名＋学科整合」的打包方案：一笔 £7.5M 捐赠同时完成新馆建设与四条藏书线的物理合并——捐赠叙事的题眼不是楼，而是「把分散的科学藏书合成一个 21 世纪图书馆」这件事本身。合看剑桥的网络级更新公式：新钱去新点，腾出来的老楼容量做再生，全局由 114 馆＋iDiscover 兜底。隐忧：West Hub 图书馆服务的馆藏边界未见公开口径；Moore 24 小时开放的现行实际时段未逐一核验。"
+    }
+  ],
+  learningSpaces: "UL 内部按行为分层：Main Reading Room 静音、South Wing Study Hub 协作讨论、Commonwealth Room 公共电脑、North Reading Room 站立式书桌、West 4 有空调，考试季另设 24 小时电脑区——官方用「哪里适合干什么」的导览语言代替楼层编号。茶室（Tea Room）是 UL 的老传统。Seeley 迁入后，West Room 读者同时享用 UL 全部学习空间。馆外，Scott 设计的红色电话亭被改造成 24 小时还书箱——电话亭与 UL 出自同一位建筑师之手，构成英式幽默的闭环。West Hub 则把「学习空间」外推为对公众开放的 co-working 枢纽：个人研习舱、媒体实验室、Research Café。",
+  serviceModel: "全校 114 所图书馆经 iDiscover 统一发现（其前身可追溯至 1880 年代的联合目录工程，是今天发现系统的祖师爷）。UL 作为法定送存馆中唯一大规模开架并允许部分读者外借的一家，服务标准天然高于其他送存馆：Reader Services Desk、Scan & Deliver、特藏阅览室分级服务；Seeley 迁入后学科馆员服务并轨——历史、政治、社会学、土地经济的专指服务在 UL 一层照常运行，还书网络三处通还（含 24 小时电话亭书箱）。West Hub 把服务边界推向公众：任何人都可参加 Research Café、使用穿越动线与咖啡区。",
+  trends: [
+    { title: "历史建筑的\"第二次生命\"", type: "fact", note: "1934 年 Grade II 主馆：1990 年代以来不断内部更新，2026-01 Herzog & de Meuron 概念方案公展（遗产保护＋碳足迹＋重新开放历史区域）；同期历史系 Stirling 名楼（Grade II*）启动 3–4 年保护性大修——两座 20 世纪名楼的再生在同一所大学并行。" },
+    { title: "藏书外迁 · 高密度库房", type: "fact", note: "法定送存的低频部分（非学术版权收登）转入 Ely 馆外库或改收电子格式；157 英尺塔本身即垂直高密度存储（17 层中 10 层藏书约百万册）——义务型收藏的三层分流。" },
+    { title: "全天候学习空间", type: "fact", note: "UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标；考试季设 24 小时电脑区；West Hub 以长时段共享办公运行——全天候以「分时梯度」而非单楼通宵实现。" },
+    { title: "Learning Commons 常态化", type: "fact", note: "West Hub 是大学第一座对公众开放的 co-working hub：穿越动线、咖啡、媒体实验室、Research Café——commons 的边界从校内推到社区；UL 茶室与行为分层学习空间则是校内版。" },
+    { title: "双重身份治理", type: "judgment", note: "「大学馆＋国家记忆基础设施」的双重身份使 UL 的藏书策略受法律约束（每种必收、永不剔除）——双重身份不是负担的叠加，而是逼出「塔＋馆外库＋电子化」三层解法的结构动力。" }
+  ],
+  business: [
+    "「塔＋馆外库＋电子化」三层分流：义务型/特藏级收藏走垂直塔与密集库，把开架空间还给读者；低利用率收藏同样是叙事资产（Tall Tales 模式）——前提是馆藏分级有制度依据。",
+    "「先迁后修」：大修前先做全校容量腾挪地图，把安置规格定为「迁入即升级」（Seeley 带完整团队进主馆）而非临时凑合——前提是中心馆确有冗余容量可借。",
+    "学习空间公共化的分寸：穿越式动线、咖啡与活动开放、研究区凭卡进入，是「公共化」与「秩序」的低成本平衡（West Hub 模式）——前提是建筑选址允许双向开口、有专门运营团队。",
+    "捐赠叙事的「题眼」选择：Moore £7.5M 的叙事不是一栋楼，而是「把四处分散的科学藏书合成一个 21 世纪图书馆」——给捐赠人一个系统级的故事，比一块砖的冠名更有募捐力。",
+    "跟踪项：Herzog & de Meuron 的 UL 概念方案（2026-01 公展）若落地，将是 1930 年代法定送存馆整体再生的下一个全球样板，建议纳入长期跟踪清单。"
+  ],
+  limits: [
+    "Stirling Building 改造的最终造价、资本批准状态与 Seeley Library 的长期安置（迁回或永久并入）未核验。",
+    "Herzog & de Meuron 概念方案的具体内容（展览资料未上网，本轮仅有公告级信息）。",
+    "UL 塔藏的具体编目比例与数字化进度无公开口径。",
+    "West Hub 图书馆服务的馆藏规模与馆员编制归属未查到公开数据。",
+    "Moore Library 24 小时开放为设计目标与历史口径，现行时段以官网当周公告为准。",
+    "UL 数字馆藏（电子书/电子刊）年度规模口径未获得与实体馆藏同等精度的数字。"
+  ],
+  sources: [
+    { label: "剑桥 UL 官网（总入口）", url: "www.lib.cam.ac.uk" },
+    { label: "UL 馆史页（1416 源头、1710 版权法、1934 现馆、1972 扩建）", url: "www.lib.cam.ac.uk/about-library/history-cambridge-university-library" },
+    { label: "Wikipedia – Cambridge University Library（约 900 万件、Rockefeller 与塔、114 馆）", url: "en.wikipedia.org/wiki/Cambridge_University_Library" },
+    { label: "校方 Tall Tales 展览页 2018（塔藏规模、Ely 馆外库、电子化收登）", url: "www.cam.ac.uk/stories/tall-tales" },
+    { label: "历史系公告 2025（Stirling 大修方案、南北亭阁、Reshaping our Estate）", url: "www.hist.cam.ac.uk/faculty-building-be-vacated-ahead-major-refurbishment" },
+    { label: "UL 通告 The Seeley Library move 2025-01-20（West Room、开放时间、还书点）", url: "www.lib.cam.ac.uk/stories/seeley-library" },
+    { label: "校方物业公告 2026-01（H&deM 概念方案公展）", url: "www.em.admin.cam.ac.uk/news/university-library-future-exhibition" },
+    { label: "Moore 图书馆馆史（£7.5M 捐赠、四线合一、2015 承接）", url: "moore.libraries.cam.ac.uk/our-history" },
+    { label: "校方 West Hub 发布稿 2022-04（公众开放、穿越动线、Foundation Year）", url: "www.cam.ac.uk/stories/westhub" },
+    { label: "访察记 PDF（约 200 万册开架、年增约 10 万件）", url: "www.jaspul.org/ind/asset/docs/kokusai_kiroku01.pdf" }
+  ]
+}
 ];
 
 /* ── 各校图书馆官网直达链接（2026-09-29 逐一验证可达；Princeton/JHU/UPenn 有反爬验证，浏览器可正常打开） ── */
@@ -1433,5 +1530,6 @@ window.LIB_URLS = {
   cornell: "https://library.cornell.edu/",
   oxford: "https://www.bodleian.ox.ac.uk/",
   ethz: "https://library.ethz.ch/en/",
-  imperial: "https://www.imperial.ac.uk/library"
+  imperial: "https://www.imperial.ac.uk/library",
+  cambridge: "https://www.lib.cam.ac.uk/"
 };
