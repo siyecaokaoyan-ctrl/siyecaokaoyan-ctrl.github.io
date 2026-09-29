@@ -1516,6 +1516,82 @@ const SCHOOLS = [
     { label: "UofG Library – 馆藏发展与管理政策（2025-02）", url: "gla.ac.uk/media/Media_344925_smxx.pdf" },
     { label: "Wikipedia – Glasgow University Library", url: "en.wikipedia.org/wiki/Glasgow_University_Library" }
   ]
+},
+{
+  id: "edinburgh",
+  name: "爱丁堡大学",
+  nameEn: "University of Edinburgh",
+  founded: 1582,
+  country: "英国",
+  region: "欧洲",
+  state: "苏格兰 · 爱丁堡",
+  reportId: "LR-20260930-01",
+  reportDate: "2026-09-30",
+  tagline: "边开馆 · 边再生",
+  mainLine: "一座比大学建校还早两年的图书馆（1580 年 276 本遗赠书）。1967 年「每层一英亩」的粗野主义主馆被 Category A 登录保护后，用七期改造全程开馆完成整体再生，留下「可净增 2,025 座」的占用率评审蓝图——悬而未决。",
+  flagship: { name: "主馆七年分期改造（2006/07–2012/13）", note: "Lewis & Hickey 设计、Stantec 参与，分七期施工全程开馆：顶层两层新建 Centre for Research Collections 特藏研究中心，新入口＋220 座咖啡厅＋夹层展厅。1967 年 Basil Spence 事务所作品，1968 RIBA 奖、1969 Civic Trust 奖，2006 年 Category A 登录——「不能闭馆的登录巨构如何整体再生」的完整操作手册。", img: "edinburgh-1.jpg", imgCap: "从 Meadows 草坪看 George Square 主馆：8 层、每层一英亩的粗野主义巨构与城市的真实关系。摄影：Richard Webb / geograph.org.uk（CC BY-SA 2.0）" },
+  overview: {
+    intro: "苏格兰最大学术图书馆，历史始于 1580 年——律师 Clement Litill 遗赠 276 本书，比大学 1582 年建校还早两年。系统以 George Square 主馆（1967）为旗舰，配合 King's Buildings 校区 Murray Library 等分馆；发现层 DiscoverEd，读者支持统一入口 EdHelp。现任 Librarian Gavin McLachlan。2025-12-04 发布 Library Strategy 2030（People / Research / Teaching & Learning / Social & Civic Responsibility 四主题），对接大学 Strategy 2030。",
+    stats: [
+      { k: "馆藏", v: "380 万+（全系统）", s: "含电子书/电子刊；2014/15 实体馆藏 340 万册" },
+      { k: "学习座", v: "约 2,500", s: "选定楼层 24/7，考试期扩大为全层（2020 官方口径）" },
+      { k: "主馆", v: "1967 · 8 层", s: "每层一英亩，建成时英国最大同类建筑；预算 £1.7M、实造价 £2.1M" },
+      { k: "特藏", v: "约 20 万件", s: "摇篮本 1,200 种，Halliwel-Phillipps 莎士比亚收藏" }
+    ]
+  },
+  projects: [
+    {
+      name: "七年分期改造：登录巨构的整体再生",
+      nameEn: "Main Library Redevelopment · Lewis & Hickey · 2006/07–2012/13",
+      year: "2006/07–2012/13",
+      stats: [{ k: "分期", v: "7 期" }, { k: "闭馆", v: "0 天" }, { k: "咖啡厅", v: "220 座" }, { k: "特藏", v: "CRC 顶层两层" }],
+      facts: "2006 年主馆列为 Category A 登录建筑（苏格兰最高等级），同年启动改造设计。Lewis & Hickey 主持，分七期施工、全程开馆：顶层两层整体新建 Centre for Research Collections，特藏/档案/珍本研究服务集中上移；新入口与门厅重组，增设 220 座咖啡厅与夹层展厅。HES 登录档案记载原始家具：黑色金属书架由建筑师与厂商共同设计、部分桌台与学习长凳为建筑师亲设、其余多为斯堪的纳维亚选品——其设计影响了格拉斯哥大学等后续馆。",
+      insight: "「不能闭馆」不是方案降级的理由，而是方案设计的一部分：七期意味着每期都有独立竣工价值（CRC 上楼/新入口/咖啡厅各自成立），早期分区暴露的问题还能在后期修正。分期＋每期独立见效，比一次性闭馆大修更容易说服决策层。",
+      img: "edinburgh-2.jpg",
+      imgCap: "主馆立面：预制混凝土模数与开窗节奏是登录保护的核心对象，改造的全部新动作只能发生在保护立面之内。摄影：Remi Mathis / Wikimedia Commons（CC BY-SA 3.0）"
+    },
+    {
+      name: "uCreate 创客空间：完整运营样本",
+      nameEn: "uCreate · George Square 四楼",
+      year: "2012 改造后启用",
+      stats: [{ k: "分区", v: "4 区" }, { k: "空间开放", v: "8:00–1:00 七天" }, { k: "人员值守", v: "10:00–20:00" }, { k: "布点", v: "旗舰＋卫星" }],
+      facts: "四区构成：服务点（设备借用）、Digital Transformation Suite（绿幕/摄影测量/RTI 数字人文设备）、Makerspace（3D 打印/CNC/激光切割，配不同高度工作台与下拉式插座）、Media Lab（与媒体系合作、HEREG 基金）。SISO 系统管理预约与设备；经费主馆运营预算＋海报制作收入；Murray Library 设卫星点。",
+      insight: "对应国内创客空间三大病灶给出四组件解：人员用「值守短于开放」错位排班降人力成本；经费「预算保底＋增值服务创收」双轨；制度用第三方系统标准化管理；旗舰点跑通再向分馆卫星式复制——创客空间最小可行运营模型。"
+    }
+  ],
+  learningSpaces: "竖向分区逻辑明确：底层入口＋EdHelp＋咖啡厅（公共性最强）→ 中间层学习空间 → 顶层 CRC 特藏（控制性最强）→ 四层 uCreate（生产性最强）。约 2,500 学习座，选定楼层 24/7、考试期扩为全层；2017 年校方《主馆占用率评审》基于刷卡数据给出可净增 2,025 座的分层蓝图（含 Vertical Connector＋南门、更多 display/event 空间、加强对爱丁堡城市的 outreach），其中土木级长期项至今未建。",
+  serviceModel: "统一发现层 DiscoverEd＋地面层 EdHelp 一站式支持。运营精细化样本：uCreate 人员 10:00–20:00 值守而空间 8:00–1:00 开放（错位排班）；经费双轨（运营预算＋海报创收）；SISO 系统管预约设备。战略层 Library Strategy 2030（2025-12 发布）四主题对接大学战略。",
+  trends: [
+    { tid: "historic-renewal", title: "登录巨构的「保护性再生」新样板", type: "fact", note: "Category A 登录（2006）与满负荷运营（2,500 座/280 万入馆）双重约束下，七期边开馆边改造完成整体再生——比格拉斯哥的「持续翻新」更极端的工况（更高保护等级、不能闭馆）。" },
+    { tid: "data-driven-ops", title: "满负荷大馆的「空间潜力审计」范本", type: "fact", note: "2017 官方《占用率评审》：刷卡数据画峰谷→按工程可行性分短中长期→给出净增 2,025 座潜力值，并捆绑 display/event 空间与城市 outreach——「不扩建还能挤出多少」可以直接产品化。" },
+    { tid: "learning-commons", title: "Commons 之后的「生产能力」层", type: "fact", note: "220 座咖啡厅＋夹层展厅＋uCreate 四区创客——学习空间之上再叠制作空间，图书馆从「学的地方」变成「产出的地方」。" },
+    { tid: "247-spaces", title: "24/7 的楼层梯度版本", type: "fact", note: "选定楼层 24/7、考试期扩为全层——全天候按楼层分配而非全馆通宵，介于哥大「楼层梯度」与芝大「考试期限定」之间的折中。" },
+    { tid: "special-collections", title: "特藏「上楼」而非「下沉」", type: "judgment", note: "CRC 特藏研究中心整体置于顶层两层——与康奈尔 Kroch「沉入地下三层」相反的路径：顶层的视野、采光与环境可控性被优先给特藏；哪种路径更适合国内，值得对照论证。" }
+  ],
+  business: [
+    "「分期＋每期独立见效」的老馆改造方案结构可直接卖：七期改造证明不能闭馆不是降级理由；把分期逻辑、临时动线、读者沟通做进任务书，是方案竞争力的来源。",
+    "「空间潜力审计」可产品化：刷卡数据画峰谷→短中长期分层→净增座位潜力值，向委托方提供「不扩建还能挤出多少空间」的审计报告（必须附「落地条件」章节——爱丁堡的 Vertical Connector 至今未建）。",
+    "创客空间最小可行运营模型四组件（错位排班/经费双轨/系统标准化/旗舰＋卫星），每个组件对应国内一个常见病灶，可直接讲给委托方。",
+    "家具进任务书：HES 档案证明顶级大馆把书架桌凳当建筑构件设计——国内任务书应设家具系统专项，含创客工作台高度分级、下拉式电源等细节级条款。",
+    "「座位扩容＋城市 outreach」捆绑立项：2017 评审把 display/event 空间与城市公共关系写进同一份文件——图书馆校内地位与城市关系是同一条预算线的两端。",
+    "可复制性边界：Category A 登录的审批与工法成本、七年运营中施工的隐性损耗账校方从未公开，不能直接对标。"
+  ],
+  limits: [
+    "七期改造总造价未找到公开权威数字。",
+    "2017 评审建议的实际执行清单未见官方更新（哪些做了哪些没做）。",
+    "2012 改造后家具供应商与型号细节待查（HES 档案仅覆盖 1967 原始家具）。",
+    "改造后中庭/CRC/uCreate 内景授权图片暂缺。",
+    "Vertical Connector 至 2026-09-30 未见实施证据。"
+  ],
+  sources: [
+    { label: "Wikipedia – Edinburgh University Library（1580 遗赠/1967 主馆/380 万+ 口径）", url: "en.wikipedia.org/wiki/Edinburgh_University_Library" },
+    { label: "HES 登录档案 LB27968（造价/奖项/家具共研/影响格拉斯哥）", url: "portal.historicenvironment.scot/designation/LB27968" },
+    { label: "Stantec – 主馆改造项目页（七期·全程开馆·CRC）", url: "stantec.com/en/projects/university-of-edinburgh-main-library-redevelopment" },
+    { label: "校方 2017《主馆占用率评审》PDF（2,025 座蓝图）", url: "ed.ac.uk/files/atoms/files/main_library_occupancy_review.pdf" },
+    { label: "校方 Facts & Figures（2,500 座/24-7/DiscoverEd/EdHelp）", url: "ed.ac.uk/information-services/library-museum-gallery/library-essentials/facts-figures" },
+    { label: "Library Strategy 2030（2025-12-04 发布）", url: "librarystrategy2030.ed.ac.uk" },
+    { label: "uCreate 官方页面（四区/排班/经费/卫星点）", url: "ucreate.ed.ac.uk" }
+  ]
 }
 ];
 
@@ -1530,6 +1606,7 @@ window.LIB_URLS = {
   jhu: "https://www.library.jhu.edu/",
   uchicago: "https://www.lib.uchicago.edu/",
   glasgow: "https://www.gla.ac.uk/myglasgow/library/",
+  edinburgh: "https://library.ed.ac.uk/",
   upenn: "https://www.library.upenn.edu/",
   columbia: "https://library.columbia.edu/",
   cornell: "https://library.cornell.edu/",
