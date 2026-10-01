@@ -6,7 +6,7 @@ const $ = (s, el) => (el || document).querySelector(s);
 const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
 function schoolShort(id) {
-  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", edinburgh:"爱", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛", cambridge:"剑", ethz:"苏", imperial:"帝" };
+  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", edinburgh:"爱", manchester:"曼", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛", cambridge:"剑", ethz:"苏", imperial:"帝" };
   return map[id] || id.slice(0, 1).toUpperCase();
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
@@ -29,7 +29,8 @@ const SCHOOL_COLORS = {
   cambridge:{ accent: "#A3C1AD", soft: "#eef4f0" },
   ethz:     { accent: "#1F407A", soft: "#e9eef4" },
   imperial: { accent: "#002E5E", soft: "#e9eef4" },
-  edinburgh:{ accent: "#1B4B8F", soft: "#eaf0f8" }
+  edinburgh:{ accent: "#1B4B8F", soft: "#eaf0f8" },
+  manchester:{ accent: "#660099", soft: "#f3e9f8" }
 };
 function setSchoolTheme(id) {
   const c = SCHOOL_COLORS[id] || SCHOOL_COLORS.upenn;
@@ -105,7 +106,7 @@ function countUp(el, target, dur = 900) {
 
 /* ── 学校卡片 ── */
 /* 校徽（本地文件；mit/jhu 为 SVG 矢量，其余 PNG） */
-const LOGO_EXT = { mit: "svg", edinburgh: "svg" };
+const LOGO_EXT = { mit: "svg", edinburgh: "svg", manchester: "svg" };
 const logoSrc = id => `assets/logos/${id}.${LOGO_EXT[id] || "png"}`;
 const logoImg = (id, cls) => `<img class="${cls}" src="${logoSrc(id)}" alt="" loading="lazy" onerror="this.style.display='none'">`;
 

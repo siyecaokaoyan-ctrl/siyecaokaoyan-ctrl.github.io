@@ -1592,6 +1592,96 @@ const SCHOOLS = [
     { label: "Library Strategy 2030（2025-12-04 发布）", url: "librarystrategy2030.ed.ac.uk" },
     { label: "uCreate 官方页面（四区/排班/经费/卫星点）", url: "ucreate.ed.ac.uk" }
   ]
+},
+{
+  id: "manchester",
+  name: "曼彻斯特大学",
+  nameEn: "University of Manchester",
+  founded: 1824,
+  country: "英国",
+  region: "欧洲",
+  state: "英格兰 · 曼彻斯特",
+  reportId: "LR-20261001-01",
+  reportDate: "2026-10-01",
+  tagline: "大教堂 · 无书馆 · 八十年主楼",
+  mainLine: "英格兰唯一的国家研究图书馆，由两个极端拼成：1900 年建成的 Grade I 哥特式「学习大教堂」赖兰兹（£1,700 万「解锁」、免费对公众开放），和 2012 年 £2,400 万建成的「没有书的图书馆」AGLC（保留老食堂四分之三框架、学生共创、7×24）。中间夹着一栋 1936 年起层层叠加的主馆。",
+  flagship: { name: "约翰·赖兰兹图书馆「解锁」工程（2003–2007）", note: "£17M：拆除 1969 年平庸加建、补建 Champneys 百年前设计却未建成的坡屋顶、新建公共入口翼（咖啡/商店/解说/保护工作室）。1900 年建成的维多利亚哥特「学习大教堂」，1994 年 Grade I 登录；镇馆之宝含古腾堡圣经与「最早新约文本」P52 纸草。2025 年「Next Chapter」新增展厅并迎 125 周年。", img: "manchester-1.jpg", imgCap: "赖兰兹外观：砂岩哥特原构与 2007 年玻璃新入口翼的「新旧对位」。摄影：Doyle of London / Wikimedia Commons（CC BY-SA 4.0）" },
+  overview: {
+    intro: "全英第三大高校图书馆系统（仅次于牛津、剑桥）、英国最大非缴存学术馆藏与最大电子资源馆藏，年服务学生、研究者与访客 300 万+ 人次。12 个馆点：主馆（人文社科主藏书）、AGLC（全数字学习 Commons）、约翰·赖兰兹（特藏＋公众界面）、八座校园专业馆及中央图书馆内的种族关系资源中心。发现层 Library Search；技能品牌 My Learning Essentials（年 13,500+ 人次）；现行战略 Imagine2030 对接大学 Manchester 2035。",
+    stats: [
+      { k: "馆藏", v: "400 万+ 印刷", s: "官网口径；StaffNet 编目实体 202.7 万件；战略口径实体 1,000 万+" },
+      { k: "电子资源", v: "80 万+ 电子书", s: "StaffNet 口径 142.9 万种；5 万+ 电子刊、700+ 数据库" },
+      { k: "AGLC", v: "1,000+ 学习位", s: "£24M、5,400㎡，学期 24/7、全年仅圣诞/节礼日闭馆" },
+      { k: "地位", v: "全英五强", s: "英格兰唯一国家研究图书馆（RLUK 成员）" }
+    ]
+  },
+  projects: [
+    {
+      name: "「解锁」工程：完成百年前的设计",
+      nameEn: "Unlocking the Rylands · 2003–2007",
+      year: "2003–2007",
+      stats: [{ k: "造价", v: "£17M" }, { k: "登录", v: "Grade I（1994）" }, { k: "建成", v: "1900" }, { k: "重开", v: "2007-09-20" }],
+      facts: "2003 年启动公开募捐（大学＋遗产彩票基金 HLF＋公众企业）：拆 1969 年加建、翻修老楼、补建 Champneys 当年因「石拱顶更防火」建议而放弃的坡屋顶，新建入口翼承担咖啡/商店/解说/保护功能。后续：历史阅览室 2012 关闭修缮、2021 重开；2013 成立 Research Institute；2025「Next Chapter」新展厅＋125 周年。馆藏：古腾堡圣经、美因茨诗篇、全英第二大 Caxton 收藏、P52「最早新约文本」。",
+      insight: "「完成历史设计」叙事：保护工程升级为「完成建筑师遗愿」的故事，募捐、审批、传播三线受益。反面教材也要记住——2021 年赖兰兹从文化场所转向研究机构引发裁员争议（管理层承认此前「过度偏向社会责任」），公众开放与研究功能的张力需要制度化平衡。",
+      img: "manchester-2.jpg",
+      imgCap: "历史阅览室 1900 年空间原境：沿中轴对称的木质长桌与哥特拱廊藏书龛——家具已成为保护清单上的条目。摄影：Mike Peel / Wikimedia Commons（CC BY-SA）"
+    },
+    {
+      name: "AGLC：没有书的图书馆",
+      nameEn: "Alan Gilbert Learning Commons · Sheppard Robson · 2012",
+      year: "2012",
+      stats: [{ k: "造价", v: "£24M" }, { k: "面积", v: "5,400 ㎡" }, { k: "学习位", v: "1,000+" }, { k: "评级", v: "BREEAM HE Excellent" }],
+      facts: "保留 1960 年代老食堂约四分之三钢筋混凝土框架——隐含碳与造价双降。空间围绕公共学习大厅＋咖啡厅组织；学生全程共创（官方导览：「每一个角落的创意设计都由学生完成」，入口装饰校友语录）；被校方与维基称为「全数字图书馆」。全年仅圣诞、节礼日闭馆。家具层：Broadstock 桌台集成 FG Technology PC 遥控（主机 20 米半径内安置）＋隐藏布线＋防盗。",
+      insight: "「未来学习中心」三件套话术：存量再生（保框架→BREEAM Excellent→省钱省碳）、学生共创（不是问卷，是从方案到家具用法全程）、家具即技术（桌面集成 PC 控制——技术集成条款应进家具标，不动信息化预算）。",
+      img: "manchester-3.jpg",
+      imgCap: "AGLC 外观：竖向彩条玻璃幕墙与旧混凝土骨架的关系——「旧馆＋新 Commons」双子配置。摄影：FJones2123 / Wikimedia Commons（CC BY-SA 4.0）"
+    },
+    {
+      name: "主馆：叠了八十年、从未停止生长的楼",
+      nameEn: "Main Library · Burlington Street · 1936–至今",
+      year: "1936–至今",
+      stats: [{ k: "东翼", v: "1936" }, { k: "两翼", v: "1953–56" }, { k: "北扩", v: "1981" }, { k: "新学习位", v: "105（2023）" }],
+      facts: "1936 年东翼（Arts Library，Thomas Worthington & Sons）→1953-56 南西两翼（含展厅与特藏部门）→1978 Muriel Stott 八角会议厅→1981 秋北扩启用（Dane, Scherrer & Hicks，1972 年设计、资金等了八年；女王 1982-06 正式揭幕）。1980 年校方自称「全英大学唯一大型基建」：三倍空间、+140 万册容量、约 2,000 座。持续微调：2009-10 地面层翻新、2023 年 Blue 1 层新增 105 个学习位、Green 区 12 间研讨室（大桌＋8 椅＋PC＋32″屏官方标准包）、亲子间与线上面试间、Cosy Campus 厨房角。",
+      insight: "「时间尺度」是最好的业务话术：大学基建决策—资金—施工天然漫长（北扩九年落地），但半年级的「105 个学习位」微循环可以无限续命——大改做分期管线、小改做年度微循环，小项目也要产品化。"
+    }
+  ],
+  learningSpaces: "系统级分工清晰：主馆＝人文社科主藏书＋学习位（Green 区小组/Blue 区安静）；AGLC＝纯学习场景（1,000+ 位、pod、多媒体）无藏书；赖兰兹＝特藏研究＋公众参观；八座专业馆学科嵌入。AGLC 全年仅两日闭馆、学期 24/7；Cosy Campus 把厨房角、康乐室嵌进主馆与 AGLC——给全英最大单校区大学补「人情味」。",
+  serviceModel: "发现层 Library Search＋Library Help 在线问答＋全校区服务台。eTextbook 计划（2023/24：1,115 门课、120,710 份个人副本、34,747 名学生）与 Reading List Strategy（2021/22 课程单元 +60%、使用参与率 80%）用官方快数把资源投入讲成学生获得；My Learning Essentials（13,500+ 人次/年）是获奖技能品牌；总馆长 Pressler 双肩挑赖兰兹馆长——特藏战略放在系统核心。",
+  trends: [
+    { tid: "historic-renewal", title: "「完成历史设计」的保护叙事", type: "fact", note: "£17M「解锁」工程补建 Champneys 百年前未建的坡屋顶、拆平庸加建——保护工程升级为「完成建筑师遗愿」的故事；主馆则演示 1936–2023 的渐进式扩建微循环。" },
+    { tid: "learning-commons", title: "「没有书的图书馆」的完整样本", type: "fact", note: "AGLC：全数字、1,000+ 学习位、学生全程共创、家具集成 PC 技术——commons 从产品升级为「由学生定义的学习场景集合」。" },
+    { tid: "247-spaces", title: "24/7 的极限运营版本", type: "fact", note: "全年仅圣诞、节礼日闭馆，学期内 24/7——在「全年无休」与「成本控制」之间走到英国高校的最远端。" },
+    { tid: "special-collections", title: "特藏＝城市级公共资产", type: "fact", note: "赖兰兹：古腾堡圣经＋P52 纸草，免费参观、常年展览，2025「Next Chapter」再增展厅——特藏从研究后台变成城市文化前台。" },
+    { tid: "open-to-public", title: "大学设施的公众界面制度化", type: "judgment", note: "赖兰兹作为免费景点的公众开放写入运营结构；但 2021 年裁员争议显示：开放承诺若只靠预算自愿，紧缩时必然回摆——需要章程级保障。" },
+    { tid: "data-driven-ops", title: "按课程单元配书的「获得」叙事", type: "fact", note: "eTextbook 计划用官方快数（1,115 门课/12 万份副本/3.5 万学生/80% 参与率）把馆藏投入翻译成学生可感指标——数据化运营从空间层扩展到课程资源层。" }
+  ],
+  business: [
+    "「完成历史设计」话术：检索委托方老馆图纸，找「当年没建成」的部分做可行性与叙事价值评估——把工程包装成完成历史，募捐、审批、传播三线受益。",
+    "「未来学习中心」三件套直接可用：存量再生（保框架→绿建评级→省钱省碳）、学生共创（全程而非问卷）、家具即技术（桌面集成 PC 控制，技术条款进家具标）。",
+    "电子阅览室改造方案：主机 20 米远置＋桌面控制＋隐藏布线，性能/安全/安静三角一次解决，且走家具预算不动信息化盘子。",
+    "「大改分期管线＋小改年度微循环」双层更新策略：105 个学习位这种半年级小项目产品化，帮馆内建立常设「空间微循环」预算科目。",
+    "预警式专业议题：公众开放 vs 研究功能的制度化平衡（赖兰兹 2021 争议）——能向委托方预警风险本身就是专业度。",
+    "可复制性边界：全英最大单校区规模效应不可类比；HLF 彩票基金结构国内无对应；Cosy Campus 属全校计划非图书馆单独预算。"
+  ],
+  limits: [
+    "赖兰兹 2007 重开日期两口径（4 月 vs 9-20）未决。",
+    "主馆 2016–2019 改造预告的完工记录未找到。",
+    "主馆总学习座位数无官方统一口径。",
+    "HLF 拨款金额未拆分。",
+    "The Meteor 报道的裁员执行结果无后续官方口径。",
+    "AGLC 年访客量精确数字待查。"
+  ],
+  sources: [
+    { label: "Wikipedia – University of Manchester Library（沿革/主馆建筑史/成员馆）", url: "en.wikipedia.org/wiki/University_of_Manchester_Library" },
+    { label: "Wikipedia – John Rylands Research Institute and Library（£17M/2007/藏品）", url: "en.wikipedia.org/wiki/John_Rylands_Research_Institute_and_Library" },
+    { label: "StaffNet – Facts and figures（2023/24 馆内快数/赖兰兹时间线）", url: "staffnet.manchester.ac.uk/library/working-here/facts-figures" },
+    { label: "Imagine2030（图书馆战略＋Pressler 引言）", url: "stories.manchester.ac.uk/imagine2030" },
+    { label: "AJ – AGLC 项目数据（£24M/5,400㎡/团队）", url: "architectsjournal.co.uk/news/sheppard-robsons-alan-gilbert-learning-commons-opens-its-doors" },
+    { label: "RIBA – AGLC（保留四分之三框架/BREEAM HE Excellent）", url: "find-an-architect.architecture.com/sheppard-robson/manchester/alan-gilbert-learning-commons" },
+    { label: "designinglibraries – AGLC 家具技术（FG/Broadstock）", url: "designinglibraries.org.uk/case-studies/alan-gilbert-learning-commons" },
+    { label: "The Meteor – 2021 赖兰兹裁员争议", url: "themeteor.org/2021/06/26/dozens-of-jobs-at-risk-libraries" },
+    { label: "主馆设施页（研讨室规格/亲子间/线上面试间）", url: "library.manchester.ac.uk/locations-and-opening-hours/main-library" }
+  ]
 }
 ];
 
@@ -1607,6 +1697,7 @@ window.LIB_URLS = {
   uchicago: "https://www.lib.uchicago.edu/",
   glasgow: "https://www.gla.ac.uk/myglasgow/library/",
   edinburgh: "https://library.ed.ac.uk/",
+  manchester: "https://www.library.manchester.ac.uk/",
   upenn: "https://www.library.upenn.edu/",
   columbia: "https://library.columbia.edu/",
   cornell: "https://library.cornell.edu/",
