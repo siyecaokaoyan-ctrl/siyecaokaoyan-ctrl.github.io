@@ -240,9 +240,7 @@ function renderTrendMap(activeIds) {
       <div class="rank">${String(i + 1).padStart(2, "0")}</div>
       <div class="t-name">${t.title}<span>${t.subtitle}</span></div>
       <div class="schools">${t.schools.map(id => {
-        const hot = activeIds && activeIds.includes(id);
-        const c = hot ? SCHOOL_COLORS[id] : null;
-        return `<div class="chip-s${hot ? " hot" : ""}"${c ? ` style="background:${c.accent};border-color:${c.accent}"` : ""} title="${schoolById(id).name}">${schoolShort(id)}</div>`;
+        return `<div class="chip-s" title="${schoolById(id).name}">${schoolShort(id)}</div>`;
       }).join("")}</div>
       <div class="count">${t.schools.length} 校共鸣</div>
     </a>`).join("");
