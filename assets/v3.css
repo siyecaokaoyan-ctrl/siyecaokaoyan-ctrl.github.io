@@ -309,3 +309,18 @@ section{padding:100px 0;}
 
 /* 首页：第一阶段样本标注 */
 .phase-tag{display:inline-block;margin-top:14px;padding:6px 14px;border-radius:999px;background:rgba(10,132,255,.08);border:1px solid rgba(10,132,255,.25);color:var(--accent);font-size:12.5px;line-height:1.5;}
+
+/* ── 多图轮播（左右切换） ── */
+.gal{position:relative;margin:18px 0 6px;}
+.gal-view{overflow:hidden;border-radius:10px;border:1px solid #e5e5ea;background:#000;}
+.gal-track{display:flex;transition:transform .35s ease;}
+.gal-slide{flex:0 0 100%;margin:0;}
+.gal-slide img{width:100%;display:block;}
+.gal-slide figcaption{font-size:12.5px;color:#77777d;padding:10px 14px;background:#fafafa;line-height:1.6;}
+.gal-arrow{position:absolute;top:36%;width:34px;height:34px;border-radius:50%;border:none;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.18);font-size:20px;line-height:1;cursor:pointer;color:#333;opacity:.55;transition:opacity .2s,background .2s;z-index:2;}
+.gal-arrow:hover{opacity:1;}
+.gal-arrow.prev{left:10px;} .gal-arrow.next{right:10px;}
+.gal-dots{display:flex;gap:6px;justify-content:center;margin-top:8px;}
+.gal-dot{width:7px;height:7px;border-radius:50%;border:none;background:#d8d8de;padding:0;cursor:pointer;transition:background .2s;}
+.gal-dot.on{background:var(--accent,#0a84ff);}
+.gal-count{position:absolute;top:10px;right:10px;font-size:11.5px;background:rgba(0,0,0,.45);color:#fff;border-radius:10px;padding:2px 8px;z-index:2;}

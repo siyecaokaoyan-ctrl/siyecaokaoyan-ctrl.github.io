@@ -11,6 +11,39 @@ function schoolShort(id) {
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
 
+/* ── 多图轮播：imgs 为 [{src, cap}]，单图自动兼容 ── */
+function galleryHtml(items) {
+  if (!items) return "";
+  const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
+  if (!arr.length) return "";
+  const slides = arr.map(it => {
+    const o = typeof it === "string" ? { src: it, cap: "" } : it;
+    return `<figure class="gal-slide"><img src="assets/photos/${esc(o.src || o.img || "")}" alt="" loading="lazy"><figcaption>${esc(o.cap || o.imgCap || "")}</figcaption></figure>`;
+  }).join("");
+  const dots = arr.map((_, i) => `<button class="gal-dot${i === 0 ? " on" : ""}" data-i="${i}" type="button" aria-label="第${i + 1}张"></button>`).join("");
+  return `<div class="gal" data-gal>
+    <div class="gal-view"><div class="gal-track">${slides}</div></div>
+    ${arr.length > 1 ? `<button class="gal-arrow prev" type="button" aria-label="上一张">‹</button><button class="gal-arrow next" type="button" aria-label="下一张">›</button><div class="gal-count">1 / ${arr.length}</div><div class="gal-dots">${dots}</div>` : ""}
+  </div>`;
+}
+document.addEventListener("click", e => {
+  const gal = e.target.closest("[data-gal]");
+  if (!gal) return;
+  const track = gal.querySelector(".gal-track");
+  const n = track.children.length;
+  if (n < 2) return;
+  const cur = Math.round(-(parseFloat((track.style.transform || "").replace(/[^0-9.\-]/g, "")) || 0) / 100);
+  let i = cur;
+  if (e.target.closest(".gal-arrow.prev")) i = (cur - 1 + n) % n;
+  else if (e.target.closest(".gal-arrow.next")) i = (cur + 1) % n;
+  else if (e.target.closest(".gal-dot")) i = +e.target.closest(".gal-dot").dataset.i;
+  else return;
+  track.style.transform = `translateX(${-i * 100}%)`;
+  gal.querySelectorAll(".gal-dot").forEach((d, j) => d.classList.toggle("on", j === i));
+  const c = gal.querySelector(".gal-count");
+  if (c) c.textContent = `${i + 1} / ${n}`;
+});
+
 /* 校色系统：详情页由 JS 覆盖 --accent / --accent-soft */
 const SCHOOL_COLORS = {
   harvard:  { accent: "#A51C30", soft: "#f7eef0" },
@@ -455,7 +488,7 @@ function initSchool() {
     <div class="f-tag">旗舰项目</div>
     <div class="f-name">${esc(s.flagship.name)}</div>
     <div class="f-note">${hl(s.flagship.note)}</div>
-    ${s.flagship.img ? `<figure class="f-fig"><img src="assets/photos/${esc(s.flagship.img)}" alt="" loading="lazy"><figcaption>${esc(s.flagship.imgCap || "")}</figcaption></figure>` : ""}`;
+    ${galleryHtml(s.flagship.imgs || (s.flagship.img ? [{ src: s.flagship.img, cap: s.flagship.imgCap || "" }] : null))}`;
   $("#d-overview-intro").innerHTML = `<b>系统概况。</b>${hl(s.overview.intro)}`;
   $("#d-stats").innerHTML = s.overview.stats.map(st =>
     `<div class="stat-card reveal"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div><div class="s">${esc(st.s)}</div></div>`).join("");
@@ -471,7 +504,7 @@ function initSchool() {
       <div class="p-en">${esc(p.nameEn)}</div>
       ${p.stats && p.stats.length ? `<div class="p-stats">${p.stats.map(st => `<div class="p-stat"><div class="k">${esc(st.k)}</div><div class="v">${esc(st.v)}</div></div>`).join("")}</div>` : ""}
       ${problem ? `<div class="p-problem"><b>要解决的问题。</b>${hl(problem)}</div>` : ""}
-      ${p.img ? `<figure class="p-fig"><img src="assets/photos/${esc(p.img)}" alt="" loading="lazy"><figcaption>${esc(p.imgCap || "")}</figcaption></figure>` : ""}
+      ${galleryHtml(p.imgs || (p.img ? [{ src: p.img, cap: p.imgCap || "" }] : null))}
       <div class="p-facts"><span class="p-badge fact">事实</span>${hl(p.facts)}</div>
       <div class="p-insight"><span class="p-badge judge">判断 · 启示</span>${hl(p.insight)}</div>
       ${boundary ? `<div class="p-boundary"><span class="p-badge bnd">边界 · 不宜照搬</span>${hl(boundary)}</div>` : ""}

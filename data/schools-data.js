@@ -1785,7 +1785,7 @@ const SCHOOLS = [
   reportDate: "2026-10-06",
   tagline: "未完工的穹顶 · 会感知座位的楼 · 实物里的课堂",
   mainLine: "Wilkins Building 1827 年设计、1829 年烂尾只剩门廊穹顶，主体 1985 年才由女王揭幕——图书馆在此两百年渐进改造：1907 年吃下整层成主馆、2012 年复原穹顶天窗点亮 Flaxman 雕塑展厅、2019–20 年旧食堂改实物教学空间。2019 年开放的 Student Centre 全年 24/7，约 2/3 座位带传感器、空位数据进 App 像停车诱导。",
-  flagship: { name: "Wilkins Building 与主馆：两百年渐进改造", note: "1827 年 William Wilkins 设计（兼国家美术馆设计者），1829 年资金断裂仅建成门廊与穹顶；1849 年旁建第一座专用馆（今 Donaldson Reading Room）；1907 年扩占整个一层成为 Main Library；主体 1985 年由女王揭幕完工——隔 158 年。2004–05 改主入口、2012 复原 oculus 天窗、2015–17 改地下室食堂、2019–20 旧食堂改 Object-Based Learning Room。Grade I 登录。", img: "ucl-1.jpg", imgCap: "Wilkins Building 门廊与穹顶（1829 年原构）：158 年「烂尾楼」的脸面部分是真古董，主馆入口就在柱廊之内。摄影：Diliff / Wikimedia Commons（CC BY-SA 3.0）" },
+  flagship: { name: "Wilkins Building 与主馆：两百年渐进改造", note: "1827 年 William Wilkins 设计（兼国家美术馆设计者），1829 年资金断裂仅建成门廊与穹顶；1849 年旁建第一座专用馆（今 Donaldson Reading Room）；1907 年扩占整个一层成为 Main Library；主体 1985 年由女王揭幕完工——隔 158 年。2004–05 改主入口、2012 复原 oculus 天窗、2015–17 改地下室食堂、2019–20 旧食堂改 Object-Based Learning Room。Grade I 登录。", imgs: [{ src: "ucl-1.jpg", cap: "Wilkins Building 门廊与穹顶（1829 年原构）：158 年「烂尾楼」的脸面部分是真古董，主馆入口就在柱廊之内。摄影：Diliff / Wikimedia Commons（CC BY-SA 3.0）" }, { src: "ucl-3.jpg", cap: "Flaxman Gallery：2012 年 oculus 复原后天窗重新点亮穹顶展厅——John Flaxman 雕塑石膏模型阵列与法学珍本同厅。摄影：LordHarris / Wikimedia Commons（CC BY-SA 3.0）" }] },
   overview: {
     intro: "UCL 图书馆系统归口 LCCOS（Library, Culture, Collections and Open Science）——把图书馆、博物馆、特藏、开放科学办公室乃至 UCL Press 装进一个口的大文化架构，负责人为 Pro-Vice-Provost Paul Ayris。17–19 个分馆（不同口径），馆藏 200 万+ 印刷册、50 万+ 电子书，发现层 Explore。主馆在 Wilkins Building（人文/经济/历史/法律/公共政策），通宵学习由 2019 年开放的 Student Centre 承接。特藏 10 公里+ 材料、Bentham 手稿、George Orwell Archive，「open to everyone」。",
     stats: [
