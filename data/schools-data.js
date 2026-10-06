@@ -1772,6 +1772,96 @@ const SCHOOLS = [
     { label: "KCL – College Collection（682 件/Former owner 字段）", url: "kcl.ac.uk/college-collection" },
     { label: "访馆记录 2013（三级分区/24h 笔记本/RFID 遗产审批）", url: "mallikarjunangadi.wordpress.com/2013/02/07/visit-to-maughan-library-kings-college-london-strand-campus" }
   ]
+},
+{
+  id: "ucl",
+  name: "伦敦大学学院",
+  nameEn: "University College London",
+  founded: 1826,
+  country: "英国",
+  region: "欧洲",
+  state: "英格兰 · 伦敦",
+  reportId: "LR-20261006-02",
+  reportDate: "2026-10-06",
+  tagline: "未完工的穹顶 · 会感知座位的楼 · 实物里的课堂",
+  mainLine: "Wilkins Building 1827 年设计、1829 年烂尾只剩门廊穹顶，主体 1985 年才由女王揭幕——图书馆在此两百年渐进改造：1907 年吃下整层成主馆、2012 年复原穹顶天窗点亮 Flaxman 雕塑展厅、2019–20 年旧食堂改实物教学空间。2019 年开放的 Student Centre 全年 24/7，约 2/3 座位带传感器、空位数据进 App 像停车诱导。",
+  flagship: { name: "Wilkins Building 与主馆：两百年渐进改造", note: "1827 年 William Wilkins 设计（兼国家美术馆设计者），1829 年资金断裂仅建成门廊与穹顶；1849 年旁建第一座专用馆（今 Donaldson Reading Room）；1907 年扩占整个一层成为 Main Library；主体 1985 年由女王揭幕完工——隔 158 年。2004–05 改主入口、2012 复原 oculus 天窗、2015–17 改地下室食堂、2019–20 旧食堂改 Object-Based Learning Room。Grade I 登录。", img: "ucl-1.jpg", imgCap: "Wilkins Building 门廊与穹顶（1829 年原构）：158 年「烂尾楼」的脸面部分是真古董，主馆入口就在柱廊之内。摄影：Diliff / Wikimedia Commons（CC BY-SA 3.0）" },
+  overview: {
+    intro: "UCL 图书馆系统归口 LCCOS（Library, Culture, Collections and Open Science）——把图书馆、博物馆、特藏、开放科学办公室乃至 UCL Press 装进一个口的大文化架构，负责人为 Pro-Vice-Provost Paul Ayris。17–19 个分馆（不同口径），馆藏 200 万+ 印刷册、50 万+ 电子书，发现层 Explore。主馆在 Wilkins Building（人文/经济/历史/法律/公共政策），通宵学习由 2019 年开放的 Student Centre 承接。特藏 10 公里+ 材料、Bentham 手稿、George Orwell Archive，「open to everyone」。",
+    stats: [
+      { k: "建校", v: "1826 年", s: "伦敦大学创校学院；首任馆长 1827 年上任" },
+      { k: "分馆", v: "17–19 个", s: "覆盖全学科；馆藏 200 万+ 印刷册" },
+      { k: "Student Centre", v: "1,000+ 座", s: "2019 年开放；5,764㎡；24/7/365；约 2/3 座位带传感器" },
+      { k: "特藏", v: "10 km+ 材料", s: "500+ 档案群、约 15 万册珍本（2022 口径）" }
+    ]
+  },
+  projects: [
+    {
+      name: "Wilkins Building：一栋楼的两百年改造连续剧",
+      nameEn: "Wilkins Building · William Wilkins 1827 → Queen 1985 · Grade I",
+      year: "1827–至今",
+      stats: [{ k: "设计", v: "1827 Wilkins" }, { k: "烂尾跨度", v: "158 年" }, { k: "成主馆", v: "1907" }, { k: "登录", v: "Grade I" }],
+      facts: "William Wilkins（国家美术馆设计师）1827 年画出希腊复兴方案，1829 年资金断裂只建成门廊与穹顶；图书馆 1828/29 年即在楼内开张，1849 年 Donaldson 设计第一座专用馆（今法学 Donaldson Reading Room），1907 年扩占 Wilkins 整个一层成 Main Library，1985 年女王为续建主体揭幕。此后渐进改造不停业推进：2004–05 主入口（Burwell）、2012 复原穹顶 oculus 天窗＋八角厅设藏品展厅（Flaxman Gallery 重见天日）、2015–17 地下室食堂＋Wilkins Terrace、2019–20 旧食堂改 Object-Based Learning Room。",
+      insight: "与 KCL「整体翻译」互为镜像：两百年连续微翻译。渐进改造的合法性来自「持续使用」——每次改造都以不停业为前提，练出外科手术式改造能力。存量馆舍更新不必等「大修时机」，拆成可与日常运营并行的小项目，每代使用者留下一层可识别的时代痕迹。",
+      img: "ucl-3.jpg",
+      imgCap: "Flaxman Gallery：2012 年 oculus 复原后天窗重新点亮穹顶展厅，John Flaxman 雕塑石膏模型阵列与法学珍本同厅——展品围栏本身就是家具参与展陈的实例。摄影：LordHarris / Wikimedia Commons（CC BY-SA 3.0）"
+    },
+    {
+      name: "Student Centre：会感知座位的 24/7 学习楼",
+      nameEn: "UCL Student Centre · Nicholas Hare Architects · 2019",
+      year: "2019–至今",
+      stats: [{ k: "造价", v: "£67.4M" }, { k: "面积", v: "5,764㎡ · 8 层" }, { k: "座位", v: "1,000+" }, { k: "开放", v: "24/7/365" }],
+      facts: "2019-02-18 开放，Nicholas Hare Architects 设计、Mace 施工（施工口径 £38.5M），BREEAM Outstanding（当时全球约 320 栋）：地源热泵、自然通风、光伏。约 2/3 座位嵌占用传感器，数据进 UCLGo App 实时显示各层空位——找座体验接近停车诱导。运维为「馆员＋保安联合值守」：Service Model Working Group（2017-07 起，跨部门＋学生会）先在前身 Cruciform Hub 试点磨合服务模型，再推广到新楼。2020 年 Jeremy Bentham 的 Auto-Icon 迁入公共中庭。",
+      insight: "最有迁移价值的不是传感器，而是「把找座位从体验问题变成数据问题」：数据先服务读者（App 诱导）、顺带服务馆方（利用率热力图＋保洁安保排班），一次采集两头受益。服务模型不在开幕当天宣布，而是小空间先跑两年攒够问题清单再定制度——任何 24/7 空间开放前都值得先设一个「服务模型工作组」。",
+      img: "ucl-2.jpg",
+      imgCap: "Student Centre 中庭（仰视）：8 层学习空间围绕大中庭叠合，木色栏板与顶部采光——1,000+ 座位按行为分层嵌入各层。摄影：orangeaurochs / Wikimedia Commons（CC BY 2.0）"
+    },
+    {
+      name: "特藏与实物教学：珍本、手稿与旧食堂里的课堂",
+      nameEn: "UCL Special Collections · Object-Based Learning",
+      year: "2019–20",
+      stats: [{ k: "特藏", v: "10 km+（2022）" }, { k: "档案群", v: "500+" }, { k: "珍本", v: "约 15 万册" }, { k: "口号", v: "open to everyone" }],
+      facts: "特藏为英国高校最重要手稿/档案/珍本收藏之一：C.K. Ogden 与 Graves 中世纪藏书、Jeremy Bentham 手稿、George Orwell Archive、全英最大数学珍本收藏、盎格鲁-犹太文献。服务分三层：公众（展厅）、教学（Object-Based Learning Room：2019–20 年旧食堂改造，展柜＋可移动桌椅＋钢木吊顶装置，原件以教具身份进课堂）、研究（Wilkins South Junction 与 IOE 馆两个校内阅览室＋Kew 国家档案馆专属阅览室）。2024 年 Small Press Collection 60 周年。",
+      insight: "关键动作是「特藏从库房功能升级为教学功能」：实物教学空间不是展厅（只看不动）也不是书库（只藏不示），而是「原件可以上桌」的教室，展柜课间隔绝保存、可移动桌椅课上围合，空间在展与教两种模式间切换。最小可行形态不必新建——UCL 直接改了一间旧食堂。"
+    }
+  ],
+  learningSpaces: "「老楼做渐进手术，新楼做未来实验」：Wilkins 主馆＝人文法政旗舰＋Flaxman 展厅（穹顶下雕塑与法学珍本同厅）；Donaldson Room＝1849 年原境仍在服役的法学阅览；Student Centre＝24/7 行为分层坐席（安静/协作/隔音舱）；Object-Based Learning Room＝展柜＋可叠合桌椅的双模式教室。",
+  serviceModel: "发现层 Explore；LCCOS 大文化口径（图书馆＋博物馆＋开放科学＋出版社，Paul Ayris 任 Pro-Vice-Provost）；特藏「open to everyone」分三阅览室服务；Student Centre 服务模型经 Service Model Working Group 在 Cruciform Hub 试点两年后定型；RLUK Space Programme（2026-09）披露今夏正推进多个 Main Library 再开发项目。",
+  trends: [
+    { tid: "historic-renewal", title: "两百年渐进改造的「时间地层」", type: "fact", note: "烂尾 158 年的 Wilkins Building 从 1828 年图书馆入驻到 1985 年主体完工，1907 成主馆、2004 改入口、2012 复原 oculus、2019 改实物教室——不停业的外科手术式改造，让建筑成为可读的时间地层。" },
+    { tid: "247-spaces", title: "服务模型「先试点后定制度」", type: "fact", note: "Service Model Working Group（2017 起，跨部门＋学生会）先在 Cruciform Hub 把「深夜谁负责」吵完，再推广到 24/7 的 Student Centre——24/7 的运营方案不是开幕当天宣布的，是试点两年攒出来的。" },
+    { tid: "learning-commons", title: "行为分层坐席与隔音舱", type: "fact", note: "Student Centre 1,000+ 座位按学习行为分层：安静自习、小组协作、个人隔音舱、静音层——学习共享空间从「一种大平层」演进为「按行为分层的坐席产品」。" },
+    { tid: "data-driven-ops", title: "座位感知＝车位诱导式找座", type: "fact", note: "约 2/3 座位嵌传感器，占用数据进 UCLGo App 实时显示——数据一头服务读者（找座诱导），一头服务馆方（利用率热力图＋保洁安保排班），一次采集两头受益。" },
+    { tid: "special-collections", title: "实物教学：原件可以上桌的教室", type: "fact", note: "旧食堂改 Object-Based Learning Room：展柜＋可移动桌椅＋空间识别层三件套，特藏原件以教具身份进本科课堂——特藏从库房功能升级为教学功能。" },
+    { tid: "open-to-public", title: "「open to everyone」的分层开放", type: "judgment", note: "特藏对公众开放（两个校内阅览室＋Kew 国家档案馆专属阅览室），Student Centre 公共层无门槛——但档案级材料仍分线预约：开放是分层设计，不是一句口号。" }
+  ],
+  business: [
+    "「渐进改造拆包」：把馆舍更新从「等大修」改为可与运营并行的小项目清单（入口/天窗/一间食堂），每代使用者留下可识别的时代痕迹——前提是每次改造留图留档。",
+    "「找座位」数据产品化：座位传感器一头服务读者（App 诱导）、一头服务馆方（利用率热力图＋排班依据）——但隐私口径要公开透明，覆盖比例宜渐进（UCL 约 2/3 是多年调出来的）。",
+    "服务模型先试点后定制度：新 24/7 空间开放前设「服务模型工作组」，用小空间把深夜责任、保洁轮次、应急流程提前吵完——试点攒不下问题清单，新楼开幕就是问题清单的开幕。",
+    "实物教学空间三件套：带锁展柜＋可叠合桌椅＋一块空间识别层，存量空间（如旧食堂）即可开课——前提是保存条件（展柜微环境）兜底，原件损耗不可逆。",
+    "大文化口径：LCCOS 把图书馆、博物馆、开放科学、出版社装进一个口，证明「开放科学」可安置在图书馆组织版图内——但合并容易考核难，需统一考核语言。",
+    "可复制性边界：UCL 的渐进改造有其伦敦地产与登录制度约束的特殊性，国内若无同等约束，要警惕「渐进」沦为「拖延」；传感器与 App 依赖学生触达率，低触达环境先做馆内诱导屏更稳。"
+  ],
+  limits: [
+    "分馆数量 17 与 19 两种口径并存，未决。",
+    "Student Centre 造价 £67.4M（项目总价）与 £38.5M（施工价）口径并列，精确构成未拆分。",
+    "传感器座位「约 2/3」为一线运维文献口径，官方未给精确值。",
+    "UCL East 新校区（Marshgate，2022/23）图书馆配置未细查。",
+    "Main Library 再开发项目清单与时间表（RLUK 2026-09 提及）细节未公开。",
+    "2012 年 oculus 复原工程造价与工期未见完整公开资料。"
+  ],
+  sources: [
+    { label: "Wikipedia – University College London（建校/Wilkins 沿革/Grade I）", url: "en.wikipedia.org/wiki/University_College_London" },
+    { label: "UCL Library 官网（LCCOS 架构/分馆/Explore/特藏开放）", url: "ucl.ac.uk/library" },
+    { label: "UCL 官方新闻 – Student Centre 开放（£67.4M/24/7/BREEAM/Auto-Icon）", url: "ucl.ac.uk/news" },
+    { label: "Nicholas Hare Architects – Student Centre 项目页（行为分层坐席）", url: "nicholashare.co.uk" },
+    { label: "UCL Special Collections 博客（2022：10km+/500 档案群/15 万珍本）", url: "blogs.ucl.ac.uk/special-collections" },
+    { label: "RLUK Space Programme（2026-09：Olivia Walsby/主馆再开发项目）", url: "rluk.ac.uk" },
+    { label: "Burwell Deakins – 主入口/oculus/Object-Based Learning Room 改造", url: "burwelldeakins.co.uk" },
+    { label: "UCL Interaction Centre – 虚拟学习空间研究（2020–22）", url: "ucl.ac.uk/uclic" },
+    { label: "Survey of London / British History Online – Wilkins Building 沿革", url: "british-history.ac.uk" }
+  ]
 }
 ];
 
@@ -1789,6 +1879,7 @@ window.LIB_URLS = {
   edinburgh: "https://library.ed.ac.uk/",
   manchester: "https://www.library.manchester.ac.uk/",
   kcl: "https://www.kcl.ac.uk/library",
+  ucl: "https://www.ucl.ac.uk/library",
   upenn: "https://www.library.upenn.edu/",
   columbia: "https://library.columbia.edu/",
   cornell: "https://library.cornell.edu/",

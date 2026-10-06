@@ -7,8 +7,8 @@ const TRENDS = [
   id: "historic-renewal",
   title: "历史建筑的\"第二次生命\"",
   subtitle: "保护性翻新 · 适应性再利用 · 滚动修复",
-  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 15 所学校独立验证，是本研究中共识最强的趋势。",
-  schools: ["princeton", "yale", "duke", "glasgow", "edinburgh", "manchester", "kcl", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge"],
+  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 16 所学校独立验证，是本研究中共识最强的趋势。",
+  schools: ["princeton", "yale", "duke", "glasgow", "edinburgh", "manchester", "kcl", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge", "ucl"],
   evidence: {
     princeton: "Firestone 主馆（1948）十年 2.5 亿美元整体翻新、全程不闭馆——哥特式外壳不动，内部从\"书库+卡片目录\"彻底改造为现代学习基础设施；\"原址现代化\"的最完整成本与周期参照。",
     yale: "Sterling 主馆（1930）以\"每 2–3 年修复一个标志性房间\"的节奏滚动更新：2014 中殿（2,000 万美元）→ 2022 Hanke 展厅 → 2024 L&B 阅览室，全程不闭馆，已启动 2031 百年评估。",
@@ -24,7 +24,8 @@ const TRENDS = [
     oxford: "Weston：1930 年代 New Bodleian 拆除 11 层防火隐患书塔→Blackwell Hall 公众大厅＋39 公里地下新书库（£80M，2015）；Gladstone Link：1909–12 年世界最大地下书库百年后再生为连接老馆与圆楼的读者空间（2011）——两个世纪的设施各获得一次第二次生命。",
     ethz: "HIF 实验楼（1972–76，Hönggerberg 二期）近年整体翻新：Stücheli 事务所设计木铝混合预制立面，ETH 自建研究项目先行试点；HPP 物理楼 2006–11 全面翻新；HIL（1972–76）将改造为 Living Lab 至约 2035——「老楼再生」在 ETH 是规划文本里的常态词汇，而非一次性事件。",
     imperial: "帝国理工中央图书馆（1969）：1994 Foster 咨询→1997 McAslan 加建两层玻璃楼＋Waterstones 进馆→2017–18 £11M 翻新（含空调）→2023 更名 Abdus Salam——约 30 年一个周期的滚动再生，55 年四次更新从不推倒重来。",
-    cambridge: "剑桥 UL（1934，Grade II）：1990 年代以来内部持续更新；2026-01 Herzog & de Meuron 未来概念方案公展——遗产保护＋降低碳足迹＋重新开放最初对公众的区域；同期历史系 Stirling 名楼（Grade II*，1968）2025-05 获批、2026-05 开工大修，计划 2028 完工——两座 20 世纪名楼的再生在同一所大学并行。"
+    cambridge: "剑桥 UL（1934，Grade II）：1990 年代以来内部持续更新；2026-01 Herzog & de Meuron 未来概念方案公展——遗产保护＋降低碳足迹＋重新开放最初对公众的区域；同期历史系 Stirling 名楼（Grade II*，1968）2025-05 获批、2026-05 开工大修，计划 2028 完工——两座 20 世纪名楼的再生在同一所大学并行。",
+    ucl: "Wilkins Building 两百年渐进改造的「时间地层」：1827 年设计、1829 年烂尾只剩门廊穹顶，图书馆 1828/29 年入驻、1907 年扩占整层成主馆、1985 年女王为续建主体揭幕（隔 158 年）；2004–05 改入口、2012 复原 oculus 天窗、2019–20 旧食堂改实物教室——不停业的外科手术式改造，每次叠加一层可识别的时代痕迹。",
   }
 },
 {
@@ -50,8 +51,8 @@ const TRENDS = [
   id: "247-spaces",
   title: "全天候学习空间",
   subtitle: "24/7 的扩张、治理与收缩",
-  summary: "24 小时空间已从 fringe 福利变成校级治理议题，而且出现了方向相反的两股力量：MIT、斯坦福在扩容，芝大、杜克在收缩后按数据恢复，格拉斯哥用多楼分时接力取代单楼通宵；KCL 示范「门禁授权≠服务承诺」的双层口径（刷卡进空间、值守才有服务）；宾大示范了\"可持续版本\"（35 年承诺配清晰边界），哥大则让全天候按学科与楼层分配成梯度，康奈尔的答案最特别——把 24 小时空间藏进 1982 年凿坡挖出的地下翼；牛津 2025 年的新版本给出硬件解法：智能储物柜让通宵空间不再需要夜间人工值守。被 14 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "uchicago", "glasgow", "edinburgh", "manchester", "kcl", "upenn", "columbia", "cornell", "oxford", "imperial", "cambridge"],
+  summary: "24 小时空间已从 fringe 福利变成校级治理议题，而且出现了方向相反的两股力量：MIT、斯坦福在扩容，芝大、杜克在收缩后按数据恢复，格拉斯哥用多楼分时接力取代单楼通宵；KCL 示范「门禁授权≠服务承诺」的双层口径（刷卡进空间、值守才有服务）；宾大示范了\"可持续版本\"（35 年承诺配清晰边界），哥大则让全天候按学科与楼层分配成梯度，康奈尔的答案最特别——把 24 小时空间藏进 1982 年凿坡挖出的地下翼；牛津 2025 年的新版本给出硬件解法：智能储物柜让通宵空间不再需要夜间人工值守。被 15 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "uchicago", "glasgow", "edinburgh", "manchester", "kcl", "upenn", "columbia", "cornell", "oxford", "imperial", "cambridge", "ucl"],
   evidence: {
     harvard: "Lamont 图书馆 24 小时开放 75 年，塑造了最强的学生归属感（\"Lamonsters\"文化）——开放时间本身是空间产品。",
     mit: "Hayden 24 小时座位从 16 座扩至 325+ 座，靠运营时段与家具布局而非新建面积——性价比最高的\"空间产品\"。",
@@ -66,15 +67,16 @@ const TRENDS = [
     cornell: "Uris 馆多个阅览室 24 小时开放，地下 \"Cocktail Lounge\"（1982 年凿坡建成、2019 翻新）玻璃顶采光——全天候空间借地形藏在坡地腹中，夜晚灯火是 Libe Slope 上的地标。",
     oxford: "Schwarzman 中心配套 24/7 学习空间与智能储物柜：读者闭架自取预约图书，通宵运行的核心成本项（夜间人工值守）被硬件消解——2025 年版本的答案不是更多人轮班，而是更少的\"必须有人在场\"。",
     imperial: "Abdus Salam Library 主馆学习空间 24 小时；GoStudy（化学楼 4–5 层）与 Student Space（Sherfield 4 层）08:00–23:00 每周七天——主馆通宵打底＋学科楼共享学习区接力的双层结构，医院分馆再按临床作息运行，一套系统三种节奏。",
-    cambridge: "剑桥以「分时梯度」而非单楼通宵实现全天候：UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标（2001）；考试季另设 24 小时电脑区；West Hub 以长时段共享办公运行——同一网络里，梯度比通宵更可持续。"
+    cambridge: "剑桥以「分时梯度」而非单楼通宵实现全天候：UL 复活节学期开放至 22:00；Moore Library 以 24 小时安全开放为设计目标（2001）；考试季另设 24 小时电脑区；West Hub 以长时段共享办公运行——同一网络里，梯度比通宵更可持续。",
+    ucl: "Student Centre（2019）全年 24/7/365、1,000+ 座；其服务模型由 Service Model Working Group（2017 起，跨部门＋学生会）先在 Cruciform Hub 试点两年、攒够问题清单再推广——24/7 的运营方案不是开幕当天宣布的，是试点攒出来的；运维为「馆员＋保安联合值守」。",
   }
 },
 {
   id: "learning-commons",
   title: "Learning Commons 常态化",
   subtitle: "主动学习 · 协作空间 · 第三空间",
-  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 15 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ethz", "imperial", "cambridge"],
+  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 16 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ethz", "imperial", "cambridge", "ucl"],
   evidence: {
     harvard: "Cabot 科学图书馆（2017）是北美 Learning Commons 标杆：一层社交协作、地下研讨教学，\"几乎所有东西都是可移动的\"；LEED-CI v4 认证。",
     mit: "Hayden 改造以\"研究十字路口\"为设计概念——研讨亭阁置于动线交叉口，功能混合成为设计概念本身。",
@@ -90,15 +92,16 @@ const TRENDS = [
     oxford: "Blackwell Hall 把公众入口、常设展厅、咖啡与讲座合成一个 13.5 米挑高大厅，重开一年访客破百万；Schwarzman 中心全楼另散布 320 个正式与非正式学习座——commons 溢出图书馆边界，成为整栋建筑的底色。",
     ethz: "战略 2025–2028 把「图书馆作为场所」写成新馆任务书：开放工位＋专注退避空间、可适配家具、现代技术配置、好空气与采光、可持续节能；HWS 新楼定位「Information and Learning Center」，展厅、研究阅览室、珍本展柜与图书馆同楼——commons 直接与展览、研究功能复合；HWO 学生公寓底层「学习工位＋托儿所」把学习空间嵌进宿舍。",
     imperial: "1997 年 Waterstones 书店进馆（第三空间正式命名前的早期实验）；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施同层配置；Charing Cross 馆把空间细化到行为颗粒：协作 booths、solo pods 单人静音舱、10 人研习室。",
-    cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：双入口穿越动线、咖啡、媒体实验室、个人研习舱，图书馆团队主办的 Research Café 对所有人开放——commons 的边界从校内推到社区；UL 茶室与「静音/协作/电脑/站桌」行为分层学习空间则是校内版；Moore Library（2001）全座位通电源的混合图书馆是鼻祖级样本。"
+    cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：双入口穿越动线、咖啡、媒体实验室、个人研习舱，图书馆团队主办的 Research Café 对所有人开放——commons 的边界从校内推到社区；UL 茶室与「静音/协作/电脑/站桌」行为分层学习空间则是校内版；Moore Library（2001）全座位通电源的混合图书馆是鼻祖级样本。",
+    ucl: "Student Centre 1,000+ 座位按学习行为分层：安静自习、小组协作、个人隔音舱、静音层——学习共享空间从「一种大平层」演进为「按行为分层的坐席产品」；8 层围绕大中庭叠合，剖面即导航。",
   }
 },
 {
   id: "data-driven-ops",
   title: "数据化运营",
   subtitle: "空间管理 · 发现层 · AI 新基建",
-  summary: "空间运营正从经验决策转向\"测量—调整—再测量\"循环：座位清点决定开放时间，用户调查决定是否恢复，预约量进入官方快数；数字层的机构打通先于实体空间发生，开源 LSP 开始进入常春藤生产环境。被 11 所学校明确验证。",
-  schools: ["duke", "glasgow", "edinburgh", "manchester", "kcl", "yale", "upenn", "columbia", "cornell", "oxford", "ethz"],
+  summary: "空间运营正从经验决策转向\"测量—调整—再测量\"循环：座位清点决定开放时间，用户调查决定是否恢复，预约量进入官方快数；数字层的机构打通先于实体空间发生，开源 LSP 开始进入常春藤生产环境。被 12 所学校明确验证。",
+  schools: ["duke", "glasgow", "edinburgh", "manchester", "kcl", "yale", "upenn", "columbia", "cornell", "oxford", "ethz", "ucl"],
   evidence: {
     duke: "运营全面数据化的最完整样本：凌晨一两点整层仅 6 人（清点数据）→ 缩短开放 → 2026 年用户调查否决 → 试点恢复至凌晨 3 点；FY2025 研讨室预约 25,644 次进入官方快数。",
     glasgow: "UofG Life App 统一预约、分时段管理与实时拥挤度显示——学习空间已成为可调度资源，使用数据反向进入家具采购与改造决策。",
@@ -110,15 +113,16 @@ const TRENDS = [
     columbia: "2025-08 正式上线 FOLIO 开源图书馆服务平台：CLIO 发现层＋Panorama 分析层三层解耦，取代使用逾二十年的 Aleph，并与 ReCAP 联盟成员系统互操作——系统架构开始像基础设施而非软件采购。",
     cornell: "Olin 改造把用户参与做成施工流程：候选家具学生试坐后再采购、VR 走查提前评审未建成空间、旧索书号叫号板被工程学生改造成数字钟——参与式决策取代经验拍板，沟通成本近零。",
     oxford: "《The 21st Century Library》研究报告直接作为 Schwarzman 人文馆的设计任务书——先研究、后设计；校外库房逐件条码＋SOLO 请求驱动每日取书动线，物流效率即数据化运营。",
-    ethz: "ETH 深度参与创建全国平台 SLSP（2017），把目录运营与电子许可谈判外包给 swisscovery，馆员转向客户中心服务；AI 与开放科学（Open Access / Open Data / Open Evaluation、开源软件）列入 2025–2028 五大战略重点；Research Collection 记录全校出版物并支撑学术年报——数据化运营的国家队版本。"
+    ethz: "ETH 深度参与创建全国平台 SLSP（2017），把目录运营与电子许可谈判外包给 swisscovery，馆员转向客户中心服务；AI 与开放科学（Open Access / Open Data / Open Evaluation、开源软件）列入 2025–2028 五大战略重点；Research Collection 记录全校出版物并支撑学术年报——数据化运营的国家队版本。",
+    ucl: "Student Centre 约 2/3 座位嵌占用传感器，数据进 UCLGo App 实时显示各层空位——「车位诱导式找座」；数据一头服务读者（App 诱导）、一头服务馆方（利用率热力图＋保洁安保排班），一次采集两头受益；2020–22 还与 UCL Interaction Centre 合作做过虚拟学习空间研究。",
   }
 },
 {
   id: "special-collections",
   title: "特藏走向台前",
   subtitle: "空间化 · 品牌化 · 教学化",
-  summary: "珍本手稿不再锁在库房：特藏以展柜长廊、档案课程、快闪展进入日常动线，并成为访客经济与捐赠叙事的引擎。\"建筑即展品\"——四分之三的 Beinecke 访客为建筑本身而来。被 11 所学校验证。",
-  schools: ["duke", "yale", "stanford", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford"],
+  summary: "珍本手稿不再锁在库房：特藏以展柜长廊、档案课程、快闪展进入日常动线，并成为访客经济与捐赠叙事的引擎。\"建筑即展品\"——四分之三的 Beinecke 访客为建筑本身而来。被 12 所学校验证。",
+  schools: ["duke", "yale", "stanford", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ucl"],
   evidence: {
     duke: "Rubenstein 特藏馆：1,360 万命名捐赠撬动 6,000 万改造，教室与展览空间翻倍，成为西校区热门活动场地；哥特阅览室晚间变身自习空间至凌晨 3 点。",
     yale: "特藏走向\"一个品牌\"整合：Beinecke 2022 年合并手稿与档案馆、2026 年再并艺术与音乐特藏；FY2024 访客 187,501 人次（同比 +30%），74% 专为建筑与书塔而来。",
@@ -130,7 +134,8 @@ const TRENDS = [
     edinburgh: "CRC 特藏研究中心整体置于主馆顶层两层（2012 改造）——与康奈尔「下沉」相反的路径：视野、采光与环境可控性优先给特藏；约 20 万件特藏（摇篮本 1,200 种）集中上移后，「特藏上楼还是下沉」成为国内新馆论证的对照组。",
     manchester: "赖兰兹把特藏做成城市级公共资产：古腾堡圣经与「最早新约文本」P52 纸草免费对公众展示、常年轮换展览，2025「Next Chapter」再增展厅并迎 125 周年；2013 年专设 Research Institute——特藏同时是研究后台、城市前台与募捐引擎。",
     kcl: "特藏借建筑史自我背书：中世纪 Rolls Chapel 残部（Weston Room，c.1232 起点、Inigo Jones 1617 重建）直接作为 Foyle 特藏展厅，建筑本身成为最大的展品；Liddell Hart 军事档案中心独立信托治理；「Former owner（前藏家）」开放为公开检索字段，provenance 研究变成读者可玩的探索入口。",
-    oxford: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配两座常设展厅，重开首展 Marks of Genius、一年访客破百万——特藏从库房变成公共目的地，\"展示\"成为珍本保存的融资叙事。"
+    oxford: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配两座常设展厅，重开首展 Marks of Genius、一年访客破百万——特藏从库房变成公共目的地，\"展示\"成为珍本保存的融资叙事。",
+    ucl: "特藏 10 公里+ 材料、500+ 档案群、约 15 万册珍本（2014 年为 7 公里，两口径并列）；Bentham 手稿、George Orwell Archive、全英最大数学珍本收藏；2019–20 年旧食堂改 Object-Based Learning Room——展柜＋可移动桌椅，原件以教具身份进本科课堂，特藏从库房功能升级为教学功能。",
   }
 },
 {
@@ -147,12 +152,13 @@ const TRENDS = [
   id: "open-to-public",
   title: "大学设施公共化",
   subtitle: "校园向社区开放 · co-working · 公众活动",
-  summary: "预算紧缩年代，顶尖大学开始学习把学习空间摆进社区：穿越式动线、咖啡、对所有人开放的活动——既是使用率解药，也是大学向公众证明自身存在的政治资产。被 3 所学校验证。",
-  schools: ["cambridge", "manchester", "kcl"],
+  summary: "预算紧缩年代，顶尖大学开始学习把学习空间摆进社区：穿越式动线、咖啡、对所有人开放的活动——既是使用率解药，也是大学向公众证明自身存在的政治资产。被 4 所学校验证。",
+  schools: ["cambridge", "manchester", "kcl", "ucl"],
   evidence: {
     cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：两个主入口相对形成穿越动线，鼓励社区居民穿楼而过、顺路使用；上层图书馆服务、媒体实验室、个人研习舱对外开放，Research Café 任何人可报名闪电演讲——「大学第一张桌子」摆进了社区。",
     manchester: "赖兰兹是「制度化公众开放」的极端样本：1900 年建馆即向公众开放，今为免费城市景点（官网定位「thriving visitor attraction」），常年免费展览；但 2021 年裁员争议揭示另一面——管理层称此前「过度偏向社会责任、损害研究教学」，公众岗位被削——公共化若无章程级保障，预算紧缩时必然回摆。",
-    kcl: "登录建筑里的「分层公众界面」：自助语音导览（把建筑史变成参观产品）＋ Weston Room 特藏展＋ Open House 开放日构成公众入口；但无卡读者限人工值守时段、四层分馆通宵只对持卡师生——公众开放以不损伤国宝建筑安防为前提，是「有限开放」的制度化版本，与赖兰兹的「完全公共化」构成光谱两端。"
+    kcl: "登录建筑里的「分层公众界面」：自助语音导览（把建筑史变成参观产品）＋ Weston Room 特藏展＋ Open House 开放日构成公众入口；但无卡读者限人工值守时段、四层分馆通宵只对持卡师生——公众开放以不损伤国宝建筑安防为前提，是「有限开放」的制度化版本，与赖兰兹的「完全公共化」构成光谱两端。",
+    ucl: "特藏口号「open to everyone」：两个校内阅览室（Wilkins South Junction＋IOE 馆）＋Kew 国家档案馆专属阅览室对外开放；Student Centre 公共层无门槛，Bentham 的 Auto-Icon 就坐在通宵自习的学生中间——但档案级材料仍分线预约：开放是分层设计，不是一句口号。",
   }
 }
 ];
