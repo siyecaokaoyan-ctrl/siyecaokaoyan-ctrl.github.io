@@ -1682,6 +1682,96 @@ const SCHOOLS = [
     { label: "The Meteor – 2021 赖兰兹裁员争议", url: "themeteor.org/2021/06/26/dozens-of-jobs-at-risk-libraries" },
     { label: "主馆设施页（研讨室规格/亲子间/线上面试间）", url: "library.manchester.ac.uk/locations-and-opening-hours/main-library" }
   ]
+},
+{
+  id: "kcl",
+  name: "伦敦国王学院",
+  nameEn: "King's College London",
+  founded: 1829,
+  country: "英国",
+  region: "欧洲",
+  state: "英格兰 · 伦敦",
+  reportId: "LR-20261006-01",
+  reportDate: "2026-10-06",
+  tagline: "帝国保险箱 · 五校网络 · 中世纪礼拜堂",
+  mainLine: "被称为「帝国保险箱」的英国公共档案馆总部（1851–1898，Grade II*），2002 年由 Gaunt Francis 花 £3,500 万改造成大学主馆——二战后英国最大的新建大学图书馆；四座分馆 24/7 刷卡开放，国宝主馆反而开到凌晨 1 点；中世纪礼拜堂残部（Weston Room）就嵌在楼里，成了特藏展厅。",
+  flagship: { name: "莫恩图书馆改造（1998–2002）", note: "£35M（购入＋改造合计约 £40M）：把英国公共档案馆总部——300 个 90 吨防火「单元」、石板书架铸铁门——翻译成大学图书馆。施工中发现 1860 年代彩绘锌吊顶与 1901 年拼花地坪并修复；2002 年女王揭幕；二战后英国最大新建大学图书馆；圆形阅览室（1863，仿大英博物馆）继续服役。", img: "kcl-1.jpg", imgCap: "莫恩图书馆外观（院内视角）：哥特复兴立面因四十年前采石场关闭而拼接多种石料。摄影：Ksanyi / Wikimedia Commons（CC BY-SA 4.0）" },
+  overview: {
+    intro: "KCL 图书馆系统（Libraries & Collections）隶属学生与教育 Directorate，馆长 Lis Hannon 领导四部门（Education & Learning / Research & Impact 等），服务五座校园四万余学生。旗舰为莫恩图书馆（前公共档案馆，75 万+ 册人文法学馆藏、1,250 个 IT 学习位）；底盘是 Waterloo/Guy's/St Thomas' 的四座 24/7 分馆。特藏：Foyle Special Collections 24 万件、Liddell Hart 军事档案中心。战略为「Library Evolution 2026: The Open Library」。",
+    stats: [
+      { k: "旗舰馆", v: "莫恩 75 万+ 册", s: "前公共档案馆；1,000+ 阅览座 / 1,250 IT 学习位（改造口径）" },
+      { k: "24/7 分馆", v: "4 座", s: "Franklin-Wilkins / New Hunt's House / Wills / St Thomas' House，刷卡进入" },
+      { k: "特藏", v: "24 万件", s: "Foyle Special Collections；Liddell Hart 军事档案中心" },
+      { k: "建筑等级", v: "Grade II*", s: "1851–1898 建造；2002 年女王揭幕" }
+    ]
+  },
+  projects: [
+    {
+      name: "把「帝国保险箱」改成图书馆",
+      nameEn: "The Maughan Library · Gaunt Francis Architects · 1998–2002",
+      year: "1998–2002",
+      stats: [{ k: "造价", v: "£35M" }, { k: "购改合计", v: "约 £40M" }, { k: "登录", v: "Grade II*" }, { k: "揭幕", v: "2002.11 女王" }],
+      facts: "原英国公共档案馆总部：Pennethorne 1851 年设计，约 300 个 90 吨防火「单元」（铸铁格栅楼板、石板书架、半吨铁门），曾保管《末日审判书》与大宪章。1990 年代档案迁 Kew 后空置（无供暖照明、漏雨锈桶、外号「阿尔卡特拉斯」）。KCL 购入后 Gaunt Francis 两年改造：修复施工中新发现的 1860 年代彩绘锌吊顶与 1901 年拼花地坪；保留单元格局与工业遗存；1863 年圆形阅览室（十二边形，仿大英博物馆）继续作为阅览空间；中世纪 Rolls Chapel 残部改为 Weston Room 特藏展厅。四馆合一后实现 7 天开放、考试期 24 小时。",
+      insight: "核心启示是「先查建筑原始功能，再谈改造方向」：档案馆的防火规格、承重体系、单元式书库与图书馆天然兼容，改造成本大头花在「从存物到容人」（供暖/照明/疏散/卫浴）。RIBA 前主席称之为「冗余建筑＋新用途最好的结合之一」。",
+      img: "kcl-2.jpg",
+      imgCap: "圆形阅览室：维多利亚环廊原构＋中央圆桌、黄铜灯树与现代软包椅——「原构不动、家具可读」的新旧分层。摄影：KiloCharlieLima / Wikimedia Commons（CC BY-SA）"
+    },
+    {
+      name: "24/7 分馆网络：国宝之外的底盘",
+      nameEn: "24/7 Network · Waterloo / Guy's / St Thomas'",
+      year: "持续运营",
+      stats: [{ k: "24/7 馆", v: "4 座" }, { k: "莫恩", v: "至凌晨 1 点" }, { k: "准入", v: "刷卡进入" }, { k: "分区", v: "讨论/安静/静音" }],
+      facts: "2026 年夏官方口径：Franklin-Wilkins（Waterloo）、New Hunt's House（Guy's）、Wills（Guy's）、St Thomas' House 四座 24/7，凭 KCL ID 刷卡进入；无卡读者限人工值守时段。莫恩工作日 09:00–01:00；Denmark Hill 的 Weston Education Centre 至凌晨 1 点。馆内三级噪声分区（Discuss/Quiet/Silent）；小组研讨室配大屏；24 小时笔记本免费借用（逾期重罚）。2010 年代莫恩考试期曾 24 小时——24/7 重心随馆舍条件与安全模型在系统内迁移。",
+      insight: "「门禁授权 ≠ 服务承诺」的双层口径：刷卡进入解决物理安全（谁在场），值守时段解决服务责任（谁负责）——两层分开后，24/7 不必捆绑深夜人力。开放时间分「空间开放（刷卡）」与「服务台值守」两栏公示，比全馆通宵值守或一刀切闭馆都更接近真实需求曲线。",
+      img: "kcl-3.jpg",
+      imgCap: "圆形阅览室穹顶：1863 年玻璃采光结构如何支撑今天的阅览功能——顶光＋环廊书架原构。摄影：The wub / Wikimedia Commons（CC BY-SA）"
+    },
+    {
+      name: "Weston Room 与 Foyle 特藏：在运转中的图书馆里展示历史",
+      nameEn: "Weston Room · c.1232 → Foyle Special Collections Library",
+      year: "c.1232–至今",
+      stats: [{ k: "起点", v: "c.1232" }, { k: "重建", v: "1617 Inigo Jones" }, { k: "特藏", v: "24 万件" }, { k: "中心", v: "LHCMA 军事档案" }],
+      facts: "Weston Room 是中世纪 Rolls Chapel 的遗存（Inigo Jones 1617 年重建的残部）：16–17 世纪墓葬纪念碑、彩色玻璃、c.1900 年马赛克地坪——被直接征用为 Foyle 特藏的展览空间，建筑本身成为最大的展品。College Collection（682 件）经 Library Search 统一检索，开放「Former owner（前藏家）」字段做源流探索；Liddell Hart 军事档案中心为独立信托治理。入口提供自助语音导览，把建筑史与使用说明合成一条叙事。",
+      insight: "低成本高回报的特藏策略：把「建筑里最老的房间」直接变成「特藏的门厅」，历史空间为馆藏叙事免版权背书。检索层面：把学术级 provenance（源流考证）做成读者可玩的公开字段，特藏从库房变成产品。"
+    }
+  ],
+  learningSpaces: "「国宝做旗舰，网络做底盘」：莫恩＝人文法学旗舰＋特藏门面（开到凌晨 1 点），四座分馆＝24/7 通宵底盘，Denmark Hill＝医学（至凌晨）。馆内三级噪声分区；圆形阅览室＝历史壳体＋现代家具芯（可识别的新旧分层）；单元格遗存＝工业考古展项。",
+  serviceModel: "发现层 Library Search；特藏/档案分线（Foyle 珍本 vs King's Archives）；「Former owner」字段开放源流探索；自助语音导览把建筑史变成参观产品。疫情中「Library Evolution」转型计划全面提速（RLUK 2021 博客），愿景「Library Evolution 2026: The Open Library」。",
+  trends: [
+    { tid: "historic-renewal", title: "国家档案馆→大学图书馆的适应性再利用", type: "fact", note: "£35M 把公共档案馆总部（90 吨防火单元、石板书架）翻译成图书馆——「原始功能兼容性」的教科书级样本：存物基因与藏书天然兼容，造价大头花在「从存物到容人」。" },
+    { tid: "247-spaces", title: "「门禁授权≠服务承诺」的双层口径", type: "fact", note: "四座分馆刷卡 24/7、国宝主馆开到凌晨 1 点；开放时间分「空间开放」与「服务值守」两栏——24/7 不再捆绑深夜人力，24/7 重心可在系统内迁移。" },
+    { tid: "special-collections", title: "特藏借建筑史自我背书", type: "fact", note: "中世纪礼拜堂残部（Weston Room）直接作为特藏展厅；「Former owner」检索字段把源流考证变成读者可玩的探索入口——特藏从库房变成产品。" },
+    { tid: "data-driven-ops", title: "转型计划＋数字公平议题", type: "fact", note: "「Library Evolution」在疫情数月内完成馆藏/支持/电子学习的数字化迁移，并公开讨论数字条件差异加剧的不平等——数据化运营与公平性议题并置。" },
+    { tid: "open-to-public", title: "登录建筑里的公众界面", type: "judgment", note: "自助语音导览＋特藏展厅＋Open House 开放日构成遗产建筑的公众界面；但无卡读者限值守时段——公众开放以不损伤国宝建筑安防为前提的分层版本。" },
+    { tid: "learning-commons", title: "历史壳体＋现代家具芯的分层策略", type: "judgment", note: "圆形阅览室「原构不动、家具可读」：新家具不仿古但一眼可辨为当代层，与遗产壳体各说各话——历史空间家具选型的「可识别性」判据。" }
+  ],
+  business: [
+    "存量改造第一问：「原建筑服务的是物还是人？」——档案馆/仓库的存物基因（防火/承重/单元式）与图书馆兼容，差距即造价。委托评估时先查原始功能与结构报告。",
+    "「施工发现」事件化：修缮中发现的遗存（锌吊顶/拼花地坪）修复后就是现成的传播素材与展项——施工合同要写清发现物处置条款。",
+    "「门禁授权≠服务承诺」双层口径直接可移植：开放时间分「空间开放（刷卡）」与「服务台值守」两栏公示，满足通宵空间刚需又界定服务责任。",
+    "历史空间家具「可识别性」判据：新家具不必仿古，但必须一眼可辨为当代层——把「新旧层级」原则写进设计任务书。",
+    "特藏产品化两招：借建筑里最老的房间做展厅（建筑史为馆藏背书）；把「前藏家」做成公开检索字段（provenance 变探索入口）。",
+    "可复制性边界：KCL 刷卡 24/7 依赖伦敦市中心安保密度与多馆互备，单馆孤立照搬需自担风险；登录建筑审批（Listed Building Consent）制度成本国内无对应。"
+  ],
+  limits: [
+    "莫恩购入年份口径冲突（1998 vs 2001）未决。",
+    "£35M（改造）与 £40M（购入＋改造）构成未拆分。",
+    "考试期莫恩是否仍 24 小时，现行学年无官方确认。",
+    "Foyle 特藏当前总件数无官方口径（24 万为约数）。",
+    "「Library Evolution 2026」愿景全文未获取（仅二手引述）。",
+    "四部门中另两个部门名称未逐一核验。"
+  ],
+  sources: [
+    { label: "Wikipedia – Maughan Library（PRO 历史/£35M/女王揭幕/锌吊顶）", url: "en.wikipedia.org/wiki/Maughan_Library" },
+    { label: "Google Arts & Culture – The Maughan Library（1851/Grade II*/圆厅）", url: "artsandculture.google.com/entity/the-maughan-library/m03ccfyn" },
+    { label: "London on the Ground – 莫恩揭秘（1232/90 吨单元/玻璃地砖）", url: "londonontheground.com/post/king-s-college-london-s-maughan-library-reveals-its-secrets" },
+    { label: "KCL LibAnswers – 开放时间（四座 24/7/莫恩至凌晨 1 点）", url: "libanswers.kcl.ac.uk/faq/247134" },
+    { label: "KCL – About Libraries & Collections（Hannon/四部门）", url: "kcl.ac.uk/library/about" },
+    { label: "RLUK – Digital: some are more equal than others（Library Evolution）", url: "rluk.ac.uk/kings-college-london-digital-some-are-more-equal-than-others" },
+    { label: "Open House Festival – 莫恩改造（Alcatraz/75 万件/1,250 位）", url: "programme.openhouse.org.uk/listings/847" },
+    { label: "KCL – College Collection（682 件/Former owner 字段）", url: "kcl.ac.uk/college-collection" },
+    { label: "访馆记录 2013（三级分区/24h 笔记本/RFID 遗产审批）", url: "mallikarjunangadi.wordpress.com/2013/02/07/visit-to-maughan-library-kings-college-london-strand-campus" }
+  ]
 }
 ];
 
@@ -1698,6 +1788,7 @@ window.LIB_URLS = {
   glasgow: "https://www.gla.ac.uk/myglasgow/library/",
   edinburgh: "https://library.ed.ac.uk/",
   manchester: "https://www.library.manchester.ac.uk/",
+  kcl: "https://www.kcl.ac.uk/library",
   upenn: "https://www.library.upenn.edu/",
   columbia: "https://library.columbia.edu/",
   cornell: "https://library.cornell.edu/",
