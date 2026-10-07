@@ -11,37 +11,69 @@ function schoolShort(id) {
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
 
-/* ── 多图轮播：imgs 为 [{src, cap}]，单图自动兼容 ── */
+/* ── 图片画廊：页面内缩略图并排，点击打开大图灯箱 ── */
 function galleryHtml(items) {
   if (!items) return "";
   const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
   if (!arr.length) return "";
-  const slides = arr.map(it => {
-    const o = typeof it === "string" ? { src: it, cap: "" } : it;
-    return `<figure class="gal-slide"><img src="assets/photos/${esc(o.src || o.img || "")}" alt="" loading="lazy"><figcaption>${esc(o.cap || o.imgCap || "")}</figcaption></figure>`;
-  }).join("");
-  const dots = arr.map((_, i) => `<button class="gal-dot${i === 0 ? " on" : ""}" data-i="${i}" type="button" aria-label="第${i + 1}张"></button>`).join("");
+  const norm = arr.map(it => typeof it === "string" ? { src: it, cap: "" } : { src: it.src || it.img || "", cap: it.cap || it.imgCap || "" });
+  const thumbs = norm.map((o, i) => `<button class="gal-th" type="button" data-i="${i}" aria-label="查看第${i + 1}张"><img src="assets/photos/${esc(o.src)}" alt="" loading="lazy"></button>`).join("");
+  const caps = norm.map((o, i) => `<p class="gal-cap${i === 0 ? " on" : ""}" data-i="${i}">${esc(o.cap)}</p>`).join("");
   return `<div class="gal" data-gal>
-    <div class="gal-view"><div class="gal-track">${slides}</div></div>
-    ${arr.length > 1 ? `<button class="gal-arrow prev" type="button" aria-label="上一张">‹</button><button class="gal-arrow next" type="button" aria-label="下一张">›</button><div class="gal-count">1 / ${arr.length}</div><div class="gal-dots">${dots}</div>` : ""}
+    <div class="gal-thumbs">${thumbs}${norm.length > 1 ? `<span class="gal-n">共 ${norm.length} 张 · 点击看大图</span>` : ""}</div>
+    <div class="gal-caps">${caps}</div>
   </div>`;
 }
+
+/* ── 灯箱：大图 + 说明 + 左右切换 + 键盘支持 ── */
+let _lb = null, _lbItems = [], _lbIdx = 0;
+function lightbox() {
+  if (_lb) return _lb;
+  _lb = document.createElement("div");
+  _lb.className = "lb";
+  _lb.innerHTML = `<button class="lb-x" type="button" aria-label="关闭">✕</button>
+    <button class="lb-arrow prev" type="button" aria-label="上一张">‹</button>
+    <img alt="">
+    <button class="lb-arrow next" type="button" aria-label="下一张">›</button>
+    <div class="lb-count"></div><div class="lb-cap"></div>`;
+  document.body.appendChild(_lb);
+  _lb.addEventListener("click", e => {
+    if (e.target === _lb || e.target.closest(".lb-x")) closeLb();
+    else if (e.target.closest(".lb-arrow.prev")) showLb((_lbIdx - 1 + _lbItems.length) % _lbItems.length);
+    else if (e.target.closest(".lb-arrow.next")) showLb((_lbIdx + 1) % _lbItems.length);
+  });
+  document.addEventListener("keydown", e => {
+    if (!_lb || !_lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLb();
+    else if (e.key === "ArrowLeft") showLb((_lbIdx - 1 + _lbItems.length) % _lbItems.length);
+    else if (e.key === "ArrowRight") showLb((_lbIdx + 1) % _lbItems.length);
+  });
+  return _lb;
+}
+function showLb(i) {
+  const o = _lbItems[i]; if (!o) return;
+  _lbIdx = i;
+  const box = lightbox();
+  const img = box.querySelector("img");
+  img.src = "assets/photos/" + o.src;
+  box.querySelector(".lb-cap").textContent = o.cap || "";
+  box.querySelector(".lb-count").textContent = `${i + 1} / ${_lbItems.length}`;
+  box.querySelectorAll(".lb-arrow").forEach(a => a.style.display = _lbItems.length > 1 ? "" : "none");
+  box.classList.add("open");
+}
+function closeLb() { if (_lb) _lb.classList.remove("open"); }
+
 document.addEventListener("click", e => {
-  const gal = e.target.closest("[data-gal]");
-  if (!gal) return;
-  const track = gal.querySelector(".gal-track");
-  const n = track.children.length;
-  if (n < 2) return;
-  const cur = Math.round(-(parseFloat((track.style.transform || "").replace(/[^0-9.\-]/g, "")) || 0) / 100);
-  let i = cur;
-  if (e.target.closest(".gal-arrow.prev")) i = (cur - 1 + n) % n;
-  else if (e.target.closest(".gal-arrow.next")) i = (cur + 1) % n;
-  else if (e.target.closest(".gal-dot")) i = +e.target.closest(".gal-dot").dataset.i;
-  else return;
-  track.style.transform = `translateX(${-i * 100}%)`;
-  gal.querySelectorAll(".gal-dot").forEach((d, j) => d.classList.toggle("on", j === i));
-  const c = gal.querySelector(".gal-count");
-  if (c) c.textContent = `${i + 1} / ${n}`;
+  const th = e.target.closest(".gal-th");
+  if (!th) return;
+  const gal = th.closest("[data-gal]");
+  _lbItems = $$(".gal-th img", gal).map((img, i) => ({
+    src: img.getAttribute("src").replace("assets/photos/", ""),
+    cap: (($(".gal-cap[data-i=\"" + i + "\"]", gal) || {}).textContent || "")
+  }));
+  // 缩略图下方说明同步高亮
+  $$(".gal-cap", gal).forEach(c => c.classList.toggle("on", +c.dataset.i === +th.dataset.i));
+  showLb(+th.dataset.i);
 });
 
 /* 校色系统：详情页由 JS 覆盖 --accent / --accent-soft */
