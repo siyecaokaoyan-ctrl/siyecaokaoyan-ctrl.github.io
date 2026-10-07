@@ -7,8 +7,8 @@ const TRENDS = [
   id: "historic-renewal",
   title: "历史建筑的\"第二次生命\"",
   subtitle: "保护性翻新 · 适应性再利用 · 滚动修复",
-  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 16 所学校独立验证，是本研究中共识最强的趋势。",
-  schools: ["princeton", "yale", "duke", "glasgow", "edinburgh", "manchester", "kcl", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge", "ucl"],
+  summary: "欧美 1930–1970 年代建成的高校图书馆正批量到达维护寿命终点，但顶级大学几乎不约而同地选择了\"不拆重建\"：外壳保护、内部重生。被 17 所学校独立验证，是本研究中共识最强的趋势。",
+  schools: ["princeton", "yale", "duke", "glasgow", "edinburgh", "manchester", "kcl", "jhu", "upenn", "columbia", "cornell", "oxford", "ethz", "imperial", "cambridge", "ucl", "psl"],
   evidence: {
     princeton: "Firestone 主馆（1948）十年 2.5 亿美元整体翻新、全程不闭馆——哥特式外壳不动，内部从\"书库+卡片目录\"彻底改造为现代学习基础设施；\"原址现代化\"的最完整成本与周期参照。",
     yale: "Sterling 主馆（1930）以\"每 2–3 年修复一个标志性房间\"的节奏滚动更新：2014 中殿（2,000 万美元）→ 2022 Hanke 展厅 → 2024 L&B 阅览室，全程不闭馆，已启动 2031 百年评估。",
@@ -26,6 +26,7 @@ const TRENDS = [
     imperial: "帝国理工中央图书馆（1969）：1994 Foster 咨询→1997 McAslan 加建两层玻璃楼＋Waterstones 进馆→2017–18 £11M 翻新（含空调）→2023 更名 Abdus Salam——约 30 年一个周期的滚动再生，55 年四次更新从不推倒重来。",
     cambridge: "剑桥 UL（1934，Grade II）：1990 年代以来内部持续更新；2026-01 Herzog & de Meuron 未来概念方案公展——遗产保护＋降低碳足迹＋重新开放最初对公众的区域；同期历史系 Stirling 名楼（Grade II*，1968）2025-05 获批、2026-05 开工大修，计划 2028 完工——两座 20 世纪名楼的再生在同一所大学并行。",
     ucl: "Wilkins Building 两百年渐进改造的「时间地层」：1827 年设计、1829 年烂尾只剩门廊穹顶，图书馆 1828/29 年入驻、1907 年扩占整层成主馆、1985 年女王为续建主体揭幕（隔 158 年）；2004–05 改入口、2012 复原 oculus 天窗、2019–20 旧食堂改实物教室——不停业的外科手术式改造，每次叠加一层可识别的时代痕迹。",
+    psl: "巴黎道芬大学：图书馆的全部功课将「就地」做在前北约总部大楼里——1955–58 年原北约总部（立面受「杰出当代建筑」标签保护）1968 年改作道芬校舍，今 €104M（HT）改造 71,890㎡ 校舍并新建 4,000㎡ 翼楼，其中 3,000㎡ 学习中心合并两馆；由 EPAURIF（大巴黎公共开发机构）任业主，目标 2029 年——公用机构当业主改造公用遗产，给图书馆改造项目的资金来源多了一条制度路径。"
   }
 },
 {
@@ -75,8 +76,8 @@ const TRENDS = [
   id: "learning-commons",
   title: "Learning Commons 常态化",
   subtitle: "主动学习 · 协作空间 · 第三空间",
-  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 16 所学校验证。",
-  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ethz", "imperial", "cambridge", "ucl"],
+  summary: "小组研讨室、可预约空间、咖啡餐饮、多媒体制作间已从新概念变成北美与欧洲顶尖馆的默认配置；空间正嵌进体育场夹层与专业馆翼楼，\"图书馆作为第三空间\"的评价指标从\"座位数/藏书量\"转向\"停留时长与归属感\"。被 18 所学校验证。",
+  schools: ["harvard", "mit", "stanford", "duke", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ethz", "imperial", "cambridge", "ucl", "psl"],
   evidence: {
     harvard: "Cabot 科学图书馆（2017）是北美 Learning Commons 标杆：一层社交协作、地下研讨教学，\"几乎所有东西都是可移动的\"；LEED-CI v4 认证。",
     mit: "Hayden 改造以\"研究十字路口\"为设计概念——研讨亭阁置于动线交叉口，功能混合成为设计概念本身。",
@@ -94,6 +95,7 @@ const TRENDS = [
     imperial: "1997 年 Waterstones 书店进馆（第三空间正式命名前的早期实验）；2025 年主馆四层新增 Group Study Space 与 Wellbeing Room——学习空间与心理健康设施同层配置；Charing Cross 馆把空间细化到行为颗粒：协作 booths、solo pods 单人静音舱、10 人研习室。",
     cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：双入口穿越动线、咖啡、媒体实验室、个人研习舱，图书馆团队主办的 Research Café 对所有人开放——commons 的边界从校内推到社区；UL 茶室与「静音/协作/电脑/站桌」行为分层学习空间则是校内版；Moore Library（2001）全座位通电源的混合图书馆是鼻祖级样本。",
     ucl: "Student Centre 1,000+ 座位按学习行为分层：安静自习、小组协作、个人隔音舱、静音层——学习共享空间从「一种大平层」演进为「按行为分层的坐席产品」；8 层围绕大中庭叠合，剖面即导航。",
+    psl: "巴黎道芬大学的 3,000㎡ 新学习中心将合并学习馆与研究馆：包含 fab lab 式创作空间并接入城市热网（市政级可持续标准）。现有学习馆已见雏形——700 座开放至 22:00、14 间小组室、吊床休息区、降噪耳机等小件借用；研究馆则按 M2 以上阶段收紧权限，同一个屋檐下「完全开放」与「按资历分层」两区并行。"
   }
 },
 {
@@ -121,8 +123,8 @@ const TRENDS = [
   id: "special-collections",
   title: "特藏走向台前",
   subtitle: "空间化 · 品牌化 · 教学化",
-  summary: "珍本手稿不再锁在库房：特藏以展柜长廊、档案课程、快闪展进入日常动线，并成为访客经济与捐赠叙事的引擎。\"建筑即展品\"——四分之三的 Beinecke 访客为建筑本身而来。被 12 所学校验证。",
-  schools: ["duke", "yale", "stanford", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ucl"],
+  summary: "珍本手稿不再锁在库房：特藏以展柜长廊、档案课程、快闪展进入日常动线，并成为访客经济与捐赠叙事的引擎。\"建筑即展品\"——四分之三的 Beinecke 访客为建筑本身而来。被 13 所学校验证。",
+  schools: ["duke", "yale", "stanford", "jhu", "upenn", "columbia", "cornell", "edinburgh", "manchester", "kcl", "oxford", "ucl", "psl"],
   evidence: {
     duke: "Rubenstein 特藏馆：1,360 万命名捐赠撬动 6,000 万改造，教室与展览空间翻倍，成为西校区热门活动场地；哥特阅览室晚间变身自习空间至凌晨 3 点。",
     yale: "特藏走向\"一个品牌\"整合：Beinecke 2022 年合并手稿与档案馆、2026 年再并艺术与音乐特藏；FY2024 访客 187,501 人次（同比 +30%），74% 专为建筑与书塔而来。",
@@ -136,6 +138,7 @@ const TRENDS = [
     kcl: "特藏借建筑史自我背书：中世纪 Rolls Chapel 残部（Weston Room，c.1232 起点、Inigo Jones 1617 重建）直接作为 Foyle 特藏展厅，建筑本身成为最大的展品；Liddell Hart 军事档案中心独立信托治理；「Former owner（前藏家）」开放为公开检索字段，provenance 研究变成读者可玩的探索入口。",
     oxford: "Weston 把 100 万+ 件特藏置于恒温恒湿新标准并配两座常设展厅，重开首展 Marks of Genius、一年访客破百万——特藏从库房变成公共目的地，\"展示\"成为珍本保存的融资叙事。",
     ucl: "特藏 10 公里+ 材料、500+ 档案群、约 15 万册珍本（2014 年为 7 公里，两口径并列）；Bentham 手稿、George Orwell Archive、全英最大数学珍本收藏；2019–20 年旧食堂改 Object-Based Learning Room——展柜＋可移动桌椅，原件以教具身份进本科课堂，特藏从库房功能升级为教学功能。",
+    psl: "巴黎天文台图书馆：1785 年由路易十六顶着科学院的负面报告批准建馆（年经费仅 600 里弗尔），1795 年并 Delisle 藏书、1881 年购 Chasles 藏书（453 册含 28 摇篮本），今为 BnF「pôle associé」（2012）与 CollEx-Persée 成员（2017）；ENS 图书馆藏 26 部摇篮本、居维叶藏书与 60 个档案全宗——法国国家级科学遗产靠「天文台馆＋ENS」这类学科馆共同守护。"
   }
 },
 {
@@ -152,13 +155,14 @@ const TRENDS = [
   id: "open-to-public",
   title: "大学设施公共化",
   subtitle: "校园向社区开放 · co-working · 公众活动",
-  summary: "预算紧缩年代，顶尖大学开始学习把学习空间摆进社区：穿越式动线、咖啡、对所有人开放的活动——既是使用率解药，也是大学向公众证明自身存在的政治资产。被 4 所学校验证。",
-  schools: ["cambridge", "manchester", "kcl", "ucl"],
+  summary: "预算紧缩年代，顶尖大学开始学习把学习空间摆进社区：穿越式动线、咖啡、对所有人开放的活动——既是使用率解药，也是大学向公众证明自身存在的政治资产。被 5 所学校验证。",
+  schools: ["cambridge", "manchester", "kcl", "ucl", "psl"],
   evidence: {
     cambridge: "West Hub（2022）是剑桥第一座对公众开放的 co-working hub：两个主入口相对形成穿越动线，鼓励社区居民穿楼而过、顺路使用；上层图书馆服务、媒体实验室、个人研习舱对外开放，Research Café 任何人可报名闪电演讲——「大学第一张桌子」摆进了社区。",
     manchester: "赖兰兹是「制度化公众开放」的极端样本：1900 年建馆即向公众开放，今为免费城市景点（官网定位「thriving visitor attraction」），常年免费展览；但 2021 年裁员争议揭示另一面——管理层称此前「过度偏向社会责任、损害研究教学」，公众岗位被削——公共化若无章程级保障，预算紧缩时必然回摆。",
     kcl: "登录建筑里的「分层公众界面」：自助语音导览（把建筑史变成参观产品）＋ Weston Room 特藏展＋ Open House 开放日构成公众入口；但无卡读者限人工值守时段、四层分馆通宵只对持卡师生——公众开放以不损伤国宝建筑安防为前提，是「有限开放」的制度化版本，与赖兰兹的「完全公共化」构成光谱两端。",
     ucl: "特藏口号「open to everyone」：两个校内阅览室（Wilkins South Junction＋IOE 馆）＋Kew 国家档案馆专属阅览室对外开放；Student Centre 公共层无门槛，Bentham 的 Auto-Icon 就坐在通宵自习的学生中间——但档案级材料仍分线预约：开放是分层设计，不是一句口号。",
+    psl: "巴黎道芬大学：校外读者注册费仅 €20/学年即可入馆，是「付费即入」的最低门槛版本；同城的 ENS 图书馆则走「授权研究者分层开放」路线——公众不是门票问题而是身份问题。两馆同在一城一系统，恰好构成欧洲「公众开放」的光谱两端：一个把门开到最大，一个把门槛设在研究身份上。"
   }
 }
 ];

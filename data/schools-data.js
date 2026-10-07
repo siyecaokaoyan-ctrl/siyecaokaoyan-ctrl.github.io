@@ -1862,6 +1862,92 @@ const SCHOOLS = [
     { label: "UCL Interaction Centre – 虚拟学习空间研究（2020–22）", url: "ucl.ac.uk/uclic" },
     { label: "Survey of London / British History Online – Wilkins Building 沿革", url: "british-history.ac.uk" }
   ]
+},
+{
+  id: "psl",
+  name: "巴黎文理研究大学",
+  nameEn: "Université PSL (Paris Sciences & Lettres)",
+  founded: 2010,
+  country: "法国",
+  region: "欧洲",
+  state: "法兰西岛 · 巴黎",
+  reportId: "LR-20261007-01",
+  reportDate: "2026-10-07",
+  tagline: "没有总馆的联邦 · 1785 年的馆规 · €104M 的学习中心",
+  mainLine: "法国「卓越计划」造出的联邦制大学：11 所百年院校各留法人、各管其馆，靠 PSL Explore 统一发现层（600 万+ 条记录）、校长任主席且含学生席位的文献理事会、联合电子资源三层黏合。最老的馆创于 1785 年（卡西尼四世、路易十六批准），最新的大手笔是 €104M 把前北约总部改成带 3,000㎡ 学习中心的校园（2029）。",
+  flagship: { name: "联邦制的图书馆：没有总馆的「系统」", note: "2010 PRES → 2015 ComUE → 2019 实验性大学 → 2022 转正 grand établissement。各校保留图书馆与法人：ENS（RUBENS 9 馆）、道芬、巴黎矿院、ESPCI、化学院、巴黎天文台、国立文献学校、EPHE、戏剧学院＋法兰西公学院/居里研究所（关联）。黏合三层：PSL Explore 统一发现层、文献理事会（校长任主席，学生正式席位＋外部独立专家）、联合电子资源采购。天文台馆与道芬馆双双入选 CollEx-Persée 国家级科学遗产网络（12 家关联馆占 2 席）。", imgs: [{ src: "psl-1.jpg", cap: "ENS Ulm 庭院（先贤胸像走廊）：图书馆所在的学术院落本身就是一部具象校史。摄影：Remi Mathis / Wikimedia Commons（CC BY-SA 4.0）" }, { src: "psl-2.jpg", cap: "ENS Ulm 花园庭院：拉丁区寸土寸金中保有一处花园——2,400 人规模精英学校的空间密度反证。摄影：Remi Mathis（CC BY-SA 4.0）" }, { src: "psl-3.jpg", cap: "巴黎天文台（佩罗楼，1667–1672）：图书馆阅览室 1997 年迁入的西塔就在画面右侧，楼前是勒维耶雕像。摄影：Fred Romero（CC BY 2.0）" }, { src: "psl-4.jpg", cap: "巴黎道芬大学：1955–58 年建成的原北约总部大楼，立面受「杰出当代建筑」标签保护；€104M 改造的全部功课将在这张立面上做。摄影：Mbzt（CC BY 3.0）" }] },
+  overview: {
+    intro: "PSL（QS 2025 世界 24、法国第 1）17,000 名学生、2,900 教研、140 实验室，28 位诺奖与 10 位菲尔兹奖得主。图书馆系统是「联邦制」：没有总馆，11 所组成院校各管其馆；校级设文献联合支撑服务与文献理事会（学生有正式席位），PSL Explore 统一发现层 600 万+ 条记录。旗舰三馆：ENS Ulm（77 万+ 册、90% 开架、大阅览室列历史古迹）、道芬（约 19.6 万册、学习馆 700 座至 22:00）、巴黎天文台（1785 年创立、BnF 联合分馆）。",
+    stats: [
+      { k: "组建", v: "2010→2022", s: "PRES → ComUE → 实验性大学 → grand établissement" },
+      { k: "排名", v: "QS 24 / 法国 1", s: "THE 40、ARWU 33、CWUR 19（2024/25）" },
+      { k: "ENS 馆藏", v: "77 万+ 册", s: "Ulm-Jourdan，90% 开架；RUBENS 9 馆网络" },
+      { k: "道芬在建", v: "€104M", s: "71,890㎡ 改造＋3,000㎡ 学习中心，2029 年" }
+    ]
+  },
+  projects: [
+    {
+      name: "道芬校区 €104M 改造：前北约总部里的学习中心",
+      nameEn: "Campus Paris Dauphine · EPAURIF · 2029",
+      year: "在建 → 2029",
+      stats: [{ k: "造价", v: "€104M" }, { k: "规模", v: "71,890㎡＋4,000㎡" }, { k: "学习中心", v: "3,000㎡" }, { k: "现状", v: "两馆分设 6 层" }],
+      facts: "道芬 1968 年建校于 1955–58 年前北约总部大楼（立面受「杰出当代建筑」标签保护）。现行两馆：学习馆 700 座（工作日 9:00–22:00）＋研究馆 150 座（M2 以上），约 19.6 万册、54.5 万种电子书、约 100 数据库；14 间可约小组室、吊床休息区、小件借用（降噪耳机/转接头/白板笔）、馆外还书箱；校外读者 €20/学年。改造：€104M（HT）整体修缮 71,890㎡＋新翼 4,000㎡，3,000㎡ 学习中心合并两馆并引入 fab lab 式协作空间，接城市热网；业主 EPAURIF，目标 2029。",
+      insight: "两层启示：①「合并同类项」是学习中心的正确打开方式——借整体改造契机重新定义「学习＋协作创新」复合体；②大工程决定空间上限，小物（吊床/耳机借用）决定口碑下限——小件借用清单一周即可上线，是最便宜的口碑投资。",
+      img: "psl-4.jpg",
+      imgCap: "道芬大楼（前北约总部）：€104M 改造的「戴着镣铐跳舞」——立面保护标签下做保温、更新与新翼衔接。摄影：Mbzt / Wikimedia Commons（CC BY 3.0）"
+    },
+    {
+      name: "ENS 与天文台：遗产可证，比古老更值钱",
+      nameEn: "Bibliothèque Ulm-Jourdan-BSE · Observatoire de Paris Library",
+      year: "1847 / 1785",
+      stats: [{ k: "ENS 迁入", v: "1847" }, { k: "ENS 馆藏", v: "77 万+ 册" }, { k: "天文台创立", v: "1785" }, { k: "摇篮本", v: "26＋28 部" }],
+      facts: "ENS 馆创于约 1810 年、1847 年迁入 Ulm 街（开学典礼在阅览室举行）；大阅览室（Salle Pompidou）列历史古迹；Herr 1888–1926 主理；1985 年两校合并建 RUBENS 统一网络 9 馆；数学馆 1864 年由巴斯德与达布共创。天文台馆 1785 年由卡西尼四世设立——路易十六顶着科学院负面报告批准，年经费仅 600 里弗尔；「秘书兼馆长」阿拉果 1805 年在任；1881 年购夏莱藏书（含 28 摇篮本）；1980 CADIST 国家专藏；2012 BnF「pôle associé」；2017 入 CollEx-Persée。",
+      insight: "两个馆的共同点：遗产「可证」比「古老」更值钱——天文台把 1785 年馆规逐条存到今天，等于保存了科学图书馆的出生公证。启示：把馆史做成可检索档案（建校章程、最早借阅簿、历任馆长名录），既是学术资源，也是争取修缮经费时最有说服力的家底证明。"
+    },
+    {
+      name: "PSL Explore 与文献理事会：协议比中心重要",
+      nameEn: "PSL Explore · Conseil de la documentation",
+      year: "2019–至今",
+      stats: [{ k: "目录", v: "600 万+" }, { k: "治理", v: "学生有席位" }, { k: "外部专家", v: "3 馆馆长" }, { k: "共享", v: "联合电子资源" }],
+      facts: "PSL Explore 一个门户检索 600 万+ 条记录，双导航（遗产/科研成果发现＋文献研究），向整个 PSL 社区开放。校级文献理事会：校长任主席，教授、学生（含学术参议院学生副主席）、各校馆员共治，外聘巴黎-萨克雷、孔多塞 Humathèque、列日大学三馆馆长任独立专家；理事会下设文献联合支撑服务。联合电子资源包（电子书刊数据库）全校共享；道芬签 DORA（2023-04-04）、设 QoRAiL 远程问答、经 HAL Dauphine 推开放获取。",
+      insight: "核心启示：系统可以没有中心，只有协议——统一发现层（协议级整合）比合并机构（组织级整合）成本低一个数量级，却拿到用户体验的大部分收益。顺序不能反：先统一发现层，再设联合治理层（读者要占正式席位），最后谈资源共建。"
+    }
+  ],
+  learningSpaces: "联邦分工下的三种空间模型：ENS＝古迹壳（大阅览室列 MH）＋天桥连 Rataud 新楼消化增量；道芬＝700 座学习馆（至 22:00）＋150 座研究馆分层准入，€104M 改造后合成 3,000㎡ 学习中心；天文台＝西塔阅览室服从 17 世纪建筑本体。",
+  serviceModel: "PSL Explore 统一发现；文献理事会共治（学生正式席位）；QoRAiL 远程问答；HAL Dauphine＋DORA 开放获取；CollEx-Persée 国家级遗产协同（天文台＝天文、道芬＝经济）；道芬校外读者 €20/学年、ENS 对授权研究者开放。",
+  trends: [
+    { tid: "historic-renewal", title: "前北约总部的第二次生命", type: "fact", note: "道芬 €104M 改造 1955–58 年前北约总部：立面受「杰出当代建筑」标签保护，在「戴镣铐」条件下做整体修缮＋新翼衔接＋3,000㎡ 学习中心——冷战建筑遗产的适应性再利用样本。" },
+    { tid: "learning-commons", title: "学习中心＝两馆合并＋协作创新", type: "fact", note: "道芬借 €104M 改造把学习馆（700 座）与研究馆（150 座）合成 3,000㎡ 学习中心，并把 fab lab 式协作创新空间纳入图书馆叙事；吊床休息区与降噪耳机借用这类轻投入定义口碑下限。" },
+    { tid: "special-collections", title: "「可证的古老」：从 1785 馆规到 BnF 联合分馆", type: "fact", note: "天文台馆 1785 年馆规逐条存世（馆藏构成/借阅登记/开放时间/年度汇报），2012 年成为 BnF「pôle associé」、2017 入 CollEx-Persée；ENS 遗产含 26 摇篮本、居维叶藏书、60 档案全宗——馆史档案化是最有说服力的家底。" },
+    { tid: "open-to-public", title: "分层开放的联邦样本", type: "judgment", note: "道芬校外读者 €20/学年即可注册（学习馆至 22:00 也向注册者开放）；ENS 对获授权的外部研究者开放——开放是「注册＋分层」的制度化版本，联邦各馆自主决定边界。" }
+  ],
+  business: [
+    "联邦式整合三步走：先统一发现层（协议级），再设联合治理层（读者正式席位），最后谈资源共建（采购级）——顺序不能反；无资金托底的联盟先只做发现层。",
+    "读者进理事会：学生以正式席位参与文献治理（PSL 学术参议院学生副主席在列）——前提是真的参与资源分配决策，否则席位变装饰；国内可从「学生馆员/读者委员会」过渡。",
+    "大工程＋小物清单并置：€104M 决定空间上限，吊床/降噪耳机借用决定口碑下限——盘点「读者最常临时缺的小物件」前十，配借用柜一周上线。",
+    "馆史档案化：建校章程、最早借阅簿、历任馆长名录做成可检索档案；争取修缮经费时，「可证的古老」比「古老的传说」有说服力。",
+    "「古迹壳＋天桥连新楼」增量策略：受保护建筑不改功能，用连廊把新需求引到新楼消化——前提是有增量用地，否则退化为存量挤兑。",
+    "可复制性边界：PSL 的联邦有「卓越计划」制度资金托底，且法国高校法人传统使「合并」成本低；国内联盟若产权与人事壁垒高，第一步只做发现层共享。"
+  ],
+  limits: [
+    "道芬 €104M 改造最新进度与学习中心设计细节未公开（仅建筑师项目页口径）。",
+    "PSL Explore 现行记录总数与系统底层未见更新。",
+    "文献联合支撑服务编制与预算未公开。",
+    "巴黎天文台馆现行馆藏总量与数字化进度未公开。",
+    "2025 年 1 月新加入两校（马拉盖建筑学院、装饰艺术学院）的图书馆整合安排未见披露。",
+    "法兰西公学院 13 馆与 PSL 的服务边界（关联成员的实际权利义务）未见细则。"
+  ],
+  sources: [
+    { label: "法语维基 – Université PSL（组建历程/排名/成员）", url: "fr.wikipedia.org/wiki/Université_Paris_Sciences_et_Lettres" },
+    { label: "PSL – Documentation Council（校长任主席/学生席位）", url: "psl.eu/en/documentation-council" },
+    { label: "PSL – 数字图书馆与资源（PSL Explore 600 万+）", url: "psl.eu/en/news/digital-libraries-and-resources-available-psl-campus" },
+    { label: "Dauphine – 学习与研究图书馆（两馆/数据库/DORA）", url: "dauphine.psl.eu/en/campus-life/study-and-research-libraries" },
+    { label: "GPAA – 道芬校区项目页（€104M/3,000㎡/2029/前 NATO）", url: "gpaa.fr/projet/campus-universitaire-paris-dauphine" },
+    { label: "ENS – 图书馆馆史（1847/Herr/26 摇篮本/居维叶藏书）", url: "oralemens.ens.fr/s/PPM/item/426" },
+    { label: "法语维基 – ENS Paris（RUBENS 9 馆/Salle Pompidou 古迹）", url: "fr.wikipedia.org/wiki/École_normale_supérieure_(Paris)" },
+    { label: "巴黎天文台 – 图书馆馆史（1785 馆规/Arago/BnF/CollEx）", url: "observatoiredeparis.psl.eu/histoire-de-la-bibliotheque.html" },
+    { label: "CollEx-Persée（12 家关联遗产馆名单）", url: "fr.wikipedia.org/wiki/CollEx-Persée" }
+  ]
 }
 ];
 
@@ -1886,5 +1972,6 @@ window.LIB_URLS = {
   oxford: "https://www.bodleian.ox.ac.uk/",
   ethz: "https://library.ethz.ch/en/",
   imperial: "https://www.imperial.ac.uk/library",
-  cambridge: "https://www.lib.cam.ac.uk/"
+  cambridge: "https://www.lib.cam.ac.uk/",
+  psl: "https://www.psl.eu/"
 };
