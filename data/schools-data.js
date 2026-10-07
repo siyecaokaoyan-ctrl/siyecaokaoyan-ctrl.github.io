@@ -1948,6 +1948,92 @@ const SCHOOLS = [
     { label: "巴黎天文台 – 图书馆馆史（1785 馆规/Arago/BnF/CollEx）", url: "observatoiredeparis.psl.eu/histoire-de-la-bibliotheque.html" },
     { label: "CollEx-Persée（12 家关联遗产馆名单）", url: "fr.wikipedia.org/wiki/CollEx-Persée" }
   ]
+},
+{
+  id: "epfl",
+  name: "洛桑联邦理工学院",
+  nameEn: "École Polytechnique Fédérale de Lausanne (EPFL)",
+  founded: 1853,
+  country: "瑞士",
+  region: "欧洲",
+  state: "沃州 · 洛桑",
+  reportId: "LR-20261007-02",
+  reportDate: "2026-10-07",
+  tagline: "把图书馆做成一片室内地貌 · 私人捐助近半 · 建成 16 年仍在加座",
+  mainLine: "1853 年私立起步、1969 年联邦化的瑞士理工名校（QS 2026 世界 22），2010 年把整馆迁入 SANAA 设计的劳力士学习中心：22,000㎡ 单层连续曲面、14 个庭院，不用楼层与隔墙，用高差＋家具＋声学管理分区，造价近半来自 Rolex 等私人捐助。真正的样本价值在建成后：2018 年正式使用后评估（POE），2026 年 STEM 区再增 100 工位至 900 座、年访问 140 万+——建成不是终点，是持续运营的起点。",
+  flagship: { name: "劳力士学习中心：没有楼层与隔墙的一层图书馆", note: "2000 年建的中央图书馆不敷使用，2004 年 SANAA（妹岛和世＋西泽立卫）赢得竞赛；2010-02-22 开放。单层连续板：楼地板与屋顶平行起伏，121×166m 平面内开 14 个玻璃庭院，地面轻轻抬起、人从拱腹下穿行进入。造价约 €65M，近半由 Rolex 等私人捐助（Logitech、Bouygues、Crédit Suisse、Nestlé、Novartis、SICPA）。功能＝图书馆＋3 餐厅＋书店＋多功能厅＋EPFL Press＋就业中心，借「cafeteria effect」互相引流；50 万册开架、RFID 整摞自助借还、中央综合服务台放在建筑几何中心。", imgs: [{ src: "epfl-1.jpg", cap: "劳力士学习中心：地面轻轻抬起，行人从混凝土拱腹下穿行——「建筑触地很轻」。摄影：Guilhem Vellut（CC BY 2.0）" }, { src: "epfl-2.jpg", cap: "波浪形玻璃幕墙与屋面：单层连续板的北侧立面，室内「地貌」在玻璃后面起伏。摄影：Guilhem Vellut（CC BY 2.0）" }, { src: "epfl-3.jpg", cap: "室内一层：扶手椅＋矮桌的客厅化组合、远处可见综合服务台——没有墙的图书馆的日常状态。摄影：Rama（CC BY-SA 3.0 fr）" }, { src: "epfl-4.jpg", cap: "室内全景：楼地板与屋顶平行起伏形成的「学习地貌」，14 个庭院把光与景引入深处。摄影：Hpschaefer（CC BY-SA 3.0）" }] },
+  overview: {
+    intro: "EPFL（QS 2026 世界 22、THE 32、ARWU 44）14,072 名学生（130+ 国）、诺奖 1（Dubochet 2017 化学）、菲尔兹 2（Hairer 2014、Viazovska 2022）、图灵 1（Sifakis）。单一中央馆制，主馆设于校园中心的劳力士学习中心（RLC）：50 万册印本（欧洲最大科技馆藏之一）、100 万+ 在线文献；2026-09 改造后 900 学习工位、年访问 140 万+；RLC 全年 7:00–24:00 开放；公共图书馆属性、校外免费入馆；NEBIS/Swisscovery 全国网络成员；EPFL 档案馆隶属图书馆；珍本 600 种含牛顿、伽利略 16 世纪印本，古籍平台 Plume 免费开放。",
+    stats: [
+      { k: "建校", v: "1853 / 1969", s: "私立 École spéciale 起步，1969 联邦化定名" },
+      { k: "排名", v: "QS 22", s: "THE 32、ARWU 44（2025/26）" },
+      { k: "馆藏", v: "50 万+ 册", s: "欧洲最大科技馆藏之一，100 万+ 在线文献" },
+      { k: "运营", v: "900 座/140 万访", s: "2026-09 STEM 区 +100 工位后；年到访人次" }
+    ]
+  },
+  projects: [
+    {
+      name: "劳力士学习中心：一座「 totem 」的配方",
+      nameEn: "Rolex Learning Center · SANAA · 2010",
+      year: "2004 竞赛 → 2010 开放",
+      stats: [{ k: "体量", v: "22,000㎡" }, { k: "造价", v: "≈€65M" }, { k: "捐助", v: "近半私人" }, { k: "庭院", v: "14 个" }],
+      facts: "时任校长 Patrick Aebischer 要一座「totem」级校园门户。SANAA 方案彻底替换「楼层＋房间」：单层连续板、楼面与屋顶平行起伏、14 个玻璃庭院采光通风、湖水冷却。馆内＝图书馆（50 万册开架）＋3 餐厅＋书店＋多功能厅＋EPFL Press＋就业中心＋学生社团，全年 7:00–24:00（仅 8/1、12/25 闭馆）。2008 年馆长团队公布「21 世纪图书馆配方」：安静/协作分区、长开放时间、数字打印设施、开架自助、社交放松活动，中央综合服务台「任何问题的第一站」。",
+      insight: "「cafeteria effect」是配方核心：多元功能互相借人流，对抗数字时代图书馆到访率的天然下滑。50 万册开架＋RFID 整摞自助借还是体验细节——140 万年访次的馆里，每个省 10 秒的环节都值得做。",
+      img: "epfl-1.jpg",
+      imgCap: "从拱腹下看 RLC：建筑不抢远处莱芒湖与山的天际线，向内做「地貌」。摄影：Guilhem Vellut（CC BY 2.0）"
+    },
+    {
+      name: "建成后 16 年：POE → 2026 再加 100 座",
+      nameEn: "Post-Occupancy Evaluation · STEM area 2026",
+      year: "2018 POE → 2026-09 改造",
+      stats: [{ k: "POE", v: "2018" }, { k: "新增", v: "+100 工位" }, { k: "总容量", v: "900 座" }, { k: "年访问", v: "140 万+" }],
+      facts: "RLC 开放 8 年后（2018），图书馆受命做正式使用后评估：馆员评估建筑使用、访谈学生需求，形成家具调整、空间再设计、设备增设的改进清单并持续落地。CRAFT 学习技术实验室（Pierre Dillenbourg）早在 2010 年就为 RLC 画过「未来技术」草图——向墙面投影学习主题/情绪的互动台灯、各区域噪声实时地图——多数未落地，但试验传统保留。2026-09：STEM 区重开发新增 100 工位，全馆 900 座。",
+      insight: "学习共享空间不是建成就完，而是「建成→评估→调校」的无限循环。POE 制度化的关键是授权：EPFL 让图书馆牵头评估整栋建筑（不只本馆区域），评估结论能转成真实的加座工程——没有授权的 POE 只会停在报告里。"
+    },
+    {
+      name: "旧总馆的体面退出：Perrault 改成神经假体中心",
+      nameEn: "Dominique Perrault · CNP · 2011 动工",
+      year: "2010 腾空 → 2011 改造",
+      stats: [{ k: "预算", v: "60M CHF" }, { k: "建筑师", v: "D. Perrault" }, { k: "新用途", v: "CNP 神经假体" }, { k: "共建", v: "两家基金会" }],
+      facts: "2010 年馆藏全部迁入 RLC 后，旧机械馆＋旧中央图书馆腾空。EPFL 请巴黎国家图书馆设计者 Dominique Perrault 改造加建：联邦议会 2009 年底批 6,000 万瑞郎，2011 年动工，改为神经假体中心（CNP），Bertarelli 与 Defitec（Borel 家族）基金会共建。同城与洛桑大学/BCUL 共建 Cosadoca 文献灾难抢救联盟（联合抢救手册），共享 NEBIS/Swisscovery 网络。",
+      insight: "图书馆「退」得有制度安排：腾退空间不临时分配，而是整体策划转作前沿科研（Perrault 级建筑师操刀，用改造预算而非日常运维预算）——旧馆舍的退出本身就是一次资源再生。"
+    }
+  ],
+  learningSpaces: "「地形即分区」：坡地平台上布置安静个人座，谷地布置协作区，10 个隔音「bubble」研讨舱承接小组工作；研究生有专用研习中心；扶手椅＋矮桌的客厅化家具沿地形自由散布；2026 年 STEM 区新增 100 工位后总 900 座。",
+  serviceModel: "全年 7:00–24:00 开放；公共图书馆属性、校外免费入馆；RFID 整摞批量自助借还；中央综合服务台「任何问题的第一站」；NEBIS（140+ 馆）/Swisscovery 全国共享；CRAFT 交互技术试验传统；EPFL 档案馆隶属图书馆；Cosadoca 跨馆灾难抢救协作。",
+  trends: [
+    { tid: "learning-commons", title: "「地貌式」学习共享空间", type: "fact", note: "RLC 用高差＋家具＋声学管理替代隔墙：坡地个人座、谷地协作区、隔音研讨舱；开馆 16 年后 2026-09 STEM 区再增 100 工位至 900 座、年访 140 万+——证明该模型仍有生命力。" },
+    { tid: "historic-renewal", title: "旧总馆的科研再生", type: "fact", note: "2010 年总馆迁入 RLC 后，旧机械馆＋旧中央图书馆由 Dominique Perrault 改造（60M CHF，2011 动工）为神经假体中心——图书馆腾退空间整体策划、改造预算再生为科研设施。" },
+    { tid: "data-driven-ops", title: "POE 制度化：开馆 8 年仍做正式评估", type: "judgment", note: "2018 年图书馆牵头对 RLC 做使用后评估（使用观测＋学生访谈），结论持续转化为家具/空间/设备改进，最终在 2026 年落成加座工程——「评估→改造」的固定循环比单次设计更值钱。" },
+    { tid: "open-to-public", title: "公共图书馆属性的理工馆", type: "fact", note: "EPFL 馆是公共图书馆：校外公众免费入馆、50 万册开架阅览；RLC 全年 7:00–24:00 仅两日闭馆——「大学的第一张桌子」对整座城市敞开。" }
+  ],
+  business: [
+    "「地形即分区」：预算不足以做硬隔断时，高差＋家具组合＋声学管理是替代方案；改造先调家具与标识，最后才动墙。",
+    "POE 要授权也要闭环：让图书馆牵头评估整栋建筑、结论必须转成工程或预算动作，否则停在报告里；开馆第 8 年做一次正式 POE 是合理节奏。",
+    "cafeteria effect 清单：列出「最值得引进的非图功能」（餐饮/书店/活动/就业服务），评估每种功能能给图书馆带来多少顺路人流。",
+    "自助体验颗粒度：RFID 整摞借还是小改进，但高流量馆里每个省 10 秒的环节都值得做——把借还、打印、找座的摩擦各列一张清单。",
+    "旧馆舍退出机制：腾退空间不临时分配，整体策划转用途并争取改造级预算；退出本身就是资源再生。",
+    "风险协作可以共建：Cosadoca 式跨馆灾难抢救联盟（联合手册＋互助协议）比自己从零写预案成本低得多。"
+  ],
+  limits: [
+    "2026 STEM 区改造的投资额与施工周期官方未披露。",
+    "约 €65M 造价为建筑资料页口径，官方决算未见公开。",
+    "现任图书馆馆长姓名与任期未见于本次检索来源。",
+    "在校生数各来源 13,000–14,072 不一，报告取 2025 最新口径。",
+    "CRAFT 设想的空间交互技术（互动台灯/噪声地图）实际落地情况未见公开。",
+    "RLC 各分区座位占比与实时 occupancy 数据未公开。"
+  ],
+  sources: [
+    { label: "EPFL 官网 – 图书馆主页（900 工位/140 万访 STEM 区新闻）", url: "epfl.ch/campus/library" },
+    { label: "EPFL News – STEM area: 100 new workspaces（2026-09-23）", url: "actu.epfl.ch/news/stem-area-100-new-workspaces-in-the-epfl-library" },
+    { label: "EPFL – Charte documentaire（珍本 600 种/Dufour 与 Siegfried 地图）", url: "epfl.ch/campus/library/fr/a-propos/charte-documentaire" },
+    { label: "Infoscience – RLC 使用后评估案例（2018 POE）", url: "infoscience.epfl.ch/entities/publication/bd5c27ed-b5b7-4ac6-a8d3-5ff96c0c8eb5" },
+    { label: "维基 – Rolex Learning Center（50 万册/860 座/14 庭院/造价）", url: "en.wikipedia.org/wiki/Rolex_Learning_Center" },
+    { label: "维基 – EPFL（1853 校史/排名/诺奖菲尔兹）", url: "en.wikipedia.org/wiki/École_Polytechnique_Fédérale_de_Lausanne" },
+    { label: "Divisare – Perrault 改造 EPFL 旧机械馆与中央图书馆", url: "divisare.com/projects/233834" },
+    { label: "Archello / ArchEyes – RLC 建筑细节与捐助名单", url: "archello.com/project/rolex-learning-center-2" },
+    { label: "Auvergne-Rhône-Alpes – Plume 古籍数字平台（2019 上线）", url: "auvergnerhonealpes-livre-lecture.org" }
+  ]
 }
 ];
 
@@ -1973,5 +2059,6 @@ window.LIB_URLS = {
   ethz: "https://library.ethz.ch/en/",
   imperial: "https://www.imperial.ac.uk/library",
   cambridge: "https://www.lib.cam.ac.uk/",
-  psl: "https://www.psl.eu/"
+  psl: "https://www.psl.eu/",
+  epfl: "https://www.epfl.ch/campus/library/"
 };
