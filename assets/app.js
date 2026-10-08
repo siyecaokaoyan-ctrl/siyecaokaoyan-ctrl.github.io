@@ -6,7 +6,7 @@ const $ = (s, el) => (el || document).querySelector(s);
 const $$ = (s, el) => Array.from((el || document).querySelectorAll(s));
 
 function schoolShort(id) {
-  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", edinburgh:"爱", manchester:"曼", kcl:"王", ucl:"伦", psl:"巴", epfl:"洛", nus:"新", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛", cambridge:"剑", ethz:"苏", imperial:"帝" };
+  const map = { harvard:"哈", mit:"M", stanford:"斯", princeton:"普", yale:"耶", jhu:"霍", duke:"杜", uchicago:"芝", glasgow:"格", edinburgh:"爱", manchester:"曼", kcl:"王", ucl:"伦", psl:"巴", epfl:"洛", nus:"新", utokyo:"东", upenn:"宾", columbia:"哥", cornell:"康", oxford:"牛", cambridge:"剑", ethz:"苏", imperial:"帝" };
   return map[id] || id.slice(0, 1).toUpperCase();
 }
 function schoolById(id) { return SCHOOLS.find(s => s.id === id); }
@@ -100,7 +100,8 @@ const SCHOOL_COLORS = {
   ucl:      { accent: "#500778", soft: "#f1e8f9" },
   psl:      { accent: "#003A70", soft: "#e8eef5" },
   epfl:     { accent: "#C8102E", soft: "#fbe9ec" },
-  nus:      { accent: "#003D7C", soft: "#e6eef7" }
+  nus:      { accent: "#003D7C", soft: "#e6eef7" },
+  utokyo:   { accent: "#005BAC", soft: "#e6f0f8" }
 };
 function setSchoolTheme(id) {
   const c = SCHOOL_COLORS[id] || SCHOOL_COLORS.upenn;
