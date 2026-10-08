@@ -2034,6 +2034,92 @@ const SCHOOLS = [
     { label: "Archello / ArchEyes – RLC 建筑细节与捐助名单", url: "archello.com/project/rolex-learning-center-2" },
     { label: "Auvergne-Rhône-Alpes – Plume 古籍数字平台（2019 上线）", url: "auvergnerhonealpes-livre-lecture.org" }
   ]
+},
+{
+  id: "nus",
+  name: "新加坡国立大学",
+  nameEn: "National University of Singapore (NUS)",
+  founded: 1905,
+  country: "新加坡",
+  region: "亚太",
+  state: "新加坡",
+  reportId: "LR-20261008-01",
+  reportDate: "2026-10-08",
+  tagline: "珍本临街的老馆改造 · 下闹上静 · 亚洲第 1 的 phygital 枢纽",
+  mainLine: "与校同庚的图书馆（1905 年从院长办公室起步），1980 年随两校合并组建 NUS Libraries（1 旗舰＋7 专业馆）。旗舰中央图书馆（1978 年楼）2018–2021 年整体改造 30,470㎡：通高门厅把 6.1 万种新马珍本做成临街橱窗，「1/3/4 层闹、5/6 层静」声学竖向分区，可旋转木屏风让空间弹性切换，全模块化装修拿下 Green Mark 铂金（年节电 156 万度）。特藏按公共产品运营——NUS120 官方叙事、外借办展、数字平台开放。",
+  flagship: { name: "中央图书馆六年自我改造：把珍本做成「临街橱窗」", note: "1978 年六层老馆长期使用后空间老化；2018 年启动 addition & alteration，2021-10 末段完工，改造 30,470㎡（Architects 61，主题「现代当代、恒久、存亚洲精髓」）。前立面外扩重塑通高两层门厅（Galleria），与主路及 Forum 广场无缝连接；二层整面通高玻璃，把 61,000+ 种新马珍本变成对广场可见的 shopfront 展示；管状天花从广场延伸进门厅形成视觉引导。楼层角色：L1 无尽发现／L2 传承／L3 体验／L4 可能／L5 启迪／L6 静思；声学竖向分区——1/3/4 层协作（可办展览讲座发布会）、5/6 层安静研习。全模块化装修（标准模数天花/地胶/幕墙）压缩工期成本；Green Mark 铂金 SLE 2020：年节电 156 万度＋屋顶光伏 460kWp；BCI 室内设计奖 2019（Learning 类 Winner）。", imgs: [{ src: "nus-1.jpg", cap: "改造后的主入口（2024）：通高 Galleria 门厅——二层玻璃后就是 6.1 万种新马珍本「临街橱窗」。摄影：ZKang123（CC BY-SA 4.0）" }, { src: "nus-2.jpg", cap: "协作层（2024）：低层「闹区」的彩色座椅与小组桌——1/3/4 层定位就是可讨论、可活动的学习现场。摄影：ZKang123（CC BY-SA 4.0）" }, { src: "nus-3.jpg", cap: "自助服务区（2024）：自助借还机与文印岛集中布置——老馆改造后的「服务前台」长这样。摄影：ZKang123（CC BY-SA 4.0）" }, { src: "nus-4.jpg", cap: "开架书库（2024）：人字拼木地板＋绿色钢架——改造保留了「书」的存在感，不是全改成沙发。摄影：ZKang123（CC BY-SA 4.0）" }] },
+  overview: {
+    intro: "NUS（QS 2026 世界 8、亚洲第 1，总分 95.9；ARWU 53）约 4.2 万名学生，1905 年建校（海峡殖民地与马来联邦政府医学院），1980 年由新加坡大学与南洋大学合并而成，2025 年建校 120 周年。NUS Libraries 为「1＋7」结构：旗舰中央图书馆＋中文、C.J. Koh 法学、Hon Sui Sen 经济商科、医学（最老，1905）、音乐、科学等 7 个专业馆。特藏是国家与区域遗产守护者：新马文献 61,000+ 种、东南亚华人档案、战前日文出版物、多语种战前报纸、14–20 世纪珍本（BookBridge 闭架＋Digital Gems 开放），与李光前自然历史博物馆共建 BLSEA 生物多样性图书馆。",
+    stats: [
+      { k: "建校", v: "1905 / 1980", s: "医学院起步；1980 两校合并组建 NUS" },
+      { k: "排名", v: "QS 8 / 亚洲 1", s: "QS 2026 总分 95.9；ARWU 53" },
+      { k: "改造", v: "30,470㎡", s: "2018–2021 中央馆整体改造" },
+      { k: "特藏", v: "6.1 万+ 种", s: "新马文献专藏临街展示；珍本 14–20 世纪" }
+    ]
+  },
+  projects: [
+    {
+      name: "声学与弹性：下闹上静＋可旋转书架墙",
+      nameEn: "Zoned Acoustics · Rotatable Screen · Level 5",
+      year: "2018–2021 改造内置",
+      stats: [{ k: "分区", v: "1/3/4 闹 5/6 静" }, { k: "屏风", v: "可旋转木饰面" }, { k: "家具", v: "全模块可移动" }, { k: "奖项", v: "BCI IDA 2019" }],
+      facts: "设计总则：空间必须在「集会/活动」「工作坊/会议室」「机房/makerspace」间可重构——移动模块家具是硬标准。5 层东南亚特藏与新马特藏之间设可手动旋转的竖向木饰面屏风：读者按隐私与活动需求旋转板面，一个空间在分隔/贯通、安静/活动间自由切换。声学竖向分区：低层办展览、讲座、发布会（噪声容忍度高），高层安静研习；天花与地材按声学等级选配。",
+      insight: "「可变家具＞固定隔墙」：改造预算紧张时优先买会变形的家具，后砌墙——一面可旋转屏风同时解决了分区、展示与弹性三个问题，而隔墙只能解决一个。",
+      img: "nus-2.jpg",
+      imgCap: "协作层（2024）：模块家具可随时重构为集会区/工作坊/机房。摄影：ZKang123（CC BY-SA 4.0）"
+    },
+    {
+      name: "特藏外向化：从书库到公共叙事",
+      nameEn: "NUS120 · Digital Gems · BLSEA",
+      year: "2025 NUS120 高峰",
+      stats: [{ k: "珍本", v: "14–20 世纪" }, { k: "新马专藏", v: "61,000+ 种" }, { k: "平台", v: "Digital Gems" }, { k: "荣誉", v: "IFLA 入围 10 强" }],
+      facts: "特藏含新马文献、东南亚华人档案、战前日文东南亚出版物、多语种战前报纸（英文/中文/Jawi 马来文/印尼文）、珍本（闭架 BookBridge，精选 Digital Gems 开放）。2025 年 NUS120：图书馆承担校史官方讲述者——120 Stories 博客、120 周年晚宴档案展＋互动问答＋VR 时间旅行穿越中央图书馆；特藏精选可外借给校内院系/博物馆办展；与李光前自然历史博物馆共建 BLSEA 开放获取。项目入围 2025 IFLA PressReader 国际营销奖十强。",
+      insight: "特藏按「公共产品」考核：外借办展、数字化开放、VR 叙事——指标是「被参观、被引用、被讲述」，不是入库量。珍本的最好归宿是被看见：临街玻璃后的 6.1 万种新马特藏，让全校每天路过都看见图书馆的家底。"
+    },
+    {
+      name: "绿色与模块化：老馆改造的隐性工程",
+      nameEn: "Green Mark Platinum SLE · Modular Fit-out",
+      year: "2020 获认证",
+      stats: [{ k: "认证", v: "Green Mark 铂金" }, { k: "节电", v: "156 万度/年" }, { k: "光伏", v: "460 kWp" }, { k: "模数", v: "全标准尺寸" }],
+      facts: "改造同时做绿色建筑：智能楼宇设计、最大化自然采光、按环境控制需求整合空间；获 BCA Green Mark 铂金（超低能耗 SLE 2020），年节电 1,560,700 度，屋顶 460kWp 光伏再省约 544,288 度。装修全模块化：从天花板块尺寸到地胶瓷砖、幕墙玻璃、集成散流器均按标准模数生产，提高安装效率，也为日后局部翻新留好接口。家具是单项最大开支，选型标准＝耐用＋经典＋呼应室内建筑元素。",
+      insight: "改造的钱一半花在「下次好改」上：模块化装修＋可移动家具，让空间可以随服务迭代而迭代——把「翻新」从一次性工程变成可持续运营能力。"
+    }
+  ],
+  learningSpaces: "「下闹上静」声学竖向分区：L1 无尽发现／L2 传承／L3 体验／L4 可能／L5 启迪／L6 静思；低层可重构为集会/工作坊/机房，高层安静研习；5 层亚洲特藏区间可旋转木屏风弹性分隔；家具全模块可移动。",
+  serviceModel: "特藏外借校内办展；Digital Gems 珍本开放；BLSEA 与李光前自然历史博物馆共建；120 Stories 校史叙事；自助借还＋文印岛集中服务；绿色建筑：年节电 156 万度＋屋顶光伏 460kWp。",
+  trends: [
+    { tid: "historic-renewal", title: "老馆改造改内里不改面子", type: "fact", note: "1978 年中央馆 2018–2021 整体改造 30,470㎡：外立面保守保留识别性，室内全部重做——通高门厅、临街珍本橱窗、声学竖向分区，BCI IDA 2019 获奖、Green Mark 铂金。" },
+    { tid: "learning-commons", title: "可重构的学习共享空间", type: "fact", note: "全馆家具模块可移动，空间在集会/工作坊/机房三态间切换；5 层可旋转木屏风让「分隔/贯通」随手转换——「可变家具＞固定隔墙」的教科书样本。" },
+    { tid: "special-collections", title: "特藏临街：珍本的城市界面", type: "fact", note: "61,000+ 种新马珍本置于二层通高玻璃后，对 Forum 广场形成 shopfront 展示；Digital Gems 开放珍本影像，特藏可外借办展——家底即门面。" },
+    { tid: "data-driven-ops", title: "绿色即运营：能耗数据进年报", type: "judgment", note: "改造把节能量（156 万度/年）与光伏产出写进学校绿债报告——空间运营的绿色 KPI 与财务披露挂钩，让改造收益可测量、可审计。" }
+  ],
+  business: [
+    "「珍本临街」策略：把最有故事性的馆藏放到最可见界面，成本是灯光与玻璃，收益是全校对图书馆的感知改写。",
+    "声学竖向分区：同一栋楼「下闹上静」比水平分区省隔断面积；关键是把每层功能写成清晰服务承诺并配导视色。",
+    "可变家具＞固定隔墙：预算紧张时先买「会变形的家具」，后砌墙——一面可旋转屏风解决分区、展示、弹性三个问题。",
+    "模块化装修：天花/地胶/幕墙全标准模数，压缩工期，更给日后局部翻新留接口——翻新从一次性工程变成运营能力。",
+    "特藏按公共产品考核：外借办展、数字化开放、VR 叙事，指标是「被参观/被引用/被讲述」。",
+    "家具是最大单项开支：选型「耐用＋经典＋呼应建筑」，便宜家具五年一换是最贵的选项。"
+  ],
+  limits: [
+    "中央馆现行馆藏总量与座位数为 2013 年 IFLA 口径，未见更新。",
+    "2021 年改造总投资额未公开。",
+    "「7 个专业馆」完整名单各来源略有出入，以官网现行名单为准。",
+    "NUS120 相关活动的具体到访数据未见公开。",
+    "可旋转屏风等家具的实际使用频率未见评估报告。",
+    "在校生数口径（4.2 万 vs 4.3 万）各来源不一，报告取约数。"
+  ],
+  sources: [
+    { label: "Architects 61 – A&A to NUS Central Library 项目页", url: "a61.com.sg/projects/aa-to-nus-central-library" },
+    { label: "BCI IDA 2019 项目板（ID_100582：六层改造简报）", url: "bciasiaidawards.com/idawards/assets/file/data/entrant/ID_100582/panel/ID_100582%20PANEL.pdf" },
+    { label: "NUS 绿债影响力报告 2022（2018 开工/2021-10 完工/节电数据）", url: "sustainability.nus.edu.sg/wp-content/uploads/2022/06/NUS-Green-Bond-Report-2022.pdf" },
+    { label: "NUS Libraries – Special Collections（新马/华人/战前日文/珍本）", url: "nus.edu.sg/nuslibraries/collections/special-collections" },
+    { label: "NUS Libraries 2025 年报（NUS120/IFLA 入围/120 Stories）", url: "nuslibraries-highlights.shorthandstories.com/2025-growing-and-learning" },
+    { label: "NUS 博客 LINUS – 前身院校早期文献考（1905 校史线）", url: "blog.nus.edu.sg/linus/2024/12/27" },
+    { label: "IFLA WLIC 2013 – NUS 半日参访资料（150 万册口径）", url: "ifla.org/past-wlic/2013/half-day-library-visits-singapore.htm" },
+    { label: "QS 2026 排名报道（NUS 第 8、95.9 分）", url: "straitstimes.com" },
+    { label: "ShanghaiRanking – NUS ARWU 2026 第 53", url: "shanghairanking.com/universities/national-university-of-singapore" }
+  ]
 }
 ];
 
@@ -2060,5 +2146,6 @@ window.LIB_URLS = {
   imperial: "https://www.imperial.ac.uk/library",
   cambridge: "https://www.lib.cam.ac.uk/",
   psl: "https://www.psl.eu/",
-  epfl: "https://www.epfl.ch/campus/library/"
+  epfl: "https://www.epfl.ch/campus/library/",
+  nus: "https://nus.edu.sg/nuslibraries"
 };
