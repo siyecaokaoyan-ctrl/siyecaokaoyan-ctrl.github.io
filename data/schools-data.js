@@ -2298,6 +2298,93 @@ const SCHOOLS = [
     { label: "港大 2025 年度学生数据概览报道（42,330 在校生）", url: "jingsailian.com/news/1624435.html" },
     { label: "QS 2026 排名（港大第 11、亚洲第 2）；THE 2026 第 33", url: "topuniversities.com/universities/university-hong-kong" }
   ]
+},
+  {
+  id: "ntu",
+  name: "南洋理工大学",
+  nameEn: "Nanyang Technological University (NTU)",
+  founded: 1991,
+  country: "新加坡",
+  region: "亚太",
+  state: "新加坡",
+  reportId: "LR-20261012-01",
+  reportDate: "2026-10-12",
+  tagline: "8 处馆舍 15,440㎡ 的多馆系统 · 开进「小笼包」的图书馆前哨 · 古迹里的华裔馆",
+  mainLine: "1991 年由南洋大学（1955 年云南园创校，东南亚第一所华文大学）一脉组建的 NTU（QS 2026 世界 12、亚洲第 3），图书馆走「一系统、多馆舍」路线：8 处馆舍合计 15,440㎡，旗舰总馆 LWN（1,149 座、103 台电脑、5 楼窗外森林海景）之外，把服务前哨开进 Heatherwick 设计的地标「小笼包」（咖啡厅式座位），在国家古迹（前南洋大学行政大楼）里设华裔馆中文图书馆。LWN 5 楼安静区嵌 2022 年教务长揭幕的 HYGGE 健康空间；机器人 Temi 馆内带路答疑、二维码书脊扫码读电子书、单一复本电子优先——不靠单体宏伟，靠系统分布的巧劲与服务颗粒度。",
+  flagship: { name: "华裔馆：在国家古迹里守护海外华文记忆", note: "华裔馆（Chinese Heritage Centre）所在建筑是前南洋大学行政大楼、新加坡国家古迹——绿瓦飞檐的中式宫殿造型，1955 年云南园创校的历史原点。馆内藏南洋大学旧报纸库、缩微平片与海外华文史一手资料，它同时是研究中心与 NTU 的中文图书馆，仿古家具与中国风空间本身就是展陈。NTU 校史里「华文大学→英文理工大学」的转折在这座馆舍里被实物保留——对今日以英文为主的 NTU，华裔馆是校史合法性与多元文化叙事的锚点；老馆舍最好的保护方式是「继续使用＋讲清故事」。", imgs: [{ src: "ntu-1.jpg", cap: "LWN 入口中庭（2026-08 摄）：玻璃顶棚大台阶直抵总馆入口，台阶上是 HYGGE 的 Fascinature 概念横幅——健康空间就嵌在中庭之上的 5 楼安静区。摄影：Robert Sim（CC BY-SA 4.0）" }, { src: "ntu-2.jpg", cap: "LWN 内部书架区：深蓝端板书架与「NTU LIBRARY」书车——旗舰总馆的日常肌理。摄影：Riya555（CC BY-SA 4.0）" }, { src: "ntu-3.jpg", cap: "华裔馆（2025-10 摄）：前南洋大学行政大楼、新加坡国家古迹——绿瓦飞檐的中式宫殿造型，NTU 华文校史的实体原点。摄影：GoAheadFan95（CC BY-SA 4.0）" }, { src: "ntu-4.jpg", cap: "Library Outpost 休闲角（小笼包一层）：人造草坪＋豆袋沙发的「咖啡厅式」图书馆座位——把图书馆开进地标建筑与学生流线。摄影：Diyanawiki（CC BY-SA 4.0）" }] },
+  overview: {
+    intro: "南洋理工大学（QS 2026 世界 12、亚洲第 3，升 3 位创近年最佳；THE 2026 第 31；ARWU 2026 第 84）1991 年由南洋大学一脉组建，主校区云南园 200 公顷、57 个 Green Mark 绿色建筑（54 铂金级），在校生逾 4 万人。图书馆为 8 处馆舍 15,440㎡ 的「一系统多馆舍」：旗舰总馆 LWN（科学与工程，1,149 座、103 台电脑、7 个多功能间、录音室与录影橱，5 楼望森林海景，考试季延至 23:30）、商务馆（415 座、Bloomberg 专区）、ADM 艺术媒体馆、传播与信息馆、人文社科馆、华裔馆（国家古迹内中文馆）、小笼包里的图书馆前哨、培训共享空间。创新服务：机器人 Temi、AV 视听舱、OneSearch 2FA、Consensus AI 等 AI 研究助手；馆藏单一复本＋电子优先，部分课程参考书做二维码书脊扫码读电子版。",
+    stats: [
+      { k: "建校", v: "1991", s: "源头 1955 年南洋大学（东南亚首所华文大学）" },
+      { k: "排名", v: "QS 12 / 亚洲 3", s: "QS 2026 近年最佳；THE 2026 第 31" },
+      { k: "馆舍", v: "8 处 / 15,440㎡", s: "一系统多馆舍（调研报告口径）" },
+      { k: "总馆座位", v: "1,149 座", s: "LWN；103 台电脑，5 楼望森林海景" }
+    ]
+  },
+  projects: [
+    {
+      name: "HYGGE 健康空间：把心理健康嵌进图书馆安静区",
+      nameEn: "HYGGE Wellbeing Space · LWN Level 5 Quiet Zone · 2022",
+      year: "2022-09-08 揭幕",
+      stats: [{ k: "位置", v: "LWN 5/F" }, { k: "概念", v: "Fascinature" }, { k: "揭幕", v: "教务长" }, { k: "支持", v: "校健康办" }],
+      facts: "LWN 5 楼安静区划出 HYGGE 健康空间（取北欧 Hygge「舒适、惬意、被照顾」之意，Fascinature 概念设计），2022-09-08 由教务长 Ling San 教授亲自揭幕，校健康办公室支持。空间选在安静区而非大堂——在「压力最大的学习场景」里做减压：自然主题陈设、舒缓氛围与休息位，学生不必离开图书馆就能获得情绪缓冲；5 楼自习区窗外是森林与海景，HYGGE 借景自然——疗愈不是软装口号，而是与景观资源的直接绑定。",
+      insight: "学习支持服务（含心理健康）最好的落点不在行政楼，而在学生压力现场——图书馆安静区就是第一现场；由教务长揭幕、健康办共建的校级配置，是图书馆与学工系统协同的背书样板。",
+      img: "ntu-1.jpg",
+      imgCap: "LWN 入口中庭与 HYGGE 横幅（2026-08）。摄影：Robert Sim（CC BY-SA 4.0）"
+    },
+    {
+      name: "图书馆前哨与「小笼包」：把服务嵌进地标建筑",
+      nameEn: "Library Outpost in the Hive · LHS-01-05 · Café-style",
+      year: "2016 前后启用",
+      stats: [{ k: "位置", v: "小笼包 1F" }, { k: "座位", v: "咖啡厅式" }, { k: "馆藏", v: "视听＋Reserve" }, { k: "思路", v: "前哨模式" }],
+      facts: "Learning Hub「小笼包」由 Heatherwick Studio 设计，是 NTU 乃至新加坡的校园地标，建筑、人文社科与商科学生最密集。图书馆不设新大楼，而是在小笼包一层（LHS-01-05）设 Library Outpost——咖啡厅式座位＋视听资料＋课程 Reserve，由总馆延伸服务到学生每天必经之地；8 处馆舍没有一处贪大，却处处贴着学科群落与人流节点。传统思路是「把学生拉到图书馆」，NTU 是「把图书馆开进学生堆里」。",
+      insight: "分馆的价值由位置定义，不由面积定义——一个 300㎡ 的前哨开在地标里，服务效能可能超过一个 3,000㎡ 的边缘馆；「前哨模式」是分校区、新校区低成本高触达扩容的直接可借鉴样本。",
+      img: "ntu-4.jpg",
+      imgCap: "Library Outpost 休闲角：人造草坪＋豆袋沙发。摄影：Diyanawiki（CC BY-SA 4.0）"
+    },
+    {
+      name: "华裔馆：在国家古迹里守护海外华文记忆",
+      nameEn: "Chinese Heritage Centre · National Monument · Nanyang University Legacy",
+      year: "1955 建筑 / 国家古迹",
+      stats: [{ k: "建筑", v: "国家古迹" }, { k: "前身", v: "南大行政楼" }, { k: "馆藏", v: "华文旧报库" }, { k: "身份", v: "馆＋研究中心" }],
+      facts: "华裔馆所在建筑是前南洋大学行政大楼、新加坡国家古迹——绿瓦飞檐的中式宫殿造型，1955 年云南园创校的历史原点。藏南洋大学旧报纸库、缩微平片、海外华文史资料，同时是研究中心与 NTU 的中文图书馆，仿古家具与中国风空间本身就是展陈的一部分。NTU 校史里「华文大学→英文理工大学」的转折在这座馆舍里被实物保留；对今日以英文为主的 NTU，华裔馆是校史合法性与多元文化叙事的锚点。",
+      insight: "老馆舍（尤其承载历史转折的）最好的保护方式是「继续使用＋讲清故事」，而不是封存或拆除——图书馆是记忆最自然的保管人；最不可替代的馆藏往往是「只有我们能收、只有我们收得住」的东西。",
+      img: "ntu-3.jpg",
+      imgCap: "华裔馆外观（2025-10）：绿瓦飞檐的国家古迹。摄影：GoAheadFan95（CC BY-SA 4.0）"
+    }
+  ],
+  learningSpaces: "LWN 5 楼安静区：HYGGE 健康空间（Fascinature 概念，自然主题减压角）＋窗外森林海景自习区（可望马来西亚）；视听舱 AV Pods（以「舱」而非「室」的颗粒度提供 AV 需求）；录影橱自助录制演讲回放；小笼包前哨：人造草坪＋豆袋沙发的咖啡厅式座位（2016 年照片可见）；华裔馆：国家古迹内的仿古家具中国风阅览空间——家具即展陈。",
+  serviceModel: "机器人 Temi 智能馆员（馆内寻路＋FAQ＋视频连线真人馆员）；OneSearch 发现系统 2026 起 2FA 登录；Consensus AI、EndNote RA、Primo RA 等 AI 研究助手；单一复本＋电子优先采购，部分课程参考书带二维码书脊扫码下载电子版；打印外包、EZ-Link 交通卡自助付费；考试季 LWN 延至 23:30（5 楼提前 15 分钟关闭）。",
+  trends: [
+    { tid: "historic-renewal", title: "古迹里的中文图书馆", type: "fact", note: "华裔馆设于国家古迹（前南洋大学行政大楼，1955 年云南园原点）：仿古家具中国风空间＋南洋大学旧报纸库——老建筑「继续使用＋讲清故事」的样本。" },
+    { tid: "learning-commons", title: "开进地标里的「前哨」", type: "fact", note: "Library Outpost 开进小笼包一层：咖啡厅式座位＋视听与课程 Reserve——把图书馆服务嵌进学生每天必经的地标建筑，8 处馆舍无一贪大、处处贴人流节点。" },
+    { tid: "special-collections", title: "海外华文记忆专藏", type: "fact", note: "华裔馆藏南洋大学旧报纸库、缩微平片与海外华文史一手资料——「只有我们能收、只有我们收得住」的校史与族群记忆馆藏。" },
+    { tid: "247-spaces", title: "考试季延时＋5 楼景观自习", type: "fact", note: "LWN 考试季延长开放至 23:30（5 楼提前 15 分钟关闭）；5 楼自习区窗外森林海景可望马来西亚——最好的窗景留给学生。" },
+    { tid: "wellness-in-library", title: "健康空间进馆（HYGGE）", type: "fact", note: "LWN 5 楼安静区设 HYGGE 健康空间（Fascinature 概念），2022-09-08 教务长揭幕、校健康办支持——把心理健康服务嵌进压力最大的学习现场。" }
+  ],
+  business: [
+    "「前哨」模式值得直接借鉴：不设新馆、在人流地标设小型服务点（咖啡厅式座位＋高频服务）——分校区／新校区低成本高触达扩容的答案。",
+    "心理健康服务应落到压力现场：HYGGE 嵌在考试季最满的 5 楼安静区，教务长揭幕、健康办支持——图书馆与学工系统的协同需要校级背书。",
+    "「单一复本＋电子优先」要配套「纸本指路」：二维码书脊让纸本架位变成电子资源的导航图——纸本存量可承担「导览介质」的二次职能。",
+    "新技术「先服务台、再研究流」：Temi 做带路与 FAQ（低门槛强展示），AI 研究助手做文献发现（高价值需培训）——推进顺序可参照。",
+    "老馆舍是叙事资产：华裔馆把校史转折实物化并持续使用——校园里的老建筑，哪一栋能讲出「这所学校为什么是它」的故事？",
+    "景观即资源：5 楼自习区「望森林海景」是 LWN 口碑传播点——选址与楼层分配时，把最好的窗景留给学生而非办公室。"
+  ],
+  limits: [
+    "8 处馆舍 15,440㎡ 为上海社科院调研报告口径，与 NTU 官网现行统计口径可能有出入。",
+    "在校生规模：官网中文站「4 万 700+」与 THE 口径 25,859 FTE 差异较大，正式引用前建议以 Facts & Figures 最新页为准。",
+    "Temi 机器人服务的现行状态（是否全馆常态部署）未见 2026 年最新说明。",
+    "各馆舍（尤其传播与信息馆、培训共享空间）的最新改造动态未逐一核实。"
+  ],
+  sources: [
+    { label: "NTU 官网中文站（校史／规模／绿色建筑）", url: "ntu.edu.sg/main/cn" },
+    { label: "NTU Library 官网（8 处馆舍／LWN 设施／HYGGE／Temi／AV Pods／AI 工具）", url: "ntu.edu.sg/library" },
+    { label: "NTU Library – Lee Wee Nam Library 楼层指南", url: "ntu.edu.sg/library" },
+    { label: "NTU 教务长办公室：HYGGE 空间揭幕（2022-09-08）", url: "ntu.edu.sg" },
+    { label: "上海社科院赴新加坡调研报告（8 处馆舍／15,440㎡ 口径）", url: "sass.org.cn" },
+    { label: "Wikipedia：Nanyang Technological University／Chinese Heritage Centre", url: "en.wikipedia.org/wiki/Nanyang_Technological_University" },
+    { label: "QS 2026（第 12、亚洲第 3）；THE 2026（31）；ARWU 2026（84）", url: "topuniversities.com/universities/nanyang-technological-university-singapore" }
+  ]
 }
 ];
 
@@ -2327,5 +2414,6 @@ window.LIB_URLS = {
   epfl: "https://www.epfl.ch/campus/library/",
   nus: "https://nus.edu.sg/nuslibraries",
   utokyo: "https://www.lib.u-tokyo.ac.jp/en",
-  hku: "https://lib.hku.hk/"
+  hku: "https://lib.hku.hk/",
+  ntu: "https://www.ntu.edu.sg/library"
 };
