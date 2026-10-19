@@ -102,7 +102,7 @@ section{padding:100px 0;}
 /* ── 详情页：每校一色的身份全部保留，只升级字级与气泡 ── */
 .detail-hero h1{font-size:clamp(40px,5.6vw,64px);font-weight:900;line-height:1.1;}
 .detail-hero .tagline{font-size:clamp(20px,2.6vw,26px);font-weight:800;}
-.detail-hero .mainline{font-size:16.5px;line-height:1.8;max-width:720px;}
+.detail-hero .mainline{font-size:16.5px;line-height:1.8;max-width:none;}
 .stat-card .v{font-size:30px;font-weight:800;}
 .stat-card .k{color:var(--ink-3);}
 .trend-item .t-body > b{font-weight:800;}

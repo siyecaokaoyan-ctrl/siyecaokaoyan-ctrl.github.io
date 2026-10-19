@@ -199,7 +199,7 @@ body>section{border-top:1px solid var(--hair);}
 .detail-hero h1::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--accent);margin-top:16px;}
 .detail-hero .en{font-size:14px;color:var(--ink-3);letter-spacing:.05em;margin-top:4px;}
 .detail-hero .tagline{font-size:clamp(18px,2.4vw,22px);font-weight:700;color:var(--accent);margin-top:18px;letter-spacing:-.01em;line-height:1.5;}
-.detail-hero .mainline{font-size:15.5px;color:var(--ink-2);line-height:1.85;max-width:760px;margin-top:14px;}
+.detail-hero .mainline{font-size:15.5px;color:var(--ink-2);line-height:1.85;max-width:none;margin-top:14px;}
 .detail-hero .mainline b{color:var(--ink);}
 .meta-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;}
 .m-chip{font-size:12px;color:var(--ink-2);background:var(--paper);border:1px solid var(--hair);padding:6px 13px;border-radius:980px;}
