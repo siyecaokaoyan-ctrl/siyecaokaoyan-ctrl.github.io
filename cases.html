@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>案例库 · 世界高校图书馆研究</title>
+<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/v3.css?v=27">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+  .case-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line,#e5e5ea);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .3s ease,box-shadow .3s ease;}
+  .case-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.08);}
+  .cc-img{aspect-ratio:16/9;overflow:hidden;}
+  .cc-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  .cc-body{padding:18px 22px 20px;}
+  .cc-kicker{font-size:12px;letter-spacing:.1em;color:var(--accent,#00539B);font-weight:600;margin-bottom:6px;}
+  .cc-body h3{font-size:18px;margin:0 0 4px;}
+  .cc-tag{font-size:13px;color:var(--sub,#6e6e73);margin-bottom:8px;}
+  .cc-body p{font-size:13.5px;color:#3a3a3e;margin:0 0 10px;}
+  .cc-meta{font-size:12px;color:var(--sub,#6e6e73);}
+  #case-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;margin-top:8px;}
+  .case-note{margin-top:22px;font-size:13px;color:var(--sub,#6e6e73);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html"><span class="dot"></span>高校图书馆研究图谱</a>
+    <div class="nav-links">
+      <a href="index.html">总览</a>
+      <a href="index.html#schools">学校库</a>
+      <a href="cases.html" class="on">案例库</a>
+      <a href="index.html#compare">双校对比</a>
+      <a href="index.html#trends">趋势专栏</a>
+    </div>
+    <div class="progress-pill">研究进度 <b id="stat-progress">–</b> / 100</div>
+  </div>
+</nav>
+
+<header class="hero" style="padding:72px 0 48px;">
+  <div class="wrap">
+    <div class="kicker">Steelcase Case Library</div>
+    <h1>案例库</h1>
+    <p class="sub">Steelcase 图书馆与学习空间项目案例——每个案例一页「图书馆研究＋空间方案」双视角研究：建筑理念、楼层场景、家具配置、影像文章与趋势研判。</p>
+    <p class="phase-tag">已入库 <b id="case-total">–</b> 个案例 · 本地案例库 26 个中国案例＋海外案例，持续整理入库中</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div id="case-cards"></div>
+    <p class="case-note">案例资料来源于站长本地 Steelcase 案例库（工作资料盘归档）与公开报道、官方视频；照片为 Steelcase 官方案例摄影，仅作研究识别之用。想看某个案例的整理，欢迎到首页留言板告诉站长。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    世界高校图书馆研究 · 每所学校一份独立研究，每周更新<br>
+    原始研究报告存档于站长本地 · 本站为精选重构版<br>
+    案例照片为 Steelcase 官方案例摄影，版权归原权利方所有，仅作研究识别之用
+  </div>
+</footer>
+
+<script src="data/cases-data.js?v=1"></script>
+<script src="data/schools-data.js?v=31"></script>
+<script src="assets/case.js?v=1"></script>
+<script src="assets/app.js?v=31"></script>
+</body>
+</html>

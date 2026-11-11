@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>案例详情 · 世界高校图书馆研究</title>
+<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/v3.css?v=27">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+  /* 案例页专属样式 */
+  .role-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:18px;}
+  .role{background:rgba(255,255,255,.72);border:1px solid var(--line,#e5e5ea);border-radius:12px;padding:12px 16px;}
+  .role .rk{font-size:12px;color:var(--sub,#6e6e73);margin-bottom:2px;}
+  .role .rv{font-size:14px;font-weight:600;}
+  .quote-card{background:#fff;border:1px solid var(--line,#e5e5ea);border-radius:14px;padding:20px 24px;margin:18px 0;position:relative;}
+  .quote-card .qc-mark{font-size:40px;line-height:1;color:var(--accent,#00539B);font-weight:700;height:24px;}
+  .quote-card p{font-size:15px;margin:8px 0 10px;}
+  .quote-card .qc-by{font-size:12.5px;color:var(--sub,#6e6e73);}
+  .floor-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line,#e5e5ea);border-radius:14px;overflow:hidden;margin:16px 0;font-size:13.5px;}
+  .floor-table th,.floor-table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line,#e5e5ea);vertical-align:top;}
+  .floor-table th{background:#fafafc;font-size:12.5px;color:var(--sub,#6e6e73);font-weight:600;}
+  .floor-table tr:last-child td{border-bottom:none;}
+  .floor-table .gray{color:var(--sub,#6e6e73);font-size:12.5px;}
+  .dot-list{margin:0 0 14px 0;list-style:none;font-size:14px;}
+  .dot-list li{padding:7px 0 7px 20px;position:relative;border-bottom:1px dashed var(--line,#e5e5ea);}
+  .dot-list li:last-child{border-bottom:none;}
+  .dot-list li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--accent,#00539B);opacity:.55;}
+  .fw-card{background:#fff;border:1px solid var(--line,#e5e5ea);border-radius:14px;padding:16px 20px;margin:10px 0;}
+  .fw-card b{font-size:14.5px;}
+  .fw-card p{margin:6px 0 0;font-size:13.5px;color:#3a3a3e;}
+  .cg-group{margin:22px 0;}
+  .cg-group h3{font-size:15.5px;margin-bottom:12px;}
+  .cg-group .cg-n{font-size:12px;color:var(--sub,#6e6e73);font-weight:400;margin-left:10px;}
+  .cg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+  .cg-th{border:none;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:none;aspect-ratio:3/2;}
+  .cg-th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease;}
+  .cg-th:hover img{transform:scale(1.05);}
+  /* 灯箱 */
+  .lb{position:fixed;inset:0;background:rgba(20,20,22,.92);z-index:99;display:none;align-items:center;justify-content:center;}
+  .lb.open{display:flex;}
+  .lb img{max-width:88vw;max-height:80vh;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.5);}
+  .lb-cap{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:#d8d8dc;font-size:13px;background:rgba(0,0,0,.35);padding:8px 18px;border-radius:99px;max-width:80vw;text-align:center;}
+  .lb-x,.lb-prev,.lb-next{position:absolute;background:rgba(255,255,255,.12);border:none;color:#fff;font-size:26px;width:46px;height:46px;border-radius:50%;cursor:pointer;line-height:1;}
+  .lb-x{top:20px;right:22px;}
+  .lb-prev{left:18px;top:50%;transform:translateY(-50%);}
+  .lb-next{right:18px;top:50%;transform:translateY(-50%);}
+  .lb-x:hover,.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.28);}
+  #c-links{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;}
+  @media (max-width:600px){.cg-grid{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html"><span class="dot"></span>高校图书馆研究图谱</a>
+    <div class="nav-links">
+      <a href="index.html">总览</a>
+      <a href="index.html#schools">学校库</a>
+      <a href="cases.html" class="on">案例库</a>
+      <a href="index.html#compare">双校对比</a>
+      <a href="index.html#trends">趋势专栏</a>
+    </div>
+    <div class="progress-pill">研究进度 <b id="stat-progress">–</b> / 100</div>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">总览</a> / <a href="cases.html">案例库</a> / <span id="c-crumb"></span></div>
+    <div class="d-title-row"><h1 id="c-title"></h1></div>
+    <div class="en" id="c-en"></div>
+    <div class="tagline" id="c-tagline"></div>
+    <p class="mainline" id="c-mainline"></p>
+    <div class="meta-chips" id="c-chips"></div>
+    <div id="c-links"></div>
+    <div class="role-list" id="c-roles"></div>
+  </div>
+</header>
+
+<section id="sec-stats">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">01</span><div class="tag">At a Glance</div><h2>项目速览</h2></div>
+    <div class="stat-grid" id="c-stats"></div>
+  </div>
+</section>
+
+<section id="sec-arch">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">02</span><div class="tag">Architecture</div><h2>建筑视角</h2></div>
+    <div class="block-card reveal" id="c-arch"></div>
+  </div>
+</section>
+
+<section id="sec-lib">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">03</span><div class="tag">Library</div><h2>图书馆视角 · 4 层楼里装了多少种「阅读」</h2></div>
+    <div class="block-card reveal" id="c-floors-wrap"><div id="c-floors"></div></div>
+    <div class="block-card reveal" style="margin-top:14px"><b>服务运营。</b><div id="c-services"></div></div>
+  </div>
+</section>
+
+<section id="sec-sc">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">04</span><div class="tag">Steelcase</div><h2>Steelcase 视角 · 从「卖家具」到「卖学习空间方法论」</h2></div>
+    <div id="c-framework"></div>
+    <div class="block-card reveal" style="margin-top:14px"><div id="c-products"></div><div class="gray" id="c-scnote" style="margin-top:10px"></div></div>
+    <div id="c-scquotes"></div>
+  </div>
+</section>
+
+<section id="sec-gallery">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">05</span><div class="tag">Gallery</div><h2>分类图库</h2><p>Steelcase 官方案例实景（本地案例库精选 19 张 / 原库 69 张），点击看大图、可左右切换。</p></div>
+    <div id="c-gallery"></div>
+  </div>
+</section>
+
+<section id="sec-media">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">06</span><div class="tag">Media</div><h2>影像与文章资源</h2></div>
+    <div class="block-card reveal" id="c-media"></div>
+  </div>
+</section>
+
+<section id="sec-trends">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">07</span><div class="tag">Trends</div><h2>趋势研判</h2><p>「事实」为有明确来源佐证的判断，「判断」为基于证据的归纳。</p></div>
+    <div class="block-card reveal" id="c-trends"></div>
+  </div>
+</section>
+
+<section id="sec-business">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">08</span><div class="tag">Business Insights</div><h2>对业务工作的启发</h2></div>
+    <div class="internal-badge">内部研究视角 · 本站不对外转发原始报告</div>
+    <div class="block-card reveal"><ul class="insight-list" id="c-business"></ul></div>
+  </div>
+</section>
+
+<section id="sec-limits">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">09</span><div class="tag">Caveats</div><h2>待验证与限制</h2></div>
+    <div class="block-card reveal"><ul class="limit-list" id="c-limits"></ul></div>
+  </div>
+</section>
+
+<section id="sec-sources">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="ghost">10</span><div class="tag">Sources</div><h2>来源清单</h2></div>
+    <div class="block-card reveal"><ul class="src-list" id="c-sources"></ul></div>
+    <div class="pager"><a class="prev" href="cases.html"><div class="p-dir">← 返回</div><div class="p-name">案例库</div></a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    世界高校图书馆研究 · 每所学校一份独立研究，每周更新<br>
+    原始研究报告存档于站长本地 · 本站为精选重构版<br>
+    案例照片为 Steelcase 官方案例摄影，版权归原权利方所有，仅作研究识别之用
+  </div>
+</footer>
+
+<script src="data/cases-data.js?v=1"></script>
+<script src="data/schools-data.js?v=31"></script>
+<script src="assets/case.js?v=1"></script>
+<script src="assets/app.js?v=31"></script>
+</body>
+</html>
